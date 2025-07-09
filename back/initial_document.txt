@@ -1,0 +1,7 @@
+Python, veri bilimi ve yapay zeka alanlarında yaygın olarak kullanılan çok yönlü bir programlama dilidir. 
+    Özellikle makine öğrenimi kütüphaneleri (TensorFlow, PyTorch, Scikit-learn) sayesinde popülaritesi artmıştır. 
+    JavaScript ise web geliştirme için temel bir dildir ve hem istemci hem de sunucu tarafında (Node.js ile) çalışabilir. 
+    OpenAI API, geliştiricilere güçlü yapay zeka modellerine erişim sağlar. 
+    Embeddings, metinlerin anlamsal temsilleridir ve benzerlik aramalarında kullanılır.
+    Chatbotlar, kullanıcılarla doğal dil aracılığıyla etkileşim kuran yapay zeka sistemleridir.
+World Intellectual Property Organization (WIPO) Patents Erişim Adresi (https://www.wipo.int/portal/en/index.html)
