@@ -1,7 +1,31 @@
-Python, veri bilimi ve yapay zeka alanlarında yaygın olarak kullanılan çok yönlü bir programlama dilidir. 
-    Özellikle makine öğrenimi kütüphaneleri (TensorFlow, PyTorch, Scikit-learn) sayesinde popülaritesi artmıştır. 
-    JavaScript ise web geliştirme için temel bir dildir ve hem istemci hem de sunucu tarafında (Node.js ile) çalışabilir. 
-    OpenAI API, geliştiricilere güçlü yapay zeka modellerine erişim sağlar. 
-    Embeddings, metinlerin anlamsal temsilleridir ve benzerlik aramalarında kullanılır.
-    Chatbotlar, kullanıcılarla doğal dil aracılığıyla etkileşim kuran yapay zeka sistemleridir.
-World Intellectual Property Organization (WIPO) Patents Erişim Adresi (https://www.wipo.int/portal/en/index.html)
+İ.T.Ü. öğretim elemanları, öğrencileri, idari ve emekli personeli İTÜ Kütüphanelerinden üye olmaksızın yararlanabilirler. Ancak,
+1. Ödünç verme hizmeti,
+2. Kütüphanelerarası ödünç yayın / belge sağlama hizmeti,
+3. Elektronik kaynaklara kampüs dışı erişim hizmeti,
+4. Kütüphaneye satın alınması için yayın siparişi hizmetlerinden yararlanılabilmesi için kütüphane üyeliği gerekmektedir. (Üye olan İTÜ emekli personeli sadece ödünç verme hizmetinden yararlanabilir).
+➢ İTÜ mezunları, İTÜ Vakfı ve İTÜ Geliştirme Vakfı personeli, diğer üniversitelerin yüksek lisans ve doktora öğrencileri ile öğretim elemanları, araştırmacılar Üniversite Yönetim Kurulu (ÜYK) kararı ile belirlenen koşullar çerçevesinde sadece kütüphane içindeki hizmetlerden yararlanabilir, ödünç yayın alamazlar.
+1. İTÜ mezunları mezun kartları ile,
+2. Diğer üniversitelerin öğretim elemanları ve lisansüstü öğrencileri çıkarılacak üyelik kartı ile,
+3. İTÜ Kütüphanelerinden yararlanmak isteyen özel sektör ve kamu kurumlarındaki araştırmacılar, Üniversite Yönetim Kurulu (ÜYK) tarafından belirlenen kurallar çerçevesinde misafir üye olarak İTÜ Kütüphanelerinden yararlanabilirler.
+Danışma Birimi
+İTÜ Kütüphanelerinde araştırma yaparken referans kütüphanecilerinden yardım alabilirsiniz. Mustafa İnan Kütüphanesi Giriş Katı’nda bulunan Ödünç/İade Bankosu’nun hemen yanındaki Danışma Bankosu’na, şube kütüphanelerde de danışma bankolarında görev yapan uzman referans kütüphanecilerine sorularınızı doğrudan iletebilirsiniz. Ayrıca web sitemizdeki Kütüphaneciye Danış bağlantılarını kullanabilirsiniz.
+Araştırma konunuzla ilgili kaynaklarla ilgili bilgi almak için, sorularınızı kaynakları iyi tanıyan referans kütüphanecisine yönlendirebilir; referans kütüphanecisi ile elektronik posta, telefon ve sosyal medya hesapları ile iletişime geçebilir, günün belirli saatlerinde web üzerinden canlı destek alabilirsiniz.
+4
+İTÜ Koleksiyonu
+İTÜ Kütüphaneleri 5 yerleşkede 1 merkez ve 7 şube kütüphanesinden oluşmaktadır. İTÜ Koleksiyonu’nda kitaplar, süreli yayınlar, tezler, standartlar, patentler, elektronik kitaplar ve dergiler, görsel-işitsel eğitim materyalleri, haritalar, müzik notaları, el yazması ve nadir eserler gibi farklı türlerde bilgi kaynakları bulunmaktadır. Kütüphane kaynaklarını web sayfasında yer alan, Kütüphane Katalog Tarama ve Tarıyorum alanından tarayabilirsiniz. Aradığınız yayının bibliyografik künyesine, içeriğine, ödünç alınabilir olup olmadığına, bulunduğu kütüphane ve yer bilgisine ulaşabilirsiniz.
+Koleksiyonun Yerleşimi
+Koleksiyonun yerleşiminde Library of Congress Sınıflama Sistemi kullanılmaktadır. Bu sistemde konuların harf ve rakamlardan oluşan karşılıklarına yer numarası adı verilir. Yer numarası her bilgi kaynağı için tektir, konusal düzende ve kaynağın koleksiyonda bulunduğu yeri göstermektedir.
+Aşağıda çeşitli konulardaki yayınlara ait yer numarası örnekleri verilmiştir;
+Sosyal Bilimler Müzik Matematik Elektronik Denizcilik
+HM 61 ML 410 QA 303 TK 7816 VM 391
+.Ö93 .S932 .B35 .H36 .S43
+2008 .A13 2006 2003 2005
+2004
+Aşağıda bir kitabın bibliyografik künyesi ve yer numarası görülmektedir;
+Balcı, Mustafa.
+Ankara : Balcı Yayınları, 2006.
+4. basım.
+2 cilt ; şekil, 25 cm.
+Library of Congress Sınıflama Sistemi tarafından verilen matematik konusuna ait numarayı,
+Yazar soyadına göre verilmiş ”cutter” numarasını,
+Kitabın yayın yılını gösterir.

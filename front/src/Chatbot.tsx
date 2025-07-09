@@ -76,7 +76,8 @@ function Chatbot() {
                         backgroundColor: msg.sender === 'user' ? '#e0f7fa' : '#f0f0f0',
                         display: 'inline-block',
                         maxWidth: '70%',
-                        wordWrap: 'break-word'
+                        wordWrap: 'break-word',
+                        color: msg.sender === 'user' ? '#000' : '#333',
                     }}>
                         {msg.text}
                     </div>
