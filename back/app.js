@@ -81,8 +81,8 @@ async function extractTextFromFile(filePath, mimeType) {
 async function indexDocumentText(text) {
   // RecursiveCharacterTextSplitter kullanarak metni parçala
   const textSplitter = new RecursiveCharacterTextSplitter({
-    chunkSize: 500, // Her parçanın maksimum token/karakter sayısı
-    chunkOverlap: 80, // Parçalar arasındaki çakışma
+    chunkSize: 1000, // Her parçanın maksimum token/karakter sayısı
+    chunkOverlap: 200, // Parçalar arasındaki çakışma
   });
 
   const docs = await textSplitter.createDocuments([text]);
@@ -161,14 +161,20 @@ app.post("/ask-chatbot", async (req, res) => {
   try {
     // RAG zincirini oluştur
     const questionAnsweringPrompt = PromptTemplate.fromTemplate(
-      `Aşağıdaki bağlamı kullanarak kullanıcının sorusuna cevap ver. 
-            Eğer bağlamda bilgi yoksa, 'Üzgünüm, bu konu hakkında belgemde yeterli bilgi bulunmuyor.' şeklinde yanıtla.
-            Sadece bağlamdaki bilgilere sadık kal.
-            
-            Bağlam:
-            {context}
-            
-            Soru: {input}`
+      `Sen yardımcı bir kütüphane asistanısın. Görevin, kullanıcının sorularını, verilen bağlamdaki bilgilere öncelik vererek yanıtlamaktır.
+
+  Bir konu (örneğin: Kimya, Bilgisayar Bilimi, Tarih, Felsefe) ve "kitap nerede" gibi yer bilgisi içeren bir soru geldiğinde:
+  1.  Öncelikle, **kendi genel bilgini kullanarak** bu konunun standart LC (Library of Congress) sınıflandırma kodunu (örneğin: Kimya -> QD, Bilgisayar Bilimi -> QA, Tarih -> D) belirle.
+  2.  Ardından, **sağlanan BAĞLAMDA** bu Library of Congress sınıflandırma kodunun ilgili konuya ait kütüphane içindeki kat, reyon veya bölümünün konum bilgisini bul.
+  3.  Yanıtını bu iki bilgiyi (Library of Congress sınıflandırması ve yerel konum) birleştirerek oluştur. Örneğin: "Kimya kitapları, Library of Congress sınıflandırmasına göre QD grubuna girer ve kütüphanemizde 2. katta bulunmaktadır."
+
+  Eğer verilen BAĞLAMDA kullanıcının sorusunu yanıtlamak için yeterli bilgi bulunmuyorsa, 'Üzgünüm, bu konu hakkında belgemde yeterli bilgi bulunmuyor.' şeklinde yanıtla.
+  Yanıtlarını sadece BAĞLAMDAKİ bilgilere ve belirlediğin Library of Congress sınıflandırmasına sadık kalarak oluştur, ek bilgi uydurma.
+
+  Bağlam:
+  {context}
+
+  Soru: {input}`
     );
 
     const combineDocsChain = await createStuffDocumentsChain({
