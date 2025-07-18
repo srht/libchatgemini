@@ -2,3 +2,69 @@
 İdari Personel: İdari personel, kitapları 1 ay süreyle ödünç alabilir ve 3 uzatma hakkı vardır. Rezerv bölümündeki yayınları 2 saat/1 gün ödünç alabilir ve uzatma yapılmaz. Görsel-işitsel materyal/haritaları ödünç alamaz; bu materyaller sadece öğretim üyelerine verilmektedir. Süreli yayınlar, referans bölümündeki yayınlar, tezler, nadir eserler/arşiv kopyaları/sanat/eski teknik eserler koleksiyonu ise kütüphane içinde kullanılır.
 Yüksek Lisans/Doktora Öğrencisi: Yüksek Lisans/Doktora öğrencisi, kitapları 15 gün süreyle ödünç alabilir ve 3 uzatma hakkı vardır. Rezerv bölümündeki yayınları 2 saat/1 gün ödünç alabilir ve uzatma yapılmaz. Görsel-işitsel materyal/haritaları ödünç alamaz; bu materyaller sadece öğretim üyelerine verilmektedir. Süreli yayınlar, referans bölümündeki yayınlar, tezler, nadir eserler/arşiv kopyaları/sanat/eski teknik eserler koleksiyonu ise kütüphane içinde kullanılır.
 Lisans Öğrencisi: Lisans öğrencisi, kitapları 15 gün süreyle ödünç alabilir ve 3 uzatma hakkı vardır. Rezerv bölümündeki yayınları 2 saat/1 gün ödünç alabilir ve uzatma yapılmaz. Görsel-işitsel materyal/haritaları ödünç alamaz; bu materyaller sadece öğretim üyelerine verilmektedir. Süreli yayınlar, referans bölümündeki yayınlar, tezler, nadir eserler/arşiv kopyaları/sanat/eski teknik eserler koleksiyonu ise kütüphane içinde kullanılır.
+FİZİKSEL KONUM BİLGİSİ
+
+Kütüphane Kat ve Bölüm Rehberi
+
+Mustafa İnan Kütüphanesi'nin katlara göre düzenlenmiş birim ve yayın dağılımı aşağıdaki gibidir.
+
+Giriş Katı
+
+Giriş katta, kullanıcılara hizmet veren başlıca birimler yer almaktadır.
+Ödünç İade Birimi giriş katta bulunmaktadır.
+Danışma Birimi giriş katta bulunmaktadır.
+ILL (Kütüphaneler Arası Belge Sağlama) Birimi giriş katta bulunmaktadır.
+Bilgi İşlem Birimi giriş katta bulunmaktadır.
+LC Sınıflandırma Sistemi'ne göre aşağıdaki ana konulara ait kitaplar ve referans yayınları giriş katta bulunmaktadır.
+A - Genel Eserler sınıflandırmasındaki kitaplar ve referans yayınları giriş katta yer alır.
+B - Felsefe, Psikoloji, Din sınıflandırmasındaki kitaplar ve referans yayınları giriş katta yer alır.
+C - Yardımcı Bilimler (Tarih) sınıflandırmasındaki kitaplar ve referans yayınları giriş katta yer alır.
+D - Dünya Tarihi sınıflandırmasındaki kitaplar ve referans yayınları giriş katta yer alır.
+E - Amerika Tarihi sınıflandırmasındaki kitaplar ve referans yayınları giriş katta yer alır.
+F - Amerika Yerel Tarihi sınıflandırmasındaki kitaplar ve referans yayınları giriş katta yer alır.
+G - Coğrafya, Antropoloji, Rekreasyon sınıflandırmasındaki kitaplar ve referans yayınları giriş katta yer alır.
+H - Sosyal Bilimler sınıflandırmasındaki kitaplar ve referans yayınları giriş katta yer alır.
+LC sınıflandırmasında I harfi mevcut değildir; J sınıflandırmasına bakınız.
+J - Siyasal Bilim sınıflandırmasındaki kitaplar ve referans yayınları giriş katta yer alır.
+K - Hukuk sınıflandırmasındaki kitaplar ve referans yayınları giriş katta yer alır.
+L - Eğitim sınıflandırmasındaki kitaplar ve referans yayınları giriş katta yer alır.
+M - Müzik sınıflandırmasındaki kitaplar ve referans yayınları giriş katta yer alır.
+N - Güzel Sanatlar sınıflandırmasındaki kitaplar ve referans yayınları giriş katta yer alır.
+P - Dil ve Edebiyat sınıflandırmasındaki kitaplar ve referans yayınları giriş katta yer alır.
+
+1. Kat
+
+katta aşağıdaki LC sınıflandırmalarına ait kitaplar bulunmaktadır.
+R - Tıp sınıflandırmasındaki kitaplar 1. katta yer almaktadır.
+S - Tarım sınıflandırmasındaki kitaplar 1. katta yer almaktadır.
+T - Teknoloji (QA-QZ hariç) sınıflandırmasındaki kitaplar 1. katta yer almaktadır.
+U - Askeri Bilim sınıflandırmasındaki kitaplar 1. katta yer almaktadır.
+V - Deniz Bilimi sınıflandırmasındaki kitaplar 1. katta yer almaktadır.
+Z - Bibliyografya, Kütüphanecilik, Bilgi Kaynakları sınıflandırmasındaki kitaplar 1. katta yer almaktadır.
+Ayrıca, Q ile başlayan tüm bilim kitapları 1. katta yer almaktadır.
+QA - Matematik ve Bilgisayar Bilimi kitapları 1. katta yer almaktadır.
+QB - Astronomi kitapları 1. katta yer almaktadır.
+QC - Fizik kitapları 1. katta yer almaktadır.
+QD - Kimya kitapları 1. katta yer almaktadır.
+QE - Jeoloji kitapları 1. katta yer almaktadır.
+QH - Doğa Tarihi kitapları 1. katta yer almaktadır.
+QK - Botanik kitapları 1. katta yer almaktadır.
+QL - Zooloji kitapları 1. katta yer almaktadır.
+QM - İnsan Anatomisi kitapları 1. katta yer almaktadır.
+QP - Fizyoloji kitapları 1. katta yer almaktadır.
+QR - Mikrobiyoloji kitapları 1. katta yer almaktadır.
+
+2. Kat
+
+katta süreli yayınlar (dergiler, bilimsel gazeteler vb.) yer almaktadır.
+Bu yayınlar AP'den SH'ye kadar olan LC sınıflandırma aralıklarını kapsamaktadır.
+Bu yayınlar T'den Tn2'ye kadar olan LC sınıflandırma aralıklarını kapsamaktadır.
+Süreli yayınlar bölümünde güncel ve geçmiş sayılara ulaşabilirsiniz.
+
+Neden Bu Şekilde Düzeltildi?
+
+Net Başlıklar ve Listeler, bilginin okunabilirliğini artırır ve LLM'in anahtar bilgileri çıkarmasını kolaylaştırır.
+LC Sınıflandırmalarının Açıklanması, modelin doğru eşleşmeleri yapmasına yardımcı olur.
+Tutarlılık ve Mantık, genel LC mantığına daha uygun bir düzenleme sağlar.
+"I" Sınıflandırması, LC sınıflandırmasında "I" harfinin kullanılmadığını belirtir.
+T-Tn2 Netleştirme, süreli yayınlardaki bu aralığı daha anlaşılır hale getirir.
