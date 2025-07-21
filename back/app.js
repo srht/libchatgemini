@@ -8,6 +8,10 @@ const path = require("path");
 
 // LangChain İçe Aktarımları
 const { OpenAIEmbeddings, ChatOpenAI } = require("@langchain/openai");
+const {
+  GoogleGenerativeAIEmbeddings,
+  ChatGoogleGenerativeAI,
+} = require("@langchain/google-genai");
 const { RecursiveCharacterTextSplitter } = require("langchain/text_splitter");
 const { MemoryVectorStore } = require("langchain/vectorstores/memory");
 const { Document } = require("@langchain/core/documents");
@@ -32,14 +36,29 @@ app.use(express.json());
 const upload = multer({ dest: "uploads/" });
 
 // --- LangChain Bileşenleri ---
+/*
 const embeddings = new OpenAIEmbeddings({
   openAIApiKey: process.env.OPENAI_API_KEY,
   modelName: "text-embedding-ada-002", // Varsayılan model, isteğe bağlı
 });
+*/
 
+const embeddings = new GoogleGenerativeAIEmbeddings({
+  apiKey: process.env.GEMINI_API_KEY, // Gemini API anahtarınızı kullanın
+  model: "gemini-embedding-001", // Gemini için embedding modeli
+});
+
+/*
 const chatModel = new ChatOpenAI({
   openAIApiKey: process.env.OPENAI_API_KEY,
   modelName: "gpt-4o", // gpt-4 veya gpt-4o da kullanabilirsiniz
+  temperature: 0.7,
+});
+*/
+
+const chatModel = new ChatGoogleGenerativeAI({
+  apiKey: process.env.GEMINI_API_KEY, // Gemini API anahtarınızı kullanın
+  model: "gemini-2.5-flash", // Metin tabanlı sohbetler için Gemini Pro
   temperature: 0.7,
 });
 
@@ -76,9 +95,10 @@ async function extractTextFromFile(filePath, mimeType) {
     mimeType ===
     "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
   ) {
-    // ... (existing .docx logic)
+    const { value } = await mammoth.extractRawText({ path: filePath });
+    return value;
   } else if (mimeType === "text/plain") {
-    // ... (existing .txt logic)
+    return fs.readFileSync(filePath, "utf8");
   } else {
     throw new Error(`Desteklenmeyen dosya tipi: ${mimeType}`);
   }
@@ -93,7 +113,7 @@ async function indexDocumentText(text) {
   // RecursiveCharacterTextSplitter kullanarak metni parçala
   const textSplitter = new RecursiveCharacterTextSplitter({
     chunkSize: 500, // Her parçanın maksimum token/karakter sayısı
-    chunkOverlap: 50, // Parçalar arasındaki çakışma
+    chunkOverlap: 150, // Parçalar arasındaki çakışma,
   });
 
   const docs = await textSplitter.createDocuments([text]);
@@ -114,7 +134,7 @@ async function indexDocumentText(text) {
  * POST /upload-document
  * Yüklenen bir belgeyi işler, parçalara ayırır ve embeddinglerini oluşturur.
  */
-app.post("/upload-document", upload.single("document"), async (req, res) => {
+/*app.post("/upload-document", upload.single("document"), async (req, res) => {
   if (!req.file) {
     return res.status(400).json({ message: "Dosya bulunamadı." });
   }
@@ -139,6 +159,7 @@ app.post("/upload-document", upload.single("document"), async (req, res) => {
     res
       .status(200)
       .json({ message: "Belge başarıyla yüklendi ve indekslendi." });
+
   } catch (error) {
     console.error("Belge işlenirken hata oluştu:", error);
     if (fs.existsSync(filePath)) {
@@ -195,7 +216,7 @@ app.post("/ask-chatbot", async (req, res) => {
 
     // Zinciri çalıştır ve yanıtı al
     const result = await retrievalChain.invoke({ input: query });
-
+    console.log("Sorgu sonucu:", result);
     res.status(200).json({ response: result.answer });
   } catch (error) {
     console.error("Chatbot sorgusu işlenirken hata oluştu:", error);
@@ -216,7 +237,7 @@ app.listen(PORT, async () => {
   }
 
   // --- OTOMATİK DOSYA YÜKLEME KISMI ---
-  const initialDocumentPath = path.join(__dirname, "kilavuz.pdf");
+  const initialDocumentPath = path.join(__dirname, "kilavuz.pdf"); // Varsayılan belge yolu");
   console.log(
     `Sunucu başlatılırken varsayılan belge yükleniyor: ${initialDocumentPath}`
   );
