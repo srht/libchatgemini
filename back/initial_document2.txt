@@ -60,11 +60,3 @@ katta süreli yayınlar (dergiler, bilimsel gazeteler vb.) yer almaktadır.
 Bu yayınlar AP'den SH'ye kadar olan LC sınıflandırma aralıklarını kapsamaktadır.
 Bu yayınlar T'den Tn2'ye kadar olan LC sınıflandırma aralıklarını kapsamaktadır.
 Süreli yayınlar bölümünde güncel ve geçmiş sayılara ulaşabilirsiniz.
-
-Neden Bu Şekilde Düzeltildi?
-
-Net Başlıklar ve Listeler, bilginin okunabilirliğini artırır ve LLM'in anahtar bilgileri çıkarmasını kolaylaştırır.
-LC Sınıflandırmalarının Açıklanması, modelin doğru eşleşmeleri yapmasına yardımcı olur.
-Tutarlılık ve Mantık, genel LC mantığına daha uygun bir düzenleme sağlar.
-"I" Sınıflandırması, LC sınıflandırmasında "I" harfinin kullanılmadığını belirtir.
-T-Tn2 Netleştirme, süreli yayınlardaki bu aralığı daha anlaşılır hale getirir.

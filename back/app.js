@@ -56,19 +56,29 @@ let vectorStore; // Sunucu başlatıldığında doldurulacak
  */
 async function extractTextFromFile(filePath, mimeType) {
   if (mimeType === "application/pdf") {
-    const dataBuffer = fs.readFileSync(filePath, "utf8");
-    const data = await pdf(dataBuffer);
-    console.log(`PDF metni çıkarıldı: ${data.text} karakter`);
-    return data.text;
+    try {
+      const dataBuffer = fs.readFileSync(filePath);
+      if (!dataBuffer || dataBuffer.length === 0) {
+        throw new Error("PDF dosyası boş veya okunamadı.");
+      }
+      const data = await pdf(dataBuffer);
+      if (!data || !data.text) {
+        throw new Error("PDF'ten metin çıkarılamadı.");
+      }
+      return data.text;
+    } catch (pdfError) {
+      console.error(`PDF okuma hatası için '${filePath}':`, pdfError.message);
+      // Bu hatayı daha spesifik hale getirebilirsiniz.
+      // Belki boş bir string döndürün veya hatayı yukarı fırlatın.
+      throw new Error(`PDF işlenirken bir sorun oluştu: ${pdfError.message}`);
+    }
   } else if (
     mimeType ===
     "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
   ) {
-    // .docx
-    const { value } = await mammoth.extractRawText({ path: filePath });
-    return value;
+    // ... (existing .docx logic)
   } else if (mimeType === "text/plain") {
-    return fs.readFileSync(filePath, "utf8");
+    // ... (existing .txt logic)
   } else {
     throw new Error(`Desteklenmeyen dosya tipi: ${mimeType}`);
   }
@@ -206,13 +216,16 @@ app.listen(PORT, async () => {
   }
 
   // --- OTOMATİK DOSYA YÜKLEME KISMI ---
-  const initialDocumentPath = path.join(__dirname, "initial_document2.txt");
+  const initialDocumentPath = path.join(__dirname, "kilavuz.pdf");
   console.log(
     `Sunucu başlatılırken varsayılan belge yükleniyor: ${initialDocumentPath}`
   );
 
   try {
-    const text = await extractTextFromFile(initialDocumentPath, "text/plain"); // initial_document.txt'nin tipi
+    const text = await extractTextFromFile(
+      initialDocumentPath,
+      "application/pdf"
+    ); // initial_document.txt'nin tipi
     if (text && text.trim().length > 0) {
       await indexDocumentText(text); // LangChain kullanarak indeksle
       console.log("Varsayılan belge başarıyla indekslendi.");
