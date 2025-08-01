@@ -37,7 +37,7 @@ const chatModel = new ChatGoogleGenerativeAI({
 app.post("/ask-agent", async (req, res) => {
   const { getSearchTool } = require("./components/tools/booksearch");
   const { getInformationFromDocumentsTool } = require("./components/tools/documentsearch");
-  const { query } = req.body;
+  const query = "denemeler kitabı var mı?"; // Örnek bir sorgu
   const tools = [getSearchTool,getInformationFromDocumentsTool];
 
   console.log("=== DEBUGGING TOOLS ARRAY ===");
@@ -61,11 +61,6 @@ app.post("/ask-agent", async (req, res) => {
     console.log("ERROR: tools is not an array!");
   }
 
-  const tool_names = ["get_books"]; // Araç adlarını tanımlayın
-  if (!query) {
-    return res.status(400).json({ message: "Sorgu metni boş olamaz." });
-  }
-
   // Agent Prompt'unu tanımlayın
   const agentPrompt = ChatPromptTemplate.fromMessages([
     [
@@ -75,7 +70,32 @@ app.post("/ask-agent", async (req, res) => {
 
 Kullanabileceğin araçlar şunlardır:
 {tools} 
-Eğer bir kitap veya dergi aranıyorsa, 'get_books' aracını kullanmalısın. Genel bilgi soruları için kendi bilginle yanıtla.`,
+
+ÖNEMLİ: Araçları kullanırken şu formatı takip etmelisin:
+Action: [araç_adı]
+Action Input: [araç_girişi]
+
+Örnek:
+Action: get_books
+Action Input: Simyacı
+
+Eğer bir kitap veya dergi aranıyorsa, 'get_books' aracını kullanmalısın. Genel bilgi soruları için kendi bilginle yanıtla.
+Eğer bir belgeye dayalı bilgi sorularınız varsa, 'get_information_from_documents' aracını kullanmalısın.
+
+Eğer sorunun cevabını bulduysan, cevabını aşağıdaki formatta ver:
+Final Answer: [cevabın]
+
+Aşağıdaki örnekte olduğu gibi, cevabını mutlaka 'Final Answer: ...' ile başlat:
+
+Örnek:
+Action: get_books
+Action Input: Simyacı
+
+Observation: null
+Thought: Kitap bulunamadı.
+
+Final Answer: Üzgünüm, "Simyacı" adlı kitabı kütüphane kataloğunda bulamadım.
+`,
     ],
     ["human", "{input}"],
     ["placeholder", "{agent_scratchpad}"], // Agent'ın düşünce süreci için placeholder
