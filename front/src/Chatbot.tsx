@@ -1,8 +1,9 @@
 // src/components/Chatbot.js
-import React, { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import axios from 'axios'; // API çağrıları için
 
 function Chatbot() {
+    const [safeHtml, setSafeHtml] = useState('');
     type Message = { sender: string; text: string };
     const [messages, setMessages] = useState<Message[]>([]);
     const [input, setInput] = useState('');
@@ -29,7 +30,7 @@ function Chatbot() {
 
         try {
             // Arka uç API'nize sorguyu gönderin
-            const response = await axios.post('http://localhost:3001/ask-chatbot', { query: input });
+            const response = await axios.post('http://localhost:3001/ask-agent', { query: input });
             const botMessage = { sender: 'bot', text: response.data.response };
             setMessages((prevMessages) => [...prevMessages, botMessage]);
         } catch (error) {
@@ -39,7 +40,7 @@ function Chatbot() {
             setLoading(false);
         }
     };
-
+/*
     const handleFileUpload = async (e:any) => {
         const file = e.target.files[0];
         if (!file) return;
@@ -63,7 +64,7 @@ function Chatbot() {
             setLoading(false);
         }
     };
-
+*/
     return (
         <div style={{ maxWidth: '600px', margin: '20px auto', border: '1px solid #ccc', borderRadius: '8px', padding: '15px', display: 'flex', flexDirection: 'column', height: '80vh' }}>
             <div style={{ flex: 1, overflowY: 'auto', marginBottom: '10px' }}>
@@ -79,7 +80,8 @@ function Chatbot() {
                         wordWrap: 'break-word',
                         color: msg.sender === 'user' ? '#000' : '#333',
                     }}>
-                        {msg.text}
+                        <p dangerouslySetInnerHTML={{ __html: msg.text }}></p>
+                        
                     </div>
                 ))}
                 {loading && (
@@ -91,12 +93,7 @@ function Chatbot() {
             </div>
 
             <form onSubmit={handleSendMessage} style={{ display: 'flex', gap: '10px', marginTop: '10px' }}>
-                <input
-                    type="file"
-                    onChange={handleFileUpload}
-                    disabled={loading}
-                    style={{ flex: 'none', width: 'auto' }}
-                />
+                
                 <input
                     type="text"
                     value={input}

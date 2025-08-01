@@ -5,7 +5,7 @@ const cors = require("cors");
 const multer = require("multer");
 const fs = require("fs");
 const path = require("path");
-const DocumentProcessor = require("./components/docprocessor"); // DocumentProcessor sınıfını içe aktar
+
 // LangChain İçe Aktarımları
 const { OpenAIEmbeddings, ChatOpenAI } = require("@langchain/openai");
 const {
@@ -19,7 +19,7 @@ const {
   createStuffDocumentsChain,
 } = require("langchain/chains/combine_documents");
 const { createRetrievalChain } = require("langchain/chains/retrieval");
-const { PromptTemplate,ChatPromptTemplate } = require("@langchain/core/prompts");
+const { PromptTemplate } = require("@langchain/core/prompts");
 
 // Dosya yükleyici yardımcıları
 const pdf = require("pdf-parse");
@@ -34,7 +34,7 @@ app.use(express.json());
 
 // Multer yapılandırması
 const upload = multer({ dest: "uploads/" });
-const documentProcessor = new DocumentProcessor(process.env.GEMINI_API_KEY);
+
 // --- LangChain Bileşenleri ---
 /*
 const embeddings = new OpenAIEmbeddings({
@@ -63,7 +63,7 @@ const chatModel = new ChatGoogleGenerativeAI({
 });
 
 // Vektör deposu (Bellek içi - Kalıcı depolama için üretimde farklı bir vektör DB kullanın)
-//let vectorStore; // Sunucu başlatıldığında doldurulacak
+let vectorStore; // Sunucu başlatıldığında doldurulacak
 
 // --- Yardımcı Fonksiyonlar ---
 
@@ -129,50 +129,6 @@ async function indexDocumentText(text) {
 }
 
 // --- API Uç Noktaları ---
-app.post("/ask-agent", async (req, res) => {
-  const { query } = req.body;
-
-  if (!query) {
-    return res.status(400).json({ message: "Sorgu metni boş olamaz." });
-  }
-
-  // Agent Prompt'unu tanımlayın
-  const agentPrompt = ChatPromptTemplate.fromMessages([
-    [
-      "system",
-      "Sen kullanıcının sorularını cevaplayan çok yetenekli bir asistansın. Eğer bir kitap veya dergi aranıyorsa, 'get_books' aracını kullanmalısın. Genel bilgi soruları için kendi bilginle yanıtla.",
-    ],
-    ["human", "{input}"],
-    ["placeholder", "{agent_scratchpad}"], // Agent'ın düşünce süreci için placeholder
-  ]);
-
-  // Agent'ı oluştur
-  const agent = await createReactAgent({
-    llm: chatModel,
-    tools: tools,
-    prompt: agentPrompt,
-  });
-
-  // Agent Executor'ı oluştur ve çalıştır
-  const agentExecutor = new AgentExecutor({
-    agent: agent,
-    tools: tools,
-    verbose: true, // Agent'ın düşünce sürecini konsolda görmek için true yapın
-  });
-
-  try {
-    console.log(`[AGENT ÇAĞRISI] Gelen Sorgu: ${query}`);
-    const result = await agentExecutor.invoke({ input: query });
-    console.log(`[AGENT YANITI] ${result.output}`);
-    res.status(200).json({ response: result.output });
-  } catch (error) {
-    console.error("Agent sorgusu işlenirken hata oluştu:", error.message);
-    res.status(500).json({
-      message: "Sorgunuz işlenirken bir sunucu hatası oluştu.",
-      error: error.message,
-    });
-  }
-});
 
 /**
  * POST /ask-chatbot
@@ -184,23 +140,20 @@ app.post("/ask-chatbot", async (req, res) => {
   if (!query) {
     return res.status(400).json({ message: "Sorgu metni boş olamaz." });
   }
-  const vectorStore = documentProcessor.getVectorStore(); // DocumentProcessor'dan vektör deposunu al
+
   if (!vectorStore) {
     return res.status(400).json({
       message:
-        "Henüz indekslenmiş bir belge yok. Lütfen önce bir belge yükleyin veya sunucuyu varsayılan belgelerle başlatın.",
+        "Henüz indekslenmiş bir belge yok. Lütfen önce bir belge yükleyin veya sunucuyu varsayılan belgeyle başlatın.",
     });
   }
+
   try {
     // RAG zincirini oluştur
     const questionAnsweringPrompt = PromptTemplate.fromTemplate(
       `Sen yardımcı bir kütüphane asistanısın. Görevin, kullanıcının sorularını, verilen bağlamdaki bilgilere öncelik vererek yanıtlamaktır.
     Eğer verilen BAĞLAMDA kullanıcının sorusunu yanıtlamak için yeterli bilgi bulunmuyorsa, 'Üzgünüm, bu konu hakkında belgemde yeterli bilgi bulunmuyor.' şeklinde yanıtla.
-Eğer bağlamda telefon numarası veya web sitesi gibi tıklanabilir bilgiler varsa, bunları yanıtına **HTML <a href="..."> etiketiyle ekle**. Örneğin:
-  - Telefon numarası için: <a href="tel:0000">0000</a>
-  - Web sitesi için: <a href="https://www.example.com">Example Website</a>
-  Eğer bağlamda resim görsel dosyasının html kodları gibi bilgiler varsa, bunları yanıtına **HTML <img="..."> etiketiyle ekle**. Örneğin:
-  - Resim görsel için: <img src="resim.jpg" />
+
   Bağlam:
   {context}
 
@@ -236,50 +189,29 @@ Eğer bağlamda telefon numarası veya web sitesi gibi tıklanabilir bilgiler va
 app.listen(PORT, async () => {
   console.log(`Backend sunucusu http://localhost:${PORT} adresinde çalışıyor.`);
 
-  if (!fs.existsSync("data")) {
-    fs.mkdirSync("data");
+  // Yükleme klasörünü oluştur (yoksa)
+  if (!fs.existsSync("uploads")) {
+    fs.mkdirSync("uploads");
   }
 
-  const initialDocsDir = path.join(__dirname, "data");
+  // --- OTOMATİK DOSYA YÜKLEME KISMI ---
+  const initialDocumentPath = path.join(__dirname, "kilavuz.pdf"); // Varsayılan belge yolu");
+  console.log(
+    `Sunucu başlatılırken varsayılan belge yükleniyor: ${initialDocumentPath}`
+  );
 
-  if (!fs.existsSync(initialDocsDir)) {
-    fs.mkdirSync(initialDocsDir);
-    console.log(
-      `'${initialDocsDir}' klasörü oluşturuldu. Lütfen içine başlangıç belgelerinizi (txt, pdf, docx) koyun.`
+  try {
+    const text = await extractTextFromFile(
+      initialDocumentPath,
+      "application/pdf"
     );
-    return;
-  }
-
-  // Yüklenecek dosyaları filtrele (txt, pdf, docx)
-  const filesToLoad = fs
-    .readdirSync(initialDocsDir)
-    .filter(
-      (file) =>
-        file.endsWith(".txt") || file.endsWith(".pdf") || file.endsWith(".docx")
-    );
-
-  if (filesToLoad.length === 0) {
-    console.log(
-      `'${initialDocsDir}' klasöründe yüklenecek .txt, .pdf veya .docx belge bulunamadı. Lütfen klasöre dosya ekleyin.`
-    );
-  } else {
-    console.log(
-      `'${initialDocsDir}' klasöründeki varsayılan belgeler yükleniyor:`
-    );
-    for (const fileName of filesToLoad) {
-      const filePath = path.join(initialDocsDir, fileName);
-      console.log(`- Yükleniyor: ${fileName}`);
-      try {
-        // DocumentProcessor sınıfını kullanarak belgeyi işle
-        await documentProcessor.processDocument(filePath, fileName);
-        console.log(`  -> ${fileName} başarıyla indekslendi.`);
-      } catch (error) {
-        console.error(
-          `  -> ${fileName} yüklenirken hata oluştu:`,
-          error.message
-        );
-      }
+    if (text && text.trim().length > 0) {
+      await indexDocumentText(text); // LangChain kullanarak indeksle
+      console.log("Varsayılan belge başarıyla indekslendi.");
+    } else {
+      console.log("Varsayılan belge boş veya okunamadı, indeksleme yapılmadı.");
     }
-    console.log("Tüm varsayılan belgeler indekslendi.");
+  } catch (error) {
+    console.error("Varsayılan belge yüklenirken hata oluştu:", error);
   }
 });
