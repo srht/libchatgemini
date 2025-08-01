@@ -1,0 +1,83 @@
+İTÜ Kütüphane Rehberi
+
+Kütüphane Genel Bilgiler:
+- Adres: İTÜ Ayazağa Kampüsü, Maslak, İstanbul
+- Telefon: 0212 285 4148 ve 0212 285 4103
+- E-posta: kutuphane@itu.edu.tr
+- Çalışma Saatleri: Hafta içi 08:00-22:00, Hafta sonu 09:00-17:00
+
+Kütüphane Katları ve Bölümler:
+
+1. Kat (Zemin Kat):
+- Giriş ve Danışma Masası
+- Ödünç Verme Servisi
+- Katalog Tarama Bilgisayarları
+- Fotokopi ve Tarama Hizmetleri
+- Kütüphane Haritası ve Yönlendirme
+
+2. Kat:
+- Mühendislik Kitapları (QA, QB, QC, QD, QE, QF, QG, QH, QJ, QK, QL, QM, QN, QP, QR, QS, QT, QU, QV, QW, QX, QY, QZ)
+- Bilgisayar Bilimi ve Yazılım Mühendisliği (QA76)
+- Elektrik-Elektronik Mühendisliği (TK)
+- Makine Mühendisliği (TJ)
+- İnşaat Mühendisliği (TA)
+- Kimya Mühendisliği (TP)
+- Endüstri Mühendisliği (T55)
+
+3. Kat:
+- Fen Bilimleri Kitapları
+- Matematik (QA)
+- Fizik (QC)
+- Kimya (QD)
+- Biyoloji (QH)
+- Jeoloji (QE)
+- Astronomi (QB)
+
+4. Kat:
+- Sosyal Bilimler Kitapları
+- Ekonomi (HB, HC, HD, HF)
+- İşletme (HD28, HF)
+- Yönetim Bilimleri (HD)
+- Psikoloji (BF)
+- Sosyoloji (HM)
+- Tarih (D, E, F)
+- Felsefe (B)
+- Edebiyat (P)
+
+5. Kat:
+- Referans Koleksiyonu
+- Ansiklopediler ve Sözlükler
+- Tez Koleksiyonu
+- Nadir Eserler
+- Arşiv Materyalleri
+
+Özel Koleksiyonlar:
+- E-Kitap Koleksiyonu: 50,000+ e-kitap
+- E-Dergi Koleksiyonu: 100,000+ e-dergi
+- Veritabanları: IEEE, ScienceDirect, Springer, Wiley, ACM
+- Tez Veritabanları: ProQuest, YÖK Tez Merkezi
+
+Hizmetler:
+- Ödünç Verme: 15 gün (öğrenci), 30 gün (öğretim üyesi)
+- Uzaktan Erişim: VPN üzerinden 7/24 erişim
+- Belge Sağlama: ILL (Interlibrary Loan) hizmeti
+- Kütüphane Eğitimi: Haftalık seminerler
+- Referans Hizmeti: Uzman kütüphaneciler
+
+Katalog Tarama:
+- OPAC (Online Public Access Catalog)
+- Web: http://katalog.itu.edu.tr
+- Mobil Uygulama: İTÜ Kütüphane App
+
+Önemli Notlar:
+- Kütüphane kartı olmadan giriş yapılamaz
+- Sessiz çalışma ortamı korunmalıdır
+- Yiyecek ve içecek yasaktır
+- Kitapların üzerine yazı yazılmamalıdır
+- Fotokopi çekiminde telif hakları gözetilmelidir
+
+İletişim:
+- Web: http://kutuphane.itu.edu.tr
+- Facebook: İTÜ Kütüphane
+- Twitter: @ITUKutuphane
+- Instagram: @itu_kutuphane 

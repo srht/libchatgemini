@@ -1,22 +1,34 @@
 const { DynamicTool } = require("langchain/tools");
+const {
+  ChatPromptTemplate,
+  PromptTemplate,
+} = require("@langchain/core/prompts");
+const {
+  createStuffDocumentsChain,
+} = require("langchain/chains/combine_documents");
+const { AgentExecutor, createReactAgent } = require("langchain/agents");
+const { createRetrievalChain } = require("langchain/chains/retrieval");
 let getInformationFromDocumentsTool;
-try {
-    getInformationFromDocumentsTool = new DynamicTool({
-        name: "get_information_from_documents",
-        description:
-          "Kütüphane belgelerinden belirli bir konu veya soru hakkında bilgi alır. Bu aracı, kullanıcı bir belgeye dayalı bilgi sorduğunda kullanın. Örneğin, 'Kimya kitapları nerede bulunur?' veya 'Veri tabanı nedir?'",
-        func: async (input) => {
-          console.log(
-            `[TOOL ÇAĞRISI] getInformationFromDocumentsTool çağrıldı, sorgu: ${input.query}`
-          );
-          const vectorStore = documentProcessor.getVectorStore();
-          if (!vectorStore) {
-            return "Vektör deposu boş. Lütfen önce bir belge yükleyin.";
-          }
-      
-          try {
-            const questionAnsweringPrompt = PromptTemplate.fromTemplate(
-              `Sen yardımcı bir kütüphane asistanısın. Görevin, kullanıcının sorularını, verilen bağlamdaki bilgilere öncelik vererek kapsamlı ve detaylı bir şekilde yanıtlamaktır. Yanıtını mümkün olduğunca zenginleştir ve tüm ilgili bilgileri içerecek şekilde uzat.
+const createDocumentSearchTool = (documentProcessor, chatModel) => {
+  try {
+    return (getInformationFromDocumentsTool = new DynamicTool({
+      name: "get_information_from_documents",
+      description:
+        "Kütüphane belgelerinden belirli bir konu veya soru hakkında bilgi alır. Bu aracı, kullanıcı bir belgeye dayalı bilgi sorduğunda kullanın. Örneğin, 'Kimya kitapları nerede bulunur?' veya 'Veri tabanı nedir?'",
+      func: async (input) => {
+        console.log("HAYIRLI OLSUN TOOLUNUZ ÇAĞRILDI");
+        console.log(
+          `[TOOL ÇAĞRISI] getInformationFromDocumentsTool çağrıldı, sorgu: ${input}`
+        );
+
+        const vectorStore = documentProcessor.getVectorStore();
+        if (!vectorStore) {
+          return "Vektör deposu boş. Lütfen önce bir belge yükleyin.";
+        }
+
+        try {
+          const questionAnsweringPrompt = PromptTemplate.fromTemplate(
+            `Sen yardımcı bir kütüphane asistanısın. Görevin, kullanıcının sorularını, verilen bağlamdaki bilgilere öncelik vererek kapsamlı ve detaylı bir şekilde yanıtlamaktır. Yanıtını mümkün olduğunca zenginleştir ve tüm ilgili bilgileri içerecek şekilde uzat.
                       
                       Bir konu (örneğin: Kimya, Bilgisayar Bilimi, Tarih, Felsefe) ve "nerede" gibi yer bilgisi içeren bir soru geldiğinde:
                       1.  Öncelikle, **kendi genel bilgini kullanarak** bu konunun standart LC (Library of Congress) sınıflandırma kodunu (örneğin: Kimya -> QD, Bilgisayar Bilimi -> QA, Tarih -> D) belirle.
@@ -32,32 +44,32 @@ try {
                       {context}
       
                       Soru: {input}`
-            );
-      
-            const combineDocsChain = await createStuffDocumentsChain({
-              llm: chatModel,
-              prompt: questionAnsweringPrompt,
-            });
-      
-            const retriever = vectorStore.asRetriever({ k: 5 });
-      
-            const retrievalChain = await createRetrievalChain({
-              retriever: retriever,
-              combineDocsChain: combineDocsChain,
-            });
-      
-            const result = await retrievalChain.invoke({ input: input.query });
-            return result.answer;
-          } catch (chainError) {
-            console.error("Belge sorgu zinciri hatası:", chainError.message);
-            return `Belge sorgulanırken bir hata oluştu: ${chainError.message}`;
-          }
-        },
-      });
-    } catch (error) {
-        console.error("Belge arama aracı hatası:", error.message);
-        getInformationFromDocumentsTool = null;
-    }
+          );
 
+          const combineDocsChain = await createStuffDocumentsChain({
+            llm: chatModel,
+            prompt: questionAnsweringPrompt,
+          });
 
-module.exports = { getInformationFromDocumentsTool };
+          const retriever = vectorStore.asRetriever({ k: 5 });
+
+          const retrievalChain = await createRetrievalChain({
+            retriever: retriever,
+            combineDocsChain: combineDocsChain,
+          });
+          console.log(`[HA BURAYA RETRIEVAL CHAIN] Sorgu: ${input}`);
+          const result = await retrievalChain.invoke({ input: input });
+          return result.answer;
+        } catch (chainError) {
+          console.error("Belge sorgu zinciri hatası:", chainError.message);
+          return `Belge sorgulanırken bir hata oluştu: ${chainError.message}`;
+        }
+      },
+    }));
+  } catch (error) {
+    console.error("Belge arama aracı hatası:", error.message);
+    getInformationFromDocumentsTool = null;
+  }
+};
+
+module.exports = { createDocumentSearchTool };

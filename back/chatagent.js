@@ -9,6 +9,7 @@ const {
   GoogleGenerativeAIEmbeddings,
   ChatGoogleGenerativeAI,
 } = require("@langchain/google-genai");
+const { OpenAIEmbeddings, ChatOpenAI } = require("@langchain/openai");
 const {
   createStuffDocumentsChain,
 } = require("langchain/chains/combine_documents");
@@ -25,20 +26,34 @@ const PORT = process.env.PORT || 3001;
 app.use(cors());
 app.use(express.json());
 
-const documentProcessor = new DocumentProcessor(process.env.GEMINI_API_KEY);
-
+const documentProcessor = new DocumentProcessor(process.env.OPENAI_API_KEY);
+/*
 const chatModel = new ChatGoogleGenerativeAI({
   apiKey: process.env.GEMINI_API_KEY, // Gemini API anahtarınızı kullanın
   model: "gemini-2.5-flash", // Metin tabanlı sohbetler için Gemini Pro
+  temperature: 0.7,
+});
+*/
+const chatModel = new ChatOpenAI({
+  openAIApiKey: process.env.OPENAI_API_KEY,
+  modelName: "gpt-4o", // gpt-4 veya gpt-4o da kullanabilirsiniz
   temperature: 0.7,
 });
 
 // --- API Uç Noktaları ---
 app.post("/ask-agent", async (req, res) => {
   const { getSearchTool } = require("./components/tools/booksearch");
-  const { getInformationFromDocumentsTool } = require("./components/tools/documentsearch");
-  const query = "denemeler kitabı var mı?"; // Örnek bir sorgu
-  const tools = [getSearchTool,getInformationFromDocumentsTool];
+  const {
+    createDocumentSearchTool,
+  } = require("./components/tools/documentsearch");
+
+  const getInformationFromDocumentsTool = createDocumentSearchTool(
+    documentProcessor,
+    chatModel
+  );
+
+  const query = req.body.query;
+  const tools = [getSearchTool, getInformationFromDocumentsTool];
 
   console.log("=== DEBUGGING TOOLS ARRAY ===");
   console.log("Tools variable type:", typeof tools);
@@ -65,36 +80,32 @@ app.post("/ask-agent", async (req, res) => {
   const agentPrompt = ChatPromptTemplate.fromMessages([
     [
       "system",
-      `Sen kullanıcının sorularını cevaplayan çok yetenekli bir asistansın.
-      Kullanıcının sorularını uygun olduğunda yanıtlamak için elindeki {tool_names} araçlarını kullanmalısın.
+      `You are a highly capable AI assistant that answers user questions.
+You have access to the following tools: {tools}
 
-Kullanabileceğin araçlar şunlardır:
-{tools} 
+You must use these tools to answer user questions when appropriate.
+If a question requires information about a book or magazine, you MUST use the 'get_books' tool.
+If a question requires information based on uploaded documents, you MUST use the 'get_information_from_documents' tool.
+For other general knowledge questions, you MUST use the 'get_information_from_documents' tool.
+Always strive to be helpful and provide comprehensive answers.
 
-ÖNEMLİ: Araçları kullanırken şu formatı takip etmelisin:
-Action: [araç_adı]
-Action Input: [araç_girişi]
+The names of the tools are: {tool_names}
 
-Örnek:
-Action: get_books
-Action Input: Simyacı
+You MUST always follow this specific format for your responses:
 
-Eğer bir kitap veya dergi aranıyorsa, 'get_books' aracını kullanmalısın. Genel bilgi soruları için kendi bilginle yanıtla.
-Eğer bir belgeye dayalı bilgi sorularınız varsa, 'get_information_from_documents' aracını kullanmalısın.
+When you need to use a tool:
+Thought: You should always think about what to do and which tool to use.
+Action: the_name_of_the_tool_to_use (one of {tool_names})
+Action Input: the_input_to_the_tool_as_a_plain_string (e.g., "Simyacı" or "chemistry books")
+Observation: the_result_of_the_tool (this will be provided by the system)
 
-Eğer sorunun cevabını bulduysan, cevabını aşağıdaki formatta ver:
-Final Answer: [cevabın]
+When you have a final answer and no more tools are needed:
+Thought: I have sufficient information to provide a final answer.
+Final Answer: Your final answer to the user.
 
-Aşağıdaki örnekte olduğu gibi, cevabını mutlaka 'Final Answer: ...' ile başlat:
-
-Örnek:
-Action: get_books
-Action Input: Simyacı
-
-Observation: null
-Thought: Kitap bulunamadı.
-
-Final Answer: Üzgünüm, "Simyacı" adlı kitabı kütüphane kataloğunda bulamadım.
+Do NOT include any other text or explanation outside of this format.
+Do NOT respond with just a thought.
+Do NOT respond with an action and action input if you don't have enough information for a final answer yet.
 `,
     ],
     ["human", "{input}"],

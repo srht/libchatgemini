@@ -8,6 +8,7 @@ const { RecursiveCharacterTextSplitter } = require("langchain/text_splitter");
 const { MemoryVectorStore } = require("langchain/vectorstores/memory");
 const { Document } = require("@langchain/core/documents");
 const { GoogleGenerativeAIEmbeddings } = require("@langchain/google-genai"); // Ya da OpenAIEmbeddings
+const { OpenAIEmbeddings, ChatOpenAI } = require("@langchain/openai");
 
 class DocumentProcessor {
   constructor(
@@ -19,10 +20,16 @@ class DocumentProcessor {
     if (!apiKey) {
       throw new Error("API Anahtarı sağlanmalıdır.");
     }
+    /*
     this.embeddings = new GoogleGenerativeAIEmbeddings({
       apiKey: apiKey,
       model: embeddingModel,
+    });*/
+    this.embeddings = new OpenAIEmbeddings({
+      openAIApiKey: process.env.OPENAI_API_KEY,
+      modelName: "text-embedding-ada-002", // Varsayılan model, isteğe bağlı
     });
+
     this.textSplitter = new RecursiveCharacterTextSplitter({
       chunkSize: chunkSize,
       chunkOverlap: chunkOverlap,
