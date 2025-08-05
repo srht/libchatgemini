@@ -116,12 +116,6 @@ Final Answer: Your final answer to the user.
 Do NOT include any other text or explanation outside of this format.
 Do NOT respond with just a thought.
 Do NOT respond with an action and action input if you don't have enough information for a final answer yet.
-
----
-### Final Answer Formatting Instructions
-* Do NOT use Markdown in your final answer. Each row of markdown should be written in new line.
-* When referring to a book's location number, you MUST use the Turkish term "yer numarası" instead of "çağrı numarası".
-* If you are providing location information, you MUST include the image tag <img src="itumap.jpg" /> in your final HTML response.
 `,
     ],
     ["human", "{input}"],

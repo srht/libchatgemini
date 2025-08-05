@@ -38,7 +38,10 @@ function Chatbot() {
             setMessages((prevMessages) => [...prevMessages, { sender: 'bot', text: 'Üzgünüm, bir hata oluştu.' }]);
         } finally {
             setLoading(false);
+            scrollToBottom();
         }
+
+        
     };
 /*
     const handleFileUpload = async (e:any) => {
@@ -66,7 +69,7 @@ function Chatbot() {
     };
 */
     return (
-        <div style={{ maxWidth: '600px', margin: '20px auto', border: '1px solid #ccc', borderRadius: '8px', padding: '15px', display: 'flex', flexDirection: 'column', height: '80vh' }}>
+        <div style={{ width: '100%', margin: '20px auto', border: '1px solid #ccc', borderRadius: '8px', padding: '15px', display: 'flex', flexDirection: 'column', height: '80vh' }}>
             <div style={{ flex: 1, overflowY: 'auto', marginBottom: '10px' }}>
                 {messages.map((msg, index) => (
                     <div style={{clear:'both'}}>
@@ -96,13 +99,12 @@ function Chatbot() {
 
             <form onSubmit={handleSendMessage} style={{ display: 'flex', gap: '10px', marginTop: '10px' }}>
                 
-                <input
-                    type="text"
+                <textarea
                     value={input}
                     onChange={(e) => setInput(e.target.value)}
                     placeholder="Mesajınızı yazın..."
                     disabled={loading}
-                    style={{ flex: 1, padding: '8px', borderRadius: '4px', border: '1px solid #ccc' }}
+                    style={{ flex: 1, padding: '8px', borderRadius: '4px', border: '1px solid #ccc', fontFamily: 'system-ui, Avenir, Helvetica, Arial, sans-serif', fontSize: '14px', resize: 'none' }}
                 />
                 <button type="submit" disabled={loading} style={{ padding: '8px 15px', borderRadius: '4px', border: 'none', backgroundColor: '#007bff', color: 'white', cursor: 'pointer' }}>
                     Gönder
