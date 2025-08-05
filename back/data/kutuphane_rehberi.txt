@@ -13,7 +13,7 @@ Kütüphane Katları ve Bölümler:
 - Ödünç Verme Servisi
 - Katalog Tarama Bilgisayarları
 - Fotokopi ve Tarama Hizmetleri
-- Kütüphane Haritası ve Yönlendirme
+- Kütüphane Haritası ve Yönlendirme <img src="itumap.jpg" />
 
 2. Kat:
 - Mühendislik Kitapları (QA, QB, QC, QD, QE, QF, QG, QH, QJ, QK, QL, QM, QN, QP, QR, QS, QT, QU, QV, QW, QX, QY, QZ)

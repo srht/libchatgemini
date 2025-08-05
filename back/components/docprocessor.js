@@ -20,16 +20,18 @@ class DocumentProcessor {
     if (!apiKey) {
       throw new Error("API Anahtarı sağlanmalıdır.");
     }
-    /*
+
     this.embeddings = new GoogleGenerativeAIEmbeddings({
-      apiKey: apiKey,
+      apiKey: process.env.GEMINI_API_KEY, // Ya da OpenAI API anahtarı
       model: embeddingModel,
-    });*/
+    });
+
+    /*
     this.embeddings = new OpenAIEmbeddings({
       openAIApiKey: process.env.OPENAI_API_KEY,
       modelName: "text-embedding-ada-002", // Varsayılan model, isteğe bağlı
     });
-
+*/
     this.textSplitter = new RecursiveCharacterTextSplitter({
       chunkSize: chunkSize,
       chunkOverlap: chunkOverlap,
@@ -141,6 +143,7 @@ class DocumentProcessor {
    * @returns {MemoryVectorStore | null}
    */
   getVectorStore() {
+    console.log("Vektör deposu alınıyor...");
     return this.vectorStore;
   }
 }

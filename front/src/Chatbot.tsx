@@ -69,19 +69,21 @@ function Chatbot() {
         <div style={{ maxWidth: '600px', margin: '20px auto', border: '1px solid #ccc', borderRadius: '8px', padding: '15px', display: 'flex', flexDirection: 'column', height: '80vh' }}>
             <div style={{ flex: 1, overflowY: 'auto', marginBottom: '10px' }}>
                 {messages.map((msg, index) => (
+                    <div style={{clear:'both'}}>
                     <div key={index} style={{
                         textAlign: msg.sender === 'user' ? 'right' : 'left',
+                        float: msg.sender === 'user' ? 'right' : 'left',
                         margin: '5px 0',
                         padding: '8px 12px',
                         borderRadius: '15px',
                         backgroundColor: msg.sender === 'user' ? '#e0f7fa' : '#f0f0f0',
-                        display: 'inline-block',
                         maxWidth: '70%',
                         wordWrap: 'break-word',
                         color: msg.sender === 'user' ? '#000' : '#333',
                     }}>
                         <p dangerouslySetInnerHTML={{ __html: msg.text }}></p>
                         
+                    </div>
                     </div>
                 ))}
                 {loading && (

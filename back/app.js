@@ -12,6 +12,7 @@ const {
   GoogleGenerativeAIEmbeddings,
   ChatGoogleGenerativeAI,
 } = require("@langchain/google-genai");
+const { AgentExecutor, createReactAgent } = require("langchain/agents");
 const { RecursiveCharacterTextSplitter } = require("langchain/text_splitter");
 const { MemoryVectorStore } = require("langchain/vectorstores/memory");
 const { Document } = require("@langchain/core/documents");
@@ -19,7 +20,10 @@ const {
   createStuffDocumentsChain,
 } = require("langchain/chains/combine_documents");
 const { createRetrievalChain } = require("langchain/chains/retrieval");
-const { PromptTemplate,ChatPromptTemplate } = require("@langchain/core/prompts");
+const {
+  PromptTemplate,
+  ChatPromptTemplate,
+} = require("@langchain/core/prompts");
 
 // Dosya yükleyici yardımcıları
 const pdf = require("pdf-parse");

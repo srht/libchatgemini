@@ -1,2 +1,2 @@
-Bilgi işlemin telefon numarası <a href="tel:4148">4148</a> ve 4103.
+Bilgi işlemin telefon numarası <a href="tel:4147">4147</a> ve 4103.
 Kütüphane harita görseli <img src="itumap.jpg" />

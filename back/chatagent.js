@@ -27,25 +27,28 @@ app.use(cors());
 app.use(express.json());
 
 const documentProcessor = new DocumentProcessor(process.env.OPENAI_API_KEY);
-/*
+
 const chatModel = new ChatGoogleGenerativeAI({
   apiKey: process.env.GEMINI_API_KEY, // Gemini API anahtarınızı kullanın
   model: "gemini-2.5-flash", // Metin tabanlı sohbetler için Gemini Pro
   temperature: 0.7,
 });
-*/
+/*
 const chatModel = new ChatOpenAI({
   openAIApiKey: process.env.OPENAI_API_KEY,
   modelName: "gpt-4o", // gpt-4 veya gpt-4o da kullanabilirsiniz
   temperature: 0.7,
 });
-
+*/
 // --- API Uç Noktaları ---
 app.post("/ask-agent", async (req, res) => {
   const { getSearchTool } = require("./components/tools/booksearch");
+  const { createEmailWriterTool } = require("./components/tools/emailsend");
   const {
     createDocumentSearchTool,
   } = require("./components/tools/documentsearch");
+
+  const emailWriterTool = createEmailWriterTool(chatModel);
 
   const getInformationFromDocumentsTool = createDocumentSearchTool(
     documentProcessor,
@@ -53,7 +56,11 @@ app.post("/ask-agent", async (req, res) => {
   );
 
   const query = req.body.query;
-  const tools = [getSearchTool, getInformationFromDocumentsTool];
+  const tools = [
+    getSearchTool,
+    getInformationFromDocumentsTool,
+    emailWriterTool,
+  ];
 
   console.log("=== DEBUGGING TOOLS ARRAY ===");
   console.log("Tools variable type:", typeof tools);
@@ -85,7 +92,10 @@ You have access to the following tools: {tools}
 
 You must use these tools to answer user questions when appropriate.
 If a question requires information about a book or magazine, you MUST use the 'get_books' tool.
+If user asks about book call number (location number) or location, you MUST use 'get_books' tool and call 'get_information_from_documents' tool to get location information of the book's call number (location number).
+If you response with a location information you MUST provide <img src="itumap.jpg" /> to show the location on the map.
 If a question requires information based on uploaded documents, you MUST use the 'get_information_from_documents' tool.
+If a question requires writing an email, you MUST use the 'email_writer' tool.
 For other general knowledge questions, you MUST use the 'get_information_from_documents' tool.
 Always strive to be helpful and provide comprehensive answers.
 
@@ -106,6 +116,12 @@ Final Answer: Your final answer to the user.
 Do NOT include any other text or explanation outside of this format.
 Do NOT respond with just a thought.
 Do NOT respond with an action and action input if you don't have enough information for a final answer yet.
+
+---
+### Final Answer Formatting Instructions
+* Do NOT use Markdown in your final answer. Each row of markdown should be written in new line.
+* When referring to a book's location number, you MUST use the Turkish term "yer numarası" instead of "çağrı numarası".
+* If you are providing location information, you MUST include the image tag <img src="itumap.jpg" /> in your final HTML response.
 `,
     ],
     ["human", "{input}"],
