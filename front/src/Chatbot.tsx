@@ -1,6 +1,7 @@
 // src/components/Chatbot.js
 import { useState, useEffect, useRef } from 'react';
 import axios from 'axios'; // API çağrıları için
+import './Chatbot.css';
 
 function Chatbot() {
     type Message = { sender: string; text: string };
@@ -69,36 +70,32 @@ function Chatbot() {
     };
 */
     return (
-        <div style={{ width: '100%', margin: '20px auto', border: '1px solid #ccc', borderRadius: '8px', padding: '15px', display: 'flex', flexDirection: 'column', height: '80vh' }}>
-            <div style={{ flex: 1, overflowY: 'auto', marginBottom: '10px' }}>
+        <div className="chatbot-container">
+            
+            <div className="chatbot-messages">
                 {messages.map((msg, index) => (
-                    <div style={{clear:'both'}}>
-                    <div key={index} style={{
-                        textAlign: msg.sender === 'user' ? 'right' : 'left',
-                        float: msg.sender === 'user' ? 'right' : 'left',
-                        margin: '5px 0',
-                        padding: '8px 12px',
-                        borderRadius: '15px',
-                        backgroundColor: msg.sender === 'user' ? '#e0f7fa' : '#f0f0f0',
-                        maxWidth: '70%',
-                        wordWrap: 'break-word',
-                        color: msg.sender === 'user' ? '#000' : '#333',
-                    }}>
-                        <p dangerouslySetInnerHTML={{ __html: msg.text }}></p>
-                        
-                    </div>
+                    <div key={index} className={`message-wrapper ${msg.sender === 'user' ? 'user-message' : 'bot-message'}`}>
+                        <div className={`message ${msg.sender === 'user' ? 'user' : 'bot'}`}>
+                            <p dangerouslySetInnerHTML={{ __html: msg.text }}></p>
+                        </div>
                     </div>
                 ))}
                 {loading && (
-                    <div style={{ textAlign: 'left', margin: '5px 0' }}>
-                        <span style={{ padding: '8px 12px', borderRadius: '15px', backgroundColor: '#f0f0f0' }}>Yazıyor...</span>
+                    <div className="message-wrapper bot-message">
+                        <div className="message bot typing">
+                            <span className="typing-indicator">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </span>
+                            Yazıyor...
+                        </div>
                     </div>
                 )}
                 <div ref={messagesEndRef} />
             </div>
 
-            <form onSubmit={handleSendMessage} style={{ display: 'flex', gap: '10px', marginTop: '10px' }}>
-                
+            <form onSubmit={handleSendMessage} className="chatbot-input-form">
                 <textarea
                     value={input}
                     onChange={(e) => setInput(e.target.value)}
@@ -108,12 +105,12 @@ function Chatbot() {
                             handleSendMessage(e);
                         }
                     }}
-                    placeholder="Mesajınızı yazın..."
+                    placeholder="Mesajınızı yazın... (Enter ile gönder, Shift+Enter ile yeni satır)"
                     disabled={loading}
-                    style={{ flex: 1, padding: '8px', borderRadius: '4px', border: '1px solid #ccc', fontFamily: 'system-ui, Avenir, Helvetica, Arial, sans-serif', fontSize: '14px', resize: 'none' }}
+                    className="chatbot-textarea"
                 />
-                <button type="submit" disabled={loading} style={{ padding: '8px 15px', borderRadius: '4px', border: 'none', backgroundColor: '#007bff', color: 'white', cursor: 'pointer' }}>
-                    Gönder
+                <button type="submit" disabled={loading} className="chatbot-send-btn">
+                    {loading ? 'Gönderiliyor...' : 'Gönder'}
                 </button>
             </form>
         </div>

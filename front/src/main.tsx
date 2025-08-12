@@ -1,10 +1,13 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
+import { BrowserRouter } from 'react-router-dom'
 import './index.css'
-import Chatbot from './Chatbot'
+import App from './App'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <Chatbot />
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
   </StrictMode>,
 )

@@ -4,6 +4,7 @@ const cors = require("cors");
 const fs = require("fs");
 const path = require("path");
 const DocumentProcessor = require("./components/docprocessor"); // DocumentProcessor sınıfını içe aktar
+const ChatLogger = require("./components/logger"); // ChatLogger sınıfını içe aktar
 const { AgentExecutor, createReactAgent } = require("langchain/agents");
 const {
   GoogleGenerativeAIEmbeddings,
@@ -40,6 +41,7 @@ app.use(cors());
 app.use(express.json());
 
 const documentProcessor = new DocumentProcessor(process.env.GEMINI_API_KEY);
+const chatLogger = new ChatLogger(); // ChatLogger instance'ı oluştur
 
 const chatModel = new ChatGoogleGenerativeAI({
   apiKey: process.env.GEMINI_API_KEY, // Gemini API anahtarınızı kullanın
@@ -84,7 +86,8 @@ app.post("/ask-agent", async (req, res) => {
 
   const getInformationFromDocumentsTool = createDocumentSearchTool(
     documentProcessor,
-    chatModel
+    chatModel,
+    chatLogger
   );
 
   const getContactInformationTool = createLibraryWebPageSearchTool(chatModel);
@@ -237,18 +240,100 @@ Final Answer:
   });
 
   try {
+    const startTime = Date.now();
     console.log(`[AGENT ÇAĞRISI] Gelen Sorgu: ${query}`);
+    
     const result = await agentExecutor.invoke({ input: query });
+    const executionTime = Date.now() - startTime;
+    
     console.log(`[AGENT YANITI] ${result.output}`);
+    
+    // Kullanılan araçları tespit et
+    const toolsUsed = [];
+    const toolDetails = [];
+    
+    if (result.intermediateSteps) {
+      result.intermediateSteps.forEach((step, index) => {
+        console.log('[INTERMEDIATE STEP:]',step);
+        if (step.action && step.action.tool) {
+          toolsUsed.push(step.action.tool);
+          toolDetails.push({
+            step: index + 1,
+            tool: step.action.tool,
+            input: step.action.toolInput,
+            observation: step.observation,
+            log: step.action.log || null
+          });
+        }
+      });
+    }
+    
+    // Ek bilgileri hazırla
+    const additionalInfo = {
+      intermediateSteps: result.intermediateSteps ? result.intermediateSteps.length : 0,
+      toolDetails: toolDetails,
+      model: chatModel.modelName || 'gemini-2.5-flash',
+      timestamp: new Date().toISOString(),
+      log: result.intermediateSteps ? `Chain execution completed with ${result.intermediateSteps.length} steps` : null
+    };
+    
+    // Chat logunu kaydet
+    chatLogger.logChat(query, result.output, toolsUsed, executionTime, null, additionalInfo);
+    
     res.status(200).json({ response: result.output });
   } catch (error) {
     console.error("Agent sorgusu işlenirken hata oluştu:", error.message);
+    
+    // Hata logunu kaydet
+    chatLogger.logError(error, `Agent sorgusu işlenirken hata: ${query}`);
+    
     res.status(500).json({
       message: "Sorgunuz işlenirken bir sunucu hatası oluştu.",
       error: error.message,
     });
   }
 });
+
+// Log dosyalarını görüntülemek için endpoint
+app.get("/logs", (req, res) => {
+  try {
+    const limit = parseInt(req.query.limit) || 50;
+    const logs = chatLogger.getLogs(limit);
+    res.status(200).json({ logs, total: logs.length });
+  } catch (error) {
+    console.error("Log okuma hatası:", error);
+    res.status(500).json({ error: "Loglar okunamadı" });
+  }
+});
+
+// Log dosyasını temizlemek için endpoint
+app.delete("/logs", (req, res) => {
+  try {
+    chatLogger.clearLogs();
+    res.status(200).json({ message: "Log dosyası temizlendi" });
+  } catch (error) {
+    console.error("Log temizleme hatası:", error);
+    res.status(500).json({ error: "Log dosyası temizlenemedi" });
+  }
+});
+
+// JSON log dosyasını export etmek için endpoint
+app.get("/logs/export", (req, res) => {
+  try {
+    const jsonLogPath = path.join(__dirname, 'logs', 'chat_logs.json');
+    if (fs.existsSync(jsonLogPath)) {
+      res.setHeader('Content-Type', 'application/json');
+      res.setHeader('Content-Disposition', 'attachment; filename="chat_logs.json"');
+      res.sendFile(jsonLogPath);
+    } else {
+      res.status(404).json({ error: "JSON log dosyası bulunamadı" });
+    }
+  } catch (error) {
+    console.error("JSON export hatası:", error);
+    res.status(500).json({ error: "JSON export yapılamadı" });
+  }
+});
+
 // --- Sunucuyu Başlat ve Otomatik Dosya Yükle ---
 app.listen(PORT, async () => {
   console.log(`Backend sunucusu http://localhost:${PORT} adresinde çalışıyor.`);

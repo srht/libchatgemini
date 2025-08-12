@@ -80,7 +80,7 @@ try {
 
 let getInformationFromDocumentsTool;
 
-const createDocumentSearchTool = (documentProcessor, chatModel) => {
+const createDocumentSearchTool = (documentProcessor, chatModel, chatLogger) => {
   try {
     console.log("🔧 Document search tool oluşturuluyor...");
 
@@ -160,6 +160,8 @@ Soru: {input}`;
 
           console.log(`🚀 Retrieval chain çalıştırılıyor: ${input}`);
           const result = await retrievalChain.invoke({ input: input });
+          console.log("🔍 Retrieval chain sonucu:", result);
+          chatLogger.logChat(result);
           return result.answer;
         } catch (chainError) {
           console.error("❌ Chain hatası:", chainError.message);
