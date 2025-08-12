@@ -143,7 +143,7 @@ BAĞLAM:
 
 Soru: {input}`;
           const questionAnsweringPrompt =
-            PromptTemplate.fromTemplate(newPrompt2);
+            PromptTemplate.fromTemplate(newPrompt);
 
           const combineDocsChain = await createStuffDocumentsChain({
             llm: chatModel,
@@ -152,8 +152,6 @@ Soru: {input}`;
 
           const retriever = vectorStore.asRetriever({
             k: 5,
-            searchType: "mmr",
-            searchKwargs: { fetchK: 25, lambda: 0.8 },
           });
           const retrievalChain = await createRetrievalChain({
             retriever: retriever,
