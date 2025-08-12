@@ -4,6 +4,11 @@ const fs = require("fs");
 const path = require("path");
 const pdf = require("pdf-parse");
 const mammoth = require("mammoth"); // DOCX için
+const {
+  getPageContent,
+  getPersonelPage,
+  getPlainPage,
+} = require("./functions/readPage");
 const { RecursiveCharacterTextSplitter } = require("langchain/text_splitter");
 const { MemoryVectorStore } = require("langchain/vectorstores/memory");
 const { Document } = require("@langchain/core/documents");
@@ -122,20 +127,136 @@ class DocumentProcessor {
         new Document({ pageContent: doc.pageContent, metadata: doc.metadata })
     );
 
-    if (this.vectorStore) {
-      await this.vectorStore.addDocuments(documents);
+    await this.addDocumentsInBatches(documents);
+  }
+
+  /**
+   * Belgeleri toplu (batch) olarak işler ve vektör deposuna ekler.
+   * @param {Document[]} documents - Eklenecek belge parçaları dizisi.
+   * @param {number} batchSize - Her bir toplu işlemde gönderilecek belge sayısı.
+   * @returns {Promise<void>}
+   */
+  async addDocumentsInBatches(documents, batchSize = 25) {
+    console.log(`Toplam ${documents.length} belge parçası işleniyor.`);
+    for (let i = 0; i < documents.length; i += batchSize) {
+      const batch = documents.slice(i, i + batchSize);
       console.log(
-        `'${fileName}' kaynağından ${documents.length} yeni belge parçası vektör deposuna eklendi.`
+        `Batch ${Math.floor(i / batchSize) + 1} (${
+          batch.length
+        } belge) gönderiliyor...`
       );
-    } else {
-      this.vectorStore = await MemoryVectorStore.fromDocuments(
-        documents,
-        this.embeddings
-      );
-      console.log(
-        `'${fileName}' kaynağından toplam ${documents.length} belge parçası ile vektör deposu oluşturuldu.`
-      );
+
+      // LangChain'in MemoryVectorStore sınıfı zaten bir dizi belgeyi
+      // toplu olarak işleyebiliyor. Ancak API tarafında limitler varsa
+      // bu tür bir manuel gruplama daha güvenli olur.
+      if (this.vectorStore) {
+        await this.vectorStore.addDocuments(batch);
+      } else {
+        this.vectorStore = await MemoryVectorStore.fromDocuments(
+          batch,
+          this.embeddings
+        );
+      }
+      console.log(`Batch ${Math.floor(i / batchSize) + 1} başarıyla eklendi.`);
+
+      // Limitleri aşmamak için her toplu işlem arasında bekleme ekleyebilirsiniz.
+      // Örneğin 1 saniye beklemek gibi.
+      if (i + batchSize < documents.length) {
+        console.log("Bir sonraki batch için 1 saniye bekleniyor...");
+        await new Promise((resolve) => setTimeout(resolve, 1000));
+      }
     }
+  }
+
+  async processWebPage(url) {
+    let text;
+    try {
+      text = await getPageContent(url);
+      if (!text || text.trim().length === 0) {
+        throw new Error("Çıkarılan metin boş.");
+      }
+
+      console.log(`Web sayfasından metin çıkarıldı: ${text}`);
+    } catch (error) {
+      console.error(
+        `Dosya '${url}' metin çıkarılırken hata oluştu:`,
+        error.message
+      );
+      throw error; // Hatayı yukarı fırlat
+    }
+
+    const docs = await this.textSplitter.createDocuments([text], {
+      source: url,
+    });
+    const documents = docs.map(
+      (doc) =>
+        new Document({ pageContent: doc.pageContent, metadata: doc.metadata })
+    );
+    console.log(
+      `${url} Web sayfasından ${documents.length} belge parçası oluşturuldu.`
+    );
+    await this.addDocumentsInBatches(documents);
+  }
+
+  async processPlainWebPage(url) {
+    let text;
+    try {
+      text = await getPlainPage(url);
+      if (!text || text.trim().length === 0) {
+        throw new Error("Çıkarılan metin boş.");
+      }
+
+      console.log(`Web sayfasından metin çıkarıldı: ${text}`);
+    } catch (error) {
+      console.error(
+        `Dosya '${url}' metin çıkarılırken hata oluştu:`,
+        error.message
+      );
+      throw error; // Hatayı yukarı fırlat
+    }
+
+    const docs = await this.textSplitter.createDocuments([text], {
+      source: url,
+    });
+    const documents = docs.map(
+      (doc) =>
+        new Document({ pageContent: doc.pageContent, metadata: doc.metadata })
+    );
+    console.log(
+      `${url} Web sayfasından ${documents.length} belge parçası oluşturuldu.`
+    );
+    await this.addDocumentsInBatches(documents);
+  }
+
+  async processPersonelPage() {
+    let text;
+    const url = "https://kutuphane.itu.edu.tr/hakkimizda/personel-ve-bolumler";
+    try {
+      text = await getPersonelPage(url);
+      if (!text || text.trim().length === 0) {
+        throw new Error("Çıkarılan metin boş.");
+      }
+
+      console.log(`Web sayfasından metin çıkarıldı: ${text}`);
+    } catch (error) {
+      console.error(
+        `Dosya '${url}' metin çıkarılırken hata oluştu:`,
+        error.message
+      );
+      throw error; // Hatayı yukarı fırlat
+    }
+
+    const docs = await this.textSplitter.createDocuments([text], {
+      source: url,
+    });
+    const documents = docs.map(
+      (doc) =>
+        new Document({ pageContent: doc.pageContent, metadata: doc.metadata })
+    );
+    console.log(
+      `${url} Web sayfasından ${documents.length} belge parçası oluşturuldu.`
+    );
+    await this.addDocumentsInBatches(documents);
   }
 
   /**

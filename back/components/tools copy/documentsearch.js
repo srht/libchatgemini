@@ -128,33 +128,15 @@ Eğer bağlamda telefon numarası veya web sitesi gibi bilgiler varsa, bunları 
   {context}
 
   Soru: {input}`;
-
-          const newPrompt2 = `Sen yardımcı bir kütüphane asistanısın. Görevin, SADECE BAĞLAM’da (context) verilen bilgilere dayanarak yanıt vermektir.
-- BAĞLAM dışında bilgi ekleme, tahmin yürütme veya genelleme yapma.
-- BAĞLAM soruyu yanıtlamak için yeterli değilse şu cümleyi aynen döndür: 
-  "Üzgünüm, bu konu hakkında belgemde yeterli bilgi bulunmuyor."
-- Yanıtı kullanıcının dilinde ver.
-- BAĞLAM’da telefon numarası veya web sitesi varsa, bunları HTML <a> etiketiyle ver:
-  Örn. Tel: <a href="tel:0000">0000</a>  |  Web: <a href="https://site">site</a>
-- BAĞLAM’da görsel dosya bilgisi (ör. resim URL’si) varsa, <img src="..."/> etiketiyle ekleyebilirsin.
-
-BAĞLAM:
-{context}
-
-Soru: {input}`;
           const questionAnsweringPrompt =
-            PromptTemplate.fromTemplate(newPrompt2);
+            PromptTemplate.fromTemplate(newPrompt);
 
           const combineDocsChain = await createStuffDocumentsChain({
             llm: chatModel,
             prompt: questionAnsweringPrompt,
           });
 
-          const retriever = vectorStore.asRetriever({
-            k: 5,
-            searchType: "mmr",
-            searchKwargs: { fetchK: 25, lambda: 0.8 },
-          });
+          const retriever = vectorStore.asRetriever({ k: 5 });
           const retrievalChain = await createRetrievalChain({
             retriever: retriever,
             combineDocsChain: combineDocsChain,

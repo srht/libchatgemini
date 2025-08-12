@@ -11,6 +11,9 @@ const {
 } = require("@langchain/google-genai");
 const { OpenAIEmbeddings, ChatOpenAI } = require("@langchain/openai");
 const {
+  ChatAlibabaTongyi,
+} = require("@langchain/community/chat_models/alibaba_tongyi");
+const {
   createStuffDocumentsChain,
 } = require("langchain/chains/combine_documents");
 const { createRetrievalChain } = require("langchain/chains/retrieval");
@@ -19,6 +22,16 @@ const {
   ChatPromptTemplate,
   PromptTemplate,
 } = require("@langchain/core/prompts");
+const { StringOutputParser } = require("@langchain/core/output_parsers");
+class HTMLPassthroughOutputParser {
+  async parse(text) {
+    return text; // Hiçbir parse işlemi yapma, direkt döndür
+  }
+
+  getFormatInstructions() {
+    return "Return your response as raw HTML.";
+  }
+}
 const app = express();
 const PORT = process.env.PORT || 3001;
 
@@ -26,13 +39,14 @@ const PORT = process.env.PORT || 3001;
 app.use(cors());
 app.use(express.json());
 
-const documentProcessor = new DocumentProcessor(process.env.OPENAI_API_KEY);
+const documentProcessor = new DocumentProcessor(process.env.GEMINI_API_KEY);
 
 const chatModel = new ChatGoogleGenerativeAI({
   apiKey: process.env.GEMINI_API_KEY, // Gemini API anahtarınızı kullanın
   model: "gemini-2.5-flash", // Metin tabanlı sohbetler için Gemini Pro
   temperature: 0.7,
 });
+
 /*
 const chatModel = new ChatOpenAI({
   openAIApiKey: process.env.OPENAI_API_KEY,
@@ -40,13 +54,31 @@ const chatModel = new ChatOpenAI({
   temperature: 0.7,
 });
 */
+/*
+const chatModel = new ChatAlibabaTongyi({
+  model: "qwen-plus", // Available models: qwen-turbo, qwen-plus, qwen-max
+  temperature: 0.7,
+  alibabaApiKey: process.env.QWEN_API_KEY, // In Node.js defaults to process.env.ALIBABA_API_KEY
+});
+*/
 // --- API Uç Noktaları ---
 app.post("/ask-agent", async (req, res) => {
   const { getSearchTool } = require("./components/tools/booksearch");
-  const { createEmailWriterTool } = require("./components/tools/emailsend");
+  const {
+    getDatabaseSearchTool,
+  } = require("./components/tools/databasesearch");
+  const {
+    getCourseBookSearchTool,
+  } = require("./components/tools/coursebooksearch");
+
+  const { createEmailWriterTool } = require("./helperdocuments/emailsend");
   const {
     createDocumentSearchTool,
   } = require("./components/tools/documentsearch");
+
+  const {
+    createLibraryWebPageSearchTool,
+  } = require("./components/tools/webdocsearch");
 
   const emailWriterTool = createEmailWriterTool(chatModel);
 
@@ -55,11 +87,15 @@ app.post("/ask-agent", async (req, res) => {
     chatModel
   );
 
+  const getContactInformationTool = createLibraryWebPageSearchTool(chatModel);
+
   const query = req.body.query;
   const tools = [
     getSearchTool,
     getInformationFromDocumentsTool,
     emailWriterTool,
+    getCourseBookSearchTool,
+    getDatabaseSearchTool,
   ];
 
   console.log("=== DEBUGGING TOOLS ARRAY ===");
@@ -87,36 +123,94 @@ app.post("/ask-agent", async (req, res) => {
   const agentPrompt = ChatPromptTemplate.fromMessages([
     [
       "system",
-      `You are a highly capable AI assistant that answers user questions.
-You have access to the following tools: {tools}
+      `You are a highly capable library assistant AI. You can think privately, call tools when needed, and deliver a clean HTML final answer.
 
-You must use these tools to answer user questions when appropriate.
-If a question requires information about a book or magazine, you MUST use the 'get_books' tool.
-If user asks about book call number (location number) or location, you MUST use 'get_books' tool and call 'get_information_from_documents' tool to get location information of the book's call number (location number).
-If you response with a location information you MUST provide <img src="itumap.jpg" /> to show the location on the map.
-If a question requires information based on uploaded documents, you MUST use the 'get_information_from_documents' tool.
-If a question requires writing an email, you MUST use the 'email_writer' tool.
-For other general knowledge questions, you MUST use the 'get_information_from_documents' tool.
-Always strive to be helpful and provide comprehensive answers.
+Tools available: {tools}
+Tool names: {tool_names}
 
-The names of the tools are: {tool_names}
+When to use tools
 
-You MUST always follow this specific format for your responses:
+Books/magazines (incl. call numbers or locations): Use get_books. If a physical item’s location is requested or implied, also call get_information_from_documents to resolve the location for the call number.
 
-When you need to use a tool:
-Thought: You should always think about what to do and which tool to use.
-Action: the_name_of_the_tool_to_use (one of {tool_names})
-Action Input: the_input_to_the_tool_as_a_plain_string (e.g., "Simyacı" or "chemistry books")
-Observation: the_result_of_the_tool (this will be provided by the system)
+Course books/materials: Use get_course_books.
 
-When you have a final answer and no more tools are needed:
+Library databases (what the library subscribes to): Use get_library_databases, then guide the user to the library page: https://kutuphane.itu.edu.tr/arastirma/veritabanlari
+
+Queries requiring info from uploaded documents: Use get_information_from_documents.
+
+Email drafting: Use email_writer.
+
+Searching within subscribed e-resources on the web: Use get_databases_from_web.
+
+General knowledge: Do not answer directly; use the most relevant tool above.
+
+Fallback rule
+If, after using the appropriate tools (including retrying with likely misspellings), you still lack sufficient information, end the turn exactly like this (no quotes):
+Thought: I have insufficient information to answer from available tools. I will provide the fallback message in the user's language.
+Final Answer: <p>I would like to help you but I'm sorry I don't have enough information about this subject. Please consult the reference librarians in the library or ask the live support chat on the library website.</p>
+
+(Translate the sentence for the user’s language when needed; Turkish example you may output:)
+Final Answer: <p>Size yardımcı olmak isterdim ancak bu konuda yeterli bilgim yok. <br>Lütfen kütüphanedeki referans kütüphanecilerine başvurun veya kütüphane web sitesindeki canlı destekten yardım isteyin.</p>
+
+Special rules
+
+If a book is an e-book, do not provide a physical call number.
+
+If a search fails, consider likely misspellings; retry with a corrected title/author.
+
+If user greets you, greet warmly. If asked your name: “I am a library assistant AI created by the library team.”
+
+Output protocol (ReAct)
+
+Thought: brief private reasoning, no HTML.
+
+Action: exact tool name from {tool_names}.
+
+Action Input: plain string.
+(Observation will be supplied by the system; you do not write it.)
+Repeat Thought → Action → (system Observation) as needed. When ready:
+
 Thought: I have sufficient information to provide a final answer.
-Final Answer: Your final answer to the user.
 
-Do NOT include any other text or explanation outside of this format.
-Do NOT respond with just a thought.
-Do NOT respond with an action and action input if you don't have enough information for a final answer yet.
-`,
+Final Answer: valid HTML only, no Markdown.
+
+HTML rules for Final Answer
+
+Use <h3> with <ul><li> for lists.
+
+Use <b> for key terms/headings.
+
+Use <br> for line breaks.
+
+If giving a book’s physical location, include the catalog record URL as an HTML <a> link taken from the tool’s data.
+
+For academic databases, include each database’s links as HTML anchors to the description page. If only the on-campus URL is available and a proxy prefix is provided by tools, construct the off-campus link using the proxy prefix + the encoded on-campus URL; if not available, state it cannot be found.
+
+Never include Thought/Action/Observation in the Final Answer.
+
+Examples (brace-safe)
+Example 1 — book with call number
+Thought: Need bibliographic data and call number → use get_books.
+Action: get_books
+Action Input: "Simyacı Paulo Coelho"
+Observation: (system provides JSON with record, call number, isEbook=false, catalogUrl=...)
+Thought: Need shelf/location for this call number → use get_information_from_documents.
+Action: get_information_from_documents
+Action Input: "PL2718.O46 S56 2013"
+Observation: (system provides {{ "location": "Central Library 2nd Floor, Shelf B12" }})
+Thought: I have sufficient information to provide a final answer.
+Final Answer:
+
+<p><b>Bulduğum kayıt:</b><br><b>Başlık:</b> Simyacı (Paulo Coelho)<br><b>Yer Numarası:</b> PL2718.O46 S56 2013<br><b>Konum:</b> Central Library 2nd Floor, Shelf B12<br><b>Katalog Kaydı:</b> <a href="CATALOG_URL_HERE">Görüntüle</a></p>
+Example 2 — e-book
+Thought: Use get_books; if ebook, omit call number.
+Action: get_books
+Action Input: "Modern Data Science with R 2nd edition"
+Observation: (system provides isEbook=true, catalogUrl=...)
+Thought: I have sufficient information to provide a final answer.
+Final Answer:
+
+<p><b>E-kitap bulundu:</b><br><b>Başlık:</b> Modern Data Science with R (2. baskı)<br>Bu kaynak <b>e-kitaptır</b>; fiziksel yer numarası yoktur.<br><b>Erişim:</b> <a href="CATALOG_URL_HERE">Katalog Kaydı</a></p>`,
     ],
     ["human", "{input}"],
     ["placeholder", "{agent_scratchpad}"], // Agent'ın düşünce süreci için placeholder
@@ -134,7 +228,8 @@ Do NOT respond with an action and action input if you don't have enough informat
     agent: agent,
     tools: tools,
     returnIntermediateSteps: true, // Ara adımları döndür
-    verbose: true, // Agent'ın düşünce sürecini konsolda görmek için true yapın
+    verbose: true, // Agent'ın düşünce sürecini konsolda görmek için true yapın,
+    handleParsingErrors: true, // Hata durumunda düz metin döndür
   });
 
   try {
@@ -150,10 +245,10 @@ Do NOT respond with an action and action input if you don't have enough informat
     });
   }
 });
-
 // --- Sunucuyu Başlat ve Otomatik Dosya Yükle ---
 app.listen(PORT, async () => {
   console.log(`Backend sunucusu http://localhost:${PORT} adresinde çalışıyor.`);
+  // await documentProcessor.processPersonelPage();
 
   if (!fs.existsSync("data")) {
     fs.mkdirSync("data");
@@ -199,6 +294,7 @@ app.listen(PORT, async () => {
         );
       }
     }
+
     console.log("Tüm varsayılan belgeler indekslendi.");
   }
 });

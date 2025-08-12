@@ -3,7 +3,6 @@ import { useState, useEffect, useRef } from 'react';
 import axios from 'axios'; // API çağrıları için
 
 function Chatbot() {
-    const [safeHtml, setSafeHtml] = useState('');
     type Message = { sender: string; text: string };
     const [messages, setMessages] = useState<Message[]>([]);
     const [input, setInput] = useState('');
@@ -31,6 +30,7 @@ function Chatbot() {
         try {
             // Arka uç API'nize sorguyu gönderin
             const response = await axios.post('http://localhost:3001/ask-agent', { query: input });
+            //const response = await axios.post('https://service.library.itu.edu.tr/chat/api/ask-agent', { query: input });
             const botMessage = { sender: 'bot', text: response.data.response };
             setMessages((prevMessages) => [...prevMessages, botMessage]);
         } catch (error) {
@@ -102,6 +102,12 @@ function Chatbot() {
                 <textarea
                     value={input}
                     onChange={(e) => setInput(e.target.value)}
+                    onKeyDown={(e) => {
+                        if (e.key === 'Enter' && !e.shiftKey) {
+                            e.preventDefault();
+                            handleSendMessage(e);
+                        }
+                    }}
                     placeholder="Mesajınızı yazın..."
                     disabled={loading}
                     style={{ flex: 1, padding: '8px', borderRadius: '4px', border: '1px solid #ccc', fontFamily: 'system-ui, Avenir, Helvetica, Arial, sans-serif', fontSize: '14px', resize: 'none' }}

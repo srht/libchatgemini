@@ -100,7 +100,14 @@ const createDocumentSearchTool = (documentProcessor, chatModel) => {
 
         try {
           // Eğer tam chain fonksiyonları varsa, onları kullan
-          const oldPrompt = `Sen yardımcı bir kütüphane asistanısın. Görevin, kullanıcının sorularını, verilen bağlamdaki bilgilere öncelik vererek kapsamlı ve detaylı bir şekilde yanıtlamaktır. Yanıtını mümkün olduğunca zenginleştir ve tüm ilgili bilgileri içerecek şekilde uzat.
+          if (
+            createStuffDocumentsChain &&
+            createRetrievalChain &&
+            PromptTemplate.fromTemplate
+          ) {
+            console.log("🔗 Tam chain implementasyonu kullanılıyor");
+
+            const oldPrompt = `Sen yardımcı bir kütüphane asistanısın. Görevin, kullanıcının sorularını, verilen bağlamdaki bilgilere öncelik vererek kapsamlı ve detaylı bir şekilde yanıtlamaktır. Yanıtını mümkün olduğunca zenginleştir ve tüm ilgili bilgileri içerecek şekilde uzat.
                       
                       Bir konu (örneğin: Kimya, Bilgisayar Bilimi, Tarih, Felsefe) ve "nerede" gibi yer bilgisi içeren bir soru geldiğinde:
                       1.  Öncelikle, **kendi genel bilgini kullanarak** bu konunun standart LC (Library of Congress) sınıflandırma kodunu (örneğin: Kimya -> QD, Bilgisayar Bilimi -> QA, Tarih -> D) belirle.
@@ -116,7 +123,7 @@ const createDocumentSearchTool = (documentProcessor, chatModel) => {
                       {context}
       
                       Soru: {input}`;
-          const newPrompt = `
+            const newPrompt = `
 Sen yardımcı bir kütüphane asistanısın. Görevin, kullanıcının sorularını, verilen bağlamdaki bilgilere öncelik vererek yanıtlamaktır.
     Eğer verilen BAĞLAMDA kullanıcının sorusunu yanıtlamak için yeterli bilgi bulunmuyorsa, 'Üzgünüm, bu konu hakkında belgemde yeterli bilgi bulunmuyor.' şeklinde yanıtla.
 Eğer bağlamda telefon numarası veya web sitesi gibi bilgiler varsa, bunları yanıtına **HTML <a href="..."> etiketiyle ekle**. Örneğin:
@@ -128,41 +135,62 @@ Eğer bağlamda telefon numarası veya web sitesi gibi bilgiler varsa, bunları 
   {context}
 
   Soru: {input}`;
+            const questionAnsweringPrompt =
+              PromptTemplate.fromTemplate(oldPrompt);
 
-          const newPrompt2 = `Sen yardımcı bir kütüphane asistanısın. Görevin, SADECE BAĞLAM’da (context) verilen bilgilere dayanarak yanıt vermektir.
-- BAĞLAM dışında bilgi ekleme, tahmin yürütme veya genelleme yapma.
-- BAĞLAM soruyu yanıtlamak için yeterli değilse şu cümleyi aynen döndür: 
-  "Üzgünüm, bu konu hakkında belgemde yeterli bilgi bulunmuyor."
-- Yanıtı kullanıcının dilinde ver.
-- BAĞLAM’da telefon numarası veya web sitesi varsa, bunları HTML <a> etiketiyle ver:
-  Örn. Tel: <a href="tel:0000">0000</a>  |  Web: <a href="https://site">site</a>
-- BAĞLAM’da görsel dosya bilgisi (ör. resim URL’si) varsa, <img src="..."/> etiketiyle ekleyebilirsin.
+            const combineDocsChain = await createStuffDocumentsChain({
+              llm: chatModel,
+              prompt: questionAnsweringPrompt,
+            });
 
-BAĞLAM:
-{context}
+            const retriever = vectorStore.asRetriever({ k: 5 });
+            const retrievalChain = await createRetrievalChain({
+              retriever: retriever,
+              combineDocsChain: combineDocsChain,
+            });
 
-Soru: {input}`;
-          const questionAnsweringPrompt =
-            PromptTemplate.fromTemplate(newPrompt2);
+            console.log(`🚀 Retrieval chain çalıştırılıyor: ${input}`);
+            const result = await retrievalChain.invoke({ input: input });
+            return result.answer;
+          } else {
+            // Basit implementasyon - chain'ler yoksa
+            console.log("🔄 Basit implementasyon kullanılıyor");
 
-          const combineDocsChain = await createStuffDocumentsChain({
-            llm: chatModel,
-            prompt: questionAnsweringPrompt,
-          });
+            const retriever = vectorStore.asRetriever({ k: 5 });
+            const relevantDocs = await retriever.getRelevantDocuments(input);
 
-          const retriever = vectorStore.asRetriever({
-            k: 5,
-            searchType: "mmr",
-            searchKwargs: { fetchK: 25, lambda: 0.8 },
-          });
-          const retrievalChain = await createRetrievalChain({
-            retriever: retriever,
-            combineDocsChain: combineDocsChain,
-          });
+            if (relevantDocs.length === 0) {
+              return "İlgili belge bulunamadı.";
+            }
 
-          console.log(`🚀 Retrieval chain çalıştırılıyor: ${input}`);
-          const result = await retrievalChain.invoke({ input: input });
-          return result.answer;
+            // Belgeleri birleştir
+            const context = relevantDocs
+              .map((doc) => doc.pageContent)
+              .join("\n\n")
+              .substring(0, 3000); // Uzunluğu sınırla
+
+            // Basit prompt oluştur
+            const simplePrompt = `Sen yardımcı bir kütüphane asistanısın. Aşağıdaki belgeler ışığında soruyu yanıtla:
+
+BELGELER:
+${context}
+
+SORU: ${input}
+
+YANIT:`;
+
+            // LLM'i çağır
+            let response;
+            if (chatModel.invoke) {
+              response = await chatModel.invoke(simplePrompt);
+              return response.content || response;
+            } else if (chatModel.call) {
+              response = await chatModel.call(simplePrompt);
+              return response;
+            } else {
+              return `Bulunan belgeler:\n\n${context.substring(0, 500)}...`;
+            }
+          }
         } catch (chainError) {
           console.error("❌ Chain hatası:", chainError.message);
 
@@ -191,6 +219,57 @@ Soru: {input}`;
   }
 };
 
+// Test fonksiyonu
+const testTool = async (documentProcessor, chatModel) => {
+  console.log("🧪 Tool test ediliyor...");
+
+  const tool = createDocumentSearchTool(documentProcessor, chatModel);
+  if (!tool) {
+    console.log("❌ Tool oluşturulamadı");
+    return false;
+  }
+
+  try {
+    const result = await tool.func("Test sorgusu");
+    console.log("✅ Tool çalışıyor!");
+    console.log("📄 Test sonucu:", result.substring(0, 100) + "...");
+    return true;
+  } catch (error) {
+    console.log("❌ Tool test hatası:", error.message);
+    return false;
+  }
+};
+
+// Debug bilgileri
+const debugInfo = () => {
+  console.log("🔍 DEBUG BİLGİLERİ:");
+  console.log("- DynamicTool:", !!DynamicTool ? "✅" : "❌");
+  console.log("- PromptTemplate:", !!PromptTemplate ? "✅" : "❌");
+  console.log(
+    "- createStuffDocumentsChain:",
+    !!createStuffDocumentsChain ? "✅" : "❌"
+  );
+  console.log("- createRetrievalChain:", !!createRetrievalChain ? "✅" : "❌");
+
+  // Node.js versiyonu
+  console.log("- Node.js version:", process.version);
+
+  // LangChain versiyonu
+  try {
+    const langchainPkg = require("langchain/package.json");
+    console.log("- LangChain version:", langchainPkg.version);
+  } catch (e) {
+    console.log("- LangChain version: Tespit edilemedi");
+  }
+};
+
 module.exports = {
   createDocumentSearchTool,
+  testTool,
+  debugInfo,
 };
+
+// Eğer direkt çalıştırılıyorsa debug bilgilerini göster
+if (require.main === module) {
+  debugInfo();
+}
