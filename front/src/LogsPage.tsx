@@ -16,6 +16,7 @@ interface ChainExecution {
   model?: string;
   timestamp?: string;
   log?: string;
+  chainLogs?: any[];
 }
 
 interface LogEntry {
@@ -57,6 +58,7 @@ function LogsPage() {
       setLoading(true);
       setError(null);
       const response = await axios.get<LogsResponse>(`http://localhost:3001/logs?limit=${limit}`);
+      //const response = await axios.get<LogsResponse>(`https://service.library.itu.edu.tr/chat/api/logs?limit=${limit}`);
       setLogs(response.data.logs);
     } catch (err) {
       setError('Loglar yüklenirken bir hata oluştu');
@@ -170,6 +172,50 @@ function LogsPage() {
             </div>
           )}
           
+          {/* Detailed Chain Logs */}
+          {chainExecution.chainLogs && chainExecution.chainLogs.length > 0 && (
+            <div className="detailed-chain-logs">
+              <h5>🔍 Detailed Chain Logs:</h5>
+              <div className="chain-logs-list">
+                {chainExecution.chainLogs.map((chainLog, index) => (
+                  <div key={index} className="chain-log-item">
+                    <div className="chain-log-header">
+                      <span className="chain-log-type">{chainLog.type}</span>
+                      <span className="chain-log-time">{new Date(chainLog.timestamp).toLocaleTimeString()}</span>
+                      <span className="chain-log-id">ID: {chainLog.runId}</span>
+                    </div>
+                    <div className="chain-log-content">
+                      {chainLog.chainName && (
+                        <div><strong>Chain:</strong> {chainLog.chainName}</div>
+                      )}
+                      {chainLog.llmName && (
+                        <div><strong>LLM:</strong> {chainLog.llmName}</div>
+                      )}
+                      {chainLog.toolName && (
+                        <div><strong>Tool:</strong> {chainLog.toolName}</div>
+                      )}
+                      {chainLog.inputs && (
+                        <div><strong>Inputs:</strong> <pre>{formatValue(chainLog.inputs)}</pre></div>
+                      )}
+                      {chainLog.outputs && (
+                        <div><strong>Outputs:</strong> <pre>{formatValue(chainLog.outputs)}</pre></div>
+                      )}
+                      {chainLog.action && (
+                        <div><strong>Action:</strong> <pre>{formatValue(chainLog.action)}</pre></div>
+                      )}
+                      {chainLog.text && (
+                        <div><strong>Text:</strong> <pre>{formatValue(chainLog.text)}</pre></div>
+                      )}
+                      {chainLog.parentRunId && (
+                        <div><strong>Parent ID:</strong> {chainLog.parentRunId}</div>
+                      )}
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
+          
           {chainExecution.toolDetails && (
             <div className="tool-execution-details">
               <h5>🛠️ Tool Execution Details:</h5>
@@ -238,7 +284,7 @@ function LogsPage() {
             <div className="log-section">
               <h4>Kullanılan Araçlar:</h4>
               <div className="tools-list">
-                {log?.toolsUsed.map((tool, index) => (
+                {log.toolsUsed && Array.isArray(log.toolsUsed) && log?.toolsUsed?.map((tool, index) => (
                   <span key={index} className="tool-tag">{tool.trim()}</span>
                 ))}
               </div>
@@ -425,7 +471,7 @@ function LogsPage() {
     }
 
     return (
-      <div className="log-content">
+      <div className="log-content text-black">
         <p>Bilinmeyen log formatı</p>
         <pre>{JSON.stringify(log, null, 2)}</pre>
       </div>

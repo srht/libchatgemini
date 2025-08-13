@@ -262,6 +262,7 @@
   background: white;
   border-radius: 8px;
   border: 1px solid #e1e5e9;
+  color: #2c3e50;
 }
 
 .log-header {
@@ -909,4 +910,108 @@
   font-size: 12px;
   line-height: 1.4;
   color: #2c3e50;
+}
+
+.detailed-chain-logs {
+  margin-top: 20px;
+  padding: 15px;
+  background: #f8f9fa;
+  border-radius: 8px;
+  border: 1px solid #e1e5e9;
+}
+
+.detailed-chain-logs h5 {
+  margin: 0 0 15px 0;
+  color: #2c3e50;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.chain-logs-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.chain-log-item {
+  background: white;
+  border: 1px solid #e1e5e9;
+  border-radius: 6px;
+  padding: 12px;
+  transition: all 0.2s ease;
+}
+
+.chain-log-item:hover {
+  border-color: #9b59b6;
+  box-shadow: 0 2px 8px rgba(155, 89, 182, 0.1);
+}
+
+.chain-log-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #f1f3f4;
+  flex-wrap: wrap;
+}
+
+.chain-log-type {
+  background: #9b59b6;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.chain-log-time {
+  background: #e3f2fd;
+  color: #1976d2;
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 10px;
+  font-weight: 500;
+}
+
+.chain-log-id {
+  background: #f3e5f5;
+  color: #7b1fa2;
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 10px;
+  font-weight: 500;
+  font-family: 'Courier New', monospace;
+}
+
+.chain-log-content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 12px;
+  line-height: 1.4;
+  color: #2c3e50;
+}
+
+.chain-log-content div {
+  background: #f8f9fa;
+  padding: 6px 8px;
+  border-radius: 4px;
+  border-left: 2px solid #9b59b6;
+}
+
+.chain-log-content pre {
+  margin: 5px 0 0 0;
+  background: white;
+  padding: 6px;
+  border-radius: 3px;
+  border: 1px solid #e1e5e9;
+  font-size: 11px;
+  line-height: 1.3;
+  max-height: 150px;
+  overflow-y: auto;
+  white-space: pre-wrap;
+  word-break: break-word;
 }

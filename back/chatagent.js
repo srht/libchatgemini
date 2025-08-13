@@ -24,6 +24,7 @@ const {
   PromptTemplate,
 } = require("@langchain/core/prompts");
 const { StringOutputParser } = require("@langchain/core/output_parsers");
+
 class HTMLPassthroughOutputParser {
   async parse(text) {
     return text; // Hiçbir parse işlemi yapma, direkt döndür
@@ -31,6 +32,204 @@ class HTMLPassthroughOutputParser {
 
   getFormatInstructions() {
     return "Return your response as raw HTML.";
+  }
+}
+
+// Custom callback handler for detailed logging
+class DetailedLoggingCallbackHandler {
+  constructor(chatLogger) {
+    this.chatLogger = chatLogger;
+    this.currentChainId = null;
+    this.chainLogs = [];
+  }
+
+  handleChainStart(chain, inputs, runId, parentRunId, tags, metadata) {
+    this.currentChainId = runId;
+    this.chainLogs.push({
+      type: 'chain_start',
+      runId,
+      parentRunId,
+      chainName: chain.constructor.name,
+      inputs: this.sanitizeInputs(inputs),
+      tags,
+      metadata,
+      timestamp: new Date().toISOString()
+    });
+  }
+
+  handleChainEnd(outputs, runId, parentRunId, tags, metadata) {
+    this.chainLogs.push({
+      type: 'chain_end',
+      runId,
+      parentRunId,
+      outputs: this.sanitizeOutputs(outputs),
+      tags,
+      metadata,
+      timestamp: new Date().toISOString()
+    });
+  }
+
+  handleLLMStart(llm, prompts, runId, parentRunId, tags, metadata) {
+    this.chainLogs.push({
+      type: 'llm_start',
+      runId,
+      parentRunId,
+      llmName: llm.constructor.name,
+      prompts: this.sanitizePrompts(prompts),
+      tags,
+      metadata,
+      timestamp: new Date().toISOString()
+    });
+  }
+
+  handleLLMEnd(output, runId, parentRunId, tags, metadata) {
+    this.chainLogs.push({
+      type: 'llm_end',
+      runId,
+      parentRunId,
+      output: this.sanitizeOutput(output),
+      tags,
+      metadata,
+      timestamp: new Date().toISOString()
+    });
+  }
+
+  handleToolStart(tool, input, runId, parentRunId, tags, metadata) {
+    this.chainLogs.push({
+      type: 'tool_start',
+      runId,
+      parentRunId,
+      toolName: tool.name || tool.constructor.name,
+      input: this.sanitizeInput(input),
+      tags,
+      metadata,
+      timestamp: new Date().toISOString()
+    });
+  }
+
+  handleToolEnd(output, runId, parentRunId, tags, metadata) {
+    this.chainLogs.push({
+      type: 'tool_end',
+      runId,
+      parentRunId,
+      output: this.sanitizeOutput(output),
+      tags,
+      metadata,
+      timestamp: new Date().toISOString()
+    });
+  }
+
+  handleAgentAction(action, runId, parentRunId, tags, metadata) {
+    this.chainLogs.push({
+      type: 'agent_action',
+      runId,
+      parentRunId,
+      action: this.sanitizeAction(action),
+      tags,
+      metadata,
+      timestamp: new Date().toISOString()
+    });
+  }
+
+  handleAgentEnd(action, runId, parentRunId, tags, metadata) {
+    this.chainLogs.push({
+      type: 'agent_end',
+      runId,
+      parentRunId,
+      action: this.sanitizeAction(action),
+      tags,
+      metadata,
+      timestamp: new Date().toISOString()
+    });
+  }
+
+  handleText(text, runId, parentRunId, tags, metadata) {
+    this.chainLogs.push({
+      type: 'text',
+      runId,
+      parentRunId,
+      text: this.sanitizeText(text),
+      tags,
+      metadata,
+      timestamp: new Date().toISOString()
+    });
+  }
+
+  // Helper methods for sanitizing data
+  sanitizeInputs(inputs) {
+    try {
+      return JSON.parse(JSON.stringify(inputs));
+    } catch (e) {
+      return { error: 'Could not serialize inputs', original: String(inputs) };
+    }
+  }
+
+  sanitizeOutputs(outputs) {
+    try {
+      return JSON.parse(JSON.stringify(outputs));
+    } catch (e) {
+      return { error: 'Could not serialize outputs', original: String(outputs) };
+    }
+  }
+
+  sanitizePrompts(prompts) {
+    try {
+      return prompts.map(prompt => {
+        if (typeof prompt === 'string') return prompt;
+        if (prompt && typeof prompt === 'object') {
+          return {
+            type: prompt.constructor.name,
+            content: prompt.content || prompt.text || String(prompt)
+          };
+        }
+        return String(prompt);
+      });
+    } catch (e) {
+      return { error: 'Could not serialize prompts' };
+    }
+  }
+
+  sanitizeInput(input) {
+    try {
+      return JSON.parse(JSON.stringify(input));
+    } catch (e) {
+      return { error: 'Could not serialize input', original: String(input) };
+    }
+  }
+
+  sanitizeOutput(output) {
+    try {
+      return JSON.parse(JSON.stringify(output));
+    } catch (e) {
+      return { error: 'Could not serialize output', original: String(output) };
+    }
+  }
+
+  sanitizeAction(action) {
+    try {
+      return JSON.parse(JSON.stringify(action));
+    } catch (e) {
+      return { error: 'Could not serialize action', original: String(action) };
+    }
+  }
+
+  sanitizeText(text) {
+    try {
+      return JSON.parse(JSON.stringify(text));
+    } catch (e) {
+      return { error: 'Could not serialize text', original: String(text) };
+    }
+  }
+
+  // Get all logs for current execution
+  getChainLogs() {
+    return this.chainLogs;
+  }
+
+  // Clear logs for new execution
+  clearChainLogs() {
+    this.chainLogs = [];
+    this.currentChainId = null;
   }
 }
 const app = express();
@@ -99,41 +298,26 @@ app.post("/ask-agent", async (req, res) => {
     emailWriterTool,
     getCourseBookSearchTool,
     getDatabaseSearchTool,
+    getContactInformationTool,
   ];
 
-  console.log("=== DEBUGGING TOOLS ARRAY ===");
-  console.log("Tools variable type:", typeof tools);
-  console.log("Tools is array:", Array.isArray(tools));
-  console.log("Tools length:", tools?.length);
-  console.log("Raw tools variable:", tools);
+  // Her sorgu için yeni callback handler oluştur
+  const detailedCallbackHandler = new DetailedLoggingCallbackHandler(chatLogger);
+  detailedCallbackHandler.clearChainLogs();
 
-  // Check each item in the array
-  if (Array.isArray(tools)) {
-    tools.forEach((tool, index) => {
-      console.log(`\nTool ${index}:`);
-      console.log("  - Type:", typeof tool);
-      console.log("  - Is null:", tool === null);
-      console.log("  - Is undefined:", tool === undefined);
-      console.log("  - Has name property:", "name" in (tool || {}));
-      console.log("  - Name value:", tool?.name);
-      console.log("  - Full object:", tool);
-    });
-  } else {
-    console.log("ERROR: tools is not an array!");
-  }
-
-  // Agent Prompt'unu tanımlayın
-  const agentPrompt = ChatPromptTemplate.fromMessages([
-    [
-      "system",
-      `You are a highly capable library assistant AI. You can think privately, call tools when needed, and deliver a clean HTML final answer.
+  try {
+    // Agent prompt'unu tanımla
+    const agentPrompt = ChatPromptTemplate.fromMessages([
+      [
+        "system",
+        `You are a highly capable library assistant AI. You can think privately, call tools when needed, and deliver a clean HTML final answer.
 
 Tools available: {tools}
 Tool names: {tool_names}
 
 When to use tools
 
-Books/magazines (incl. call numbers or locations): Use get_books. If a physical item’s location is requested or implied, also call get_information_from_documents to resolve the location for the call number.
+Books/magazines (incl. call numbers or locations): Use get_books. If a physical item's location is requested or implied, also call get_information_from_documents to resolve the location for the call number.
 
 Course books/materials: Use get_course_books.
 
@@ -148,11 +332,13 @@ Searching within subscribed e-resources on the web: Use get_databases_from_web.
 General knowledge: Do not answer directly; use the most relevant tool above.
 
 Fallback rule
+ONLY use this fallback if you have tried ALL relevant tools and still cannot find ANY information about the user's request. If you found books, databases, or any relevant information, DO NOT use this fallback.
+
 If, after using the appropriate tools (including retrying with likely misspellings), you still lack sufficient information, end the turn exactly like this (no quotes):
 Thought: I have insufficient information to answer from available tools. I will provide the fallback message in the user's language.
 Final Answer: <p>I would like to help you but I'm sorry I don't have enough information about this subject. Please consult the reference librarians in the library or ask the live support chat on the library website.</p>
 
-(Translate the sentence for the user’s language when needed; Turkish example you may output:)
+(Translate the sentence for the user's language when needed; Turkish example you may output:)
 Final Answer: <p>Size yardımcı olmak isterdim ancak bu konuda yeterli bilgim yok. <br>Lütfen kütüphanedeki referans kütüphanecilerine başvurun veya kütüphane web sitesindeki canlı destekten yardım isteyin.</p>
 
 Special rules
@@ -161,7 +347,7 @@ If a book is an e-book, do not provide a physical call number.
 
 If you can't find a book you must check if the user misspelled the book name fix with your own information and try again.
 
-If user greets you, greet warmly. If asked your name: “I am a library assistant AI created by the library team.”
+If user greets you, greet warmly. If asked your name: "I am a library assistant AI created by the library team."
 
 Do NOT include any other text or explanation outside of this format.
 Do NOT respond with just a thought.
@@ -189,9 +375,9 @@ Use <b> for key terms/headings.
 
 Use <br> for line breaks.
 
-If giving a book’s physical location, include the catalog record URL as an HTML <a> link taken from the tool’s data.
+If giving a book's physical location, include the catalog record URL as an HTML <a> link taken from the tool's data.
 
-For academic databases, include each database’s links as HTML anchors to the description page. If only the on-campus URL is available and a proxy prefix is provided by tools, construct the off-campus link using the proxy prefix + the encoded on-campus URL; if not available, state it cannot be found.
+For academic databases, include each database's links as HTML anchors to the description page. If only the on-campus URL is available and a proxy prefix is provided by tools, construct the off-campus link using the proxy prefix + the encoded on-campus URL; if not available, state it cannot be found.
 
 Never include Thought/Action/Observation in the Final Answer.
 
@@ -201,14 +387,11 @@ Thought: Need bibliographic data and call number → use get_books.
 Action: get_books
 Action Input: "Simyacı Paulo Coelho"
 Observation: (system provides JSON with record, call number, isEbook=false, catalogUrl=...)
-Thought: Need shelf/location for this call number → use get_information_from_documents.
-Action: get_information_from_documents
-Action Input: "PL2718.O46 S56 2013"
-Observation: (system provides {{ "location": "Central Library 2nd Floor" }})
 Thought: I have sufficient information to provide a final answer.
 Final Answer:
 
-<p><b>Bulduğum kayıt:</b><br><b>Başlık:</b> Simyacı (Paulo Coelho)<br><b>Yer Numarası:</b> PL2718.O46 S56 2013<br><b>Konum:</b> Central Library 2nd Floor, Shelf B12<br><b>Katalog Kaydı:</b> <a href="CATALOG_URL_HERE">Görüntüle</a></p>
+<p><b>Bulduğum kayıt:</b><br><b>Başlık:</b> Simyacı (Paulo Coelho)<br><b>Yer Numarası:</b> PL2718.O46 S56 2013<br><b>Katalog Kaydı:</b> <a href="CATALOG_URL_HERE">Görüntüle</a></p>
+
 Example 2 — e-book
 Thought: Use get_books; if ebook, omit call number.
 Action: get_books
@@ -217,37 +400,46 @@ Observation: (system provides isEbook=true, catalogUrl=...)
 Thought: I have sufficient information to provide a final answer.
 Final Answer:
 
-<p><b>E-kitap bulundu:</b><br><b>Başlık:</b> Modern Data Science with R (2. baskı)<br>Bu kaynak <b>e-kitaptır</b>; fiziksel yer numarası yoktur.<br><b>Erişim:</b> <a href="CATALOG_URL_HERE">Katalog Kaydı</a></p>`,
-    ],
-    ["human", "{input}"],
-    ["placeholder", "{agent_scratchpad}"], // Agent'ın düşünce süreci için placeholder
-  ]);
+<p><b>E-kitap bulundu:</b><br><b>Başlık:</b> Modern Data Science with R (2. baskı)<br>Bu kaynak <b>e-kitaptır</b>; fiziksel yer numarası yoktur.<br><b>Erişim:</b> <a href="CATALOG_URL_HERE">Katalog Kaydı</a></p>
 
-  // Agent'ı oluştur
-  const agent = await createReactAgent({
-    llm: chatModel,
-    tools: tools,
-    prompt: agentPrompt,
-  });
+Example 3 — simple book search
+Thought: User wants to find "Beyaz diş" book → use get_books.
+Action: get_books
+Action Input: "beyaz diş"
+Observation: (system provides book results)
+Thought: I have sufficient information to provide a final answer.
+Final Answer:
 
-  // Agent Executor'ı oluştur ve çalıştır
-  const agentExecutor = new AgentExecutor({
-    agent: agent,
-    tools: tools,
-    returnIntermediateSteps: true, // Ara adımları döndür
-    verbose: true, // Agent'ın düşünce sürecini konsolda görmek için true yapın,
-    handleParsingErrors: true, // Hata durumunda düz metin döndür
-  });
+<p><b>Beyaz Diş kitabı bulundu:</b><br><b>Yazar:</b> London, Jack<br><b>Yer Numarası:</b> PS3523.O46 W419 2019<br><b>Katalog Kaydı:</b> <a href="https://divit.library.itu.edu.tr/record=b3445386">Görüntüle</a></p>`,
+      ],
+      ["human", "{input}"],
+      ["placeholder", "{agent_scratchpad}"], // Agent'ın düşünce süreci için placeholder
+    ]);
 
-  try {
+    // Agent'ı callback handler ile oluştur
+    const agent = await createReactAgent({
+      llm: chatModel,
+      tools,
+      prompt: agentPrompt,
+      callbacks: [detailedCallbackHandler]
+    });
+
+    const agentExecutor = new AgentExecutor({
+      agent,
+      tools,
+      returnIntermediateSteps: true, // Ara adımları döndür
+      callbacks: [detailedCallbackHandler]
+    });
+
     const startTime = Date.now();
-    console.log(`[AGENT ÇAĞRISI] Gelen Sorgu: ${query}`);
-    
     const result = await agentExecutor.invoke({ input: query });
     const executionTime = Date.now() - startTime;
-    
-    console.log(`[AGENT YANITI] ${result.output}`);
-    
+
+    // Chain loglarını al
+    const chainLogs = detailedCallbackHandler.getChainLogs();
+
+    console.log("[AGENT YANITI]", result.output);
+
     // Kullanılan araçları tespit et
     const toolsUsed = [];
     const toolDetails = [];
@@ -274,22 +466,68 @@ Final Answer:
       toolDetails: toolDetails,
       model: chatModel.modelName || 'gemini-2.5-flash',
       timestamp: new Date().toISOString(),
-      log: result.intermediateSteps ? `Chain execution completed with ${result.intermediateSteps.length} steps` : null
+      log: result.intermediateSteps ? `Chain execution completed with ${result.intermediateSteps.length} steps` : null,
+      chainLogs: chainLogs // Detaylı chain loglarını ekle
     };
-    
-    // Chat logunu kaydet
-    chatLogger.logChat(query, result.output, toolsUsed, executionTime, null, additionalInfo);
     
     res.status(200).json({ response: result.output });
   } catch (error) {
     console.error("Agent sorgusu işlenirken hata oluştu:", error.message);
     
-    // Hata logunu kaydet
-    chatLogger.logError(error, `Agent sorgusu işlenirken hata: ${query}`);
+    // Parse hatası durumunda özel handling
+    if (error.message.includes("Could not parse LLM output")) {
+      // LLM çıktısından HTML'i çıkar - daha kapsamlı regex
+      const htmlMatch = error.message.match(/<p>.*?<\/p>/s) || 
+                       error.message.match(/<.*?>.*?<\/.*?>/s) ||
+                       error.message.match(/<[^>]+>.*?<\/[^>]+>/s);
+                       
+      if (htmlMatch) {
+        const extractedResponse = htmlMatch[0];
+        console.log("✅ Parse hatasından HTML çıkarıldı:", extractedResponse.substring(0, 100) + "...");
+        
+        // Chain loglarını al
+        const chainLogs = detailedCallbackHandler.getChainLogs();
+        
+        // Log'u kaydet
+        await chatLogger.logChat(
+          query,
+          [],
+          Date.now() - Date.now(), // 0ms
+          error,
+          extractedResponse,
+          {
+            intermediateSteps: 0,
+            toolDetails: [],
+            model: chatModel.modelName || 'gemini-2.5-flash',
+            timestamp: new Date().toISOString(),
+            log: "Parse error occurred, but response extracted successfully",
+            chainLogs: chainLogs
+          }
+        );
+
+        res.json({
+          response: extractedResponse,
+          toolsUsed: [],
+          executionTime: 0,
+          intermediateSteps: [],
+          chainLogs: chainLogs,
+          parseError: true,
+          message: "Response extracted from parse error"
+        });
+        return;
+      }
+    }
     
+    // Diğer hatalar için normal error handling
+    await chatLogger.logError(
+      "Agent sorgusu işlenirken hata: " + query,
+      error,
+      "Agent execution"
+    );
+
     res.status(500).json({
-      message: "Sorgunuz işlenirken bir sunucu hatası oluştu.",
-      error: error.message,
+      error: "Agent sorgusu işlenirken hata oluştu",
+      details: error.message
     });
   }
 });
@@ -337,7 +575,7 @@ app.get("/logs/export", (req, res) => {
 // --- Sunucuyu Başlat ve Otomatik Dosya Yükle ---
 app.listen(PORT, async () => {
   console.log(`Backend sunucusu http://localhost:${PORT} adresinde çalışıyor.`);
-  // await documentProcessor.processPersonelPage();
+  await documentProcessor.processPersonelPage();
 
   if (!fs.existsSync("data")) {
     fs.mkdirSync("data");

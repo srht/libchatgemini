@@ -41,7 +41,7 @@ function App() {
           </Link>
           <Link 
             to="/settings" 
-            className={`nav-tab ${location.pathname === '/settings' ? 'active' : ''}`}
+            className={`nav-tab ${location.pathname === '/chat/settings' ? 'active' : ''}`}
           >
             ⚙️ Ayarlar
           </Link>

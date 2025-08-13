@@ -46,7 +46,8 @@ class ChatLogger {
         toolDetails: additionalInfo.toolDetails || [],
         model: additionalInfo.model,
         timestamp: additionalInfo.timestamp,
-        log: additionalInfo.log || null
+        log: additionalInfo.log || null,
+        chainLogs: additionalInfo.chainLogs || []
       } : null,
       additionalInfo: additionalInfo
     };
@@ -89,6 +90,40 @@ class ChatLogger {
       // Log field'ını da ekle
       if (additionalInfo.log) {
         logEntry += `  Log: ${this.formatObservation(additionalInfo.log)}\n`;
+      }
+      
+      // Chain Logları ekle
+      if (additionalInfo.chainLogs && additionalInfo.chainLogs.length > 0) {
+        logEntry += `  Chain Logs:\n`;
+        additionalInfo.chainLogs.forEach((chainLog, index) => {
+          logEntry += `    ${index + 1}. ${chainLog.type} (${chainLog.timestamp}):\n`;
+          logEntry += `       Run ID: ${chainLog.runId}\n`;
+          if (chainLog.parentRunId) {
+            logEntry += `       Parent Run ID: ${chainLog.parentRunId}\n`;
+          }
+          if (chainLog.chainName) {
+            logEntry += `       Chain: ${chainLog.chainName}\n`;
+          }
+          if (chainLog.llmName) {
+            logEntry += `       LLM: ${chainLog.llmName}\n`;
+          }
+          if (chainLog.toolName) {
+            logEntry += `       Tool: ${chainLog.toolName}\n`;
+          }
+          if (chainLog.inputs) {
+            logEntry += `       Inputs: ${JSON.stringify(chainLog.inputs)}\n`;
+          }
+          if (chainLog.outputs) {
+            logEntry += `       Outputs: ${JSON.stringify(chainLog.outputs)}\n`;
+          }
+          if (chainLog.action) {
+            logEntry += `       Action: ${JSON.stringify(chainLog.action)}\n`;
+          }
+          if (chainLog.text) {
+            logEntry += `       Text: ${JSON.stringify(chainLog.text)}\n`;
+          }
+          logEntry += `\n`;
+        });
       }
     }
     

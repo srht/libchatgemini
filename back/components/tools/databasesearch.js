@@ -48,8 +48,8 @@ try {
   });
 
   console.log("DynamicTool created successfully!");
-  console.log("Tool name:", getDatabasesTool.name);
-  console.log("Tool description:", getDatabasesTool.description);
+  console.log("Tool name:", getDatabaseSearchTool.name);
+  console.log("Tool description:", getDatabaseSearchTool.description);
 } catch (error) {
   console.error("Error creating DynamicTool:", error);
   // Hata durumunda basit bir tool oluştur
