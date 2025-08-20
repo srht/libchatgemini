@@ -4884,5 +4884,727 @@
     "error": null,
     "chainExecution": null,
     "additionalInfo": {}
+  },
+  {
+    "type": "chat",
+    "timestamp": "2025-08-20 12:59:42.638",
+    "userQuery": {
+      "input": "Recep",
+      "chat_history": [],
+      "context": [
+        {
+          "pageContent": "Dış Hat: 247 17 33 \n 129\ngurkanoz@itu.edu.tr\nGüneş Çetinkaya Şerik - Dış Hat: Kütüphaneci (Öğr. Gör.) - Kütüphane Sorumlusu\nYönetim\n\n 293 13 00 \nDahili: 2189\ngcserik@itu.edu.tr, Dahili: Kütüphaneci (Öğr. Gör.) - Kütüphane Sorumlusu\nYönetim\n\nDış Hat: 293 13 00 \n 2189\ngcserik@itu.edu.tr\nRecep Kurtul - Dış Hat: Kütüphaneci (Öğr. Gör.)\nÖdünç Verme\n\n 293 13 00 \nDahili: 2189\nkurtulrec@itu.edu.tr, Dahili: Kütüphaneci (Öğr. Gör.)\nÖdünç Verme\n\nDış Hat: 293 13 00 \n 2189\nkurtulrec@itu.edu.tr",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 715,
+                "to": 739
+              }
+            }
+          }
+        },
+        {
+          "pageContent": "Dış Hat: 285 30 13 \n 4116\nokaraca@itu.edu.tr\nOnur Atan - Dış Hat: Memur - Gece Görevlisi\nÖdünç Verme\n\n 285 66 19 \nDahili: -\natan20@itu.edu.tr, Dahili: Memur - Gece Görevlisi\nÖdünç Verme\n\nDış Hat: 285 66 19 \n -\natan20@itu.edu.tr\nÖmer Yarımdünya - Dış Hat: Destek Personeli\nDestek Hizmetleri\n\n 285 30 14 \nDahili: 4141\nyarimdunyaomer1@gmail.com, Dahili: Destek Personeli\nDestek Hizmetleri\n\nDış Hat: 285 30 14 \n 4141\nyarimdunyaomer1@gmail.com\nÖnder Ulunyege - Dış Hat: Destek Personeli\nTemizlik Hizmetleri\n\n 285 30 13 \nDahili: 4141, Dahili: Destek Personeli\nTemizlik Hizmetleri\n\nDış Hat: 285 30 13 \n 4141\nÖzkan Katmerlikaya - Dış Hat: Destek Personeli-Raf\nRaf Hizmetleri\n\n 285 30 13 \nDahili: 4116\nokatmerlikaya@gmail.com, Dahili: Destek Personeli-Raf\nRaf Hizmetleri\n\nDış Hat: 285 30 13 \n 4116\nokatmerlikaya@gmail.com\nReşit Turan - Dış Hat: Destek Personeli\nTemizlik Hizmetleri\n\n 285 30 13 \nDahili: 4141, Dahili: Destek Personeli\nTemizlik Hizmetleri",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 436,
+                "to": 486
+              }
+            }
+          }
+        },
+        {
+          "pageContent": "285 30 13 \nDahili: 4116\nkenanyildirim5234@gmail.com, Dahili: Destek Personeli\nRaf Hizmetleri\n\nDış Hat: 285 30 13 \n 4116\nkenanyildirim5234@gmail.com\nKerim Kaptan - Dış Hat: Destek Personeli\nÖdünç Verme\n\n 285 30 13 \nDahili: 6619\nkerimkaptan67@gmail.com, Dahili: Destek Personeli\nÖdünç Verme\n\nDış Hat: 285 30 13 \n 6619\nkerimkaptan67@gmail.com\nLeyla Akçakoca - Dış Hat: Kütüphaneci - Gece Görevlisi\nÖdünç Verme\n\n 285 30 13 \nDahili: 6619\nterkib_i.bend@hotmail.com, Dahili: Kütüphaneci - Gece Görevlisi\nÖdünç Verme\n\nDış Hat: 285 30 13 \n 6619\nterkib_i.bend@hotmail.com\nMehtap Uca - Dış Hat: Yönetici Asistanı\nYönetim\n\n 285 35 96 \nDahili: 3596\nucame@itu.edu.tr, Dahili: Yönetici Asistanı\nYönetim\n\nDış Hat: 285 35 96 \n 3596\nucame@itu.edu.tr\nMeral Uzun - Dış Hat: Destek Personeli\nRaf Hizmetleri\n\n 285 30 13 \nDahili: 4123\nmeralugurezgi@hotmail.com, Dahili: Destek Personeli\nRaf Hizmetleri\n\nDış Hat: 285 30 13 \n 4123\nmeralugurezgi@hotmail.com\nMetin Gürler - Dış Hat: Destek Personeli\nTemizlik Hizmetleri",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 318,
+                "to": 371
+              }
+            }
+          }
+        },
+        {
+          "pageContent": "285 30 13 \nDahili: 4116\nokatmerlikaya@gmail.com, Dahili: Destek Personeli-Raf\nRaf Hizmetleri\n\nDış Hat: 285 30 13 \n 4116\nokatmerlikaya@gmail.com\nReşit Turan - Dış Hat: Destek Personeli\nTemizlik Hizmetleri\n\n 285 30 13 \nDahili: 4141, Dahili: Destek Personeli\nTemizlik Hizmetleri\n\nDış Hat: 285 30 13 \n 4141\nSalih Öksüztepe - Dış Hat: Şef\nMali İşler\n\n 285 33 04 \nDahili: 3304\nsalihok@itu.edu.tr, Dahili: Şef\nMali İşler\n\nDış Hat: 285 33 04 \n 3304\nsalihok@itu.edu.tr\nSeher Demirci - Dış Hat: Destek Personeli\nTemizlik Hizmetleri\n\n \nDahili: -, Dahili: Destek Personeli\nTemizlik Hizmetleri\n\nDış Hat: \n -\nSema Çelikbaş - Dış Hat: Kütüphaneci (Öğr. Gör.) - ILL\nÖdünç Verme\n\n 285 30 13 \nDahili: 6616\nsemac@itu.edu.tr, Dahili: Kütüphaneci (Öğr. Gör.) - ILL\nÖdünç Verme\n\nDış Hat: 285 30 13 \n 6616\nsemac@itu.edu.tr\nSerdal Çaycı - Dış Hat: Yardımcı Hizmetli\nÖdünç Verme\n\n 285 30 13 \nDahili: 6619\ncaycis@itu.edu.tr, Dahili: Yardımcı Hizmetli\nÖdünç Verme",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 473,
+                "to": 527
+              }
+            }
+          }
+        },
+        {
+          "pageContent": "285 30 13 \nDahili: 6616\nsemac@itu.edu.tr, Dahili: Kütüphaneci (Öğr. Gör.) - ILL\nÖdünç Verme\n\nDış Hat: 285 30 13 \n 6616\nsemac@itu.edu.tr\nSerdal Çaycı - Dış Hat: Yardımcı Hizmetli\nÖdünç Verme\n\n 285 30 13 \nDahili: 6619\ncaycis@itu.edu.tr, Dahili: Yardımcı Hizmetli\nÖdünç Verme\n\nDış Hat: 285 30 13 \n 6619\ncaycis@itu.edu.tr\nSerhat Mürsel Köroğlu - Dış Hat: Bilgisayar Programcısı\nBilgi İşlem\n\n 285 30 13 \nDahili: 4148\nsmkoroglu@itu.edu.tr, Dahili: Bilgisayar Programcısı\nBilgi İşlem\n\nDış Hat: 285 30 13 \n 4148\nsmkoroglu@itu.edu.tr\nSerpil Aykaç - Dış Hat: Destek Personeli - Gece Görevlisi\nÖdünç Verme\n\n 285 30 13 \nDahili: 6619\nserpil.aykac@hotmail.com, Dahili: Destek Personeli - Gece Görevlisi\nÖdünç Verme\n\nDış Hat: 285 30 13 \n 6619\nserpil.aykac@hotmail.com\nSeyit Karadeniz - Dış Hat: Destek Personeli\nTemizlik Hizmetleri\n\n 285 30 13 \nDahili: 4145\nseyit_karadeniz@hotmail.com, Dahili: Destek Personeli\nTemizlik Hizmetleri",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 513,
+                "to": 560
+              }
+            }
+          }
+        }
+      ],
+      "answer": "Recep Kurtul'un iletişim bilgileri aşağıdaki gibidir:\n\n*   **Dış Hat:** <a href=\"tel:2931300\">293 13 00</a>\n*   **Dahili:** 2189\n*   **E-posta:** <a href=\"mailto:kurtulrec@itu.edu.tr\">kurtulrec@itu.edu.tr</a>\n*   **Görevi:** Kütüphaneci (Öğr. Gör.)\n*   **Birim:** Ödünç Verme"
+    },
+    "toolsUsed": [],
+    "executionTime": null,
+    "error": null,
+    "chainExecution": null,
+    "additionalInfo": {}
+  },
+  {
+    "type": "chat",
+    "timestamp": "2025-08-20 13:12:57.357",
+    "userQuery": {
+      "input": "süreli yayınlar raf düzeni",
+      "chat_history": [],
+      "context": [
+        {
+          "pageContent": "285 30 13 \nDahili: 4120\nmalay@itu.edu.tr, Dahili: Bilgisayar İşletmeni\nÖdünç Verme\n\nDış Hat: 285 30 13 \n 4120\nmalay@itu.edu.tr\nDerya Karakoç - Dış Hat: Kütüphaneci - Gece Görevlisi\nÖdünç Verme\n\n 285 30 13\nDahili: 6619, Dahili: Kütüphaneci - Gece Görevlisi\nÖdünç Verme\n\nDış Hat: 285 30 13\n 6619\nDilek Tuğba Tural - Dış Hat: Bilgisayar İşletmeni\nÖdünç Verme\n\n 285 30 13 \nDahili: 6619\nturald@itu.edu.tr, Dahili: Bilgisayar İşletmeni\nÖdünç Verme\n\nDış Hat: 285 30 13 \n 6619\nturald@itu.edu.tr\nEbru Akçeken - Dış Hat: Kütüphaneci (Öğr. Gör.)\nElektronik Kaynaklar ve Akademik Araştırma Hizmetleri\n 285 30 13 \nDahili: 4111\nakceken@itu.edu.tr, Dahili: Kütüphaneci (Öğr. Gör.)\nElektronik Kaynaklar ve Akademik Araştırma Hizmetleri\nDış Hat: 285 30 13 \n 4111\nakceken@itu.edu.tr\nEda Kara - Dış Hat: Destek Personeli\nRaf Hizmetleri\n\n 285 30 13 \nDahili: 4123\nedakuzeykara@gmail.com, Dahili: Destek Personeli\nRaf Hizmetleri",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 46,
+                "to": 89
+              }
+            }
+          }
+        },
+        {
+          "pageContent": "285 30 13 \nDahili: 4116\nokatmerlikaya@gmail.com, Dahili: Destek Personeli-Raf\nRaf Hizmetleri\n\nDış Hat: 285 30 13 \n 4116\nokatmerlikaya@gmail.com\nReşit Turan - Dış Hat: Destek Personeli\nTemizlik Hizmetleri\n\n 285 30 13 \nDahili: 4141, Dahili: Destek Personeli\nTemizlik Hizmetleri\n\nDış Hat: 285 30 13 \n 4141\nSalih Öksüztepe - Dış Hat: Şef\nMali İşler\n\n 285 33 04 \nDahili: 3304\nsalihok@itu.edu.tr, Dahili: Şef\nMali İşler\n\nDış Hat: 285 33 04 \n 3304\nsalihok@itu.edu.tr\nSeher Demirci - Dış Hat: Destek Personeli\nTemizlik Hizmetleri\n\n \nDahili: -, Dahili: Destek Personeli\nTemizlik Hizmetleri\n\nDış Hat: \n -\nSema Çelikbaş - Dış Hat: Kütüphaneci (Öğr. Gör.) - ILL\nÖdünç Verme\n\n 285 30 13 \nDahili: 6616\nsemac@itu.edu.tr, Dahili: Kütüphaneci (Öğr. Gör.) - ILL\nÖdünç Verme\n\nDış Hat: 285 30 13 \n 6616\nsemac@itu.edu.tr\nSerdal Çaycı - Dış Hat: Yardımcı Hizmetli\nÖdünç Verme\n\n 285 30 13 \nDahili: 6619\ncaycis@itu.edu.tr, Dahili: Yardımcı Hizmetli\nÖdünç Verme",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 473,
+                "to": 527
+              }
+            }
+          }
+        },
+        {
+          "pageContent": "Dış Hat: 247 17 33 \n 129\ngurkanoz@itu.edu.tr\nGüneş Çetinkaya Şerik - Dış Hat: Kütüphaneci (Öğr. Gör.) - Kütüphane Sorumlusu\nYönetim\n\n 293 13 00 \nDahili: 2189\ngcserik@itu.edu.tr, Dahili: Kütüphaneci (Öğr. Gör.) - Kütüphane Sorumlusu\nYönetim\n\nDış Hat: 293 13 00 \n 2189\ngcserik@itu.edu.tr\nRecep Kurtul - Dış Hat: Kütüphaneci (Öğr. Gör.)\nÖdünç Verme\n\n 293 13 00 \nDahili: 2189\nkurtulrec@itu.edu.tr, Dahili: Kütüphaneci (Öğr. Gör.)\nÖdünç Verme\n\nDış Hat: 293 13 00 \n 2189\nkurtulrec@itu.edu.tr",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 715,
+                "to": 739
+              }
+            }
+          }
+        },
+        {
+          "pageContent": "285 30 13 \nDahili: 6616\nsemac@itu.edu.tr, Dahili: Kütüphaneci (Öğr. Gör.) - ILL\nÖdünç Verme\n\nDış Hat: 285 30 13 \n 6616\nsemac@itu.edu.tr\nSerdal Çaycı - Dış Hat: Yardımcı Hizmetli\nÖdünç Verme\n\n 285 30 13 \nDahili: 6619\ncaycis@itu.edu.tr, Dahili: Yardımcı Hizmetli\nÖdünç Verme\n\nDış Hat: 285 30 13 \n 6619\ncaycis@itu.edu.tr\nSerhat Mürsel Köroğlu - Dış Hat: Bilgisayar Programcısı\nBilgi İşlem\n\n 285 30 13 \nDahili: 4148\nsmkoroglu@itu.edu.tr, Dahili: Bilgisayar Programcısı\nBilgi İşlem\n\nDış Hat: 285 30 13 \n 4148\nsmkoroglu@itu.edu.tr\nSerpil Aykaç - Dış Hat: Destek Personeli - Gece Görevlisi\nÖdünç Verme\n\n 285 30 13 \nDahili: 6619\nserpil.aykac@hotmail.com, Dahili: Destek Personeli - Gece Görevlisi\nÖdünç Verme\n\nDış Hat: 285 30 13 \n 6619\nserpil.aykac@hotmail.com\nSeyit Karadeniz - Dış Hat: Destek Personeli\nTemizlik Hizmetleri\n\n 285 30 13 \nDahili: 4145\nseyit_karadeniz@hotmail.com, Dahili: Destek Personeli\nTemizlik Hizmetleri",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 513,
+                "to": 560
+              }
+            }
+          }
+        },
+        {
+          "pageContent": "Dış Hat: 293 13 00 \n 2163\npolatenes@itu.edu.tr\nFatma İnal - Dış Hat: Kütüphaneci (Öğr. Gör.) - Kütüphane Sorumlusu Yönetim\nYönetim\n\n 293 13 00 \nDahili: 2163\ninalf@itu.edu.tr, Dahili: Kütüphaneci (Öğr. Gör.) - Kütüphane Sorumlusu Yönetim\nYönetim\n\nDış Hat: 293 13 00 \n 2163\ninalf@itu.edu.tr\nOsman Aytaç - Dış Hat: Kütüphaneci (Öğr. Gör.)\nElektronik Kaynaklar ve Akademik Araştırma Hizmetleri\n 293 13 00 \nDahili: 2163\naytaco@itu.edu.tr, Dahili: Kütüphaneci (Öğr. Gör.)\nElektronik Kaynaklar ve Akademik Araştırma Hizmetleri\nDış Hat: 293 13 00 \n 2163\naytaco@itu.edu.tr\nAbdurrahman Murat Ayataç - Dış Hat: Kütüphaneci (Öğr. Gör.) - Kütüphane Sorumlusu\nYönetim\n\n 293 13 00 \nDahili: 2346\nayatacm@itu.edu.tr, Dahili: Kütüphaneci (Öğr. Gör.) - Kütüphane Sorumlusu\nYönetim\n\nDış Hat: 293 13 00 \n 2346\nayatacm@itu.edu.tr\nİclal Işık - Dış Hat: Kütüphaneci (Öğr. Gör.)\nTeknik Hizmetler\n\n 293 13 00 \nDahili: 2346\nkarakas@itu.edu.tr, Dahili: Kütüphaneci (Öğr. Gör.)\nTeknik Hizmetler",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 644,
+                "to": 684
+              }
+            }
+          }
+        }
+      ],
+      "answer": "Üzgünüm, bu konu hakkında belgemde yeterli bilgi bulunmuyor."
+    },
+    "toolsUsed": [],
+    "executionTime": null,
+    "error": null,
+    "chainExecution": null,
+    "additionalInfo": {}
+  },
+  {
+    "type": "chat",
+    "timestamp": "2025-08-20 13:15:07.073",
+    "userQuery": {
+      "input": "süreli yayınlar raflara nasıl bir düzen içinde yerleştiriliyor",
+      "chat_history": [],
+      "context": [
+        {
+          "pageContent": "Öğrenci  Dolapları: Mustafa İnan Kütüphanesinin giriş katında bulunan dolapların anahtarlarını, Ödünç \nVerme  Bankosu’ndan kimlik karşılığında 5 saatliğine ödünç alabilir, süreyi 3  kez  uzatabilirsiniz. Gecikme \ndurumunda saatlik gecikme ücreti alınır. Anahtarı kaybetme durumunda ise kaybetme bedeli \nalınmaktadır. \n \nTuvaletler: Kütüphaneye girişte, sol taraftadır. \n \nBirinci Kat \nSol koridorda (bina arka cephesinde yer alan raf bloğu) Q ile başlayan kitap koleksiyonu, sağ koridorda (bina \nön cephesinde yer alan raf bloğu) R ile başlayan Z’ye kadar devam eden kitap koleksiyonu yer almaktadır. \nİkinci ve Üçüncü Kat  \n \nSüreli Yayınlar (dergiler) koleksiyonu yer almaktadır. Aranılan bir derginin hangi rafta olduğu -kitaplarda \nolduğu gibi- yer numarası yardımıyla bulunabilir. Süreli yayınlar ödünç verilmez, kütüphane içinde kullanılır.  \nÜçüncü katta, Nadir Eserler Koleksiyonu ve İTÜ Yayınları Arşivi yer almaktadır.",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 170,
+                "to": 184
+              }
+            }
+          }
+        },
+        {
+          "pageContent": "ayırtmaları var (İADE TARİHİ +AYIRTMA SAYISI yazılıdır), kayıp, ciltte  veya  ödünç verilmeyen bir yayın \nolabilir.  \n \nRafta olduğu görülen yayını, künyesinde belirtilen yerde, yer numarasına göre bulabilirsiniz.  \n \nSistemde rafta görünmesine karşın yerinde bulamadığınız yayınlar o an başka bir kullanıcı tarafından \nsalonlarda kullanılıyor olabilir.    Statüsü RAFTA (CHECK SHELF) olan ve farklı zamanda yaptığınız aramaya \nrağmen yerinde bulamadığınız yayınlar için Danışma Masası’na başvurunuz.  \n \nBibliyografik Künye \n \nBibliyografik künye, bir bilgi kaynağının kimlik kartı olarak tanımlanabilir. Bir künye o kaynağın adı,",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 234,
+                "to": 245
+              }
+            }
+          }
+        },
+        {
+          "pageContent": "Katalog   Tarama, kaynakların bibliyografik   künyelerindeki bilgilere  göre  yapılan  bir  arama  şeklidir. \nKütüphane Kataloğu, koleksiyonda bulunan tüm bilgi kaynaklarının bibliyografik künyelerini içerir.   \n \nÖncelikle yayının bulunduğu yer, yer numarası ve statüsü kontrol edilmelidir.  \n \nYayının  bulunduğu yer: Yayın, merkez veya şube kütüphanelerinden  birinde  ya  da  bu  kütüphanelerin  özel \nkoleksiyonlarında bulunuyor olabilir. Mustafa İnan Kütüphanesi,  Makina Fakültesi  Kütüphanesi,  Mustafa \nİnan Kütüphanesi Görsel İşitsel Merkez gibi.  \n \nYer numarası: Yayına ait yer numarasını not edin. \n \nStatüsü: Yayın raftaki yerinde (RAFTA), kullanıcı üzerinde (İADE TARİHİ yazılıdır), kullanıcı üzerinde ve \nayırtmaları var (İADE TARİHİ +AYIRTMA SAYISI yazılıdır), kayıp, ciltte  veya  ödünç verilmeyen bir yayın \nolabilir.  \n \nRafta olduğu görülen yayını, künyesinde belirtilen yerde, yer numarasına göre bulabilirsiniz.",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 222,
+                "to": 237
+              }
+            }
+          }
+        },
+        {
+          "pageContent": "olduğu gibi- yer numarası yardımıyla bulunabilir. Süreli yayınlar ödünç verilmez, kütüphane içinde kullanılır.  \nÜçüncü katta, Nadir Eserler Koleksiyonu ve İTÜ Yayınları Arşivi yer almaktadır. \n \nNadir Eserler Koleksiyonu mühendislik, teknoloji, cebir, geometri, gemi tasarımları, yapı ve inşaat \nkonularında 1694’ten 1928 yılları aralığını kapsayan, 5000 civarında nadir eserden oluşmaktadır. \n \nİTÜ Yayınları Arşivi: Koleksiyonumuzda; Mühendishane-i  Berrî-i  Hümâyûn,  Mühendis Mektebi  ve İstanbul \nTeknik   Üniversitesi   bünyesinde 1800’lü  yıllardan   günümüze   kadar basılmış  olan  3000’e  yakın  eser \nbulunmaktadır. İTÜ Yayınları’nın birer kopyası gelecek kuşaklara aktarılmak üzere İTÜ Yayınları Arşivi’nde \nyer almakta, ödünç verilmemektedir. Detaylı bilgi referans kütüphanecilerinden (Danışma Masası) alınabilir. \n  \nSesli Çalışma Salonu  \nKütüphane’ye girişte soldaki merdivenlerle ulaşılan Salon’da grup çalışmaları yapılabilir, Kütüphane’nin",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 183,
+                "to": 195
+              }
+            }
+          }
+        },
+        {
+          "pageContent": "Koleksiyonun yerleşiminde Library  of  Congress Sınıflama Sistemi kullanılmaktadır. Bu sistemde konuların \nharf ve rakamlardan oluşan karşılıklarına yer numarası adı verilir. Yer numarası her bilgi kaynağı için tektir, \nkonusal düzende ve kaynağın koleksiyonda bulunduğu yeri göstermektedir. \n \nAşağıda çeşitli konulardaki yayınlara ait yer numarası örnekleri verilmiştir; \n \nSosyal Bilimler      Müzik  Matematik Elektronik Denizcilik \n \nHM 61    ML 410  QA 303  TK 7816 VM 391  \n.Ö93    .S932                 .B35  .H36  .S43 \n2008    .A13                2006  2003  2005 \n 2004 \n \nAşağıda bir kitabın bibliyografik künyesi ve yer numarası görülmektedir; \n \nBalcı, Mustafa. \n Ankara : Balcı Yayınları, 2006. \n 4. basım.  \n 2 cilt ; şekil, 25 cm. \n    \n \n \n \n \n \n \n \n \n \n \n \n \n \n \nLibrary of Congress Sınıflama Sistemi tarafından verilen matematik konusuna ait numarayı,   \nYazar soyadına göre verilmiş ”cutter” numarasını, \nKitabın yayın yılını gösterir.",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 71,
+                "to": 107
+              }
+            }
+          }
+        }
+      ],
+      "answer": "Süreli yayınlar (dergiler) koleksiyonu, tıpkı kitaplarda olduğu gibi, **yer numarası** yardımıyla bulunabilir. Koleksiyonun yerleşiminde **Library of Congress Sınıflama Sistemi** kullanılmaktadır. Bu sistemde, konuların harf ve rakamlardan oluşan karşılıklarına yer numarası adı verilir ve bu numaralar her bilgi kaynağı için tektir, konusal düzende kaynağın koleksiyonda bulunduğu yeri gösterir."
+    },
+    "toolsUsed": [],
+    "executionTime": null,
+    "error": null,
+    "chainExecution": null,
+    "additionalInfo": {}
+  },
+  {
+    "type": "chat",
+    "timestamp": "2025-08-20 13:18:43.641",
+    "userQuery": {
+      "input": "PQ2286.A68 Ç36 2019",
+      "chat_history": [],
+      "context": [
+        {
+          "pageContent": "285 30 13 \nDahili: 4120\nmalay@itu.edu.tr, Dahili: Bilgisayar İşletmeni\nÖdünç Verme\n\nDış Hat: 285 30 13 \n 4120\nmalay@itu.edu.tr\nDerya Karakoç - Dış Hat: Kütüphaneci - Gece Görevlisi\nÖdünç Verme\n\n 285 30 13\nDahili: 6619, Dahili: Kütüphaneci - Gece Görevlisi\nÖdünç Verme\n\nDış Hat: 285 30 13\n 6619\nDilek Tuğba Tural - Dış Hat: Bilgisayar İşletmeni\nÖdünç Verme\n\n 285 30 13 \nDahili: 6619\nturald@itu.edu.tr, Dahili: Bilgisayar İşletmeni\nÖdünç Verme\n\nDış Hat: 285 30 13 \n 6619\nturald@itu.edu.tr\nEbru Akçeken - Dış Hat: Kütüphaneci (Öğr. Gör.)\nElektronik Kaynaklar ve Akademik Araştırma Hizmetleri\n 285 30 13 \nDahili: 4111\nakceken@itu.edu.tr, Dahili: Kütüphaneci (Öğr. Gör.)\nElektronik Kaynaklar ve Akademik Araştırma Hizmetleri\nDış Hat: 285 30 13 \n 4111\nakceken@itu.edu.tr\nEda Kara - Dış Hat: Destek Personeli\nRaf Hizmetleri\n\n 285 30 13 \nDahili: 4123\nedakuzeykara@gmail.com, Dahili: Destek Personeli\nRaf Hizmetleri",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 46,
+                "to": 89
+              }
+            }
+          }
+        },
+        {
+          "pageContent": "285 66 23 \nDahili: -\nfatmabekir2023@gmail.com, Dahili: Güvenlik Görevlisi\nGüvenlik Hizmetleri\n\nDış Hat: 285 66 23 \n -\nfatmabekir2023@gmail.com\nFigen Aksu - Dış Hat: Kütüphaneci (Öğr. Gör.)\nTeknik Hizmetler\n\n 285 30 13 \nDahili: 4106\naksuf@itu.edu.tr, Dahili: Kütüphaneci (Öğr. Gör.)\nTeknik Hizmetler\n\nDış Hat: 285 30 13 \n 4106\naksuf@itu.edu.tr\nGamze Küreksiz - Dış Hat: Destek Personeli\nRaf Hizmetleri\n\n 285 30 13 \nDahili: 4123\nmiyagy37@gmail.com, Dahili: Destek Personeli\nRaf Hizmetleri\n\nDış Hat: 285 30 13 \n 4123\nmiyagy37@gmail.com\nGökhan Usta - Dış Hat: Kütüphaneci (Öğr. Gör.)\nTeknik Hizmetler\n\n 285 30 13 \nDahili: 4135\ngusta@itu.edu.tr, Dahili: Kütüphaneci (Öğr. Gör.)\nTeknik Hizmetler\n\nDış Hat: 285 30 13 \n 4135\ngusta@itu.edu.tr\nGöknur Aslan - Dış Hat: Daire Başkanı\nYönetim\n\n 285 35 96 \nDahili: 3596\naslang@itu.edu.tr, Dahili: Daire Başkanı\nYönetim",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 170,
+                "to": 217
+              }
+            }
+          }
+        },
+        {
+          "pageContent": "285 30 13 \nDahili: 6616\nsemac@itu.edu.tr, Dahili: Kütüphaneci (Öğr. Gör.) - ILL\nÖdünç Verme\n\nDış Hat: 285 30 13 \n 6616\nsemac@itu.edu.tr\nSerdal Çaycı - Dış Hat: Yardımcı Hizmetli\nÖdünç Verme\n\n 285 30 13 \nDahili: 6619\ncaycis@itu.edu.tr, Dahili: Yardımcı Hizmetli\nÖdünç Verme\n\nDış Hat: 285 30 13 \n 6619\ncaycis@itu.edu.tr\nSerhat Mürsel Köroğlu - Dış Hat: Bilgisayar Programcısı\nBilgi İşlem\n\n 285 30 13 \nDahili: 4148\nsmkoroglu@itu.edu.tr, Dahili: Bilgisayar Programcısı\nBilgi İşlem\n\nDış Hat: 285 30 13 \n 4148\nsmkoroglu@itu.edu.tr\nSerpil Aykaç - Dış Hat: Destek Personeli - Gece Görevlisi\nÖdünç Verme\n\n 285 30 13 \nDahili: 6619\nserpil.aykac@hotmail.com, Dahili: Destek Personeli - Gece Görevlisi\nÖdünç Verme\n\nDış Hat: 285 30 13 \n 6619\nserpil.aykac@hotmail.com\nSeyit Karadeniz - Dış Hat: Destek Personeli\nTemizlik Hizmetleri\n\n 285 30 13 \nDahili: 4145\nseyit_karadeniz@hotmail.com, Dahili: Destek Personeli\nTemizlik Hizmetleri",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 513,
+                "to": 560
+              }
+            }
+          }
+        },
+        {
+          "pageContent": "285 30 13 \nDahili: 4103\ntekinmursel@itu.edu.tr, Dahili: Bilgisayar Programcısı\nBilgi İşlem\n\nDış Hat: 285 30 13 \n 4103\ntekinmursel@itu.edu.tr\nNafiye Aslan Alabak - Dış Hat: Kütüphaneci (Öğr. Gör.)\nKoleksiyon Geliştirme\n\n 285 30 13 \nDahili: 4112\nnaslan@itu.edu.tr, Dahili: Kütüphaneci (Öğr. Gör.)\nKoleksiyon Geliştirme\n\nDış Hat: 285 30 13 \n 4112\nnaslan@itu.edu.tr\nNermin Yıldırım - Dış Hat: Destek Personeli\nTemizlik Hizmetleri\n\n 285 30 13 \nDahili: 4141, Dahili: Destek Personeli\nTemizlik Hizmetleri\n\nDış Hat: 285 30 13 \n 4141\nOktay Karaca - Dış Hat: Yardımcı Hizmetli\nYönetim\n\n 285 30 13 \nDahili: 4116\nokaraca@itu.edu.tr, Dahili: Yardımcı Hizmetli\nYönetim\n\nDış Hat: 285 30 13 \n 4116\nokaraca@itu.edu.tr\nOnur Atan - Dış Hat: Memur - Gece Görevlisi\nÖdünç Verme\n\n 285 66 19 \nDahili: -\natan20@itu.edu.tr, Dahili: Memur - Gece Görevlisi\nÖdünç Verme\n\nDış Hat: 285 66 19 \n -\natan20@itu.edu.tr\nÖmer Yarımdünya - Dış Hat: Destek Personeli\nDestek Hizmetleri",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 400,
+                "to": 451
+              }
+            }
+          }
+        },
+        {
+          "pageContent": "285 30 13 \nDahili: 4135\ngusta@itu.edu.tr, Dahili: Kütüphaneci (Öğr. Gör.)\nTeknik Hizmetler\n\nDış Hat: 285 30 13 \n 4135\ngusta@itu.edu.tr\nGöknur Aslan - Dış Hat: Daire Başkanı\nYönetim\n\n 285 35 96 \nDahili: 3596\naslang@itu.edu.tr, Dahili: Daire Başkanı\nYönetim\n\nDış Hat: 285 35 96 \n 3596\naslang@itu.edu.tr\nGülçin Kubat - Dış Hat: Kütüphaneci (Öğr. Gör.)\nElektronik Kaynaklar ve Akademik Araştırma Hizmetleri\n 285 30 13 \nDahili: 4118\ndemirgul@itu.edu.tr, Dahili: Kütüphaneci (Öğr. Gör.)\nElektronik Kaynaklar ve Akademik Araştırma Hizmetleri\nDış Hat: 285 30 13 \n 4118\ndemirgul@itu.edu.tr\nGülsüm Okan - Dış Hat: Kütüphaneci - Gece Görevlisi\nÖdünç Verme\n\n 285 66 19 \nDahili: -\nglsm.okankc@gmail.com, Dahili: Kütüphaneci - Gece Görevlisi\nÖdünç Verme\n\nDış Hat: 285 66 19 \n -\nglsm.okankc@gmail.com\nGülüzar Evran - Dış Hat: Teknisyen\nYönetim\n\n 285 30 13 \nDahili: 4127\neser@itu.edu.tr, Dahili: Teknisyen\nYönetim",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 203,
+                "to": 248
+              }
+            }
+          }
+        }
+      ],
+      "answer": "Üzgünüm, bu konu hakkında belgemde yeterli bilgi bulunmuyor."
+    },
+    "toolsUsed": [],
+    "executionTime": null,
+    "error": null,
+    "chainExecution": null,
+    "additionalInfo": {}
+  },
+  {
+    "type": "chat",
+    "timestamp": "2025-08-20 13:18:47.859",
+    "userQuery": {
+      "input": "PQ2286.A68 E73 2010",
+      "chat_history": [],
+      "context": [
+        {
+          "pageContent": "285 30 13 \nDahili: 4123\nedakuzeykara@gmail.com, Dahili: Destek Personeli\nRaf Hizmetleri\n\nDış Hat: 285 30 13 \n 4123\nedakuzeykara@gmail.com\nEmine Köroğlu - Dış Hat: Bilgisayar İşletmeni\nTeknik Hizmetler\n\n 285 30 13 \nDahili: 4133\nkayae@itu.edu.tr, Dahili: Bilgisayar İşletmeni\nTeknik Hizmetler\n\nDış Hat: 285 30 13 \n 4133\nkayae@itu.edu.tr\nErdal Işık - Dış Hat: Kütüphaneci (Öğr. Gör.) - Bölüm Sorumlusu\nTeknik Hizmetler\n\n 285 66 26 \nDahili: 6626\nerdal@itu.edu.tr, Dahili: Kütüphaneci (Öğr. Gör.) - Bölüm Sorumlusu\nTeknik Hizmetler\n\nDış Hat: 285 66 26 \n 6626\nerdal@itu.edu.tr\nErdoğan Dursun - Dış Hat: Destek Personeli\nTemizlik Hizmetleri\n\n 285 30 13 \nDahili: 4141, Dahili: Destek Personeli\nTemizlik Hizmetleri\n\nDış Hat: 285 30 13 \n 4141\nErhan Evran - Dış Hat: Bilgisayar İşletmeni\nÖdünç Verme\n\n 285 30 13 \nDahili: 6619\nerhan@itu.edu.tr, Dahili: Bilgisayar İşletmeni\nÖdünç Verme\n\nDış Hat: 285 30 13 \n 6619\nerhan@itu.edu.tr\nEsin Arslan - Dış Hat: Yardımcı Hizmetli\nTeknik Hizmetler",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 86,
+                "to": 137
+              }
+            }
+          }
+        },
+        {
+          "pageContent": "285 30 13 \nDahili: 4123\nmeralugurezgi@hotmail.com, Dahili: Destek Personeli\nRaf Hizmetleri\n\nDış Hat: 285 30 13 \n 4123\nmeralugurezgi@hotmail.com\nMetin Gürler - Dış Hat: Destek Personeli\nTemizlik Hizmetleri\n\n 285 30 13 \nDahili: 4141, Dahili: Destek Personeli\nTemizlik Hizmetleri\n\nDış Hat: 285 30 13 \n 4141\nMuhammed Doğu - Dış Hat: Destek Personeli\nTemizlik Hizmetleri\n\n 285 30 13 \nDahili: 4141, Dahili: Destek Personeli\nTemizlik Hizmetleri\n\nDış Hat: 285 30 13 \n 4141\nMuteber Karadeniz - Dış Hat: Destek Personeli\nTemizlik Hizmetleri\n\n 285 30 13 \nDahili: 4141, Dahili: Destek Personeli\nTemizlik Hizmetleri\n\nDış Hat: 285 30 13 \n 4141\nMürsel Tekin - Dış Hat: Bilgisayar Programcısı\nBilgi İşlem\n\n 285 30 13 \nDahili: 4103\ntekinmursel@itu.edu.tr, Dahili: Bilgisayar Programcısı\nBilgi İşlem\n\nDış Hat: 285 30 13 \n 4103\ntekinmursel@itu.edu.tr\nNafiye Aslan Alabak - Dış Hat: Kütüphaneci (Öğr. Gör.)\nKoleksiyon Geliştirme",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 362,
+                "to": 409
+              }
+            }
+          }
+        },
+        {
+          "pageContent": "285 30 13 \nDahili: 4103\ntekinmursel@itu.edu.tr, Dahili: Bilgisayar Programcısı\nBilgi İşlem\n\nDış Hat: 285 30 13 \n 4103\ntekinmursel@itu.edu.tr\nNafiye Aslan Alabak - Dış Hat: Kütüphaneci (Öğr. Gör.)\nKoleksiyon Geliştirme\n\n 285 30 13 \nDahili: 4112\nnaslan@itu.edu.tr, Dahili: Kütüphaneci (Öğr. Gör.)\nKoleksiyon Geliştirme\n\nDış Hat: 285 30 13 \n 4112\nnaslan@itu.edu.tr\nNermin Yıldırım - Dış Hat: Destek Personeli\nTemizlik Hizmetleri\n\n 285 30 13 \nDahili: 4141, Dahili: Destek Personeli\nTemizlik Hizmetleri\n\nDış Hat: 285 30 13 \n 4141\nOktay Karaca - Dış Hat: Yardımcı Hizmetli\nYönetim\n\n 285 30 13 \nDahili: 4116\nokaraca@itu.edu.tr, Dahili: Yardımcı Hizmetli\nYönetim\n\nDış Hat: 285 30 13 \n 4116\nokaraca@itu.edu.tr\nOnur Atan - Dış Hat: Memur - Gece Görevlisi\nÖdünç Verme\n\n 285 66 19 \nDahili: -\natan20@itu.edu.tr, Dahili: Memur - Gece Görevlisi\nÖdünç Verme\n\nDış Hat: 285 66 19 \n -\natan20@itu.edu.tr\nÖmer Yarımdünya - Dış Hat: Destek Personeli\nDestek Hizmetleri",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 400,
+                "to": 451
+              }
+            }
+          }
+        },
+        {
+          "pageContent": "285 30 13 \nDahili: 4120\nmalay@itu.edu.tr, Dahili: Bilgisayar İşletmeni\nÖdünç Verme\n\nDış Hat: 285 30 13 \n 4120\nmalay@itu.edu.tr\nDerya Karakoç - Dış Hat: Kütüphaneci - Gece Görevlisi\nÖdünç Verme\n\n 285 30 13\nDahili: 6619, Dahili: Kütüphaneci - Gece Görevlisi\nÖdünç Verme\n\nDış Hat: 285 30 13\n 6619\nDilek Tuğba Tural - Dış Hat: Bilgisayar İşletmeni\nÖdünç Verme\n\n 285 30 13 \nDahili: 6619\nturald@itu.edu.tr, Dahili: Bilgisayar İşletmeni\nÖdünç Verme\n\nDış Hat: 285 30 13 \n 6619\nturald@itu.edu.tr\nEbru Akçeken - Dış Hat: Kütüphaneci (Öğr. Gör.)\nElektronik Kaynaklar ve Akademik Araştırma Hizmetleri\n 285 30 13 \nDahili: 4111\nakceken@itu.edu.tr, Dahili: Kütüphaneci (Öğr. Gör.)\nElektronik Kaynaklar ve Akademik Araştırma Hizmetleri\nDış Hat: 285 30 13 \n 4111\nakceken@itu.edu.tr\nEda Kara - Dış Hat: Destek Personeli\nRaf Hizmetleri\n\n 285 30 13 \nDahili: 4123\nedakuzeykara@gmail.com, Dahili: Destek Personeli\nRaf Hizmetleri",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 46,
+                "to": 89
+              }
+            }
+          }
+        },
+        {
+          "pageContent": "Dış Hat: 285 30 13 \n 4141\nErhan Evran - Dış Hat: Bilgisayar İşletmeni\nÖdünç Verme\n\n 285 30 13 \nDahili: 6619\nerhan@itu.edu.tr, Dahili: Bilgisayar İşletmeni\nÖdünç Verme\n\nDış Hat: 285 30 13 \n 6619\nerhan@itu.edu.tr\nEsin Arslan - Dış Hat: Yardımcı Hizmetli\nTeknik Hizmetler\n\n 285 30 13 \nDahili: 4108\narslanes@itu.edu.tr, Dahili: Yardımcı Hizmetli\nTeknik Hizmetler\n\nDış Hat: 285 30 13 \n 4108\narslanes@itu.edu.tr\nFatih Özcan - Dış Hat: Bilgisayar İşletmeni\n\n\n 285 30 13 \nDahili: 4128\nozcanfa@itu.edu.tr, Dahili: Bilgisayar İşletmeni\n\n\nDış Hat: 285 30 13 \n 4128\nozcanfa@itu.edu.tr\nFatma Yavuz - Dış Hat: Kütüphaneci\nElektronik Kaynaklar ve Akademik Araştırma Hizmetleri\n 285 30 13 \nDahili: 4110\nyavuzf@itu.edu.tr, Dahili: Kütüphaneci\nElektronik Kaynaklar ve Akademik Araştırma Hizmetleri\nDış Hat: 285 30 13 \n 4110\nyavuzf@itu.edu.tr\nFatma Bakır - Dış Hat: Güvenlik Görevlisi\nGüvenlik Hizmetleri\n\n 285 66 23 \nDahili: -\nfatmabekir2023@gmail.com, Dahili: Güvenlik Görevlisi\nGüvenlik Hizmetleri",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 123,
+                "to": 173
+              }
+            }
+          }
+        }
+      ],
+      "answer": "Üzgünüm, bu konu hakkında belgemde yeterli bilgi bulunmuyor."
+    },
+    "toolsUsed": [],
+    "executionTime": null,
+    "error": null,
+    "chainExecution": null,
+    "additionalInfo": {}
+  },
+  {
+    "type": "chat",
+    "timestamp": "2025-08-20 13:20:45.756",
+    "userQuery": {
+      "input": "PQ2286.A68 Ç36 2019",
+      "chat_history": [],
+      "context": [
+        {
+          "pageContent": "Aytaç Kayadevir - Dış Hat: Kütüphaneci\nTeknik Hizmetler\n\n 285 30 13 \nDahili: 4119\nkayadevir@itu.edu.tr, Dahili: Kütüphaneci\nTeknik Hizmetler\n\nDış Hat: 285 30 13 \n 4119\nkayadevir@itu.edu.tr\nBasri Kadir Şekermen - Dış Hat: Memur\nYönetim\n\n 285 30 13 \nDahili: 4137\nsekermen@itu.edu.tr, Dahili: Memur\nYönetim\n\nDış Hat: 285 30 13 \n 4137\nsekermen@itu.edu.tr\nBelkız Özgenç - Dış Hat: Bilgisayar İşletmeni\nKoleksiyon Geliştirme\n\n 285 30 13 \nDahili: 4104\naktayb@itu.edu.tr, Dahili: Bilgisayar İşletmeni\nKoleksiyon Geliştirme\n\nDış Hat: 285 30 13 \n 4104\naktayb@itu.edu.tr\nBurcu Bulut - Dış Hat: Kütüphaneci (Öğr. Gör.)\nElektronik Kaynaklar ve Akademik Araştırma Hizmetleri\n 285 30 13 \nDahili: 6625\nbulutburcu@itu.edu.tr, Dahili: Kütüphaneci (Öğr. Gör.)\nElektronik Kaynaklar ve Akademik Araştırma Hizmetleri\nDış Hat: 285 30 13 \n 6625\nbulutburcu@itu.edu.tr\nCihan Malay - Dış Hat: Bilgisayar İşletmeni\nÖdünç Verme\n\n 285 30 13 \nDahili: 4120\nmalay@itu.edu.tr, Dahili: Bilgisayar İşletmeni\nÖdünç Verme",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 1,
+                "to": 49
+              }
+            }
+          }
+        },
+        {
+          "pageContent": "285 30 13 \nDahili: 4120\nmalay@itu.edu.tr, Dahili: Bilgisayar İşletmeni\nÖdünç Verme\n\nDış Hat: 285 30 13 \n 4120\nmalay@itu.edu.tr\nDerya Karakoç - Dış Hat: Kütüphaneci - Gece Görevlisi\nÖdünç Verme\n\n 285 30 13\nDahili: 6619, Dahili: Kütüphaneci - Gece Görevlisi\nÖdünç Verme\n\nDış Hat: 285 30 13\n 6619\nDilek Tuğba Tural - Dış Hat: Bilgisayar İşletmeni\nÖdünç Verme\n\n 285 30 13 \nDahili: 6619\nturald@itu.edu.tr, Dahili: Bilgisayar İşletmeni\nÖdünç Verme\n\nDış Hat: 285 30 13 \n 6619\nturald@itu.edu.tr\nEbru Akçeken - Dış Hat: Kütüphaneci (Öğr. Gör.)\nElektronik Kaynaklar ve Akademik Araştırma Hizmetleri\n 285 30 13 \nDahili: 4111\nakceken@itu.edu.tr, Dahili: Kütüphaneci (Öğr. Gör.)\nElektronik Kaynaklar ve Akademik Araştırma Hizmetleri\nDış Hat: 285 30 13 \n 4111\nakceken@itu.edu.tr\nEda Kara - Dış Hat: Destek Personeli\nRaf Hizmetleri\n\n 285 30 13 \nDahili: 4123\nedakuzeykara@gmail.com, Dahili: Destek Personeli\nRaf Hizmetleri",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 46,
+                "to": 89
+              }
+            }
+          }
+        },
+        {
+          "pageContent": "285 30 13 \nDahili: 4123\nedakuzeykara@gmail.com, Dahili: Destek Personeli\nRaf Hizmetleri\n\nDış Hat: 285 30 13 \n 4123\nedakuzeykara@gmail.com\nEmine Köroğlu - Dış Hat: Bilgisayar İşletmeni\nTeknik Hizmetler\n\n 285 30 13 \nDahili: 4133\nkayae@itu.edu.tr, Dahili: Bilgisayar İşletmeni\nTeknik Hizmetler\n\nDış Hat: 285 30 13 \n 4133\nkayae@itu.edu.tr\nErdal Işık - Dış Hat: Kütüphaneci (Öğr. Gör.) - Bölüm Sorumlusu\nTeknik Hizmetler\n\n 285 66 26 \nDahili: 6626\nerdal@itu.edu.tr, Dahili: Kütüphaneci (Öğr. Gör.) - Bölüm Sorumlusu\nTeknik Hizmetler\n\nDış Hat: 285 66 26 \n 6626\nerdal@itu.edu.tr\nErdoğan Dursun - Dış Hat: Destek Personeli\nTemizlik Hizmetleri\n\n 285 30 13 \nDahili: 4141, Dahili: Destek Personeli\nTemizlik Hizmetleri\n\nDış Hat: 285 30 13 \n 4141\nErhan Evran - Dış Hat: Bilgisayar İşletmeni\nÖdünç Verme\n\n 285 30 13 \nDahili: 6619\nerhan@itu.edu.tr, Dahili: Bilgisayar İşletmeni\nÖdünç Verme\n\nDış Hat: 285 30 13 \n 6619\nerhan@itu.edu.tr\nEsin Arslan - Dış Hat: Yardımcı Hizmetli\nTeknik Hizmetler",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 86,
+                "to": 137
+              }
+            }
+          }
+        },
+        {
+          "pageContent": "Dış Hat: 285 30 13 \n 4141\nErhan Evran - Dış Hat: Bilgisayar İşletmeni\nÖdünç Verme\n\n 285 30 13 \nDahili: 6619\nerhan@itu.edu.tr, Dahili: Bilgisayar İşletmeni\nÖdünç Verme\n\nDış Hat: 285 30 13 \n 6619\nerhan@itu.edu.tr\nEsin Arslan - Dış Hat: Yardımcı Hizmetli\nTeknik Hizmetler\n\n 285 30 13 \nDahili: 4108\narslanes@itu.edu.tr, Dahili: Yardımcı Hizmetli\nTeknik Hizmetler\n\nDış Hat: 285 30 13 \n 4108\narslanes@itu.edu.tr\nFatih Özcan - Dış Hat: Bilgisayar İşletmeni\n\n\n 285 30 13 \nDahili: 4128\nozcanfa@itu.edu.tr, Dahili: Bilgisayar İşletmeni\n\n\nDış Hat: 285 30 13 \n 4128\nozcanfa@itu.edu.tr\nFatma Yavuz - Dış Hat: Kütüphaneci\nElektronik Kaynaklar ve Akademik Araştırma Hizmetleri\n 285 30 13 \nDahili: 4110\nyavuzf@itu.edu.tr, Dahili: Kütüphaneci\nElektronik Kaynaklar ve Akademik Araştırma Hizmetleri\nDış Hat: 285 30 13 \n 4110\nyavuzf@itu.edu.tr\nFatma Bakır - Dış Hat: Güvenlik Görevlisi\nGüvenlik Hizmetleri\n\n 285 66 23 \nDahili: -\nfatmabekir2023@gmail.com, Dahili: Güvenlik Görevlisi\nGüvenlik Hizmetleri",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 123,
+                "to": 173
+              }
+            }
+          }
+        },
+        {
+          "pageContent": "285 66 23 \nDahili: -\nfatmabekir2023@gmail.com, Dahili: Güvenlik Görevlisi\nGüvenlik Hizmetleri\n\nDış Hat: 285 66 23 \n -\nfatmabekir2023@gmail.com\nFigen Aksu - Dış Hat: Kütüphaneci (Öğr. Gör.)\nTeknik Hizmetler\n\n 285 30 13 \nDahili: 4106\naksuf@itu.edu.tr, Dahili: Kütüphaneci (Öğr. Gör.)\nTeknik Hizmetler\n\nDış Hat: 285 30 13 \n 4106\naksuf@itu.edu.tr\nGamze Küreksiz - Dış Hat: Destek Personeli\nRaf Hizmetleri\n\n 285 30 13 \nDahili: 4123\nmiyagy37@gmail.com, Dahili: Destek Personeli\nRaf Hizmetleri\n\nDış Hat: 285 30 13 \n 4123\nmiyagy37@gmail.com\nGökhan Usta - Dış Hat: Kütüphaneci (Öğr. Gör.)\nTeknik Hizmetler\n\n 285 30 13 \nDahili: 4135\ngusta@itu.edu.tr, Dahili: Kütüphaneci (Öğr. Gör.)\nTeknik Hizmetler\n\nDış Hat: 285 30 13 \n 4135\ngusta@itu.edu.tr\nGöknur Aslan - Dış Hat: Daire Başkanı\nYönetim\n\n 285 35 96 \nDahili: 3596\naslang@itu.edu.tr, Dahili: Daire Başkanı\nYönetim",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 170,
+                "to": 217
+              }
+            }
+          }
+        }
+      ],
+      "answer": "Üzgünüm, bu konu hakkında belgemde yeterli bilgi bulunmuyor."
+    },
+    "toolsUsed": [],
+    "executionTime": null,
+    "error": null,
+    "chainExecution": null,
+    "additionalInfo": {}
+  },
+  {
+    "type": "chat",
+    "timestamp": "2025-08-20 13:20:50.384",
+    "userQuery": {
+      "input": "PQ2286.A68 E73 2010",
+      "chat_history": [],
+      "context": [
+        {
+          "pageContent": "Aytaç Kayadevir - Dış Hat: Kütüphaneci\nTeknik Hizmetler\n\n 285 30 13 \nDahili: 4119\nkayadevir@itu.edu.tr, Dahili: Kütüphaneci\nTeknik Hizmetler\n\nDış Hat: 285 30 13 \n 4119\nkayadevir@itu.edu.tr\nBasri Kadir Şekermen - Dış Hat: Memur\nYönetim\n\n 285 30 13 \nDahili: 4137\nsekermen@itu.edu.tr, Dahili: Memur\nYönetim\n\nDış Hat: 285 30 13 \n 4137\nsekermen@itu.edu.tr\nBelkız Özgenç - Dış Hat: Bilgisayar İşletmeni\nKoleksiyon Geliştirme\n\n 285 30 13 \nDahili: 4104\naktayb@itu.edu.tr, Dahili: Bilgisayar İşletmeni\nKoleksiyon Geliştirme\n\nDış Hat: 285 30 13 \n 4104\naktayb@itu.edu.tr\nBurcu Bulut - Dış Hat: Kütüphaneci (Öğr. Gör.)\nElektronik Kaynaklar ve Akademik Araştırma Hizmetleri\n 285 30 13 \nDahili: 6625\nbulutburcu@itu.edu.tr, Dahili: Kütüphaneci (Öğr. Gör.)\nElektronik Kaynaklar ve Akademik Araştırma Hizmetleri\nDış Hat: 285 30 13 \n 6625\nbulutburcu@itu.edu.tr\nCihan Malay - Dış Hat: Bilgisayar İşletmeni\nÖdünç Verme\n\n 285 30 13 \nDahili: 4120\nmalay@itu.edu.tr, Dahili: Bilgisayar İşletmeni\nÖdünç Verme",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 1,
+                "to": 49
+              }
+            }
+          }
+        },
+        {
+          "pageContent": "285 30 13 \nDahili: 4120\nmalay@itu.edu.tr, Dahili: Bilgisayar İşletmeni\nÖdünç Verme\n\nDış Hat: 285 30 13 \n 4120\nmalay@itu.edu.tr\nDerya Karakoç - Dış Hat: Kütüphaneci - Gece Görevlisi\nÖdünç Verme\n\n 285 30 13\nDahili: 6619, Dahili: Kütüphaneci - Gece Görevlisi\nÖdünç Verme\n\nDış Hat: 285 30 13\n 6619\nDilek Tuğba Tural - Dış Hat: Bilgisayar İşletmeni\nÖdünç Verme\n\n 285 30 13 \nDahili: 6619\nturald@itu.edu.tr, Dahili: Bilgisayar İşletmeni\nÖdünç Verme\n\nDış Hat: 285 30 13 \n 6619\nturald@itu.edu.tr\nEbru Akçeken - Dış Hat: Kütüphaneci (Öğr. Gör.)\nElektronik Kaynaklar ve Akademik Araştırma Hizmetleri\n 285 30 13 \nDahili: 4111\nakceken@itu.edu.tr, Dahili: Kütüphaneci (Öğr. Gör.)\nElektronik Kaynaklar ve Akademik Araştırma Hizmetleri\nDış Hat: 285 30 13 \n 4111\nakceken@itu.edu.tr\nEda Kara - Dış Hat: Destek Personeli\nRaf Hizmetleri\n\n 285 30 13 \nDahili: 4123\nedakuzeykara@gmail.com, Dahili: Destek Personeli\nRaf Hizmetleri",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 46,
+                "to": 89
+              }
+            }
+          }
+        },
+        {
+          "pageContent": "285 30 13 \nDahili: 4123\nedakuzeykara@gmail.com, Dahili: Destek Personeli\nRaf Hizmetleri\n\nDış Hat: 285 30 13 \n 4123\nedakuzeykara@gmail.com\nEmine Köroğlu - Dış Hat: Bilgisayar İşletmeni\nTeknik Hizmetler\n\n 285 30 13 \nDahili: 4133\nkayae@itu.edu.tr, Dahili: Bilgisayar İşletmeni\nTeknik Hizmetler\n\nDış Hat: 285 30 13 \n 4133\nkayae@itu.edu.tr\nErdal Işık - Dış Hat: Kütüphaneci (Öğr. Gör.) - Bölüm Sorumlusu\nTeknik Hizmetler\n\n 285 66 26 \nDahili: 6626\nerdal@itu.edu.tr, Dahili: Kütüphaneci (Öğr. Gör.) - Bölüm Sorumlusu\nTeknik Hizmetler\n\nDış Hat: 285 66 26 \n 6626\nerdal@itu.edu.tr\nErdoğan Dursun - Dış Hat: Destek Personeli\nTemizlik Hizmetleri\n\n 285 30 13 \nDahili: 4141, Dahili: Destek Personeli\nTemizlik Hizmetleri\n\nDış Hat: 285 30 13 \n 4141\nErhan Evran - Dış Hat: Bilgisayar İşletmeni\nÖdünç Verme\n\n 285 30 13 \nDahili: 6619\nerhan@itu.edu.tr, Dahili: Bilgisayar İşletmeni\nÖdünç Verme\n\nDış Hat: 285 30 13 \n 6619\nerhan@itu.edu.tr\nEsin Arslan - Dış Hat: Yardımcı Hizmetli\nTeknik Hizmetler",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 86,
+                "to": 137
+              }
+            }
+          }
+        },
+        {
+          "pageContent": "Dış Hat: 285 30 13 \n 4141\nErhan Evran - Dış Hat: Bilgisayar İşletmeni\nÖdünç Verme\n\n 285 30 13 \nDahili: 6619\nerhan@itu.edu.tr, Dahili: Bilgisayar İşletmeni\nÖdünç Verme\n\nDış Hat: 285 30 13 \n 6619\nerhan@itu.edu.tr\nEsin Arslan - Dış Hat: Yardımcı Hizmetli\nTeknik Hizmetler\n\n 285 30 13 \nDahili: 4108\narslanes@itu.edu.tr, Dahili: Yardımcı Hizmetli\nTeknik Hizmetler\n\nDış Hat: 285 30 13 \n 4108\narslanes@itu.edu.tr\nFatih Özcan - Dış Hat: Bilgisayar İşletmeni\n\n\n 285 30 13 \nDahili: 4128\nozcanfa@itu.edu.tr, Dahili: Bilgisayar İşletmeni\n\n\nDış Hat: 285 30 13 \n 4128\nozcanfa@itu.edu.tr\nFatma Yavuz - Dış Hat: Kütüphaneci\nElektronik Kaynaklar ve Akademik Araştırma Hizmetleri\n 285 30 13 \nDahili: 4110\nyavuzf@itu.edu.tr, Dahili: Kütüphaneci\nElektronik Kaynaklar ve Akademik Araştırma Hizmetleri\nDış Hat: 285 30 13 \n 4110\nyavuzf@itu.edu.tr\nFatma Bakır - Dış Hat: Güvenlik Görevlisi\nGüvenlik Hizmetleri\n\n 285 66 23 \nDahili: -\nfatmabekir2023@gmail.com, Dahili: Güvenlik Görevlisi\nGüvenlik Hizmetleri",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 123,
+                "to": 173
+              }
+            }
+          }
+        },
+        {
+          "pageContent": "285 66 23 \nDahili: -\nfatmabekir2023@gmail.com, Dahili: Güvenlik Görevlisi\nGüvenlik Hizmetleri\n\nDış Hat: 285 66 23 \n -\nfatmabekir2023@gmail.com\nFigen Aksu - Dış Hat: Kütüphaneci (Öğr. Gör.)\nTeknik Hizmetler\n\n 285 30 13 \nDahili: 4106\naksuf@itu.edu.tr, Dahili: Kütüphaneci (Öğr. Gör.)\nTeknik Hizmetler\n\nDış Hat: 285 30 13 \n 4106\naksuf@itu.edu.tr\nGamze Küreksiz - Dış Hat: Destek Personeli\nRaf Hizmetleri\n\n 285 30 13 \nDahili: 4123\nmiyagy37@gmail.com, Dahili: Destek Personeli\nRaf Hizmetleri\n\nDış Hat: 285 30 13 \n 4123\nmiyagy37@gmail.com\nGökhan Usta - Dış Hat: Kütüphaneci (Öğr. Gör.)\nTeknik Hizmetler\n\n 285 30 13 \nDahili: 4135\ngusta@itu.edu.tr, Dahili: Kütüphaneci (Öğr. Gör.)\nTeknik Hizmetler\n\nDış Hat: 285 30 13 \n 4135\ngusta@itu.edu.tr\nGöknur Aslan - Dış Hat: Daire Başkanı\nYönetim\n\n 285 35 96 \nDahili: 3596\naslang@itu.edu.tr, Dahili: Daire Başkanı\nYönetim",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 170,
+                "to": 217
+              }
+            }
+          }
+        }
+      ],
+      "answer": "Üzgünüm, bu konu hakkında belgemde yeterli bilgi bulunmuyor."
+    },
+    "toolsUsed": [],
+    "executionTime": null,
+    "error": null,
+    "chainExecution": null,
+    "additionalInfo": {}
+  },
+  {
+    "type": "chat",
+    "timestamp": "2025-08-20 13:25:47.008",
+    "userQuery": {
+      "input": "PQ2286.A68 Ç36 2019",
+      "chat_history": [],
+      "context": [
+        {
+          "pageContent": "Aytaç Kayadevir - Dış Hat: Kütüphaneci\nTeknik Hizmetler\n\n 285 30 13 \nDahili: 4119\nkayadevir@itu.edu.tr, Dahili: Kütüphaneci\nTeknik Hizmetler\n\nDış Hat: 285 30 13 \n 4119\nkayadevir@itu.edu.tr\nBasri Kadir Şekermen - Dış Hat: Memur\nYönetim\n\n 285 30 13 \nDahili: 4137\nsekermen@itu.edu.tr, Dahili: Memur\nYönetim\n\nDış Hat: 285 30 13 \n 4137\nsekermen@itu.edu.tr\nBelkız Özgenç - Dış Hat: Bilgisayar İşletmeni\nKoleksiyon Geliştirme\n\n 285 30 13 \nDahili: 4104\naktayb@itu.edu.tr, Dahili: Bilgisayar İşletmeni\nKoleksiyon Geliştirme\n\nDış Hat: 285 30 13 \n 4104\naktayb@itu.edu.tr\nBurcu Bulut - Dış Hat: Kütüphaneci (Öğr. Gör.)\nElektronik Kaynaklar ve Akademik Araştırma Hizmetleri\n 285 30 13 \nDahili: 6625\nbulutburcu@itu.edu.tr, Dahili: Kütüphaneci (Öğr. Gör.)\nElektronik Kaynaklar ve Akademik Araştırma Hizmetleri\nDış Hat: 285 30 13 \n 6625\nbulutburcu@itu.edu.tr\nCihan Malay - Dış Hat: Bilgisayar İşletmeni\nÖdünç Verme\n\n 285 30 13 \nDahili: 4120\nmalay@itu.edu.tr, Dahili: Bilgisayar İşletmeni\nÖdünç Verme",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 1,
+                "to": 49
+              }
+            }
+          }
+        },
+        {
+          "pageContent": "285 30 13 \nDahili: 4120\nmalay@itu.edu.tr, Dahili: Bilgisayar İşletmeni\nÖdünç Verme\n\nDış Hat: 285 30 13 \n 4120\nmalay@itu.edu.tr\nDerya Karakoç - Dış Hat: Kütüphaneci - Gece Görevlisi\nÖdünç Verme\n\n 285 30 13\nDahili: 6619, Dahili: Kütüphaneci - Gece Görevlisi\nÖdünç Verme\n\nDış Hat: 285 30 13\n 6619\nDilek Tuğba Tural - Dış Hat: Bilgisayar İşletmeni\nÖdünç Verme\n\n 285 30 13 \nDahili: 6619\nturald@itu.edu.tr, Dahili: Bilgisayar İşletmeni\nÖdünç Verme\n\nDış Hat: 285 30 13 \n 6619\nturald@itu.edu.tr\nEbru Akçeken - Dış Hat: Kütüphaneci (Öğr. Gör.)\nElektronik Kaynaklar ve Akademik Araştırma Hizmetleri\n 285 30 13 \nDahili: 4111\nakceken@itu.edu.tr, Dahili: Kütüphaneci (Öğr. Gör.)\nElektronik Kaynaklar ve Akademik Araştırma Hizmetleri\nDış Hat: 285 30 13 \n 4111\nakceken@itu.edu.tr\nEda Kara - Dış Hat: Destek Personeli\nRaf Hizmetleri\n\n 285 30 13 \nDahili: 4123\nedakuzeykara@gmail.com, Dahili: Destek Personeli\nRaf Hizmetleri",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 46,
+                "to": 89
+              }
+            }
+          }
+        },
+        {
+          "pageContent": "285 30 13 \nDahili: 4123\nedakuzeykara@gmail.com, Dahili: Destek Personeli\nRaf Hizmetleri\n\nDış Hat: 285 30 13 \n 4123\nedakuzeykara@gmail.com\nEmine Köroğlu - Dış Hat: Bilgisayar İşletmeni\nTeknik Hizmetler\n\n 285 30 13 \nDahili: 4133\nkayae@itu.edu.tr, Dahili: Bilgisayar İşletmeni\nTeknik Hizmetler\n\nDış Hat: 285 30 13 \n 4133\nkayae@itu.edu.tr\nErdal Işık - Dış Hat: Kütüphaneci (Öğr. Gör.) - Bölüm Sorumlusu\nTeknik Hizmetler\n\n 285 66 26 \nDahili: 6626\nerdal@itu.edu.tr, Dahili: Kütüphaneci (Öğr. Gör.) - Bölüm Sorumlusu\nTeknik Hizmetler\n\nDış Hat: 285 66 26 \n 6626\nerdal@itu.edu.tr\nErdoğan Dursun - Dış Hat: Destek Personeli\nTemizlik Hizmetleri\n\n 285 30 13 \nDahili: 4141, Dahili: Destek Personeli\nTemizlik Hizmetleri\n\nDış Hat: 285 30 13 \n 4141\nErhan Evran - Dış Hat: Bilgisayar İşletmeni\nÖdünç Verme\n\n 285 30 13 \nDahili: 6619\nerhan@itu.edu.tr, Dahili: Bilgisayar İşletmeni\nÖdünç Verme\n\nDış Hat: 285 30 13 \n 6619\nerhan@itu.edu.tr\nEsin Arslan - Dış Hat: Yardımcı Hizmetli\nTeknik Hizmetler",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 86,
+                "to": 137
+              }
+            }
+          }
+        },
+        {
+          "pageContent": "Dış Hat: 285 30 13 \n 4141\nErhan Evran - Dış Hat: Bilgisayar İşletmeni\nÖdünç Verme\n\n 285 30 13 \nDahili: 6619\nerhan@itu.edu.tr, Dahili: Bilgisayar İşletmeni\nÖdünç Verme\n\nDış Hat: 285 30 13 \n 6619\nerhan@itu.edu.tr\nEsin Arslan - Dış Hat: Yardımcı Hizmetli\nTeknik Hizmetler\n\n 285 30 13 \nDahili: 4108\narslanes@itu.edu.tr, Dahili: Yardımcı Hizmetli\nTeknik Hizmetler\n\nDış Hat: 285 30 13 \n 4108\narslanes@itu.edu.tr\nFatih Özcan - Dış Hat: Bilgisayar İşletmeni\n\n\n 285 30 13 \nDahili: 4128\nozcanfa@itu.edu.tr, Dahili: Bilgisayar İşletmeni\n\n\nDış Hat: 285 30 13 \n 4128\nozcanfa@itu.edu.tr\nFatma Yavuz - Dış Hat: Kütüphaneci\nElektronik Kaynaklar ve Akademik Araştırma Hizmetleri\n 285 30 13 \nDahili: 4110\nyavuzf@itu.edu.tr, Dahili: Kütüphaneci\nElektronik Kaynaklar ve Akademik Araştırma Hizmetleri\nDış Hat: 285 30 13 \n 4110\nyavuzf@itu.edu.tr\nFatma Bakır - Dış Hat: Güvenlik Görevlisi\nGüvenlik Hizmetleri\n\n 285 66 23 \nDahili: -\nfatmabekir2023@gmail.com, Dahili: Güvenlik Görevlisi\nGüvenlik Hizmetleri",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 123,
+                "to": 173
+              }
+            }
+          }
+        },
+        {
+          "pageContent": "285 66 23 \nDahili: -\nfatmabekir2023@gmail.com, Dahili: Güvenlik Görevlisi\nGüvenlik Hizmetleri\n\nDış Hat: 285 66 23 \n -\nfatmabekir2023@gmail.com\nFigen Aksu - Dış Hat: Kütüphaneci (Öğr. Gör.)\nTeknik Hizmetler\n\n 285 30 13 \nDahili: 4106\naksuf@itu.edu.tr, Dahili: Kütüphaneci (Öğr. Gör.)\nTeknik Hizmetler\n\nDış Hat: 285 30 13 \n 4106\naksuf@itu.edu.tr\nGamze Küreksiz - Dış Hat: Destek Personeli\nRaf Hizmetleri\n\n 285 30 13 \nDahili: 4123\nmiyagy37@gmail.com, Dahili: Destek Personeli\nRaf Hizmetleri\n\nDış Hat: 285 30 13 \n 4123\nmiyagy37@gmail.com\nGökhan Usta - Dış Hat: Kütüphaneci (Öğr. Gör.)\nTeknik Hizmetler\n\n 285 30 13 \nDahili: 4135\ngusta@itu.edu.tr, Dahili: Kütüphaneci (Öğr. Gör.)\nTeknik Hizmetler\n\nDış Hat: 285 30 13 \n 4135\ngusta@itu.edu.tr\nGöknur Aslan - Dış Hat: Daire Başkanı\nYönetim\n\n 285 35 96 \nDahili: 3596\naslang@itu.edu.tr, Dahili: Daire Başkanı\nYönetim",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 170,
+                "to": 217
+              }
+            }
+          }
+        }
+      ],
+      "answer": "Üzgünüm, bu konu hakkında belgemde yeterli bilgi bulunmuyor."
+    },
+    "toolsUsed": [],
+    "executionTime": null,
+    "error": null,
+    "chainExecution": null,
+    "additionalInfo": {}
+  },
+  {
+    "type": "chat",
+    "timestamp": "2025-08-20 13:25:52.549",
+    "userQuery": {
+      "input": "PQ2286.A68 E73 2010",
+      "chat_history": [],
+      "context": [
+        {
+          "pageContent": "Aytaç Kayadevir - Dış Hat: Kütüphaneci\nTeknik Hizmetler\n\n 285 30 13 \nDahili: 4119\nkayadevir@itu.edu.tr, Dahili: Kütüphaneci\nTeknik Hizmetler\n\nDış Hat: 285 30 13 \n 4119\nkayadevir@itu.edu.tr\nBasri Kadir Şekermen - Dış Hat: Memur\nYönetim\n\n 285 30 13 \nDahili: 4137\nsekermen@itu.edu.tr, Dahili: Memur\nYönetim\n\nDış Hat: 285 30 13 \n 4137\nsekermen@itu.edu.tr\nBelkız Özgenç - Dış Hat: Bilgisayar İşletmeni\nKoleksiyon Geliştirme\n\n 285 30 13 \nDahili: 4104\naktayb@itu.edu.tr, Dahili: Bilgisayar İşletmeni\nKoleksiyon Geliştirme\n\nDış Hat: 285 30 13 \n 4104\naktayb@itu.edu.tr\nBurcu Bulut - Dış Hat: Kütüphaneci (Öğr. Gör.)\nElektronik Kaynaklar ve Akademik Araştırma Hizmetleri\n 285 30 13 \nDahili: 6625\nbulutburcu@itu.edu.tr, Dahili: Kütüphaneci (Öğr. Gör.)\nElektronik Kaynaklar ve Akademik Araştırma Hizmetleri\nDış Hat: 285 30 13 \n 6625\nbulutburcu@itu.edu.tr\nCihan Malay - Dış Hat: Bilgisayar İşletmeni\nÖdünç Verme\n\n 285 30 13 \nDahili: 4120\nmalay@itu.edu.tr, Dahili: Bilgisayar İşletmeni\nÖdünç Verme",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 1,
+                "to": 49
+              }
+            }
+          }
+        },
+        {
+          "pageContent": "285 30 13 \nDahili: 4120\nmalay@itu.edu.tr, Dahili: Bilgisayar İşletmeni\nÖdünç Verme\n\nDış Hat: 285 30 13 \n 4120\nmalay@itu.edu.tr\nDerya Karakoç - Dış Hat: Kütüphaneci - Gece Görevlisi\nÖdünç Verme\n\n 285 30 13\nDahili: 6619, Dahili: Kütüphaneci - Gece Görevlisi\nÖdünç Verme\n\nDış Hat: 285 30 13\n 6619\nDilek Tuğba Tural - Dış Hat: Bilgisayar İşletmeni\nÖdünç Verme\n\n 285 30 13 \nDahili: 6619\nturald@itu.edu.tr, Dahili: Bilgisayar İşletmeni\nÖdünç Verme\n\nDış Hat: 285 30 13 \n 6619\nturald@itu.edu.tr\nEbru Akçeken - Dış Hat: Kütüphaneci (Öğr. Gör.)\nElektronik Kaynaklar ve Akademik Araştırma Hizmetleri\n 285 30 13 \nDahili: 4111\nakceken@itu.edu.tr, Dahili: Kütüphaneci (Öğr. Gör.)\nElektronik Kaynaklar ve Akademik Araştırma Hizmetleri\nDış Hat: 285 30 13 \n 4111\nakceken@itu.edu.tr\nEda Kara - Dış Hat: Destek Personeli\nRaf Hizmetleri\n\n 285 30 13 \nDahili: 4123\nedakuzeykara@gmail.com, Dahili: Destek Personeli\nRaf Hizmetleri",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 46,
+                "to": 89
+              }
+            }
+          }
+        },
+        {
+          "pageContent": "285 30 13 \nDahili: 4123\nedakuzeykara@gmail.com, Dahili: Destek Personeli\nRaf Hizmetleri\n\nDış Hat: 285 30 13 \n 4123\nedakuzeykara@gmail.com\nEmine Köroğlu - Dış Hat: Bilgisayar İşletmeni\nTeknik Hizmetler\n\n 285 30 13 \nDahili: 4133\nkayae@itu.edu.tr, Dahili: Bilgisayar İşletmeni\nTeknik Hizmetler\n\nDış Hat: 285 30 13 \n 4133\nkayae@itu.edu.tr\nErdal Işık - Dış Hat: Kütüphaneci (Öğr. Gör.) - Bölüm Sorumlusu\nTeknik Hizmetler\n\n 285 66 26 \nDahili: 6626\nerdal@itu.edu.tr, Dahili: Kütüphaneci (Öğr. Gör.) - Bölüm Sorumlusu\nTeknik Hizmetler\n\nDış Hat: 285 66 26 \n 6626\nerdal@itu.edu.tr\nErdoğan Dursun - Dış Hat: Destek Personeli\nTemizlik Hizmetleri\n\n 285 30 13 \nDahili: 4141, Dahili: Destek Personeli\nTemizlik Hizmetleri\n\nDış Hat: 285 30 13 \n 4141\nErhan Evran - Dış Hat: Bilgisayar İşletmeni\nÖdünç Verme\n\n 285 30 13 \nDahili: 6619\nerhan@itu.edu.tr, Dahili: Bilgisayar İşletmeni\nÖdünç Verme\n\nDış Hat: 285 30 13 \n 6619\nerhan@itu.edu.tr\nEsin Arslan - Dış Hat: Yardımcı Hizmetli\nTeknik Hizmetler",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 86,
+                "to": 137
+              }
+            }
+          }
+        },
+        {
+          "pageContent": "Dış Hat: 285 30 13 \n 4141\nErhan Evran - Dış Hat: Bilgisayar İşletmeni\nÖdünç Verme\n\n 285 30 13 \nDahili: 6619\nerhan@itu.edu.tr, Dahili: Bilgisayar İşletmeni\nÖdünç Verme\n\nDış Hat: 285 30 13 \n 6619\nerhan@itu.edu.tr\nEsin Arslan - Dış Hat: Yardımcı Hizmetli\nTeknik Hizmetler\n\n 285 30 13 \nDahili: 4108\narslanes@itu.edu.tr, Dahili: Yardımcı Hizmetli\nTeknik Hizmetler\n\nDış Hat: 285 30 13 \n 4108\narslanes@itu.edu.tr\nFatih Özcan - Dış Hat: Bilgisayar İşletmeni\n\n\n 285 30 13 \nDahili: 4128\nozcanfa@itu.edu.tr, Dahili: Bilgisayar İşletmeni\n\n\nDış Hat: 285 30 13 \n 4128\nozcanfa@itu.edu.tr\nFatma Yavuz - Dış Hat: Kütüphaneci\nElektronik Kaynaklar ve Akademik Araştırma Hizmetleri\n 285 30 13 \nDahili: 4110\nyavuzf@itu.edu.tr, Dahili: Kütüphaneci\nElektronik Kaynaklar ve Akademik Araştırma Hizmetleri\nDış Hat: 285 30 13 \n 4110\nyavuzf@itu.edu.tr\nFatma Bakır - Dış Hat: Güvenlik Görevlisi\nGüvenlik Hizmetleri\n\n 285 66 23 \nDahili: -\nfatmabekir2023@gmail.com, Dahili: Güvenlik Görevlisi\nGüvenlik Hizmetleri",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 123,
+                "to": 173
+              }
+            }
+          }
+        },
+        {
+          "pageContent": "285 66 23 \nDahili: -\nfatmabekir2023@gmail.com, Dahili: Güvenlik Görevlisi\nGüvenlik Hizmetleri\n\nDış Hat: 285 66 23 \n -\nfatmabekir2023@gmail.com\nFigen Aksu - Dış Hat: Kütüphaneci (Öğr. Gör.)\nTeknik Hizmetler\n\n 285 30 13 \nDahili: 4106\naksuf@itu.edu.tr, Dahili: Kütüphaneci (Öğr. Gör.)\nTeknik Hizmetler\n\nDış Hat: 285 30 13 \n 4106\naksuf@itu.edu.tr\nGamze Küreksiz - Dış Hat: Destek Personeli\nRaf Hizmetleri\n\n 285 30 13 \nDahili: 4123\nmiyagy37@gmail.com, Dahili: Destek Personeli\nRaf Hizmetleri\n\nDış Hat: 285 30 13 \n 4123\nmiyagy37@gmail.com\nGökhan Usta - Dış Hat: Kütüphaneci (Öğr. Gör.)\nTeknik Hizmetler\n\n 285 30 13 \nDahili: 4135\ngusta@itu.edu.tr, Dahili: Kütüphaneci (Öğr. Gör.)\nTeknik Hizmetler\n\nDış Hat: 285 30 13 \n 4135\ngusta@itu.edu.tr\nGöknur Aslan - Dış Hat: Daire Başkanı\nYönetim\n\n 285 35 96 \nDahili: 3596\naslang@itu.edu.tr, Dahili: Daire Başkanı\nYönetim",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 170,
+                "to": 217
+              }
+            }
+          }
+        }
+      ],
+      "answer": "Üzgünüm, bu konu hakkında belgemde yeterli bilgi bulunmuyor."
+    },
+    "toolsUsed": [],
+    "executionTime": null,
+    "error": null,
+    "chainExecution": null,
+    "additionalInfo": {}
+  },
+  {
+    "type": "chat",
+    "timestamp": "2025-08-20 13:27:22.488",
+    "userQuery": {
+      "input": "PQ2286.A68 Ç36 2019",
+      "chat_history": [],
+      "context": [
+        {
+          "pageContent": "Aytaç Kayadevir - Dış Hat: Kütüphaneci\nTeknik Hizmetler\n\n 285 30 13 \nDahili: 4119\nkayadevir@itu.edu.tr, Dahili: Kütüphaneci\nTeknik Hizmetler\n\nDış Hat: 285 30 13 \n 4119\nkayadevir@itu.edu.tr\nBasri Kadir Şekermen - Dış Hat: Memur\nYönetim\n\n 285 30 13 \nDahili: 4137\nsekermen@itu.edu.tr, Dahili: Memur\nYönetim\n\nDış Hat: 285 30 13 \n 4137\nsekermen@itu.edu.tr\nBelkız Özgenç - Dış Hat: Bilgisayar İşletmeni\nKoleksiyon Geliştirme\n\n 285 30 13 \nDahili: 4104\naktayb@itu.edu.tr, Dahili: Bilgisayar İşletmeni\nKoleksiyon Geliştirme\n\nDış Hat: 285 30 13 \n 4104\naktayb@itu.edu.tr\nBurcu Bulut - Dış Hat: Kütüphaneci (Öğr. Gör.)\nElektronik Kaynaklar ve Akademik Araştırma Hizmetleri\n 285 30 13 \nDahili: 6625\nbulutburcu@itu.edu.tr, Dahili: Kütüphaneci (Öğr. Gör.)\nElektronik Kaynaklar ve Akademik Araştırma Hizmetleri\nDış Hat: 285 30 13 \n 6625\nbulutburcu@itu.edu.tr\nCihan Malay - Dış Hat: Bilgisayar İşletmeni\nÖdünç Verme\n\n 285 30 13 \nDahili: 4120\nmalay@itu.edu.tr, Dahili: Bilgisayar İşletmeni\nÖdünç Verme",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 1,
+                "to": 49
+              }
+            }
+          }
+        },
+        {
+          "pageContent": "285 30 13 \nDahili: 4120\nmalay@itu.edu.tr, Dahili: Bilgisayar İşletmeni\nÖdünç Verme\n\nDış Hat: 285 30 13 \n 4120\nmalay@itu.edu.tr\nDerya Karakoç - Dış Hat: Kütüphaneci - Gece Görevlisi\nÖdünç Verme\n\n 285 30 13\nDahili: 6619, Dahili: Kütüphaneci - Gece Görevlisi\nÖdünç Verme\n\nDış Hat: 285 30 13\n 6619\nDilek Tuğba Tural - Dış Hat: Bilgisayar İşletmeni\nÖdünç Verme\n\n 285 30 13 \nDahili: 6619\nturald@itu.edu.tr, Dahili: Bilgisayar İşletmeni\nÖdünç Verme\n\nDış Hat: 285 30 13 \n 6619\nturald@itu.edu.tr\nEbru Akçeken - Dış Hat: Kütüphaneci (Öğr. Gör.)\nElektronik Kaynaklar ve Akademik Araştırma Hizmetleri\n 285 30 13 \nDahili: 4111\nakceken@itu.edu.tr, Dahili: Kütüphaneci (Öğr. Gör.)\nElektronik Kaynaklar ve Akademik Araştırma Hizmetleri\nDış Hat: 285 30 13 \n 4111\nakceken@itu.edu.tr\nEda Kara - Dış Hat: Destek Personeli\nRaf Hizmetleri\n\n 285 30 13 \nDahili: 4123\nedakuzeykara@gmail.com, Dahili: Destek Personeli\nRaf Hizmetleri",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 46,
+                "to": 89
+              }
+            }
+          }
+        },
+        {
+          "pageContent": "285 30 13 \nDahili: 4123\nedakuzeykara@gmail.com, Dahili: Destek Personeli\nRaf Hizmetleri\n\nDış Hat: 285 30 13 \n 4123\nedakuzeykara@gmail.com\nEmine Köroğlu - Dış Hat: Bilgisayar İşletmeni\nTeknik Hizmetler\n\n 285 30 13 \nDahili: 4133\nkayae@itu.edu.tr, Dahili: Bilgisayar İşletmeni\nTeknik Hizmetler\n\nDış Hat: 285 30 13 \n 4133\nkayae@itu.edu.tr\nErdal Işık - Dış Hat: Kütüphaneci (Öğr. Gör.) - Bölüm Sorumlusu\nTeknik Hizmetler\n\n 285 66 26 \nDahili: 6626\nerdal@itu.edu.tr, Dahili: Kütüphaneci (Öğr. Gör.) - Bölüm Sorumlusu\nTeknik Hizmetler\n\nDış Hat: 285 66 26 \n 6626\nerdal@itu.edu.tr\nErdoğan Dursun - Dış Hat: Destek Personeli\nTemizlik Hizmetleri\n\n 285 30 13 \nDahili: 4141, Dahili: Destek Personeli\nTemizlik Hizmetleri\n\nDış Hat: 285 30 13 \n 4141\nErhan Evran - Dış Hat: Bilgisayar İşletmeni\nÖdünç Verme\n\n 285 30 13 \nDahili: 6619\nerhan@itu.edu.tr, Dahili: Bilgisayar İşletmeni\nÖdünç Verme\n\nDış Hat: 285 30 13 \n 6619\nerhan@itu.edu.tr\nEsin Arslan - Dış Hat: Yardımcı Hizmetli\nTeknik Hizmetler",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 86,
+                "to": 137
+              }
+            }
+          }
+        },
+        {
+          "pageContent": "Dış Hat: 285 30 13 \n 4141\nErhan Evran - Dış Hat: Bilgisayar İşletmeni\nÖdünç Verme\n\n 285 30 13 \nDahili: 6619\nerhan@itu.edu.tr, Dahili: Bilgisayar İşletmeni\nÖdünç Verme\n\nDış Hat: 285 30 13 \n 6619\nerhan@itu.edu.tr\nEsin Arslan - Dış Hat: Yardımcı Hizmetli\nTeknik Hizmetler\n\n 285 30 13 \nDahili: 4108\narslanes@itu.edu.tr, Dahili: Yardımcı Hizmetli\nTeknik Hizmetler\n\nDış Hat: 285 30 13 \n 4108\narslanes@itu.edu.tr\nFatih Özcan - Dış Hat: Bilgisayar İşletmeni\n\n\n 285 30 13 \nDahili: 4128\nozcanfa@itu.edu.tr, Dahili: Bilgisayar İşletmeni\n\n\nDış Hat: 285 30 13 \n 4128\nozcanfa@itu.edu.tr\nFatma Yavuz - Dış Hat: Kütüphaneci\nElektronik Kaynaklar ve Akademik Araştırma Hizmetleri\n 285 30 13 \nDahili: 4110\nyavuzf@itu.edu.tr, Dahili: Kütüphaneci\nElektronik Kaynaklar ve Akademik Araştırma Hizmetleri\nDış Hat: 285 30 13 \n 4110\nyavuzf@itu.edu.tr\nFatma Bakır - Dış Hat: Güvenlik Görevlisi\nGüvenlik Hizmetleri\n\n 285 66 23 \nDahili: -\nfatmabekir2023@gmail.com, Dahili: Güvenlik Görevlisi\nGüvenlik Hizmetleri",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 123,
+                "to": 173
+              }
+            }
+          }
+        },
+        {
+          "pageContent": "285 66 23 \nDahili: -\nfatmabekir2023@gmail.com, Dahili: Güvenlik Görevlisi\nGüvenlik Hizmetleri\n\nDış Hat: 285 66 23 \n -\nfatmabekir2023@gmail.com\nFigen Aksu - Dış Hat: Kütüphaneci (Öğr. Gör.)\nTeknik Hizmetler\n\n 285 30 13 \nDahili: 4106\naksuf@itu.edu.tr, Dahili: Kütüphaneci (Öğr. Gör.)\nTeknik Hizmetler\n\nDış Hat: 285 30 13 \n 4106\naksuf@itu.edu.tr\nGamze Küreksiz - Dış Hat: Destek Personeli\nRaf Hizmetleri\n\n 285 30 13 \nDahili: 4123\nmiyagy37@gmail.com, Dahili: Destek Personeli\nRaf Hizmetleri\n\nDış Hat: 285 30 13 \n 4123\nmiyagy37@gmail.com\nGökhan Usta - Dış Hat: Kütüphaneci (Öğr. Gör.)\nTeknik Hizmetler\n\n 285 30 13 \nDahili: 4135\ngusta@itu.edu.tr, Dahili: Kütüphaneci (Öğr. Gör.)\nTeknik Hizmetler\n\nDış Hat: 285 30 13 \n 4135\ngusta@itu.edu.tr\nGöknur Aslan - Dış Hat: Daire Başkanı\nYönetim\n\n 285 35 96 \nDahili: 3596\naslang@itu.edu.tr, Dahili: Daire Başkanı\nYönetim",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 170,
+                "to": 217
+              }
+            }
+          }
+        }
+      ],
+      "answer": "Üzgünüm, bu konu hakkında belgemde yeterli bilgi bulunmuyor."
+    },
+    "toolsUsed": [],
+    "executionTime": null,
+    "error": null,
+    "chainExecution": null,
+    "additionalInfo": {}
+  },
+  {
+    "type": "error",
+    "timestamp": "2025-08-20 13:31:21.466",
+    "context": {
+      "attemptNumber": 7,
+      "retriesLeft": 0
+    },
+    "error": {
+      "type": "string",
+      "value": "Agent sorgusu işlenirken hata: sefiller kitabını kütüphanede nerede bulabilirim"
+    }
   }
 ]

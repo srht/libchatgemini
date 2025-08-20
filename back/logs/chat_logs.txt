@@ -968,3 +968,70 @@ Timestamp: 2025-08-20 12:20:32.384
 User Query: [object Object]
 Agent Response: undefined
 === END LOG ENTRY ===
+
+=== CHAT LOG ENTRY ===
+Timestamp: 2025-08-20 12:59:42.638
+User Query: [object Object]
+Agent Response: undefined
+=== END LOG ENTRY ===
+
+=== CHAT LOG ENTRY ===
+Timestamp: 2025-08-20 13:12:57.357
+User Query: [object Object]
+Agent Response: undefined
+=== END LOG ENTRY ===
+
+=== CHAT LOG ENTRY ===
+Timestamp: 2025-08-20 13:15:07.073
+User Query: [object Object]
+Agent Response: undefined
+=== END LOG ENTRY ===
+
+=== CHAT LOG ENTRY ===
+Timestamp: 2025-08-20 13:18:43.641
+User Query: [object Object]
+Agent Response: undefined
+=== END LOG ENTRY ===
+
+=== CHAT LOG ENTRY ===
+Timestamp: 2025-08-20 13:18:47.859
+User Query: [object Object]
+Agent Response: undefined
+=== END LOG ENTRY ===
+
+=== CHAT LOG ENTRY ===
+Timestamp: 2025-08-20 13:20:45.756
+User Query: [object Object]
+Agent Response: undefined
+=== END LOG ENTRY ===
+
+=== CHAT LOG ENTRY ===
+Timestamp: 2025-08-20 13:20:50.384
+User Query: [object Object]
+Agent Response: undefined
+=== END LOG ENTRY ===
+
+=== CHAT LOG ENTRY ===
+Timestamp: 2025-08-20 13:25:47.008
+User Query: [object Object]
+Agent Response: undefined
+=== END LOG ENTRY ===
+
+=== CHAT LOG ENTRY ===
+Timestamp: 2025-08-20 13:25:52.549
+User Query: [object Object]
+Agent Response: undefined
+=== END LOG ENTRY ===
+
+=== CHAT LOG ENTRY ===
+Timestamp: 2025-08-20 13:27:22.488
+User Query: [object Object]
+Agent Response: undefined
+=== END LOG ENTRY ===
+
+=== ERROR LOG ===
+Timestamp: 2025-08-20 13:31:21.466
+Context: Error: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:streamGenerateContent?alt=sse: fetch failed
+Error Type: string
+Error Value: "Agent sorgusu işlenirken hata: sefiller kitabını kütüphanede nerede bulabilirim"
+=== END ERROR LOG ===

@@ -6,7 +6,7 @@ let getDatabaseSearchTool;
 try {
   getDatabaseSearchTool = new DynamicTool({
     name: "get_library_databases",
-    description: `Kütüphanenin abone olduğu veritabanlarını bulur konu başlıklarına göre filtreler. Input should be a keyword string. 'Mesela mühendislik veritabanları var mı?' sorusu için 'mühendislik' kelimesini kullanır. Sonuç olarak bulunan tüm veritabanlarını isimlerini, açıklamalarını ve kampüs içi ve  kampüs dışı erişim linklerini döndürür. `,
+    description: `Kütüphanenin abone olduğu veritabanlarını bulur konu başlıklarına göre filtreler. Input should be a keyword string. 'Mesela mühendislik veritabanları var mı?' sorusu için 'mühendislik' kelimesini kullanır. Sonuç olarak bulunan veritabanlarını döndürür. `,
     func: async (input) => {
       console.log(input);
       console.log(
@@ -14,6 +14,7 @@ try {
       );
 
       const tolowerInput = input.toLocaleLowerCase("tr-TR");
+      const encodedInput = encodeURIComponent(input);
       const subjectsResponse = await fetch(
         "https://service.library.itu.edu.tr/web/api/Veritabanlari/Filtreler?turid=1"
       );
@@ -36,13 +37,42 @@ try {
       const databasesResponse = await fetch(
         `https://service.library.itu.edu.tr/web/api/Veritabanlari/FilterByMultiple?filters=,${filterIdStrings}&page=1`
       );
+      
+      const databasesWithTitleResponse = await fetch(
+        `https://service.library.itu.edu.tr/web/api/Veritabanlari/TitleFiltrele?s=${encodedInput}&page=1`
+      );
+
+      const databasesSearchResponse = await fetch(
+         `https://service.library.itu.edu.tr/web/api/Veritabanlari/Ara?s=${encodedInput}&page=1`);
+      console.log('adres:', `https://service.library.itu.edu.tr/web/api/Veritabanlari/TitleFiltrele?s=${encodedInput}&page=1`)
       const databasesData = await databasesResponse.json();
-      const databases = databasesData.Liste.map((db) => {
+      const databasesWithTitleData = await databasesWithTitleResponse.json();
+      const databasesSearchData = await databasesSearchResponse.json();
+      console.log('databasesWithTitleData',databasesWithTitleData.Liste);
+      let databases = [];
+      const databasesWithFilter = databasesData.Liste.map((db) => {
         return {
           name: db.Adi,
-          link: `https://kutuphane.itu.edu.tr/arastirma/veritabanlari#${db.Id}`,
+          link: `https://kutuphane.itu.edu.tr/arastirma/veritabanlari#${db.Id}`
         };
       });
+
+      const databasesWithTitle = databasesWithTitleData.Liste.map((db) => {
+        return {
+          name: db.Adi,
+          link: `https://kutuphane.itu.edu.tr/arastirma/veritabanlari#${db.Id}`
+        };
+      });
+
+      const databasesWithSearch = databasesSearchData.Liste.map((db) => {
+        return {
+          name: db.Adi,
+          link: `https://kutuphane.itu.edu.tr/arastirma/veritabanlari#${db.Id}`
+        };
+      });
+
+      databases = [...databasesWithFilter, ...databasesWithTitle, ...databasesWithSearch];
+
       return JSON.stringify(databases);
     },
   });

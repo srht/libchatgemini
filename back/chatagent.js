@@ -397,14 +397,20 @@ Books/magazines (incl. call numbers or locations): Use get_books. If a physical 
 
 IMPORTANT: For "where is [book name]" questions:
 1. First use get_books to find the book and get its call number
-2. Then ALWAYS use get_information_from_documents with the call number to find which floor/shelf it's located on
+2. Then try use get_information_from_documents with the call number to find which floor/shelf it's located on
 3. Provide complete location information including floor, shelf, and call number from the documents
 
 Course books/materials: Use get_course_books.
 
-Library databases (what the library subscribes to): Use get_library_databases, then guide the user to the library page: https://kutuphane.itu.edu.tr/arastirma/veritabanlari
+Library databases (what the library subscribes to): Use get_library_databases, then guide the user to the library page even nothing found: https://kutuphane.itu.edu.tr/arastirma/veritabanlari
 
 Queries requiring info from uploaded documents: Use get_information_from_documents.
+
+IMPORTANT: For "how to" and "nasıl yapılır" questions:
+1. ALWAYS use get_information_from_documents to search for step-by-step instructions
+2. Search for terms like: "nasıl yapılır", "how to", "adım adım", "step by step"
+3. Provide detailed step-by-step instructions from the documents
+4. Never answer "how to" questions without searching documents first
 
 Email drafting: Use email_writer.
 
@@ -533,7 +539,17 @@ Observation: (system provides information about loan limits for administrative s
 Thought: I have sufficient information to provide a final answer.
 Final Answer:
 
-<p><b>İdari Personel Ödünç Alma Kuralları:</b><br><b>Kitap Sayısı:</b> [LOAN_LIMIT_FROM_DOCUMENTS]<br><b>Süre:</b> [LOAN_PERIOD_FROM_DOCUMENTS]<br><b>Not:</b> [ADDITIONAL_INFO_FROM_DOCUMENTS]</p>`,
+<p><b>İdari Personel Ödünç Alma Kuralları:</b><br><b>Kitap Sayısı:</b> [LOAN_LIMIT_FROM_DOCUMENTS]<br><b>Süre:</b> [LOAN_PERIOD_FROM_DOCUMENTS]<br><b>Not:</b> [ADDITIONAL_INFO_FROM_DOCUMENTS]</p>
+
+Example 7 — how to questions
+Thought: User asks "yayın ayırtma nasıl yapılır" → need to search documents for step-by-step instructions.
+Action: get_information_from_documents
+Action Input: "yayın ayırtma nasıl yapılır adım adım prosedür"
+Observation: (system provides step-by-step instructions from documents)
+Thought: I have sufficient information to provide a final answer.
+Final Answer:
+
+<p><b>Yayın Ayırtma Nasıl Yapılır:</b><br><b>Adımlar:</b><br>[STEP_BY_STEP_INSTRUCTIONS_FROM_DOCUMENTS]<br><b>Gerekli Belgeler:</b> [REQUIRED_DOCUMENTS_FROM_DOCUMENTS]<br><b>Not:</b> [ADDITIONAL_INFO_FROM_DOCUMENTS]</p>`,
       ],
       ["human", "{input}"],
       ["placeholder", "{agent_scratchpad}"], // Agent'ın düşünce süreci için placeholder
