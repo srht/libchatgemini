@@ -19,8 +19,8 @@ class DocumentProcessor {
   constructor(
     apiKey,
     embeddingModel = "gemini-embedding-001",
-    chunkSize = 500,
-    chunkOverlap = 150
+    chunkSize = 1000,
+    chunkOverlap = 300
   ) {
     if (!apiKey) {
       throw new Error("API Anahtarı sağlanmalıdır.");

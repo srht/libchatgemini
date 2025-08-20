@@ -2585,5 +2585,2304 @@
     "error": null,
     "chainExecution": null,
     "additionalInfo": {}
+  },
+  {
+    "type": "chat",
+    "timestamp": "2025-08-19 06:47:42.737",
+    "userQuery": {
+      "input": "Recep telefon numarası",
+      "chat_history": [],
+      "context": [
+        {
+          "pageContent": "Dış Hat: 293 13 00 \n 2189\ngcserik@itu.edu.tr\nRecep Kurtul - Dış Hat: Kütüphaneci (Öğr. Gör.)\nÖdünç Verme\n\n 293 13 00 \nDahili: 2189\nkurtulrec@itu.edu.tr, Dahili: Kütüphaneci (Öğr. Gör.)\nÖdünç Verme\n\nDış Hat: 293 13 00 \n 2189\nkurtulrec@itu.edu.tr",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 726,
+                "to": 739
+              }
+            }
+          }
+        },
+        {
+          "pageContent": "285 30 13 \nDahili: 4116\nokatmerlikaya@gmail.com, Dahili: Destek Personeli-Raf\nRaf Hizmetleri\n\nDış Hat: 285 30 13 \n 4116\nokatmerlikaya@gmail.com\nReşit Turan - Dış Hat: Destek Personeli\nTemizlik Hizmetleri\n\n 285 30 13 \nDahili: 4141, Dahili: Destek Personeli\nTemizlik Hizmetleri\n\nDış Hat: 285 30 13 \n 4141\nSalih Öksüztepe - Dış Hat: Şef\nMali İşler\n\n 285 33 04 \nDahili: 3304\nsalihok@itu.edu.tr, Dahili: Şef\nMali İşler",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 473,
+                "to": 496
+              }
+            }
+          }
+        },
+        {
+          "pageContent": "Dış Hat: 285 30 13 \n 6619\nserpil.aykac@hotmail.com\nSeyit Karadeniz - Dış Hat: Destek Personeli\nTemizlik Hizmetleri\n\n 285 30 13 \nDahili: 4145\nseyit_karadeniz@hotmail.com, Dahili: Destek Personeli\nTemizlik Hizmetleri",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 551,
+                "to": 560
+              }
+            }
+          }
+        },
+        {
+          "pageContent": "Dış Hat: 285 35 96 \n 3596\nucame@itu.edu.tr\nMeral Uzun - Dış Hat: Destek Personeli\nRaf Hizmetleri\n\n 285 30 13 \nDahili: 4123\nmeralugurezgi@hotmail.com, Dahili: Destek Personeli\nRaf Hizmetleri\n\nDış Hat: 285 30 13 \n 4123\nmeralugurezgi@hotmail.com\nMetin Gürler - Dış Hat: Destek Personeli\nTemizlik Hizmetleri\n\n 285 30 13 \nDahili: 4141, Dahili: Destek Personeli\nTemizlik Hizmetleri\n\nDış Hat: 285 30 13 \n 4141\nMuhammed Doğu - Dış Hat: Destek Personeli\nTemizlik Hizmetleri",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 356,
+                "to": 380
+              }
+            }
+          }
+        },
+        {
+          "pageContent": "Dış Hat: 285 30 13 \n 4137\nsekermen@itu.edu.tr\nBelkız Özgenç - Dış Hat: Bilgisayar İşletmeni\nKoleksiyon Geliştirme\n\n 285 30 13 \nDahili: 4104\naktayb@itu.edu.tr, Dahili: Bilgisayar İşletmeni\nKoleksiyon Geliştirme",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 20,
+                "to": 29
+              }
+            }
+          }
+        }
+      ],
+      "answer": "Recep Kurtul'un telefon numarası: <a href=\"tel:2931300\">293 13 00</a> (Dahili: 2189)."
+    },
+    "toolsUsed": [],
+    "executionTime": null,
+    "error": null,
+    "chainExecution": null,
+    "additionalInfo": {}
+  },
+  {
+    "type": "chat",
+    "timestamp": "2025-08-19 06:48:36.774",
+    "userQuery": {
+      "input": "kütüphanede kaynak bulma",
+      "chat_history": [],
+      "context": [
+        {
+          "pageContent": "Kütüphanede araştırma yapmak için kutuphane.itu.edu.tr anasayfasında bulunan Tarıyorum arama kutusuna aramak istediğiniz konuyu belirtebilirsiniz.\r\nBuradan kitaplar, e-kitaplar, elektronik dergiler arasından sonuçlara erişebilirsiniz.",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 1,
+                "to": 2
+              }
+            }
+          }
+        },
+        {
+          "pageContent": "Dış Hat: 293 13 00 \n 2163\ninalf@itu.edu.tr\nOsman Aytaç - Dış Hat: Kütüphaneci (Öğr. Gör.)\nElektronik Kaynaklar ve Akademik Araştırma Hizmetleri\n 293 13 00 \nDahili: 2163\naytaco@itu.edu.tr, Dahili: Kütüphaneci (Öğr. Gör.)\nElektronik Kaynaklar ve Akademik Araştırma Hizmetleri\nDış Hat: 293 13 00 \n 2163\naytaco@itu.edu.tr\nAbdurrahman Murat Ayataç - Dış Hat: Kütüphaneci (Öğr. Gör.) - Kütüphane Sorumlusu\nYönetim",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 655,
+                "to": 668
+              }
+            }
+          }
+        },
+        {
+          "pageContent": "247 17 33 \nDahili: 129\ngurkanoz@itu.edu.tr, Dahili: Kütüphaneci (Öğr. Gör.) - Kütüphane Sorumlusu\nYönetim\n\nDış Hat: 247 17 33 \n 129\ngurkanoz@itu.edu.tr\nGüneş Çetinkaya Şerik - Dış Hat: Kütüphaneci (Öğr. Gör.) - Kütüphane Sorumlusu\nYönetim\n\n 293 13 00 \nDahili: 2189\ngcserik@itu.edu.tr, Dahili: Kütüphaneci (Öğr. Gör.) - Kütüphane Sorumlusu\nYönetim\n\nDış Hat: 293 13 00 \n 2189\ngcserik@itu.edu.tr\nRecep Kurtul - Dış Hat: Kütüphaneci (Öğr. Gör.)\nÖdünç Verme",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 710,
+                "to": 730
+              }
+            }
+          }
+        },
+        {
+          "pageContent": "Dış Hat: 293 13 00 \n 2189\ngcserik@itu.edu.tr\nRecep Kurtul - Dış Hat: Kütüphaneci (Öğr. Gör.)\nÖdünç Verme\n\n 293 13 00 \nDahili: 2189\nkurtulrec@itu.edu.tr, Dahili: Kütüphaneci (Öğr. Gör.)\nÖdünç Verme\n\nDış Hat: 293 13 00 \n 2189\nkurtulrec@itu.edu.tr",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 726,
+                "to": 739
+              }
+            }
+          }
+        },
+        {
+          "pageContent": "293 13 00 \nDahili: 2163\npolatenes@itu.edu.tr, Dahili: Memur\nÖdünç Verme\n\nDış Hat: 293 13 00 \n 2163\npolatenes@itu.edu.tr\nFatma İnal - Dış Hat: Kütüphaneci (Öğr. Gör.) - Kütüphane Sorumlusu Yönetim\nYönetim\n\n 293 13 00 \nDahili: 2163\ninalf@itu.edu.tr, Dahili: Kütüphaneci (Öğr. Gör.) - Kütüphane Sorumlusu Yönetim\nYönetim",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 639,
+                "to": 653
+              }
+            }
+          }
+        }
+      ],
+      "answer": "Kütüphanede kaynak bulmak için <a href=\"https://kutuphane.itu.edu.tr\">kutuphane.itu.edu.tr</a> anasayfasında bulunan \"Tarıyorum\" arama kutusuna aramak istediğiniz konuyu yazabilirsiniz. Bu arama kutusu aracılığıyla kitaplar, e-kitaplar ve elektronik dergiler arasından sonuçlara erişebilirsiniz."
+    },
+    "toolsUsed": [],
+    "executionTime": null,
+    "error": null,
+    "chainExecution": null,
+    "additionalInfo": {}
+  },
+  {
+    "type": "chat",
+    "timestamp": "2025-08-19 07:00:22.314",
+    "userQuery": {
+      "input": "tuvaletler nerede",
+      "chat_history": [],
+      "context": [
+        {
+          "pageContent": "Öğrenci  Dolapları: Mustafa İnan Kütüphanesinin giriş katında bulunan dolapların anahtarlarını, Ödünç \nVerme  Bankosu’ndan kimlik karşılığında 5 saatliğine ödünç alabilir, süreyi 3  kez  uzatabilirsiniz. Gecikme \ndurumunda saatlik gecikme ücreti alınır. Anahtarı kaybetme durumunda ise kaybetme bedeli \nalınmaktadır. \n \nTuvaletler: Kütüphaneye girişte, sol taraftadır. \n \nBirinci Kat \nSol koridorda (bina arka cephesinde yer alan raf bloğu) Q ile başlayan kitap koleksiyonu, sağ koridorda (bina",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 170,
+                "to": 178
+              }
+            }
+          }
+        },
+        {
+          "pageContent": "Birinci Kat \nSol koridorda (bina arka cephesinde yer alan raf bloğu) Q ile başlayan kitap koleksiyonu, sağ koridorda (bina \nön cephesinde yer alan raf bloğu) R ile başlayan Z’ye kadar devam eden kitap koleksiyonu yer almaktadır. \nİkinci ve Üçüncü Kat  \n \nSüreli Yayınlar (dergiler) koleksiyonu yer almaktadır. Aranılan bir derginin hangi rafta olduğu -kitaplarda \nolduğu gibi- yer numarası yardımıyla bulunabilir. Süreli yayınlar ödünç verilmez, kütüphane içinde kullanılır.",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 177,
+                "to": 183
+              }
+            }
+          }
+        },
+        {
+          "pageContent": "bulunmaktadır. İTÜ Yayınları’nın birer kopyası gelecek kuşaklara aktarılmak üzere İTÜ Yayınları Arşivi’nde \nyer almakta, ödünç verilmemektedir. Detaylı bilgi referans kütüphanecilerinden (Danışma Masası) alınabilir. \n  \nSesli Çalışma Salonu  \nKütüphane’ye girişte soldaki merdivenlerle ulaşılan Salon’da grup çalışmaları yapılabilir, Kütüphane’nin \ndiğer alanlarında olduğu gibi çok sessiz olunması beklenmez. Sesli Çalışma Salonu’nun bir kısmı mescit \nolarak düzenlenmiştir.",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 191,
+                "to": 197
+              }
+            }
+          }
+        },
+        {
+          "pageContent": "3 \n \nMUSTAFA İNAN KÜTÜPHANESİ’NDE NE NEREDE? \n \nGiriş Kat \n  \nÖdünç  Verme  Bankosu:  Kütüphaneye girişte sağda yer almaktadır. Ödünç kitap almak, aldığınız kitabı iade \netmek, ayırttığınız yayınları ödünç almak için bu bankoda çalışan görevliler sizlere yardımcı olmaktan \nmutluluk duyacaktır. \n  \nKütüphanelerarası Ödünç Yayın / Belge Sağlama Ofisi: İTÜ kütüphanelerinin koleksiyonunda  olmayan  ve",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 112,
+                "to": 122
+              }
+            }
+          }
+        },
+        {
+          "pageContent": "Bunun için web sayfamızdaki Hizmetler menüsü altında yer alan formu doldurmanız yeterlidir. Detaylı bilgi \niçin bkz.: Aranılan Yayın İTÜ Kütüphanelerinde Yoksa... (s.13)      \n \nGenel Kitap Koleksiyonu  (A – P yer numaralı kitaplar): Aradığınız bir yayını yer numarası yardımıyla \nbulabilirsiniz.  Mustafa  İnan  Kütüphanesi  kitap  koleksiyonunun  yer  numarası  A  ile  başlayanlarla P  ile",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 125,
+                "to": 129
+              }
+            }
+          }
+        }
+      ],
+      "answer": "Tuvaletler, kütüphaneye girişte sol taraftadır."
+    },
+    "toolsUsed": [],
+    "executionTime": null,
+    "error": null,
+    "chainExecution": null,
+    "additionalInfo": {}
+  },
+  {
+    "type": "chat",
+    "timestamp": "2025-08-19 07:01:07.591",
+    "userQuery": {
+      "input": "kütüphaneye nasıl üye olabilirim",
+      "chat_history": [],
+      "context": [
+        {
+          "pageContent": "yararlanabilirler. Ancak, \n1. Ödünç verme hizmeti, \n2. Kütüphanelerarası ödünç yayın / belge sağlama hizmeti, \n3. Elektronik kaynaklara kampüs dışı erişim hizmeti, \n4. Kütüphaneye satın alınması için yayın siparişi hizmetlerinden \n yararlanılabilmesi için kütüphane üyeliği gerekmektedir. (Üye olan İTÜ emekli personeli sadece \nödünç verme hizmetinden yararlanabilir). \n \n➢ İTÜ mezunları, İTÜ Vakfı ve İTÜ Geliştirme Vakfı personeli, diğer üniversitelerin  yüksek  lisans  ve",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 28,
+                "to": 36
+              }
+            }
+          }
+        },
+        {
+          "pageContent": "verilmektedir. Eğitimlere bireysel başvuru ile isteyen tüm İTÜ öğrencileri katılabilmektedir. Bunun için web \nsayfamızdaki Bilgi Okuryazarlığı Eğitim Formu’nu doldurmanız yeterlidir. \n \nÜyelik                                                                                                       \n \n➢ İTÜ öğretim elemanları, öğrencileri, idari ve emekli personeli İTÜ Kütüphanelerinden üye olmaksızın \nyararlanabilirler. Ancak, \n1. Ödünç verme hizmeti,",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 22,
+                "to": 29
+              }
+            }
+          }
+        },
+        {
+          "pageContent": "1. İTÜ mezunları mezun kartları ile, \n2. Diğer üniversitelerin öğretim elemanları ve lisansüstü öğrencileri çıkarılacak üyelik kartı ile, \n3. İTÜ Kütüphanelerinden yararlanmak isteyen lisansüstü öğrenciler ve akademisyenler, Üniversite \nYönetim  Kurulu  (ÜYK)  tarafından  belirlenen kurallar çerçevesinde  misafir  üye  olarak  İTÜ \nKütüphanelerinden yararlanabilirler. \n \nElektronik Kaynaklar ve Akademik Araştırma Hizmetleri",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 39,
+                "to": 45
+              }
+            }
+          }
+        },
+        {
+          "pageContent": "10 \n \nYAYIN ÖDÜNÇ ALMA      \n                                                                                                \nRaftan aldığınız bir yayını, İTÜ kimliğinizle ödünç verme bankolarından ödünç alabilirsiniz. Ödünç alma veya \nkütüphane  girişlerinde  başkasının  kartıyla işlem  yapmanın,  üyeliğin  geçici  olarak  iptal  edilmesiyle \nsonuçlanacağını unutmayın. \nÖdünç Yayın Alma Sayısı: \nÖdünç Yayın Alma Süresi: \n \n \nKullanıcı \nTipi \nÖdünç \nAlınabilen \nToplam \nYayın Sayısı",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 368,
+                "to": 384
+              }
+            }
+          }
+        },
+        {
+          "pageContent": "bulunmaktadır. Kütüphane kaynaklarını web sayfasında yer alan, Kütüphane Katalog Tarama ve Tarıyorum \nalanından  tarayabilirsiniz. Aradığınız  yayının bibliyografik   künyesine, içeriğine, ödünç  alınabilir   olup \nolmadığına, bulunduğu kütüphane ve yer bilgisine ulaşabilirsiniz.  \n \nKoleksiyonun Yerleşimi  \nKoleksiyonun yerleşiminde Library  of  Congress Sınıflama Sistemi kullanılmaktadır. Bu sistemde konuların",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 66,
+                "to": 71
+              }
+            }
+          }
+        }
+      ],
+      "answer": "Üzgünüm, bu konu hakkında belgemde yeterli bilgi bulunmuyor. Belgede kimlerin kütüphaneden üye olmaksızın veya üyelik gerektiren hizmetlerden nasıl yararlanabileceği (mezun kartı ile, çıkarılacak üyelik kartı ile, misafir üye olarak) belirtilmiştir, ancak üyelik başvuru süreci veya adımları hakkında detaylı bilgi verilmemiştir."
+    },
+    "toolsUsed": [],
+    "executionTime": null,
+    "error": null,
+    "chainExecution": null,
+    "additionalInfo": {}
+  },
+  {
+    "type": "chat",
+    "timestamp": "2025-08-19 07:14:14.051",
+    "userQuery": {
+      "input": "PQ2286.A68 Ç36 2019",
+      "chat_history": [],
+      "context": [
+        {
+          "pageContent": "Aytaç Kayadevir - Dış Hat: Kütüphaneci\nTeknik Hizmetler\n\n 285 30 13 \nDahili: 4119\nkayadevir@itu.edu.tr, Dahili: Kütüphaneci\nTeknik Hizmetler\n\nDış Hat: 285 30 13 \n 4119\nkayadevir@itu.edu.tr\nBasri Kadir Şekermen - Dış Hat: Memur\nYönetim\n\n 285 30 13 \nDahili: 4137\nsekermen@itu.edu.tr, Dahili: Memur\nYönetim\n\nDış Hat: 285 30 13 \n 4137\nsekermen@itu.edu.tr\nBelkız Özgenç - Dış Hat: Bilgisayar İşletmeni\nKoleksiyon Geliştirme",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 1,
+                "to": 24
+              }
+            }
+          }
+        },
+        {
+          "pageContent": "Dış Hat: 285 30 13 \n 4137\nsekermen@itu.edu.tr\nBelkız Özgenç - Dış Hat: Bilgisayar İşletmeni\nKoleksiyon Geliştirme\n\n 285 30 13 \nDahili: 4104\naktayb@itu.edu.tr, Dahili: Bilgisayar İşletmeni\nKoleksiyon Geliştirme",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 20,
+                "to": 29
+              }
+            }
+          }
+        },
+        {
+          "pageContent": "285 30 13 \nDahili: 4104\naktayb@itu.edu.tr, Dahili: Bilgisayar İşletmeni\nKoleksiyon Geliştirme\n\nDış Hat: 285 30 13 \n 4104\naktayb@itu.edu.tr\nBurcu Bulut - Dış Hat: Kütüphaneci (Öğr. Gör.)\nElektronik Kaynaklar ve Akademik Araştırma Hizmetleri\n 285 30 13 \nDahili: 6625\nbulutburcu@itu.edu.tr, Dahili: Kütüphaneci (Öğr. Gör.)\nElektronik Kaynaklar ve Akademik Araştırma Hizmetleri\nDış Hat: 285 30 13 \n 6625\nbulutburcu@itu.edu.tr\nCihan Malay - Dış Hat: Bilgisayar İşletmeni\nÖdünç Verme",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 26,
+                "to": 44
+              }
+            }
+          }
+        },
+        {
+          "pageContent": "285 30 13 \nDahili: 4120\nmalay@itu.edu.tr, Dahili: Bilgisayar İşletmeni\nÖdünç Verme\n\nDış Hat: 285 30 13 \n 4120\nmalay@itu.edu.tr\nDerya Karakoç - Dış Hat: Kütüphaneci - Gece Görevlisi\nÖdünç Verme\n\n 285 30 13\nDahili: 6619, Dahili: Kütüphaneci - Gece Görevlisi\nÖdünç Verme\n\nDış Hat: 285 30 13\n 6619\nDilek Tuğba Tural - Dış Hat: Bilgisayar İşletmeni\nÖdünç Verme\n\n 285 30 13 \nDahili: 6619\nturald@itu.edu.tr, Dahili: Bilgisayar İşletmeni\nÖdünç Verme",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 46,
+                "to": 69
+              }
+            }
+          }
+        },
+        {
+          "pageContent": "285 30 13 \nDahili: 6619\nturald@itu.edu.tr, Dahili: Bilgisayar İşletmeni\nÖdünç Verme\n\nDış Hat: 285 30 13 \n 6619\nturald@itu.edu.tr\nEbru Akçeken - Dış Hat: Kütüphaneci (Öğr. Gör.)\nElektronik Kaynaklar ve Akademik Araştırma Hizmetleri\n 285 30 13 \nDahili: 4111\nakceken@itu.edu.tr, Dahili: Kütüphaneci (Öğr. Gör.)\nElektronik Kaynaklar ve Akademik Araştırma Hizmetleri\nDış Hat: 285 30 13 \n 4111\nakceken@itu.edu.tr\nEda Kara - Dış Hat: Destek Personeli\nRaf Hizmetleri",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 66,
+                "to": 84
+              }
+            }
+          }
+        }
+      ],
+      "answer": "Üzgünüm, bu konu hakkında belgemde yeterli bilgi bulunmuyor."
+    },
+    "toolsUsed": [],
+    "executionTime": null,
+    "error": null,
+    "chainExecution": null,
+    "additionalInfo": {}
+  },
+  {
+    "type": "chat",
+    "timestamp": "2025-08-19 07:15:53.010",
+    "userQuery": {
+      "input": "P ile başlayan yer numarası hangi katta",
+      "chat_history": [],
+      "context": [
+        {
+          "pageContent": "Aytaç Kayadevir - Dış Hat: Kütüphaneci\nTeknik Hizmetler\n\n 285 30 13 \nDahili: 4119\nkayadevir@itu.edu.tr, Dahili: Kütüphaneci\nTeknik Hizmetler\n\nDış Hat: 285 30 13 \n 4119\nkayadevir@itu.edu.tr\nBasri Kadir Şekermen - Dış Hat: Memur\nYönetim\n\n 285 30 13 \nDahili: 4137\nsekermen@itu.edu.tr, Dahili: Memur\nYönetim\n\nDış Hat: 285 30 13 \n 4137\nsekermen@itu.edu.tr\nBelkız Özgenç - Dış Hat: Bilgisayar İşletmeni\nKoleksiyon Geliştirme",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 1,
+                "to": 24
+              }
+            }
+          }
+        },
+        {
+          "pageContent": "Dış Hat: 285 30 13 \n 4137\nsekermen@itu.edu.tr\nBelkız Özgenç - Dış Hat: Bilgisayar İşletmeni\nKoleksiyon Geliştirme\n\n 285 30 13 \nDahili: 4104\naktayb@itu.edu.tr, Dahili: Bilgisayar İşletmeni\nKoleksiyon Geliştirme",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 20,
+                "to": 29
+              }
+            }
+          }
+        },
+        {
+          "pageContent": "285 30 13 \nDahili: 4104\naktayb@itu.edu.tr, Dahili: Bilgisayar İşletmeni\nKoleksiyon Geliştirme\n\nDış Hat: 285 30 13 \n 4104\naktayb@itu.edu.tr\nBurcu Bulut - Dış Hat: Kütüphaneci (Öğr. Gör.)\nElektronik Kaynaklar ve Akademik Araştırma Hizmetleri\n 285 30 13 \nDahili: 6625\nbulutburcu@itu.edu.tr, Dahili: Kütüphaneci (Öğr. Gör.)\nElektronik Kaynaklar ve Akademik Araştırma Hizmetleri\nDış Hat: 285 30 13 \n 6625\nbulutburcu@itu.edu.tr\nCihan Malay - Dış Hat: Bilgisayar İşletmeni\nÖdünç Verme",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 26,
+                "to": 44
+              }
+            }
+          }
+        },
+        {
+          "pageContent": "285 30 13 \nDahili: 4120\nmalay@itu.edu.tr, Dahili: Bilgisayar İşletmeni\nÖdünç Verme\n\nDış Hat: 285 30 13 \n 4120\nmalay@itu.edu.tr\nDerya Karakoç - Dış Hat: Kütüphaneci - Gece Görevlisi\nÖdünç Verme\n\n 285 30 13\nDahili: 6619, Dahili: Kütüphaneci - Gece Görevlisi\nÖdünç Verme\n\nDış Hat: 285 30 13\n 6619\nDilek Tuğba Tural - Dış Hat: Bilgisayar İşletmeni\nÖdünç Verme\n\n 285 30 13 \nDahili: 6619\nturald@itu.edu.tr, Dahili: Bilgisayar İşletmeni\nÖdünç Verme",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 46,
+                "to": 69
+              }
+            }
+          }
+        },
+        {
+          "pageContent": "285 30 13 \nDahili: 6619\nturald@itu.edu.tr, Dahili: Bilgisayar İşletmeni\nÖdünç Verme\n\nDış Hat: 285 30 13 \n 6619\nturald@itu.edu.tr\nEbru Akçeken - Dış Hat: Kütüphaneci (Öğr. Gör.)\nElektronik Kaynaklar ve Akademik Araştırma Hizmetleri\n 285 30 13 \nDahili: 4111\nakceken@itu.edu.tr, Dahili: Kütüphaneci (Öğr. Gör.)\nElektronik Kaynaklar ve Akademik Araştırma Hizmetleri\nDış Hat: 285 30 13 \n 4111\nakceken@itu.edu.tr\nEda Kara - Dış Hat: Destek Personeli\nRaf Hizmetleri",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 66,
+                "to": 84
+              }
+            }
+          }
+        }
+      ],
+      "answer": "Üzgünüm, bu konu hakkında belgemde yeterli bilgi bulunmuyor."
+    },
+    "toolsUsed": [],
+    "executionTime": null,
+    "error": null,
+    "chainExecution": null,
+    "additionalInfo": {}
+  },
+  {
+    "type": "chat",
+    "timestamp": "2025-08-19 07:21:24.513",
+    "userQuery": {
+      "input": "PQ2286.A68 Ç36 2019",
+      "chat_history": [],
+      "context": [
+        {
+          "pageContent": "Aytaç Kayadevir - Dış Hat: Kütüphaneci\nTeknik Hizmetler\n\n 285 30 13 \nDahili: 4119\nkayadevir@itu.edu.tr, Dahili: Kütüphaneci\nTeknik Hizmetler\n\nDış Hat: 285 30 13 \n 4119\nkayadevir@itu.edu.tr\nBasri Kadir Şekermen - Dış Hat: Memur\nYönetim\n\n 285 30 13 \nDahili: 4137\nsekermen@itu.edu.tr, Dahili: Memur\nYönetim\n\nDış Hat: 285 30 13 \n 4137\nsekermen@itu.edu.tr\nBelkız Özgenç - Dış Hat: Bilgisayar İşletmeni\nKoleksiyon Geliştirme",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 1,
+                "to": 24
+              }
+            }
+          }
+        },
+        {
+          "pageContent": "Dış Hat: 285 30 13 \n 4137\nsekermen@itu.edu.tr\nBelkız Özgenç - Dış Hat: Bilgisayar İşletmeni\nKoleksiyon Geliştirme\n\n 285 30 13 \nDahili: 4104\naktayb@itu.edu.tr, Dahili: Bilgisayar İşletmeni\nKoleksiyon Geliştirme",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 20,
+                "to": 29
+              }
+            }
+          }
+        },
+        {
+          "pageContent": "285 30 13 \nDahili: 4104\naktayb@itu.edu.tr, Dahili: Bilgisayar İşletmeni\nKoleksiyon Geliştirme\n\nDış Hat: 285 30 13 \n 4104\naktayb@itu.edu.tr\nBurcu Bulut - Dış Hat: Kütüphaneci (Öğr. Gör.)\nElektronik Kaynaklar ve Akademik Araştırma Hizmetleri\n 285 30 13 \nDahili: 6625\nbulutburcu@itu.edu.tr, Dahili: Kütüphaneci (Öğr. Gör.)\nElektronik Kaynaklar ve Akademik Araştırma Hizmetleri\nDış Hat: 285 30 13 \n 6625\nbulutburcu@itu.edu.tr\nCihan Malay - Dış Hat: Bilgisayar İşletmeni\nÖdünç Verme",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 26,
+                "to": 44
+              }
+            }
+          }
+        },
+        {
+          "pageContent": "285 30 13 \nDahili: 4120\nmalay@itu.edu.tr, Dahili: Bilgisayar İşletmeni\nÖdünç Verme\n\nDış Hat: 285 30 13 \n 4120\nmalay@itu.edu.tr\nDerya Karakoç - Dış Hat: Kütüphaneci - Gece Görevlisi\nÖdünç Verme\n\n 285 30 13\nDahili: 6619, Dahili: Kütüphaneci - Gece Görevlisi\nÖdünç Verme\n\nDış Hat: 285 30 13\n 6619\nDilek Tuğba Tural - Dış Hat: Bilgisayar İşletmeni\nÖdünç Verme\n\n 285 30 13 \nDahili: 6619\nturald@itu.edu.tr, Dahili: Bilgisayar İşletmeni\nÖdünç Verme",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 46,
+                "to": 69
+              }
+            }
+          }
+        },
+        {
+          "pageContent": "285 30 13 \nDahili: 6619\nturald@itu.edu.tr, Dahili: Bilgisayar İşletmeni\nÖdünç Verme\n\nDış Hat: 285 30 13 \n 6619\nturald@itu.edu.tr\nEbru Akçeken - Dış Hat: Kütüphaneci (Öğr. Gör.)\nElektronik Kaynaklar ve Akademik Araştırma Hizmetleri\n 285 30 13 \nDahili: 4111\nakceken@itu.edu.tr, Dahili: Kütüphaneci (Öğr. Gör.)\nElektronik Kaynaklar ve Akademik Araştırma Hizmetleri\nDış Hat: 285 30 13 \n 4111\nakceken@itu.edu.tr\nEda Kara - Dış Hat: Destek Personeli\nRaf Hizmetleri",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 66,
+                "to": 84
+              }
+            }
+          }
+        }
+      ],
+      "answer": "Üzgünüm, bu konu hakkında belgemde yeterli bilgi bulunmuyor."
+    },
+    "toolsUsed": [],
+    "executionTime": null,
+    "error": null,
+    "chainExecution": null,
+    "additionalInfo": {}
+  },
+  {
+    "type": "chat",
+    "timestamp": "2025-08-19 07:21:28.318",
+    "userQuery": {
+      "input": "PQ2286.A68 E73 2010",
+      "chat_history": [],
+      "context": [
+        {
+          "pageContent": "Aytaç Kayadevir - Dış Hat: Kütüphaneci\nTeknik Hizmetler\n\n 285 30 13 \nDahili: 4119\nkayadevir@itu.edu.tr, Dahili: Kütüphaneci\nTeknik Hizmetler\n\nDış Hat: 285 30 13 \n 4119\nkayadevir@itu.edu.tr\nBasri Kadir Şekermen - Dış Hat: Memur\nYönetim\n\n 285 30 13 \nDahili: 4137\nsekermen@itu.edu.tr, Dahili: Memur\nYönetim\n\nDış Hat: 285 30 13 \n 4137\nsekermen@itu.edu.tr\nBelkız Özgenç - Dış Hat: Bilgisayar İşletmeni\nKoleksiyon Geliştirme",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 1,
+                "to": 24
+              }
+            }
+          }
+        },
+        {
+          "pageContent": "Dış Hat: 285 30 13 \n 4137\nsekermen@itu.edu.tr\nBelkız Özgenç - Dış Hat: Bilgisayar İşletmeni\nKoleksiyon Geliştirme\n\n 285 30 13 \nDahili: 4104\naktayb@itu.edu.tr, Dahili: Bilgisayar İşletmeni\nKoleksiyon Geliştirme",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 20,
+                "to": 29
+              }
+            }
+          }
+        },
+        {
+          "pageContent": "285 30 13 \nDahili: 4104\naktayb@itu.edu.tr, Dahili: Bilgisayar İşletmeni\nKoleksiyon Geliştirme\n\nDış Hat: 285 30 13 \n 4104\naktayb@itu.edu.tr\nBurcu Bulut - Dış Hat: Kütüphaneci (Öğr. Gör.)\nElektronik Kaynaklar ve Akademik Araştırma Hizmetleri\n 285 30 13 \nDahili: 6625\nbulutburcu@itu.edu.tr, Dahili: Kütüphaneci (Öğr. Gör.)\nElektronik Kaynaklar ve Akademik Araştırma Hizmetleri\nDış Hat: 285 30 13 \n 6625\nbulutburcu@itu.edu.tr\nCihan Malay - Dış Hat: Bilgisayar İşletmeni\nÖdünç Verme",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 26,
+                "to": 44
+              }
+            }
+          }
+        },
+        {
+          "pageContent": "285 30 13 \nDahili: 4120\nmalay@itu.edu.tr, Dahili: Bilgisayar İşletmeni\nÖdünç Verme\n\nDış Hat: 285 30 13 \n 4120\nmalay@itu.edu.tr\nDerya Karakoç - Dış Hat: Kütüphaneci - Gece Görevlisi\nÖdünç Verme\n\n 285 30 13\nDahili: 6619, Dahili: Kütüphaneci - Gece Görevlisi\nÖdünç Verme\n\nDış Hat: 285 30 13\n 6619\nDilek Tuğba Tural - Dış Hat: Bilgisayar İşletmeni\nÖdünç Verme\n\n 285 30 13 \nDahili: 6619\nturald@itu.edu.tr, Dahili: Bilgisayar İşletmeni\nÖdünç Verme",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 46,
+                "to": 69
+              }
+            }
+          }
+        },
+        {
+          "pageContent": "285 30 13 \nDahili: 6619\nturald@itu.edu.tr, Dahili: Bilgisayar İşletmeni\nÖdünç Verme\n\nDış Hat: 285 30 13 \n 6619\nturald@itu.edu.tr\nEbru Akçeken - Dış Hat: Kütüphaneci (Öğr. Gör.)\nElektronik Kaynaklar ve Akademik Araştırma Hizmetleri\n 285 30 13 \nDahili: 4111\nakceken@itu.edu.tr, Dahili: Kütüphaneci (Öğr. Gör.)\nElektronik Kaynaklar ve Akademik Araştırma Hizmetleri\nDış Hat: 285 30 13 \n 4111\nakceken@itu.edu.tr\nEda Kara - Dış Hat: Destek Personeli\nRaf Hizmetleri",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 66,
+                "to": 84
+              }
+            }
+          }
+        }
+      ],
+      "answer": "Üzgünüm, bu konu hakkında belgemde yeterli bilgi bulunmuyor."
+    },
+    "toolsUsed": [],
+    "executionTime": null,
+    "error": null,
+    "chainExecution": null,
+    "additionalInfo": {}
+  },
+  {
+    "type": "error",
+    "timestamp": "2025-08-19 07:21:42.400",
+    "context": {},
+    "error": {
+      "type": "string",
+      "value": "Agent sorgusu işlenirken hata: sefiller nerede"
+    }
+  },
+  {
+    "type": "chat",
+    "timestamp": "2025-08-19 07:22:56.251",
+    "userQuery": {
+      "input": "PQ2286.A68 Ç36 2019",
+      "chat_history": [],
+      "context": [
+        {
+          "pageContent": "Aşağıda Katalog Tarama’dan erişilen bir yayının bibliyografik künyesi görünmektedir;  \n \n \n \nKatalog Tarama: Yazar Adı Taraması \n \nTarama alanlarından yazar alanı seçilerek, aranan yazarın soyadının arama kutucuğuna yazılarak yapıldığı \ntarama biçimidir.",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 256,
+                "to": 263
+              }
+            }
+          }
+        },
+        {
+          "pageContent": "Örneğin A: Tarih, B: Bilim başlıklarını temsil etsin.  \nA and B   :  İçinde tarih ve  bilim sözcüklerinin ikisinin de bulunduğu sonuçları,  \nA or B        :  İçinde tarih sözcüğünün ve bilim sözcüğünün geçtiği sonuçları, \nA not B  :  İçinde bilim sözcüğünün geçmediği tarih sözcüğünün geçtiği sonuçları içerir.",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 350,
+                "to": 353
+              }
+            }
+          }
+        },
+        {
+          "pageContent": "bulabilirsiniz.  Mustafa  İnan  Kütüphanesi  kitap  koleksiyonunun  yer  numarası  A  ile  başlayanlarla P  ile \nbaşlayan kitap koleksiyonu giriş katta yer almaktadır. Bu bölümdeki kitapları üyelik haklarınız kapsamında \nödünç alabilirsiniz.  \nReferans Kaynakları:  Ansiklopediler, indeksler,  abstraktlar,  elkitapları, yıllıklar gibi genel kullanıma yönelik \nolan danışma kaynaklarını giriş katta bulabilirsiniz. Bu koleksiyondaki kitapların yer numaralarının başında",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 129,
+                "to": 133
+              }
+            }
+          }
+        },
+        {
+          "pageContent": "Dış Hat: 285 30 13 \n 6619\nkerimkaptan67@gmail.com\nLeyla Akçakoca - Dış Hat: Kütüphaneci - Gece Görevlisi\nÖdünç Verme\n\n 285 30 13 \nDahili: 6619\nterkib_i.bend@hotmail.com, Dahili: Kütüphaneci - Gece Görevlisi\nÖdünç Verme\n\nDış Hat: 285 30 13 \n 6619\nterkib_i.bend@hotmail.com\nMehtap Uca - Dış Hat: Yönetici Asistanı\nYönetim\n\n 285 35 96 \nDahili: 3596\nucame@itu.edu.tr, Dahili: Yönetici Asistanı\nYönetim\n\nDış Hat: 285 35 96 \n 3596\nucame@itu.edu.tr\nMeral Uzun - Dış Hat: Destek Personeli\nRaf Hizmetleri",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 334,
+                "to": 360
+              }
+            }
+          }
+        },
+        {
+          "pageContent": "285 30 13 \nDahili: 4123\nmiyagy37@gmail.com, Dahili: Destek Personeli\nRaf Hizmetleri\n\nDış Hat: 285 30 13 \n 4123\nmiyagy37@gmail.com\nGökhan Usta - Dış Hat: Kütüphaneci (Öğr. Gör.)\nTeknik Hizmetler\n\n 285 30 13 \nDahili: 4135\ngusta@itu.edu.tr, Dahili: Kütüphaneci (Öğr. Gör.)\nTeknik Hizmetler\n\nDış Hat: 285 30 13 \n 4135\ngusta@itu.edu.tr\nGöknur Aslan - Dış Hat: Daire Başkanı\nYönetim\n\n 285 35 96 \nDahili: 3596\naslang@itu.edu.tr, Dahili: Daire Başkanı\nYönetim",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 192,
+                "to": 217
+              }
+            }
+          }
+        }
+      ],
+      "answer": "Üzgünüm, bu konu hakkında belgemde yeterli bilgi bulunmuyor."
+    },
+    "toolsUsed": [],
+    "executionTime": null,
+    "error": null,
+    "chainExecution": null,
+    "additionalInfo": {}
+  },
+  {
+    "type": "chat",
+    "timestamp": "2025-08-19 07:23:01.473",
+    "userQuery": {
+      "input": "PQ2286.A68 E73 2010",
+      "chat_history": [],
+      "context": [
+        {
+          "pageContent": "Aşağıda Katalog Tarama’dan erişilen bir yayının bibliyografik künyesi görünmektedir;  \n \n \n \nKatalog Tarama: Yazar Adı Taraması \n \nTarama alanlarından yazar alanı seçilerek, aranan yazarın soyadının arama kutucuğuna yazılarak yapıldığı \ntarama biçimidir.",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 256,
+                "to": 263
+              }
+            }
+          }
+        },
+        {
+          "pageContent": "Örneğin A: Tarih, B: Bilim başlıklarını temsil etsin.  \nA and B   :  İçinde tarih ve  bilim sözcüklerinin ikisinin de bulunduğu sonuçları,  \nA or B        :  İçinde tarih sözcüğünün ve bilim sözcüğünün geçtiği sonuçları, \nA not B  :  İçinde bilim sözcüğünün geçmediği tarih sözcüğünün geçtiği sonuçları içerir.",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 350,
+                "to": 353
+              }
+            }
+          }
+        },
+        {
+          "pageContent": "7 \n \n \n \nYazarın soyadını yazarak yapacağınız taramada aynı soyadını taşıyan diğer yazarlar da listelenir.  \nMümkün   oldukça yazar  adını  tam  olarak  yazmaya  çalışmanız, sizi  aradığınız  sonuca  daha çok \nyaklaştıracaktır. Yazar   listesinden,  aradığınız  yazar  adını  seçtiğinizde  o  yazara  ait  yayınların  listesine \nulaşabilirsiniz.  \n \n \nBu  arayüzdeki  butonlarla  yeni  bir  taramaya başlayabilir, tarama sonuçlarını geniş gösterim modunda",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 271,
+                "to": 281
+              }
+            }
+          }
+        },
+        {
+          "pageContent": "bulunduğu yer, yayının dili, yayının yılı ya da başlıkta geçen kelimelere göre sınırlandırabilirsiniz.  \n \nÖrneğin; electronic başlığında  konu  taraması  sonuçlarına  ulaştığınızda   sayfa  başındaki sınırla/sırala \nbutonunu seçerek yayının bulunduğu yeri Mustafa İnan Kütüphanesi Görsel İşitsel Merkez olarak seçip \nyeniden  tarattığınızda electronic konu başlığı almış olan ve Görsel İşitsel Merkez Koleksiyonu’nda  bulunan \nkaynaklara erişmiş olursunuz.",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 325,
+                "to": 330
+              }
+            }
+          }
+        },
+        {
+          "pageContent": "bulabilirsiniz.  Mustafa  İnan  Kütüphanesi  kitap  koleksiyonunun  yer  numarası  A  ile  başlayanlarla P  ile \nbaşlayan kitap koleksiyonu giriş katta yer almaktadır. Bu bölümdeki kitapları üyelik haklarınız kapsamında \nödünç alabilirsiniz.  \nReferans Kaynakları:  Ansiklopediler, indeksler,  abstraktlar,  elkitapları, yıllıklar gibi genel kullanıma yönelik \nolan danışma kaynaklarını giriş katta bulabilirsiniz. Bu koleksiyondaki kitapların yer numaralarının başında",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 129,
+                "to": 133
+              }
+            }
+          }
+        }
+      ],
+      "answer": "Üzgünüm, bu konu hakkında belgemde yeterli bilgi bulunmuyor."
+    },
+    "toolsUsed": [],
+    "executionTime": null,
+    "error": null,
+    "chainExecution": null,
+    "additionalInfo": {}
+  },
+  {
+    "type": "chat",
+    "timestamp": "2025-08-19 07:23:30.295",
+    "userQuery": {
+      "input": "P ile başlayan yer numarasına sahip yayınlar nerede",
+      "chat_history": [],
+      "context": [
+        {
+          "pageContent": "Koleksiyonun Yerleşimi  \nKoleksiyonun yerleşiminde Library  of  Congress Sınıflama Sistemi kullanılmaktadır. Bu sistemde konuların \nharf ve rakamlardan oluşan karşılıklarına yer numarası adı verilir. Yer numarası her bilgi kaynağı için tektir, \nkonusal düzende ve kaynağın koleksiyonda bulunduğu yeri göstermektedir. \n \nAşağıda çeşitli konulardaki yayınlara ait yer numarası örnekleri verilmiştir; \n \nSosyal Bilimler      Müzik  Matematik Elektronik Denizcilik",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 70,
+                "to": 77
+              }
+            }
+          }
+        },
+        {
+          "pageContent": "Aşağıda çeşitli konulardaki yayınlara ait yer numarası örnekleri verilmiştir; \n \nSosyal Bilimler      Müzik  Matematik Elektronik Denizcilik \n \nHM 61    ML 410  QA 303  TK 7816 VM 391  \n.Ö93    .S932                 .B35  .H36  .S43 \n2008    .A13                2006  2003  2005 \n 2004 \n \nAşağıda bir kitabın bibliyografik künyesi ve yer numarası görülmektedir; \n \nBalcı, Mustafa. \n Ankara : Balcı Yayınları, 2006. \n 4. basım.  \n 2 cilt ; şekil, 25 cm.",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 75,
+                "to": 89
+              }
+            }
+          }
+        },
+        {
+          "pageContent": "Bunun için web sayfamızdaki Hizmetler menüsü altında yer alan formu doldurmanız yeterlidir. Detaylı bilgi \niçin bkz.: Aranılan Yayın İTÜ Kütüphanelerinde Yoksa... (s.13)      \n \nGenel Kitap Koleksiyonu  (A – P yer numaralı kitaplar): Aradığınız bir yayını yer numarası yardımıyla \nbulabilirsiniz.  Mustafa  İnan  Kütüphanesi  kitap  koleksiyonunun  yer  numarası  A  ile  başlayanlarla P  ile",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 125,
+                "to": 129
+              }
+            }
+          }
+        },
+        {
+          "pageContent": "İnan Kütüphanesi Görsel İşitsel Merkez gibi.  \n \nYer numarası: Yayına ait yer numarasını not edin. \n \nStatüsü: Yayın raftaki yerinde (RAFTA), kullanıcı üzerinde (İADE TARİHİ yazılıdır), kullanıcı üzerinde ve \nayırtmaları var (İADE TARİHİ +AYIRTMA SAYISI yazılıdır), kayıp, ciltte  veya  ödünç verilmeyen bir yayın \nolabilir.  \n \nRafta olduğu görülen yayını, künyesinde belirtilen yerde, yer numarasına göre bulabilirsiniz.",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 229,
+                "to": 237
+              }
+            }
+          }
+        },
+        {
+          "pageContent": "bulabilirsiniz.  Mustafa  İnan  Kütüphanesi  kitap  koleksiyonunun  yer  numarası  A  ile  başlayanlarla P  ile \nbaşlayan kitap koleksiyonu giriş katta yer almaktadır. Bu bölümdeki kitapları üyelik haklarınız kapsamında \nödünç alabilirsiniz.  \nReferans Kaynakları:  Ansiklopediler, indeksler,  abstraktlar,  elkitapları, yıllıklar gibi genel kullanıma yönelik \nolan danışma kaynaklarını giriş katta bulabilirsiniz. Bu koleksiyondaki kitapların yer numaralarının başında",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 129,
+                "to": 133
+              }
+            }
+          }
+        }
+      ],
+      "answer": "P ile başlayan yer numarasına sahip kitap koleksiyonu Mustafa İnan Kütüphanesi'nin giriş katında yer almaktadır."
+    },
+    "toolsUsed": [],
+    "executionTime": null,
+    "error": null,
+    "chainExecution": null,
+    "additionalInfo": {}
+  },
+  {
+    "type": "error",
+    "timestamp": "2025-08-19 07:23:31.404",
+    "context": {},
+    "error": {
+      "type": "string",
+      "value": "Agent sorgusu işlenirken hata: P ile başlayan yer numarasına sahip yayınlar nerede"
+    }
+  },
+  {
+    "type": "chat",
+    "timestamp": "2025-08-19 07:23:49.606",
+    "userQuery": {
+      "input": "tuvaletler nerede",
+      "chat_history": [],
+      "context": [
+        {
+          "pageContent": "Öğrenci  Dolapları: Mustafa İnan Kütüphanesinin giriş katında bulunan dolapların anahtarlarını, Ödünç \nVerme  Bankosu’ndan kimlik karşılığında 5 saatliğine ödünç alabilir, süreyi 3  kez  uzatabilirsiniz. Gecikme \ndurumunda saatlik gecikme ücreti alınır. Anahtarı kaybetme durumunda ise kaybetme bedeli \nalınmaktadır. \n \nTuvaletler: Kütüphaneye girişte, sol taraftadır. \n \nBirinci Kat \nSol koridorda (bina arka cephesinde yer alan raf bloğu) Q ile başlayan kitap koleksiyonu, sağ koridorda (bina",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 170,
+                "to": 178
+              }
+            }
+          }
+        },
+        {
+          "pageContent": "Birinci Kat \nSol koridorda (bina arka cephesinde yer alan raf bloğu) Q ile başlayan kitap koleksiyonu, sağ koridorda (bina \nön cephesinde yer alan raf bloğu) R ile başlayan Z’ye kadar devam eden kitap koleksiyonu yer almaktadır. \nİkinci ve Üçüncü Kat  \n \nSüreli Yayınlar (dergiler) koleksiyonu yer almaktadır. Aranılan bir derginin hangi rafta olduğu -kitaplarda \nolduğu gibi- yer numarası yardımıyla bulunabilir. Süreli yayınlar ödünç verilmez, kütüphane içinde kullanılır.",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 177,
+                "to": 183
+              }
+            }
+          }
+        },
+        {
+          "pageContent": "bulunmaktadır. İTÜ Yayınları’nın birer kopyası gelecek kuşaklara aktarılmak üzere İTÜ Yayınları Arşivi’nde \nyer almakta, ödünç verilmemektedir. Detaylı bilgi referans kütüphanecilerinden (Danışma Masası) alınabilir. \n  \nSesli Çalışma Salonu  \nKütüphane’ye girişte soldaki merdivenlerle ulaşılan Salon’da grup çalışmaları yapılabilir, Kütüphane’nin \ndiğer alanlarında olduğu gibi çok sessiz olunması beklenmez. Sesli Çalışma Salonu’nun bir kısmı mescit \nolarak düzenlenmiştir.",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 191,
+                "to": 197
+              }
+            }
+          }
+        },
+        {
+          "pageContent": "3 \n \nMUSTAFA İNAN KÜTÜPHANESİ’NDE NE NEREDE? \n \nGiriş Kat \n  \nÖdünç  Verme  Bankosu:  Kütüphaneye girişte sağda yer almaktadır. Ödünç kitap almak, aldığınız kitabı iade \netmek, ayırttığınız yayınları ödünç almak için bu bankoda çalışan görevliler sizlere yardımcı olmaktan \nmutluluk duyacaktır. \n  \nKütüphanelerarası Ödünç Yayın / Belge Sağlama Ofisi: İTÜ kütüphanelerinin koleksiyonunda  olmayan  ve",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 112,
+                "to": 122
+              }
+            }
+          }
+        },
+        {
+          "pageContent": "Bunun için web sayfamızdaki Hizmetler menüsü altında yer alan formu doldurmanız yeterlidir. Detaylı bilgi \niçin bkz.: Aranılan Yayın İTÜ Kütüphanelerinde Yoksa... (s.13)      \n \nGenel Kitap Koleksiyonu  (A – P yer numaralı kitaplar): Aradığınız bir yayını yer numarası yardımıyla \nbulabilirsiniz.  Mustafa  İnan  Kütüphanesi  kitap  koleksiyonunun  yer  numarası  A  ile  başlayanlarla P  ile",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 125,
+                "to": 129
+              }
+            }
+          }
+        }
+      ],
+      "answer": "Tuvaletler, kütüphaneye girişte, sol taraftadır."
+    },
+    "toolsUsed": [],
+    "executionTime": null,
+    "error": null,
+    "chainExecution": null,
+    "additionalInfo": {}
+  },
+  {
+    "type": "chat",
+    "timestamp": "2025-08-19 07:24:12.100",
+    "userQuery": {
+      "input": "kaç kitap ödünç alabilirim",
+      "chat_history": [],
+      "context": [
+        {
+          "pageContent": "10 \n \nYAYIN ÖDÜNÇ ALMA      \n                                                                                                \nRaftan aldığınız bir yayını, İTÜ kimliğinizle ödünç verme bankolarından ödünç alabilirsiniz. Ödünç alma veya \nkütüphane  girişlerinde  başkasının  kartıyla işlem  yapmanın,  üyeliğin  geçici  olarak  iptal  edilmesiyle \nsonuçlanacağını unutmayın. \nÖdünç Yayın Alma Sayısı: \nÖdünç Yayın Alma Süresi: \n \n \nKullanıcı \nTipi \nÖdünç \nAlınabilen \nToplam \nYayın Sayısı",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 368,
+                "to": 384
+              }
+            }
+          }
+        },
+        {
+          "pageContent": "ödünç  verilme  süresi  2  saattir. Ayrıca bu yayınların kullanım süreleri uzatılamaz, ayırtma yapılamaz ve \nsaatlik gecikme cezası uygulanır. \n  \nFilmler:  DVD,  VCD,  CD-Rom formatındaki sinema filmi, belgesel, dil eğitim setleri Görsel İşitsel Merkez’de \nbulunmaktadır.  Bu  koleksiyondan  birimde   bulunan   karellerden   yararlanabileceğiniz  gibi  ödünç  de \nalabilirsiniz. En  az 5 kişi olduğunuzda koleksiyonumuzdan seçtiğiniz filmi rezervasyon  yaparak Konferans",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 145,
+                "to": 150
+              }
+            }
+          }
+        },
+        {
+          "pageContent": "ya da e-posta iletisi olarak gönderebilirsiniz. \nDers Kitapları: Fakültelerden  gelen  istek  üzerine -veya kütüphane yönetiminin kararı ile- tespit  edilen \nyayınlar, Rezerv Yayınlar Salonu’nda bulunur. Ders amaçlı kullanılan ve kullanım yoğunluğu nedeniyle sınırlı \nödünç  verme  kurallarıyla Rezerv Yayınlar Salonu’nda hizmete sunulan koleksiyonda  bulunan yayınların \nödünç  verilme  süresi  2  saattir. Ayrıca bu yayınların kullanım süreleri uzatılamaz, ayırtma yapılamaz ve",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 141,
+                "to": 145
+              }
+            }
+          }
+        },
+        {
+          "pageContent": "mutluluk duyacaktır. \n  \nKütüphanelerarası Ödünç Yayın / Belge Sağlama Ofisi: İTÜ kütüphanelerinin koleksiyonunda  olmayan  ve \nsatın alınmasını bekleyecek  zamanınızın olmadığı durumlarda, kitapları yurt içi  ya  da  yurt dışında bulunan \nbaşka kütüphanelerden sizin için ödünç alabilir ya da istediğiniz makalelerin kopyasını sizin için getirtebiliriz. \nBunun için web sayfamızdaki Hizmetler menüsü altında yer alan formu doldurmanız yeterlidir. Detaylı bilgi",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 120,
+                "to": 125
+              }
+            }
+          }
+        },
+        {
+          "pageContent": "bulabilirsiniz.  Mustafa  İnan  Kütüphanesi  kitap  koleksiyonunun  yer  numarası  A  ile  başlayanlarla P  ile \nbaşlayan kitap koleksiyonu giriş katta yer almaktadır. Bu bölümdeki kitapları üyelik haklarınız kapsamında \nödünç alabilirsiniz.  \nReferans Kaynakları:  Ansiklopediler, indeksler,  abstraktlar,  elkitapları, yıllıklar gibi genel kullanıma yönelik \nolan danışma kaynaklarını giriş katta bulabilirsiniz. Bu koleksiyondaki kitapların yer numaralarının başında",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 129,
+                "to": 133
+              }
+            }
+          }
+        }
+      ],
+      "answer": "Üzgünüm, bu konu hakkında belgemde yeterli bilgi bulunmuyor."
+    },
+    "toolsUsed": [],
+    "executionTime": null,
+    "error": null,
+    "chainExecution": null,
+    "additionalInfo": {}
+  },
+  {
+    "type": "chat",
+    "timestamp": "2025-08-19 07:24:39.815",
+    "userQuery": {
+      "input": "idari personel kaç kitap alabilir",
+      "chat_history": [],
+      "context": [
+        {
+          "pageContent": "ya da e-posta iletisi olarak gönderebilirsiniz. \nDers Kitapları: Fakültelerden  gelen  istek  üzerine -veya kütüphane yönetiminin kararı ile- tespit  edilen \nyayınlar, Rezerv Yayınlar Salonu’nda bulunur. Ders amaçlı kullanılan ve kullanım yoğunluğu nedeniyle sınırlı \nödünç  verme  kurallarıyla Rezerv Yayınlar Salonu’nda hizmete sunulan koleksiyonda  bulunan yayınların \nödünç  verilme  süresi  2  saattir. Ayrıca bu yayınların kullanım süreleri uzatılamaz, ayırtma yapılamaz ve",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 141,
+                "to": 145
+              }
+            }
+          }
+        },
+        {
+          "pageContent": "bulabilirsiniz.  Mustafa  İnan  Kütüphanesi  kitap  koleksiyonunun  yer  numarası  A  ile  başlayanlarla P  ile \nbaşlayan kitap koleksiyonu giriş katta yer almaktadır. Bu bölümdeki kitapları üyelik haklarınız kapsamında \nödünç alabilirsiniz.  \nReferans Kaynakları:  Ansiklopediler, indeksler,  abstraktlar,  elkitapları, yıllıklar gibi genel kullanıma yönelik \nolan danışma kaynaklarını giriş katta bulabilirsiniz. Bu koleksiyondaki kitapların yer numaralarının başında",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 129,
+                "to": 133
+              }
+            }
+          }
+        },
+        {
+          "pageContent": "10 \n \nYAYIN ÖDÜNÇ ALMA      \n                                                                                                \nRaftan aldığınız bir yayını, İTÜ kimliğinizle ödünç verme bankolarından ödünç alabilirsiniz. Ödünç alma veya \nkütüphane  girişlerinde  başkasının  kartıyla işlem  yapmanın,  üyeliğin  geçici  olarak  iptal  edilmesiyle \nsonuçlanacağını unutmayın. \nÖdünç Yayın Alma Sayısı: \nÖdünç Yayın Alma Süresi: \n \n \nKullanıcı \nTipi \nÖdünç \nAlınabilen \nToplam \nYayın Sayısı",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 368,
+                "to": 384
+              }
+            }
+          }
+        },
+        {
+          "pageContent": "293 13 00 \nDahili: 2163\npolatenes@itu.edu.tr, Dahili: Memur\nÖdünç Verme\n\nDış Hat: 293 13 00 \n 2163\npolatenes@itu.edu.tr\nFatma İnal - Dış Hat: Kütüphaneci (Öğr. Gör.) - Kütüphane Sorumlusu Yönetim\nYönetim\n\n 293 13 00 \nDahili: 2163\ninalf@itu.edu.tr, Dahili: Kütüphaneci (Öğr. Gör.) - Kütüphane Sorumlusu Yönetim\nYönetim",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 639,
+                "to": 653
+              }
+            }
+          }
+        },
+        {
+          "pageContent": "mutluluk duyacaktır. \n  \nKütüphanelerarası Ödünç Yayın / Belge Sağlama Ofisi: İTÜ kütüphanelerinin koleksiyonunda  olmayan  ve \nsatın alınmasını bekleyecek  zamanınızın olmadığı durumlarda, kitapları yurt içi  ya  da  yurt dışında bulunan \nbaşka kütüphanelerden sizin için ödünç alabilir ya da istediğiniz makalelerin kopyasını sizin için getirtebiliriz. \nBunun için web sayfamızdaki Hizmetler menüsü altında yer alan formu doldurmanız yeterlidir. Detaylı bilgi",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 120,
+                "to": 125
+              }
+            }
+          }
+        }
+      ],
+      "answer": "Üzgünüm, bu konu hakkında belgemde yeterli bilgi bulunmuyor."
+    },
+    "toolsUsed": [],
+    "executionTime": null,
+    "error": null,
+    "chainExecution": null,
+    "additionalInfo": {}
+  },
+  {
+    "type": "chat",
+    "timestamp": "2025-08-19 07:25:48.930",
+    "userQuery": {
+      "input": "idari personel kaç kitap alabilir",
+      "chat_history": [],
+      "context": [
+        {
+          "pageContent": "ya da e-posta iletisi olarak gönderebilirsiniz. \nDers Kitapları: Fakültelerden  gelen  istek  üzerine -veya kütüphane yönetiminin kararı ile- tespit  edilen \nyayınlar, Rezerv Yayınlar Salonu’nda bulunur. Ders amaçlı kullanılan ve kullanım yoğunluğu nedeniyle sınırlı \nödünç  verme  kurallarıyla Rezerv Yayınlar Salonu’nda hizmete sunulan koleksiyonda  bulunan yayınların \nödünç  verilme  süresi  2  saattir. Ayrıca bu yayınların kullanım süreleri uzatılamaz, ayırtma yapılamaz ve",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 141,
+                "to": 145
+              }
+            }
+          }
+        },
+        {
+          "pageContent": "bulabilirsiniz.  Mustafa  İnan  Kütüphanesi  kitap  koleksiyonunun  yer  numarası  A  ile  başlayanlarla P  ile \nbaşlayan kitap koleksiyonu giriş katta yer almaktadır. Bu bölümdeki kitapları üyelik haklarınız kapsamında \nödünç alabilirsiniz.  \nReferans Kaynakları:  Ansiklopediler, indeksler,  abstraktlar,  elkitapları, yıllıklar gibi genel kullanıma yönelik \nolan danışma kaynaklarını giriş katta bulabilirsiniz. Bu koleksiyondaki kitapların yer numaralarının başında",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 129,
+                "to": 133
+              }
+            }
+          }
+        },
+        {
+          "pageContent": "10 \n \nYAYIN ÖDÜNÇ ALMA      \n                                                                                                \nRaftan aldığınız bir yayını, İTÜ kimliğinizle ödünç verme bankolarından ödünç alabilirsiniz. Ödünç alma veya \nkütüphane  girişlerinde  başkasının  kartıyla işlem  yapmanın,  üyeliğin  geçici  olarak  iptal  edilmesiyle \nsonuçlanacağını unutmayın. \nÖdünç Yayın Alma Sayısı: \nÖdünç Yayın Alma Süresi: \n \n \nKullanıcı \nTipi \nÖdünç \nAlınabilen \nToplam \nYayın Sayısı",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 368,
+                "to": 384
+              }
+            }
+          }
+        },
+        {
+          "pageContent": "293 13 00 \nDahili: 2163\npolatenes@itu.edu.tr, Dahili: Memur\nÖdünç Verme\n\nDış Hat: 293 13 00 \n 2163\npolatenes@itu.edu.tr\nFatma İnal - Dış Hat: Kütüphaneci (Öğr. Gör.) - Kütüphane Sorumlusu Yönetim\nYönetim\n\n 293 13 00 \nDahili: 2163\ninalf@itu.edu.tr, Dahili: Kütüphaneci (Öğr. Gör.) - Kütüphane Sorumlusu Yönetim\nYönetim",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 639,
+                "to": 653
+              }
+            }
+          }
+        },
+        {
+          "pageContent": "mutluluk duyacaktır. \n  \nKütüphanelerarası Ödünç Yayın / Belge Sağlama Ofisi: İTÜ kütüphanelerinin koleksiyonunda  olmayan  ve \nsatın alınmasını bekleyecek  zamanınızın olmadığı durumlarda, kitapları yurt içi  ya  da  yurt dışında bulunan \nbaşka kütüphanelerden sizin için ödünç alabilir ya da istediğiniz makalelerin kopyasını sizin için getirtebiliriz. \nBunun için web sayfamızdaki Hizmetler menüsü altında yer alan formu doldurmanız yeterlidir. Detaylı bilgi",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 120,
+                "to": 125
+              }
+            }
+          }
+        }
+      ],
+      "answer": "Üzgünüm, bu konu hakkında belgemde yeterli bilgi bulunmuyor."
+    },
+    "toolsUsed": [],
+    "executionTime": null,
+    "error": null,
+    "chainExecution": null,
+    "additionalInfo": {}
+  },
+  {
+    "type": "chat",
+    "timestamp": "2025-08-19 07:26:59.162",
+    "userQuery": {
+      "input": "idari personel kaç kitap ödünç alabilir",
+      "chat_history": [],
+      "context": [
+        {
+          "pageContent": "10 \n \nYAYIN ÖDÜNÇ ALMA      \n                                                                                                \nRaftan aldığınız bir yayını, İTÜ kimliğinizle ödünç verme bankolarından ödünç alabilirsiniz. Ödünç alma veya \nkütüphane  girişlerinde  başkasının  kartıyla işlem  yapmanın,  üyeliğin  geçici  olarak  iptal  edilmesiyle \nsonuçlanacağını unutmayın. \nÖdünç Yayın Alma Sayısı: \nÖdünç Yayın Alma Süresi: \n \n \nKullanıcı \nTipi \nÖdünç \nAlınabilen \nToplam \nYayın Sayısı",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 368,
+                "to": 384
+              }
+            }
+          }
+        },
+        {
+          "pageContent": "ya da e-posta iletisi olarak gönderebilirsiniz. \nDers Kitapları: Fakültelerden  gelen  istek  üzerine -veya kütüphane yönetiminin kararı ile- tespit  edilen \nyayınlar, Rezerv Yayınlar Salonu’nda bulunur. Ders amaçlı kullanılan ve kullanım yoğunluğu nedeniyle sınırlı \nödünç  verme  kurallarıyla Rezerv Yayınlar Salonu’nda hizmete sunulan koleksiyonda  bulunan yayınların \nödünç  verilme  süresi  2  saattir. Ayrıca bu yayınların kullanım süreleri uzatılamaz, ayırtma yapılamaz ve",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 141,
+                "to": 145
+              }
+            }
+          }
+        },
+        {
+          "pageContent": "mutluluk duyacaktır. \n  \nKütüphanelerarası Ödünç Yayın / Belge Sağlama Ofisi: İTÜ kütüphanelerinin koleksiyonunda  olmayan  ve \nsatın alınmasını bekleyecek  zamanınızın olmadığı durumlarda, kitapları yurt içi  ya  da  yurt dışında bulunan \nbaşka kütüphanelerden sizin için ödünç alabilir ya da istediğiniz makalelerin kopyasını sizin için getirtebiliriz. \nBunun için web sayfamızdaki Hizmetler menüsü altında yer alan formu doldurmanız yeterlidir. Detaylı bilgi",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 120,
+                "to": 125
+              }
+            }
+          }
+        },
+        {
+          "pageContent": "bulabilirsiniz.  Mustafa  İnan  Kütüphanesi  kitap  koleksiyonunun  yer  numarası  A  ile  başlayanlarla P  ile \nbaşlayan kitap koleksiyonu giriş katta yer almaktadır. Bu bölümdeki kitapları üyelik haklarınız kapsamında \nödünç alabilirsiniz.  \nReferans Kaynakları:  Ansiklopediler, indeksler,  abstraktlar,  elkitapları, yıllıklar gibi genel kullanıma yönelik \nolan danışma kaynaklarını giriş katta bulabilirsiniz. Bu koleksiyondaki kitapların yer numaralarının başında",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 129,
+                "to": 133
+              }
+            }
+          }
+        },
+        {
+          "pageContent": "293 13 00 \nDahili: 2163\npolatenes@itu.edu.tr, Dahili: Memur\nÖdünç Verme\n\nDış Hat: 293 13 00 \n 2163\npolatenes@itu.edu.tr\nFatma İnal - Dış Hat: Kütüphaneci (Öğr. Gör.) - Kütüphane Sorumlusu Yönetim\nYönetim\n\n 293 13 00 \nDahili: 2163\ninalf@itu.edu.tr, Dahili: Kütüphaneci (Öğr. Gör.) - Kütüphane Sorumlusu Yönetim\nYönetim",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 639,
+                "to": 653
+              }
+            }
+          }
+        }
+      ],
+      "answer": "Üzgünüm, bu konu hakkında belgemde yeterli bilgi bulunmuyor."
+    },
+    "toolsUsed": [],
+    "executionTime": null,
+    "error": null,
+    "chainExecution": null,
+    "additionalInfo": {}
+  },
+  {
+    "type": "chat",
+    "timestamp": "2025-08-19 07:29:33.727",
+    "userQuery": {
+      "input": "idari personel ödünç alma limit kitap sayısı",
+      "chat_history": [],
+      "context": [
+        {
+          "pageContent": "Aytaç Kayadevir - Dış Hat: Kütüphaneci\nTeknik Hizmetler\n\n 285 30 13 \nDahili: 4119\nkayadevir@itu.edu.tr, Dahili: Kütüphaneci\nTeknik Hizmetler\n\nDış Hat: 285 30 13 \n 4119\nkayadevir@itu.edu.tr\nBasri Kadir Şekermen - Dış Hat: Memur\nYönetim\n\n 285 30 13 \nDahili: 4137\nsekermen@itu.edu.tr, Dahili: Memur\nYönetim\n\nDış Hat: 285 30 13 \n 4137\nsekermen@itu.edu.tr\nBelkız Özgenç - Dış Hat: Bilgisayar İşletmeni\nKoleksiyon Geliştirme",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 1,
+                "to": 24
+              }
+            }
+          }
+        },
+        {
+          "pageContent": "Dış Hat: 285 30 13 \n 4137\nsekermen@itu.edu.tr\nBelkız Özgenç - Dış Hat: Bilgisayar İşletmeni\nKoleksiyon Geliştirme\n\n 285 30 13 \nDahili: 4104\naktayb@itu.edu.tr, Dahili: Bilgisayar İşletmeni\nKoleksiyon Geliştirme",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 20,
+                "to": 29
+              }
+            }
+          }
+        },
+        {
+          "pageContent": "285 30 13 \nDahili: 4104\naktayb@itu.edu.tr, Dahili: Bilgisayar İşletmeni\nKoleksiyon Geliştirme\n\nDış Hat: 285 30 13 \n 4104\naktayb@itu.edu.tr\nBurcu Bulut - Dış Hat: Kütüphaneci (Öğr. Gör.)\nElektronik Kaynaklar ve Akademik Araştırma Hizmetleri\n 285 30 13 \nDahili: 6625\nbulutburcu@itu.edu.tr, Dahili: Kütüphaneci (Öğr. Gör.)\nElektronik Kaynaklar ve Akademik Araştırma Hizmetleri\nDış Hat: 285 30 13 \n 6625\nbulutburcu@itu.edu.tr\nCihan Malay - Dış Hat: Bilgisayar İşletmeni\nÖdünç Verme",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 26,
+                "to": 44
+              }
+            }
+          }
+        },
+        {
+          "pageContent": "285 30 13 \nDahili: 4120\nmalay@itu.edu.tr, Dahili: Bilgisayar İşletmeni\nÖdünç Verme\n\nDış Hat: 285 30 13 \n 4120\nmalay@itu.edu.tr\nDerya Karakoç - Dış Hat: Kütüphaneci - Gece Görevlisi\nÖdünç Verme\n\n 285 30 13\nDahili: 6619, Dahili: Kütüphaneci - Gece Görevlisi\nÖdünç Verme\n\nDış Hat: 285 30 13\n 6619\nDilek Tuğba Tural - Dış Hat: Bilgisayar İşletmeni\nÖdünç Verme\n\n 285 30 13 \nDahili: 6619\nturald@itu.edu.tr, Dahili: Bilgisayar İşletmeni\nÖdünç Verme",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 46,
+                "to": 69
+              }
+            }
+          }
+        },
+        {
+          "pageContent": "285 30 13 \nDahili: 6619\nturald@itu.edu.tr, Dahili: Bilgisayar İşletmeni\nÖdünç Verme\n\nDış Hat: 285 30 13 \n 6619\nturald@itu.edu.tr\nEbru Akçeken - Dış Hat: Kütüphaneci (Öğr. Gör.)\nElektronik Kaynaklar ve Akademik Araştırma Hizmetleri\n 285 30 13 \nDahili: 4111\nakceken@itu.edu.tr, Dahili: Kütüphaneci (Öğr. Gör.)\nElektronik Kaynaklar ve Akademik Araştırma Hizmetleri\nDış Hat: 285 30 13 \n 4111\nakceken@itu.edu.tr\nEda Kara - Dış Hat: Destek Personeli\nRaf Hizmetleri",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 66,
+                "to": 84
+              }
+            }
+          }
+        }
+      ],
+      "answer": "Üzgünüm, bu konu hakkında belgemde yeterli bilgi bulunmuyor."
+    },
+    "toolsUsed": [],
+    "executionTime": null,
+    "error": null,
+    "chainExecution": null,
+    "additionalInfo": {}
+  },
+  {
+    "type": "chat",
+    "timestamp": "2025-08-19 07:29:38.136",
+    "userQuery": {
+      "input": "idari personel ödünç alma kuralları",
+      "chat_history": [],
+      "context": [
+        {
+          "pageContent": "Aytaç Kayadevir - Dış Hat: Kütüphaneci\nTeknik Hizmetler\n\n 285 30 13 \nDahili: 4119\nkayadevir@itu.edu.tr, Dahili: Kütüphaneci\nTeknik Hizmetler\n\nDış Hat: 285 30 13 \n 4119\nkayadevir@itu.edu.tr\nBasri Kadir Şekermen - Dış Hat: Memur\nYönetim\n\n 285 30 13 \nDahili: 4137\nsekermen@itu.edu.tr, Dahili: Memur\nYönetim\n\nDış Hat: 285 30 13 \n 4137\nsekermen@itu.edu.tr\nBelkız Özgenç - Dış Hat: Bilgisayar İşletmeni\nKoleksiyon Geliştirme",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 1,
+                "to": 24
+              }
+            }
+          }
+        },
+        {
+          "pageContent": "Dış Hat: 285 30 13 \n 4137\nsekermen@itu.edu.tr\nBelkız Özgenç - Dış Hat: Bilgisayar İşletmeni\nKoleksiyon Geliştirme\n\n 285 30 13 \nDahili: 4104\naktayb@itu.edu.tr, Dahili: Bilgisayar İşletmeni\nKoleksiyon Geliştirme",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 20,
+                "to": 29
+              }
+            }
+          }
+        },
+        {
+          "pageContent": "285 30 13 \nDahili: 4104\naktayb@itu.edu.tr, Dahili: Bilgisayar İşletmeni\nKoleksiyon Geliştirme\n\nDış Hat: 285 30 13 \n 4104\naktayb@itu.edu.tr\nBurcu Bulut - Dış Hat: Kütüphaneci (Öğr. Gör.)\nElektronik Kaynaklar ve Akademik Araştırma Hizmetleri\n 285 30 13 \nDahili: 6625\nbulutburcu@itu.edu.tr, Dahili: Kütüphaneci (Öğr. Gör.)\nElektronik Kaynaklar ve Akademik Araştırma Hizmetleri\nDış Hat: 285 30 13 \n 6625\nbulutburcu@itu.edu.tr\nCihan Malay - Dış Hat: Bilgisayar İşletmeni\nÖdünç Verme",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 26,
+                "to": 44
+              }
+            }
+          }
+        },
+        {
+          "pageContent": "285 30 13 \nDahili: 4120\nmalay@itu.edu.tr, Dahili: Bilgisayar İşletmeni\nÖdünç Verme\n\nDış Hat: 285 30 13 \n 4120\nmalay@itu.edu.tr\nDerya Karakoç - Dış Hat: Kütüphaneci - Gece Görevlisi\nÖdünç Verme\n\n 285 30 13\nDahili: 6619, Dahili: Kütüphaneci - Gece Görevlisi\nÖdünç Verme\n\nDış Hat: 285 30 13\n 6619\nDilek Tuğba Tural - Dış Hat: Bilgisayar İşletmeni\nÖdünç Verme\n\n 285 30 13 \nDahili: 6619\nturald@itu.edu.tr, Dahili: Bilgisayar İşletmeni\nÖdünç Verme",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 46,
+                "to": 69
+              }
+            }
+          }
+        },
+        {
+          "pageContent": "285 30 13 \nDahili: 6619\nturald@itu.edu.tr, Dahili: Bilgisayar İşletmeni\nÖdünç Verme\n\nDış Hat: 285 30 13 \n 6619\nturald@itu.edu.tr\nEbru Akçeken - Dış Hat: Kütüphaneci (Öğr. Gör.)\nElektronik Kaynaklar ve Akademik Araştırma Hizmetleri\n 285 30 13 \nDahili: 4111\nakceken@itu.edu.tr, Dahili: Kütüphaneci (Öğr. Gör.)\nElektronik Kaynaklar ve Akademik Araştırma Hizmetleri\nDış Hat: 285 30 13 \n 4111\nakceken@itu.edu.tr\nEda Kara - Dış Hat: Destek Personeli\nRaf Hizmetleri",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 66,
+                "to": 84
+              }
+            }
+          }
+        }
+      ],
+      "answer": "Üzgünüm, bu konu hakkında belgemde yeterli bilgi bulunmuyor."
+    },
+    "toolsUsed": [],
+    "executionTime": null,
+    "error": null,
+    "chainExecution": null,
+    "additionalInfo": {}
+  },
+  {
+    "type": "chat",
+    "timestamp": "2025-08-19 07:30:25.797",
+    "userQuery": {
+      "input": "yayın ayırtma nedir",
+      "chat_history": [],
+      "context": [
+        {
+          "pageContent": "Aytaç Kayadevir - Dış Hat: Kütüphaneci\nTeknik Hizmetler\n\n 285 30 13 \nDahili: 4119\nkayadevir@itu.edu.tr, Dahili: Kütüphaneci\nTeknik Hizmetler\n\nDış Hat: 285 30 13 \n 4119\nkayadevir@itu.edu.tr\nBasri Kadir Şekermen - Dış Hat: Memur\nYönetim\n\n 285 30 13 \nDahili: 4137\nsekermen@itu.edu.tr, Dahili: Memur\nYönetim\n\nDış Hat: 285 30 13 \n 4137\nsekermen@itu.edu.tr\nBelkız Özgenç - Dış Hat: Bilgisayar İşletmeni\nKoleksiyon Geliştirme",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 1,
+                "to": 24
+              }
+            }
+          }
+        },
+        {
+          "pageContent": "Dış Hat: 285 30 13 \n 4137\nsekermen@itu.edu.tr\nBelkız Özgenç - Dış Hat: Bilgisayar İşletmeni\nKoleksiyon Geliştirme\n\n 285 30 13 \nDahili: 4104\naktayb@itu.edu.tr, Dahili: Bilgisayar İşletmeni\nKoleksiyon Geliştirme",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 20,
+                "to": 29
+              }
+            }
+          }
+        },
+        {
+          "pageContent": "285 30 13 \nDahili: 4104\naktayb@itu.edu.tr, Dahili: Bilgisayar İşletmeni\nKoleksiyon Geliştirme\n\nDış Hat: 285 30 13 \n 4104\naktayb@itu.edu.tr\nBurcu Bulut - Dış Hat: Kütüphaneci (Öğr. Gör.)\nElektronik Kaynaklar ve Akademik Araştırma Hizmetleri\n 285 30 13 \nDahili: 6625\nbulutburcu@itu.edu.tr, Dahili: Kütüphaneci (Öğr. Gör.)\nElektronik Kaynaklar ve Akademik Araştırma Hizmetleri\nDış Hat: 285 30 13 \n 6625\nbulutburcu@itu.edu.tr\nCihan Malay - Dış Hat: Bilgisayar İşletmeni\nÖdünç Verme",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 26,
+                "to": 44
+              }
+            }
+          }
+        },
+        {
+          "pageContent": "285 30 13 \nDahili: 4120\nmalay@itu.edu.tr, Dahili: Bilgisayar İşletmeni\nÖdünç Verme\n\nDış Hat: 285 30 13 \n 4120\nmalay@itu.edu.tr\nDerya Karakoç - Dış Hat: Kütüphaneci - Gece Görevlisi\nÖdünç Verme\n\n 285 30 13\nDahili: 6619, Dahili: Kütüphaneci - Gece Görevlisi\nÖdünç Verme\n\nDış Hat: 285 30 13\n 6619\nDilek Tuğba Tural - Dış Hat: Bilgisayar İşletmeni\nÖdünç Verme\n\n 285 30 13 \nDahili: 6619\nturald@itu.edu.tr, Dahili: Bilgisayar İşletmeni\nÖdünç Verme",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 46,
+                "to": 69
+              }
+            }
+          }
+        },
+        {
+          "pageContent": "285 30 13 \nDahili: 6619\nturald@itu.edu.tr, Dahili: Bilgisayar İşletmeni\nÖdünç Verme\n\nDış Hat: 285 30 13 \n 6619\nturald@itu.edu.tr\nEbru Akçeken - Dış Hat: Kütüphaneci (Öğr. Gör.)\nElektronik Kaynaklar ve Akademik Araştırma Hizmetleri\n 285 30 13 \nDahili: 4111\nakceken@itu.edu.tr, Dahili: Kütüphaneci (Öğr. Gör.)\nElektronik Kaynaklar ve Akademik Araştırma Hizmetleri\nDış Hat: 285 30 13 \n 4111\nakceken@itu.edu.tr\nEda Kara - Dış Hat: Destek Personeli\nRaf Hizmetleri",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 66,
+                "to": 84
+              }
+            }
+          }
+        }
+      ],
+      "answer": "Üzgünüm, bu konu hakkında belgemde yeterli bilgi bulunmuyor."
+    },
+    "toolsUsed": [],
+    "executionTime": null,
+    "error": null,
+    "chainExecution": null,
+    "additionalInfo": {}
+  },
+  {
+    "type": "chat",
+    "timestamp": "2025-08-19 07:49:21.867",
+    "userQuery": {
+      "input": "mezun ödünç alma kütüphane üyelik hakları",
+      "chat_history": [],
+      "context": [
+        {
+          "pageContent": "Aytaç Kayadevir - Dış Hat: Kütüphaneci\nTeknik Hizmetler\n\n 285 30 13 \nDahili: 4119\nkayadevir@itu.edu.tr, Dahili: Kütüphaneci\nTeknik Hizmetler\n\nDış Hat: 285 30 13 \n 4119\nkayadevir@itu.edu.tr\nBasri Kadir Şekermen - Dış Hat: Memur\nYönetim\n\n 285 30 13 \nDahili: 4137\nsekermen@itu.edu.tr, Dahili: Memur\nYönetim\n\nDış Hat: 285 30 13 \n 4137\nsekermen@itu.edu.tr\nBelkız Özgenç - Dış Hat: Bilgisayar İşletmeni\nKoleksiyon Geliştirme",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 1,
+                "to": 24
+              }
+            }
+          }
+        },
+        {
+          "pageContent": "Dış Hat: 285 30 13 \n 4137\nsekermen@itu.edu.tr\nBelkız Özgenç - Dış Hat: Bilgisayar İşletmeni\nKoleksiyon Geliştirme\n\n 285 30 13 \nDahili: 4104\naktayb@itu.edu.tr, Dahili: Bilgisayar İşletmeni\nKoleksiyon Geliştirme",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 20,
+                "to": 29
+              }
+            }
+          }
+        },
+        {
+          "pageContent": "285 30 13 \nDahili: 4104\naktayb@itu.edu.tr, Dahili: Bilgisayar İşletmeni\nKoleksiyon Geliştirme\n\nDış Hat: 285 30 13 \n 4104\naktayb@itu.edu.tr\nBurcu Bulut - Dış Hat: Kütüphaneci (Öğr. Gör.)\nElektronik Kaynaklar ve Akademik Araştırma Hizmetleri\n 285 30 13 \nDahili: 6625\nbulutburcu@itu.edu.tr, Dahili: Kütüphaneci (Öğr. Gör.)\nElektronik Kaynaklar ve Akademik Araştırma Hizmetleri\nDış Hat: 285 30 13 \n 6625\nbulutburcu@itu.edu.tr\nCihan Malay - Dış Hat: Bilgisayar İşletmeni\nÖdünç Verme",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 26,
+                "to": 44
+              }
+            }
+          }
+        },
+        {
+          "pageContent": "285 30 13 \nDahili: 4120\nmalay@itu.edu.tr, Dahili: Bilgisayar İşletmeni\nÖdünç Verme\n\nDış Hat: 285 30 13 \n 4120\nmalay@itu.edu.tr\nDerya Karakoç - Dış Hat: Kütüphaneci - Gece Görevlisi\nÖdünç Verme\n\n 285 30 13\nDahili: 6619, Dahili: Kütüphaneci - Gece Görevlisi\nÖdünç Verme\n\nDış Hat: 285 30 13\n 6619\nDilek Tuğba Tural - Dış Hat: Bilgisayar İşletmeni\nÖdünç Verme\n\n 285 30 13 \nDahili: 6619\nturald@itu.edu.tr, Dahili: Bilgisayar İşletmeni\nÖdünç Verme",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 46,
+                "to": 69
+              }
+            }
+          }
+        },
+        {
+          "pageContent": "285 30 13 \nDahili: 6619\nturald@itu.edu.tr, Dahili: Bilgisayar İşletmeni\nÖdünç Verme\n\nDış Hat: 285 30 13 \n 6619\nturald@itu.edu.tr\nEbru Akçeken - Dış Hat: Kütüphaneci (Öğr. Gör.)\nElektronik Kaynaklar ve Akademik Araştırma Hizmetleri\n 285 30 13 \nDahili: 4111\nakceken@itu.edu.tr, Dahili: Kütüphaneci (Öğr. Gör.)\nElektronik Kaynaklar ve Akademik Araştırma Hizmetleri\nDış Hat: 285 30 13 \n 4111\nakceken@itu.edu.tr\nEda Kara - Dış Hat: Destek Personeli\nRaf Hizmetleri",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 66,
+                "to": 84
+              }
+            }
+          }
+        }
+      ],
+      "answer": "Üzgünüm, bu konu hakkında belgemde yeterli bilgi bulunmuyor."
+    },
+    "toolsUsed": [],
+    "executionTime": null,
+    "error": null,
+    "chainExecution": null,
+    "additionalInfo": {}
+  },
+  {
+    "type": "chat",
+    "timestamp": "2025-08-19 07:50:23.612",
+    "userQuery": {
+      "input": "yayın ayırtma",
+      "chat_history": [],
+      "context": [
+        {
+          "pageContent": "Aytaç Kayadevir - Dış Hat: Kütüphaneci\nTeknik Hizmetler\n\n 285 30 13 \nDahili: 4119\nkayadevir@itu.edu.tr, Dahili: Kütüphaneci\nTeknik Hizmetler\n\nDış Hat: 285 30 13 \n 4119\nkayadevir@itu.edu.tr\nBasri Kadir Şekermen - Dış Hat: Memur\nYönetim\n\n 285 30 13 \nDahili: 4137\nsekermen@itu.edu.tr, Dahili: Memur\nYönetim\n\nDış Hat: 285 30 13 \n 4137\nsekermen@itu.edu.tr\nBelkız Özgenç - Dış Hat: Bilgisayar İşletmeni\nKoleksiyon Geliştirme",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 1,
+                "to": 24
+              }
+            }
+          }
+        },
+        {
+          "pageContent": "Dış Hat: 285 30 13 \n 4137\nsekermen@itu.edu.tr\nBelkız Özgenç - Dış Hat: Bilgisayar İşletmeni\nKoleksiyon Geliştirme\n\n 285 30 13 \nDahili: 4104\naktayb@itu.edu.tr, Dahili: Bilgisayar İşletmeni\nKoleksiyon Geliştirme",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 20,
+                "to": 29
+              }
+            }
+          }
+        },
+        {
+          "pageContent": "285 30 13 \nDahili: 4104\naktayb@itu.edu.tr, Dahili: Bilgisayar İşletmeni\nKoleksiyon Geliştirme\n\nDış Hat: 285 30 13 \n 4104\naktayb@itu.edu.tr\nBurcu Bulut - Dış Hat: Kütüphaneci (Öğr. Gör.)\nElektronik Kaynaklar ve Akademik Araştırma Hizmetleri\n 285 30 13 \nDahili: 6625\nbulutburcu@itu.edu.tr, Dahili: Kütüphaneci (Öğr. Gör.)\nElektronik Kaynaklar ve Akademik Araştırma Hizmetleri\nDış Hat: 285 30 13 \n 6625\nbulutburcu@itu.edu.tr\nCihan Malay - Dış Hat: Bilgisayar İşletmeni\nÖdünç Verme",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 26,
+                "to": 44
+              }
+            }
+          }
+        },
+        {
+          "pageContent": "285 30 13 \nDahili: 4120\nmalay@itu.edu.tr, Dahili: Bilgisayar İşletmeni\nÖdünç Verme\n\nDış Hat: 285 30 13 \n 4120\nmalay@itu.edu.tr\nDerya Karakoç - Dış Hat: Kütüphaneci - Gece Görevlisi\nÖdünç Verme\n\n 285 30 13\nDahili: 6619, Dahili: Kütüphaneci - Gece Görevlisi\nÖdünç Verme\n\nDış Hat: 285 30 13\n 6619\nDilek Tuğba Tural - Dış Hat: Bilgisayar İşletmeni\nÖdünç Verme\n\n 285 30 13 \nDahili: 6619\nturald@itu.edu.tr, Dahili: Bilgisayar İşletmeni\nÖdünç Verme",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 46,
+                "to": 69
+              }
+            }
+          }
+        },
+        {
+          "pageContent": "285 30 13 \nDahili: 6619\nturald@itu.edu.tr, Dahili: Bilgisayar İşletmeni\nÖdünç Verme\n\nDış Hat: 285 30 13 \n 6619\nturald@itu.edu.tr\nEbru Akçeken - Dış Hat: Kütüphaneci (Öğr. Gör.)\nElektronik Kaynaklar ve Akademik Araştırma Hizmetleri\n 285 30 13 \nDahili: 4111\nakceken@itu.edu.tr, Dahili: Kütüphaneci (Öğr. Gör.)\nElektronik Kaynaklar ve Akademik Araştırma Hizmetleri\nDış Hat: 285 30 13 \n 4111\nakceken@itu.edu.tr\nEda Kara - Dış Hat: Destek Personeli\nRaf Hizmetleri",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 66,
+                "to": 84
+              }
+            }
+          }
+        }
+      ],
+      "answer": "Üzgünüm, bu konu hakkında belgemde yeterli bilgi bulunmuyor."
+    },
+    "toolsUsed": [],
+    "executionTime": null,
+    "error": null,
+    "chainExecution": null,
+    "additionalInfo": {}
+  },
+  {
+    "type": "chat",
+    "timestamp": "2025-08-19 07:55:58.025",
+    "userQuery": {
+      "input": "yayın ayırtma",
+      "chat_history": [],
+      "context": [
+        {
+          "pageContent": "ayırtmaları var (İADE TARİHİ +AYIRTMA SAYISI yazılıdır), kayıp, ciltte  veya  ödünç verilmeyen bir yayın \nolabilir.  \n \nRafta olduğu görülen yayını, künyesinde belirtilen yerde, yer numarasına göre bulabilirsiniz.  \n \nSistemde rafta görünmesine karşın yerinde bulamadığınız yayınlar o an başka bir kullanıcı tarafından \nsalonlarda kullanılıyor olabilir.    Statüsü RAFTA (CHECK SHELF) olan ve farklı zamanda yaptığınız aramaya \nrağmen yerinde bulamadığınız yayınlar için Danışma Masası’na başvurunuz.  \n \nBibliyografik Künye \n \nBibliyografik künye, bir bilgi kaynağının kimlik kartı olarak tanımlanabilir. Bir künye o kaynağın adı,",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 234,
+                "to": 245
+              }
+            }
+          }
+        },
+        {
+          "pageContent": "11 \n \n \nYayın Ayırtma \nKullanmak istediğiniz yayın bir başka kullanıcı tarafından ödünç alınmış olabilir. Yayın uzatma hakkı \nkullanılmadan iade edildiğinde kendiniz için ayırtılmasını sağlayabilirsiniz. Bunun için web’de katalog \nkaydının olduğu sayfanın hemen üstünde yer alan İstek Yap butonunu kullanmalısınız. Ayırttığınız yayın, \nsizin ödünç alabilmeniz için Ödünç Verme Bankosu’nda 3 gün süreyle tutulacaktır.  \nÖdünç Alınan Yayının İade İşlemleri \n \nÖdünç  almış olduğunuz bir yayını iade etmeniz gereken son tarihe kadar, aldığınız kütüphanenin ödünç \nverme  bankosuna  iade  etmeniz gerekir. Zamanında iade edilmeyen yayınlar  için  her  materyal  türüne göre \nfarklı periyodlarda artan cezalar uygulanır. İade işlemini yayını ödünç alan kişinin yapması zorunluluğu \nyoktur. \n \nÖdünç Alınan Yayının İade Süresini Uzatmak \n \nBaşka bir kullanıcı tarafından ayırtılmadıysa üzerinizdeki yayının iade süresini Kullanıcı Hesabım bağlantısını \nkullanarak uzatma işleminizi yapabilirsiniz.",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 464,
+                "to": 482
+              }
+            }
+          }
+        },
+        {
+          "pageContent": "Örneğin; electronic başlığında  konu  taraması  sonuçlarına  ulaştığınızda   sayfa  başındaki sınırla/sırala \nbutonunu seçerek yayının bulunduğu yeri Mustafa İnan Kütüphanesi Görsel İşitsel Merkez olarak seçip \nyeniden  tarattığınızda electronic konu başlığı almış olan ve Görsel İşitsel Merkez Koleksiyonu’nda  bulunan \nkaynaklara erişmiş olursunuz.  \n \n \nYaptığınız bir tarama sonucunda çok sayıda sonuçla karşılaştıysanız sayfanın sağ tarafında bulunan tarama \nseçeneklerinden gelişmiş tarama butonu  ile ya  da  ana sayfada detaylı arama ile birden  fazla  kritere  göre \ntarama stratejisi geliştirebileceğiniz bir sayfaya ulaşırsınız.",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 327,
+                "to": 335
+              }
+            }
+          }
+        },
+        {
+          "pageContent": "Katalog   Tarama, kaynakların bibliyografik   künyelerindeki bilgilere  göre  yapılan  bir  arama  şeklidir. \nKütüphane Kataloğu, koleksiyonda bulunan tüm bilgi kaynaklarının bibliyografik künyelerini içerir.   \n \nÖncelikle yayının bulunduğu yer, yer numarası ve statüsü kontrol edilmelidir.  \n \nYayının  bulunduğu yer: Yayın, merkez veya şube kütüphanelerinden  birinde  ya  da  bu  kütüphanelerin  özel \nkoleksiyonlarında bulunuyor olabilir. Mustafa İnan Kütüphanesi,  Makina Fakültesi  Kütüphanesi,  Mustafa \nİnan Kütüphanesi Görsel İşitsel Merkez gibi.  \n \nYer numarası: Yayına ait yer numarasını not edin. \n \nStatüsü: Yayın raftaki yerinde (RAFTA), kullanıcı üzerinde (İADE TARİHİ yazılıdır), kullanıcı üzerinde ve \nayırtmaları var (İADE TARİHİ +AYIRTMA SAYISI yazılıdır), kayıp, ciltte  veya  ödünç verilmeyen bir yayın \nolabilir.  \n \nRafta olduğu görülen yayını, künyesinde belirtilen yerde, yer numarasına göre bulabilirsiniz.",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 222,
+                "to": 237
+              }
+            }
+          }
+        },
+        {
+          "pageContent": "kırmızı renkte M harfi bulunmaktadır. Bu bölümdeki yayınlar yalnızca kütüphane içinde kullanılabilir, ödünç \nverilmez.  \nTezler: İTÜ’de üretilen yüksek lisans (uzmanlık) ve doktora tezlerini Kütüphane Giriş Katı’nda, salonun en \nsonundaki  raflarda  yer numaralarına  göre  Enstitü  /  Fakülte  isimlerine  göre  alfabetik  bir  sıralamada \nbulabilirsiniz.  Yüksek  lisans  tezleri  mavi  ciltlidir. 2024 öncesi  yüksek  lisans  tezleri Depo’da bulunmaktadır. \nDepo’dan çıkartılması için Danışma Masası’na başvurmanız gerekmektedir. Tezler  ödünç  verilemez.  Telif \nhaklarına dikkat ederek, bir tezin en fazla %30’unu katlarda bulunan tarayıcı ile USB’lerinize kopyalayabilir \nya da e-posta iletisi olarak gönderebilirsiniz. \nDers Kitapları: Fakültelerden  gelen  istek  üzerine -veya kütüphane yönetiminin kararı ile- tespit  edilen \nyayınlar, Rezerv Yayınlar Salonu’nda bulunur. Ders amaçlı kullanılan ve kullanım yoğunluğu nedeniyle sınırlı",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 134,
+                "to": 143
+              }
+            }
+          }
+        }
+      ],
+      "answer": "Bir yayını ayırtmak için, kullanmak istediğiniz yayın başka bir kullanıcı tarafından ödünç alınmışsa ve uzatma hakkı kullanılmadan iade edildiğinde kendiniz için ayırtabilirsiniz. Bunun için web'de katalog kaydının bulunduğu sayfanın hemen üstündeki \"İstek Yap\" butonunu kullanmanız gerekmektedir. Ayırttığınız yayın, ödünç alabilmeniz için Ödünç Verme Bankosu'nda 3 gün süreyle tutulacaktır."
+    },
+    "toolsUsed": [],
+    "executionTime": null,
+    "error": null,
+    "chainExecution": null,
+    "additionalInfo": {}
+  },
+  {
+    "type": "chat",
+    "timestamp": "2025-08-19 07:56:28.938",
+    "userQuery": {
+      "input": "PQ2286.A68 Ç36 2019",
+      "chat_history": [],
+      "context": [
+        {
+          "pageContent": "tarama alanına girmeniz gerekecektir.  Örneğin “Analog and digital control systems” adlı kitapla ilgili başlık \ntaraması sonuçları; \n \nAnalog     119 sonuç \nAnalog and digital   13 sonuç \nAnalog and digital control  2 sonuç \nAnalog and digital control systems 1 sonuç \nşeklinde olacaktır.",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 290,
+                "to": 297
+              }
+            }
+          }
+        },
+        {
+          "pageContent": "Bunun için web sayfamızdaki Hizmetler menüsü altında yer alan formu doldurmanız yeterlidir. Detaylı bilgi \niçin bkz.: Aranılan Yayın İTÜ Kütüphanelerinde Yoksa... (s.13)      \n \nGenel Kitap Koleksiyonu  (A – P yer numaralı kitaplar): Aradığınız bir yayını yer numarası yardımıyla \nbulabilirsiniz.  Mustafa  İnan  Kütüphanesi  kitap  koleksiyonunun  yer  numarası  A  ile  başlayanlarla P  ile \nbaşlayan kitap koleksiyonu giriş katta yer almaktadır. Bu bölümdeki kitapları üyelik haklarınız kapsamında \nödünç alabilirsiniz.  \nReferans Kaynakları:  Ansiklopediler, indeksler,  abstraktlar,  elkitapları, yıllıklar gibi genel kullanıma yönelik \nolan danışma kaynaklarını giriş katta bulabilirsiniz. Bu koleksiyondaki kitapların yer numaralarının başında \nkırmızı renkte M harfi bulunmaktadır. Bu bölümdeki yayınlar yalnızca kütüphane içinde kullanılabilir, ödünç \nverilmez.  \nTezler: İTÜ’de üretilen yüksek lisans (uzmanlık) ve doktora tezlerini Kütüphane Giriş Katı’nda, salonun en",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 125,
+                "to": 136
+              }
+            }
+          }
+        },
+        {
+          "pageContent": "285 30 13 \nDahili: 4120\nmalay@itu.edu.tr, Dahili: Bilgisayar İşletmeni\nÖdünç Verme\n\nDış Hat: 285 30 13 \n 4120\nmalay@itu.edu.tr\nDerya Karakoç - Dış Hat: Kütüphaneci - Gece Görevlisi\nÖdünç Verme\n\n 285 30 13\nDahili: 6619, Dahili: Kütüphaneci - Gece Görevlisi\nÖdünç Verme\n\nDış Hat: 285 30 13\n 6619\nDilek Tuğba Tural - Dış Hat: Bilgisayar İşletmeni\nÖdünç Verme\n\n 285 30 13 \nDahili: 6619\nturald@itu.edu.tr, Dahili: Bilgisayar İşletmeni\nÖdünç Verme\n\nDış Hat: 285 30 13 \n 6619\nturald@itu.edu.tr\nEbru Akçeken - Dış Hat: Kütüphaneci (Öğr. Gör.)\nElektronik Kaynaklar ve Akademik Araştırma Hizmetleri\n 285 30 13 \nDahili: 4111\nakceken@itu.edu.tr, Dahili: Kütüphaneci (Öğr. Gör.)\nElektronik Kaynaklar ve Akademik Araştırma Hizmetleri\nDış Hat: 285 30 13 \n 4111\nakceken@itu.edu.tr\nEda Kara - Dış Hat: Destek Personeli\nRaf Hizmetleri\n\n 285 30 13 \nDahili: 4123\nedakuzeykara@gmail.com, Dahili: Destek Personeli\nRaf Hizmetleri",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 46,
+                "to": 89
+              }
+            }
+          }
+        },
+        {
+          "pageContent": "285 66 23 \nDahili: -\nfatmabekir2023@gmail.com, Dahili: Güvenlik Görevlisi\nGüvenlik Hizmetleri\n\nDış Hat: 285 66 23 \n -\nfatmabekir2023@gmail.com\nFigen Aksu - Dış Hat: Kütüphaneci (Öğr. Gör.)\nTeknik Hizmetler\n\n 285 30 13 \nDahili: 4106\naksuf@itu.edu.tr, Dahili: Kütüphaneci (Öğr. Gör.)\nTeknik Hizmetler\n\nDış Hat: 285 30 13 \n 4106\naksuf@itu.edu.tr\nGamze Küreksiz - Dış Hat: Destek Personeli\nRaf Hizmetleri\n\n 285 30 13 \nDahili: 4123\nmiyagy37@gmail.com, Dahili: Destek Personeli\nRaf Hizmetleri\n\nDış Hat: 285 30 13 \n 4123\nmiyagy37@gmail.com\nGökhan Usta - Dış Hat: Kütüphaneci (Öğr. Gör.)\nTeknik Hizmetler\n\n 285 30 13 \nDahili: 4135\ngusta@itu.edu.tr, Dahili: Kütüphaneci (Öğr. Gör.)\nTeknik Hizmetler\n\nDış Hat: 285 30 13 \n 4135\ngusta@itu.edu.tr\nGöknur Aslan - Dış Hat: Daire Başkanı\nYönetim\n\n 285 35 96 \nDahili: 3596\naslang@itu.edu.tr, Dahili: Daire Başkanı\nYönetim",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 170,
+                "to": 217
+              }
+            }
+          }
+        },
+        {
+          "pageContent": "285 30 13 \nDahili: 6616\nsemac@itu.edu.tr, Dahili: Kütüphaneci (Öğr. Gör.) - ILL\nÖdünç Verme\n\nDış Hat: 285 30 13 \n 6616\nsemac@itu.edu.tr\nSerdal Çaycı - Dış Hat: Yardımcı Hizmetli\nÖdünç Verme\n\n 285 30 13 \nDahili: 6619\ncaycis@itu.edu.tr, Dahili: Yardımcı Hizmetli\nÖdünç Verme\n\nDış Hat: 285 30 13 \n 6619\ncaycis@itu.edu.tr\nSerhat Mürsel Köroğlu - Dış Hat: Bilgisayar Programcısı\nBilgi İşlem\n\n 285 30 13 \nDahili: 4148\nsmkoroglu@itu.edu.tr, Dahili: Bilgisayar Programcısı\nBilgi İşlem\n\nDış Hat: 285 30 13 \n 4148\nsmkoroglu@itu.edu.tr\nSerpil Aykaç - Dış Hat: Destek Personeli - Gece Görevlisi\nÖdünç Verme\n\n 285 30 13 \nDahili: 6619\nserpil.aykac@hotmail.com, Dahili: Destek Personeli - Gece Görevlisi\nÖdünç Verme\n\nDış Hat: 285 30 13 \n 6619\nserpil.aykac@hotmail.com\nSeyit Karadeniz - Dış Hat: Destek Personeli\nTemizlik Hizmetleri\n\n 285 30 13 \nDahili: 4145\nseyit_karadeniz@hotmail.com, Dahili: Destek Personeli\nTemizlik Hizmetleri",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 513,
+                "to": 560
+              }
+            }
+          }
+        }
+      ],
+      "answer": "Aradığınız \"PQ2286.A68 Ç36 2019\" gibi bir yayın, yer numarası yardımıyla bulunabilir. Mustafa İnan Kütüphanesi'ndeki yer numarası A ile P arasında başlayan kitap koleksiyonu giriş katta yer almaktadır. Bu bölümdeki kitapları üyelik haklarınız kapsamında ödünç alabilirsiniz."
+    },
+    "toolsUsed": [],
+    "executionTime": null,
+    "error": null,
+    "chainExecution": null,
+    "additionalInfo": {}
+  },
+  {
+    "type": "chat",
+    "timestamp": "2025-08-19 07:57:50.052",
+    "userQuery": {
+      "input": "idari personel ödünç alma limit kitap sayısı",
+      "chat_history": [],
+      "context": [
+        {
+          "pageContent": "10 \n \nYAYIN ÖDÜNÇ ALMA      \n                                                                                                \nRaftan aldığınız bir yayını, İTÜ kimliğinizle ödünç verme bankolarından ödünç alabilirsiniz. Ödünç alma veya \nkütüphane  girişlerinde  başkasının  kartıyla işlem  yapmanın,  üyeliğin  geçici  olarak  iptal  edilmesiyle \nsonuçlanacağını unutmayın. \nÖdünç Yayın Alma Sayısı: \nÖdünç Yayın Alma Süresi: \n \n \nKullanıcı \nTipi \nÖdünç \nAlınabilen \nToplam \nYayın Sayısı \n \nKitap \n \nGörsel-İşitsel \nMateryal \nRezerv Yayın \n (Ders Kitabı)  \nKütüphanelerarası \nÖdünç Yayın \nNota \nÖğretim \nElemanı \n30 30 3 3 10 10 \nİdari \nPersonel \n10 10 3 \n3 \n5 3 \nY.Lisans/ \nDoktora \nÖğrencisi \n15 15 3 3 5 3 \nLisans \nÖğrencisi \n10 10 3 3 5 3 \nİTU Emekli \nPersoneli \n5 5 3 3 \n \nÖdünç Verilmez \n \nÖdünç \nverilmez \nYayın Tipi Ödünç verme Süresi \nKitap Öğretim Elemanı 1 ay 4 uzatma \n \nİdari Personel 1 ay 3 uzatma \nY.Lisans/Doktora 15 gün 3 uzatma \nLisans 15 gün 3 uzatma",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 368,
+                "to": 423
+              }
+            }
+          }
+        },
+        {
+          "pageContent": "Doktora \nÖğrencisi \n15 15 3 3 5 3 \nLisans \nÖğrencisi \n10 10 3 3 5 3 \nİTU Emekli \nPersoneli \n5 5 3 3 \n \nÖdünç Verilmez \n \nÖdünç \nverilmez \nYayın Tipi Ödünç verme Süresi \nKitap Öğretim Elemanı 1 ay 4 uzatma \n \nİdari Personel 1 ay 3 uzatma \nY.Lisans/Doktora 15 gün 3 uzatma \nLisans 15 gün 3 uzatma \nİTÜ Emekli Personeli 1 ay 3 uzatma \nSüreli yayınlar Kütüphane içinde kullanılır \nReferans \nBölümündeki Yayınlar \nKütüphane içinde kullanılır \nRezerv \nBölümündeki \nYayınlar \nÖğretim \nÜyesi \n2 saat/ 1 \nDönem \nUzatma yapılmaz \n \nDiğer \nKullanıcılar \n2 saat/ 1 \ngün \nUzatma yapılmaz \nGörsel-İşitsel Materyal \nÖğretim \nÜyesi \n3 gün Uzatma yapılmaz \n \nDiğer \nKullanıcılar \n3 gün Uzatma yapılmaz \nTezler \nKütüphane içinde kullanılır \nNadir Eserler/ Arşiv Kopyaları/ Sanat \nKoleksiyonu/ Haritalar \n \nKütüphane içinde kullanılır. \nNotalar (ciltli ve urtext) \nKütüphane içinde kullanılır \nNota \n7 gün Uzatma yapılmaz",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 404,
+                "to": 460
+              }
+            }
+          }
+        },
+        {
+          "pageContent": "yoktur. \n \nÖdünç Alınan Yayının İade Süresini Uzatmak \n \nBaşka bir kullanıcı tarafından ayırtılmadıysa üzerinizdeki yayının iade süresini Kullanıcı Hesabım bağlantısını \nkullanarak uzatma işleminizi yapabilirsiniz.  \n \nGecikme Cezası \n \nÖdünç alınan ve  iade süresi  geçen yayınlar için saatlik veya günlük periyodlarda artan gecikme cezaları \nhesaplanarak üye kaydına işlenir.    Üyelik  türüne  göre  cezalar  belli bir miktara ulaştığında üyelik hakkına \nkısıtlama konulur ve geçici olarak kütüphane hizmetlerinden yararlanılamaz.  \nGecikme ceza miktarı, kaynakların türlerine ve bulundukları koleksiyona göre belirlenmektedir.  \nSon İade tarihinden itibaren ilk üç gün içinde  iade  edilen yayınlara gecikme cezası uygulanmaz. Gecikme \nNotlarına rağmen ödünç aldığı yayını iade etmeyen; \na) Öğrencilerin öğrenci otomasyon sistemindeki kayıtlarına kısıntı konulur. \nb) Öğretim elemanı ve idari personelin görev yaptığı birime yazı yazılır.",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 477,
+                "to": 493
+              }
+            }
+          }
+        },
+        {
+          "pageContent": "Notlarına rağmen ödünç aldığı yayını iade etmeyen; \na) Öğrencilerin öğrenci otomasyon sistemindeki kayıtlarına kısıntı konulur. \nb) Öğretim elemanı ve idari personelin görev yaptığı birime yazı yazılır. \nİTÜ emekli  personelinin ödünç alınan yayını iki kez  geciktirmesi cezasını ödemediği takdirde üyeliği iptal \nedilir. \n \nÖdünç Alınan Bir Yayının Kaybedilmesi \n \nÖdünç alınan yayınların korunması ve  zamanında iade edilmesi sorumluluğu yayınları ödünç alan kişiye \naittir. Ödünç aldığınız yayını kaybettiyseniz  yerine  aynı yayını satın alarak 30 gün içinde kütüphaneye \ngetirmeniz gerekir. Kaybettiğiniz yayın için ayrıca işlem ücreti  de  tahsil  edilir.  Baskısı tükenmiş yayının \nkaybedilmesi durumunda ise kullanıcı, Daire Başkanlığı’nca belirlenen, kaybedilene eşdeğer  bir  yayını 30 \ngün içinde temin etmek ve işlem ücretini ödemek zorundadır. \n \nAranılan Yayın İTÜ Kütüphanelerinde Yoksa...",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 491,
+                "to": 505
+              }
+            }
+          }
+        },
+        {
+          "pageContent": "5. Daire Başkanlığı bağış yapılan yayınları hangi bölümde ve hangi kurallar doğrultusunda kullanıcılara \nsunacağı konusunda karar verme hakkına sahiptir. \n6. Süreli yayınların bağış olarak kabul edilebilmesi için koleksiyonun başlangıcı ya da devamının \nkütüphanede bulunması gerekir.  \n7. Dergi, ansiklopedi vb. çok ciltli eserler cilt bütünlüğü oluşturuyorsa kabul edilir.  \n8. Daire Başkanlığı özel ya da tüzel kişilere, koleksiyon bağışı yapması için başvurabilir.  \n9. Daire Başkanlığı uygun gördüğü takdirde bağış olarak kabul ettiği yayınları iade etme veya başka bir \nkütüphaneye bağışlama hakkına sahiptir.  \n10. Fotokopi yayınlar,  fiziksel  açıdan  kötü  durumdaki yayınlar ve  devamlılığı  sağlanamayan  süreli \nyayınlar bağış olarak kabul edilmemektedir.  \n \nKULLANICI HESABI                                                                                             \n \nKütüphaneye  üye olduğunuz andan itibaren adınıza bir hesap oluşturulur. Bu hesapta üyelik bilgileriniz,",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 536,
+                "to": 549
+              }
+            }
+          }
+        }
+      ],
+      "answer": "İdari personel için ödünç alınabilen kitap sayısı 10'dur."
+    },
+    "toolsUsed": [],
+    "executionTime": null,
+    "error": null,
+    "chainExecution": null,
+    "additionalInfo": {}
+  },
+  {
+    "type": "chat",
+    "timestamp": "2025-08-19 07:57:59.601",
+    "userQuery": {
+      "input": "tuvaletler nerede",
+      "chat_history": [],
+      "context": [
+        {
+          "pageContent": "Öğrenci  Dolapları: Mustafa İnan Kütüphanesinin giriş katında bulunan dolapların anahtarlarını, Ödünç \nVerme  Bankosu’ndan kimlik karşılığında 5 saatliğine ödünç alabilir, süreyi 3  kez  uzatabilirsiniz. Gecikme \ndurumunda saatlik gecikme ücreti alınır. Anahtarı kaybetme durumunda ise kaybetme bedeli \nalınmaktadır. \n \nTuvaletler: Kütüphaneye girişte, sol taraftadır. \n \nBirinci Kat \nSol koridorda (bina arka cephesinde yer alan raf bloğu) Q ile başlayan kitap koleksiyonu, sağ koridorda (bina \nön cephesinde yer alan raf bloğu) R ile başlayan Z’ye kadar devam eden kitap koleksiyonu yer almaktadır. \nİkinci ve Üçüncü Kat  \n \nSüreli Yayınlar (dergiler) koleksiyonu yer almaktadır. Aranılan bir derginin hangi rafta olduğu -kitaplarda \nolduğu gibi- yer numarası yardımıyla bulunabilir. Süreli yayınlar ödünç verilmez, kütüphane içinde kullanılır.  \nÜçüncü katta, Nadir Eserler Koleksiyonu ve İTÜ Yayınları Arşivi yer almaktadır.",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 170,
+                "to": 184
+              }
+            }
+          }
+        },
+        {
+          "pageContent": "yer almakta, ödünç verilmemektedir. Detaylı bilgi referans kütüphanecilerinden (Danışma Masası) alınabilir. \n  \nSesli Çalışma Salonu  \nKütüphane’ye girişte soldaki merdivenlerle ulaşılan Salon’da grup çalışmaları yapılabilir, Kütüphane’nin \ndiğer alanlarında olduğu gibi çok sessiz olunması beklenmez. Sesli Çalışma Salonu’nun bir kısmı mescit \nolarak düzenlenmiştir.",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 192,
+                "to": 197
+              }
+            }
+          }
+        },
+        {
+          "pageContent": "Bunun için web sayfamızdaki Hizmetler menüsü altında yer alan formu doldurmanız yeterlidir. Detaylı bilgi \niçin bkz.: Aranılan Yayın İTÜ Kütüphanelerinde Yoksa... (s.13)      \n \nGenel Kitap Koleksiyonu  (A – P yer numaralı kitaplar): Aradığınız bir yayını yer numarası yardımıyla \nbulabilirsiniz.  Mustafa  İnan  Kütüphanesi  kitap  koleksiyonunun  yer  numarası  A  ile  başlayanlarla P  ile \nbaşlayan kitap koleksiyonu giriş katta yer almaktadır. Bu bölümdeki kitapları üyelik haklarınız kapsamında \nödünç alabilirsiniz.  \nReferans Kaynakları:  Ansiklopediler, indeksler,  abstraktlar,  elkitapları, yıllıklar gibi genel kullanıma yönelik \nolan danışma kaynaklarını giriş katta bulabilirsiniz. Bu koleksiyondaki kitapların yer numaralarının başında \nkırmızı renkte M harfi bulunmaktadır. Bu bölümdeki yayınlar yalnızca kütüphane içinde kullanılabilir, ödünç \nverilmez.  \nTezler: İTÜ’de üretilen yüksek lisans (uzmanlık) ve doktora tezlerini Kütüphane Giriş Katı’nda, salonun en",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 125,
+                "to": 136
+              }
+            }
+          }
+        },
+        {
+          "pageContent": "3 \n \nMUSTAFA İNAN KÜTÜPHANESİ’NDE NE NEREDE? \n \nGiriş Kat \n  \nÖdünç  Verme  Bankosu:  Kütüphaneye girişte sağda yer almaktadır. Ödünç kitap almak, aldığınız kitabı iade \netmek, ayırttığınız yayınları ödünç almak için bu bankoda çalışan görevliler sizlere yardımcı olmaktan \nmutluluk duyacaktır. \n  \nKütüphanelerarası Ödünç Yayın / Belge Sağlama Ofisi: İTÜ kütüphanelerinin koleksiyonunda  olmayan  ve \nsatın alınmasını bekleyecek  zamanınızın olmadığı durumlarda, kitapları yurt içi  ya  da  yurt dışında bulunan \nbaşka kütüphanelerden sizin için ödünç alabilir ya da istediğiniz makalelerin kopyasını sizin için getirtebiliriz. \nBunun için web sayfamızdaki Hizmetler menüsü altında yer alan formu doldurmanız yeterlidir. Detaylı bilgi \niçin bkz.: Aranılan Yayın İTÜ Kütüphanelerinde Yoksa... (s.13)      \n \nGenel Kitap Koleksiyonu  (A – P yer numaralı kitaplar): Aradığınız bir yayını yer numarası yardımıyla",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 112,
+                "to": 128
+              }
+            }
+          }
+        },
+        {
+          "pageContent": "yararlanabilmektedir. \n2. Bu  odalardan yararlanmak  isteyen  kullanıcılar giriş katta yer  alan Ödünç Verme Bankosu’ndaki \npersonele başvurarak, kimlik kartı ile oda ödünç alabilmektedir. \n3. Grup çalışma odaları 3 saatliğine kullanılabilir. Odaları kullanmak isteyen başka bir kullanıcı \nolmadığı takdirde  kullanım süresi kütüphane hesabı üzerinden uzatılabilir. Zamanında teslim \nedilmeyen odalar için para cezası uygulanır.  \n4. Grup  çalışma  odalarına kütüphanenin diğer  bölümlerinde  olduğu  gibi  yiyecek  ve  içecek \ngetirilmesi, sigara içilmesi ve cep telefonu kullanılması yasaktır. \n5. Odaların  düzenli  ve  temiz   kullanılması  ile  odaya  götürülen  yayınların  salondaki  masalara \nbırakılmasından kullanıcı sorumludur. \n6. Kullanımda  olan  odalardan  yararlanmak  isteyen  kullanıcılar giriş kattaki Ödünç   Verme \nBankosu’na ayırtma taleplerini iletebilir. \nTOPLANTI VE KONFERANS SALONLARINDAN YARARLANMA",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 609,
+                "to": 621
+              }
+            }
+          }
+        }
+      ],
+      "answer": "Tuvaletler, kütüphaneye girişte sol tarafta yer almaktadır."
+    },
+    "toolsUsed": [],
+    "executionTime": null,
+    "error": null,
+    "chainExecution": null,
+    "additionalInfo": {}
+  },
+  {
+    "type": "chat",
+    "timestamp": "2025-08-19 07:58:28.582",
+    "userQuery": {
+      "input": "Mürsel Tekin nerede çalışıyor",
+      "chat_history": [],
+      "context": [
+        {
+          "pageContent": "285 30 13 \nDahili: 4103\ntekinmursel@itu.edu.tr, Dahili: Bilgisayar Programcısı\nBilgi İşlem\n\nDış Hat: 285 30 13 \n 4103\ntekinmursel@itu.edu.tr\nNafiye Aslan Alabak - Dış Hat: Kütüphaneci (Öğr. Gör.)\nKoleksiyon Geliştirme\n\n 285 30 13 \nDahili: 4112\nnaslan@itu.edu.tr, Dahili: Kütüphaneci (Öğr. Gör.)\nKoleksiyon Geliştirme\n\nDış Hat: 285 30 13 \n 4112\nnaslan@itu.edu.tr\nNermin Yıldırım - Dış Hat: Destek Personeli\nTemizlik Hizmetleri\n\n 285 30 13 \nDahili: 4141, Dahili: Destek Personeli\nTemizlik Hizmetleri\n\nDış Hat: 285 30 13 \n 4141\nOktay Karaca - Dış Hat: Yardımcı Hizmetli\nYönetim\n\n 285 30 13 \nDahili: 4116\nokaraca@itu.edu.tr, Dahili: Yardımcı Hizmetli\nYönetim\n\nDış Hat: 285 30 13 \n 4116\nokaraca@itu.edu.tr\nOnur Atan - Dış Hat: Memur - Gece Görevlisi\nÖdünç Verme\n\n 285 66 19 \nDahili: -\natan20@itu.edu.tr, Dahili: Memur - Gece Görevlisi\nÖdünç Verme\n\nDış Hat: 285 66 19 \n -\natan20@itu.edu.tr\nÖmer Yarımdünya - Dış Hat: Destek Personeli\nDestek Hizmetleri",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 400,
+                "to": 451
+              }
+            }
+          }
+        },
+        {
+          "pageContent": "285 30 13 \nDahili: 4123\nmeralugurezgi@hotmail.com, Dahili: Destek Personeli\nRaf Hizmetleri\n\nDış Hat: 285 30 13 \n 4123\nmeralugurezgi@hotmail.com\nMetin Gürler - Dış Hat: Destek Personeli\nTemizlik Hizmetleri\n\n 285 30 13 \nDahili: 4141, Dahili: Destek Personeli\nTemizlik Hizmetleri\n\nDış Hat: 285 30 13 \n 4141\nMuhammed Doğu - Dış Hat: Destek Personeli\nTemizlik Hizmetleri\n\n 285 30 13 \nDahili: 4141, Dahili: Destek Personeli\nTemizlik Hizmetleri\n\nDış Hat: 285 30 13 \n 4141\nMuteber Karadeniz - Dış Hat: Destek Personeli\nTemizlik Hizmetleri\n\n 285 30 13 \nDahili: 4141, Dahili: Destek Personeli\nTemizlik Hizmetleri\n\nDış Hat: 285 30 13 \n 4141\nMürsel Tekin - Dış Hat: Bilgisayar Programcısı\nBilgi İşlem\n\n 285 30 13 \nDahili: 4103\ntekinmursel@itu.edu.tr, Dahili: Bilgisayar Programcısı\nBilgi İşlem\n\nDış Hat: 285 30 13 \n 4103\ntekinmursel@itu.edu.tr\nNafiye Aslan Alabak - Dış Hat: Kütüphaneci (Öğr. Gör.)\nKoleksiyon Geliştirme",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 362,
+                "to": 409
+              }
+            }
+          }
+        },
+        {
+          "pageContent": "285 30 13 \nDahili: 6616\nsemac@itu.edu.tr, Dahili: Kütüphaneci (Öğr. Gör.) - ILL\nÖdünç Verme\n\nDış Hat: 285 30 13 \n 6616\nsemac@itu.edu.tr\nSerdal Çaycı - Dış Hat: Yardımcı Hizmetli\nÖdünç Verme\n\n 285 30 13 \nDahili: 6619\ncaycis@itu.edu.tr, Dahili: Yardımcı Hizmetli\nÖdünç Verme\n\nDış Hat: 285 30 13 \n 6619\ncaycis@itu.edu.tr\nSerhat Mürsel Köroğlu - Dış Hat: Bilgisayar Programcısı\nBilgi İşlem\n\n 285 30 13 \nDahili: 4148\nsmkoroglu@itu.edu.tr, Dahili: Bilgisayar Programcısı\nBilgi İşlem\n\nDış Hat: 285 30 13 \n 4148\nsmkoroglu@itu.edu.tr\nSerpil Aykaç - Dış Hat: Destek Personeli - Gece Görevlisi\nÖdünç Verme\n\n 285 30 13 \nDahili: 6619\nserpil.aykac@hotmail.com, Dahili: Destek Personeli - Gece Görevlisi\nÖdünç Verme\n\nDış Hat: 285 30 13 \n 6619\nserpil.aykac@hotmail.com\nSeyit Karadeniz - Dış Hat: Destek Personeli\nTemizlik Hizmetleri\n\n 285 30 13 \nDahili: 4145\nseyit_karadeniz@hotmail.com, Dahili: Destek Personeli\nTemizlik Hizmetleri",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 513,
+                "to": 560
+              }
+            }
+          }
+        },
+        {
+          "pageContent": "Dış Hat: 285 30 13 \n 6619\nserpil.aykac@hotmail.com\nSeyit Karadeniz - Dış Hat: Destek Personeli\nTemizlik Hizmetleri\n\n 285 30 13 \nDahili: 4145\nseyit_karadeniz@hotmail.com, Dahili: Destek Personeli\nTemizlik Hizmetleri\n\nDış Hat: 285 30 13 \n 4145\nseyit_karadeniz@hotmail.com\nSibel Cevher - Dış Hat: Kütüphaneci\nElektronik Kaynaklar ve Akademik Araştırma Hizmetleri\n 285 30 13 \nDahili: 4118\nscevher@itu.edu.tr, Dahili: Kütüphaneci\nElektronik Kaynaklar ve Akademik Araştırma Hizmetleri\nDış Hat: 285 30 13 \n 4118\nscevher@itu.edu.tr\nSibel Şenol - Dış Hat: Kütüphaneci - Harita Bölümü\nTeknik Hizmetler\n\n 285 30 13 \nDahili: 6621\nssenol@itu.edu.tr, Dahili: Kütüphaneci - Harita Bölümü\nTeknik Hizmetler\n\nDış Hat: 285 30 13 \n 6621\nssenol@itu.edu.tr\nSinan Düzgün - Dış Hat: Kütüphaneci - Gece Görevlisi\nÖdünç Verme\n\n 285 30 13 \nDahili: 6619\nsinanduzgunn@gmail.com, Dahili: Kütüphaneci - Gece Görevlisi\nÖdünç Verme",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 551,
+                "to": 591
+              }
+            }
+          }
+        },
+        {
+          "pageContent": "285 30 13 \nDahili: 4116\nokatmerlikaya@gmail.com, Dahili: Destek Personeli-Raf\nRaf Hizmetleri\n\nDış Hat: 285 30 13 \n 4116\nokatmerlikaya@gmail.com\nReşit Turan - Dış Hat: Destek Personeli\nTemizlik Hizmetleri\n\n 285 30 13 \nDahili: 4141, Dahili: Destek Personeli\nTemizlik Hizmetleri\n\nDış Hat: 285 30 13 \n 4141\nSalih Öksüztepe - Dış Hat: Şef\nMali İşler\n\n 285 33 04 \nDahili: 3304\nsalihok@itu.edu.tr, Dahili: Şef\nMali İşler\n\nDış Hat: 285 33 04 \n 3304\nsalihok@itu.edu.tr\nSeher Demirci - Dış Hat: Destek Personeli\nTemizlik Hizmetleri\n\n \nDahili: -, Dahili: Destek Personeli\nTemizlik Hizmetleri\n\nDış Hat: \n -\nSema Çelikbaş - Dış Hat: Kütüphaneci (Öğr. Gör.) - ILL\nÖdünç Verme\n\n 285 30 13 \nDahili: 6616\nsemac@itu.edu.tr, Dahili: Kütüphaneci (Öğr. Gör.) - ILL\nÖdünç Verme\n\nDış Hat: 285 30 13 \n 6616\nsemac@itu.edu.tr\nSerdal Çaycı - Dış Hat: Yardımcı Hizmetli\nÖdünç Verme\n\n 285 30 13 \nDahili: 6619\ncaycis@itu.edu.tr, Dahili: Yardımcı Hizmetli\nÖdünç Verme",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 473,
+                "to": 527
+              }
+            }
+          }
+        }
+      ],
+      "answer": "Mürsel Tekin Bilgi İşlem biriminde çalışmaktadır."
+    },
+    "toolsUsed": [],
+    "executionTime": null,
+    "error": null,
+    "chainExecution": null,
+    "additionalInfo": {}
+  },
+  {
+    "type": "chat",
+    "timestamp": "2025-08-19 08:00:35.451",
+    "userQuery": {
+      "input": "yayın ayırtma nedir",
+      "chat_history": [],
+      "context": [
+        {
+          "pageContent": "ayırtmaları var (İADE TARİHİ +AYIRTMA SAYISI yazılıdır), kayıp, ciltte  veya  ödünç verilmeyen bir yayın \nolabilir.  \n \nRafta olduğu görülen yayını, künyesinde belirtilen yerde, yer numarasına göre bulabilirsiniz.  \n \nSistemde rafta görünmesine karşın yerinde bulamadığınız yayınlar o an başka bir kullanıcı tarafından \nsalonlarda kullanılıyor olabilir.    Statüsü RAFTA (CHECK SHELF) olan ve farklı zamanda yaptığınız aramaya \nrağmen yerinde bulamadığınız yayınlar için Danışma Masası’na başvurunuz.  \n \nBibliyografik Künye \n \nBibliyografik künye, bir bilgi kaynağının kimlik kartı olarak tanımlanabilir. Bir künye o kaynağın adı,",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 234,
+                "to": 245
+              }
+            }
+          }
+        },
+        {
+          "pageContent": "11 \n \n \nYayın Ayırtma \nKullanmak istediğiniz yayın bir başka kullanıcı tarafından ödünç alınmış olabilir. Yayın uzatma hakkı \nkullanılmadan iade edildiğinde kendiniz için ayırtılmasını sağlayabilirsiniz. Bunun için web’de katalog \nkaydının olduğu sayfanın hemen üstünde yer alan İstek Yap butonunu kullanmalısınız. Ayırttığınız yayın, \nsizin ödünç alabilmeniz için Ödünç Verme Bankosu’nda 3 gün süreyle tutulacaktır.  \nÖdünç Alınan Yayının İade İşlemleri \n \nÖdünç  almış olduğunuz bir yayını iade etmeniz gereken son tarihe kadar, aldığınız kütüphanenin ödünç \nverme  bankosuna  iade  etmeniz gerekir. Zamanında iade edilmeyen yayınlar  için  her  materyal  türüne göre \nfarklı periyodlarda artan cezalar uygulanır. İade işlemini yayını ödünç alan kişinin yapması zorunluluğu \nyoktur. \n \nÖdünç Alınan Yayının İade Süresini Uzatmak \n \nBaşka bir kullanıcı tarafından ayırtılmadıysa üzerinizdeki yayının iade süresini Kullanıcı Hesabım bağlantısını \nkullanarak uzatma işleminizi yapabilirsiniz.",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 464,
+                "to": 482
+              }
+            }
+          }
+        },
+        {
+          "pageContent": "Örneğin; electronic başlığında  konu  taraması  sonuçlarına  ulaştığınızda   sayfa  başındaki sınırla/sırala \nbutonunu seçerek yayının bulunduğu yeri Mustafa İnan Kütüphanesi Görsel İşitsel Merkez olarak seçip \nyeniden  tarattığınızda electronic konu başlığı almış olan ve Görsel İşitsel Merkez Koleksiyonu’nda  bulunan \nkaynaklara erişmiş olursunuz.  \n \n \nYaptığınız bir tarama sonucunda çok sayıda sonuçla karşılaştıysanız sayfanın sağ tarafında bulunan tarama \nseçeneklerinden gelişmiş tarama butonu  ile ya  da  ana sayfada detaylı arama ile birden  fazla  kritere  göre \ntarama stratejisi geliştirebileceğiniz bir sayfaya ulaşırsınız.",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 327,
+                "to": 335
+              }
+            }
+          }
+        },
+        {
+          "pageContent": "Katalog   Tarama, kaynakların bibliyografik   künyelerindeki bilgilere  göre  yapılan  bir  arama  şeklidir. \nKütüphane Kataloğu, koleksiyonda bulunan tüm bilgi kaynaklarının bibliyografik künyelerini içerir.   \n \nÖncelikle yayının bulunduğu yer, yer numarası ve statüsü kontrol edilmelidir.  \n \nYayının  bulunduğu yer: Yayın, merkez veya şube kütüphanelerinden  birinde  ya  da  bu  kütüphanelerin  özel \nkoleksiyonlarında bulunuyor olabilir. Mustafa İnan Kütüphanesi,  Makina Fakültesi  Kütüphanesi,  Mustafa \nİnan Kütüphanesi Görsel İşitsel Merkez gibi.  \n \nYer numarası: Yayına ait yer numarasını not edin. \n \nStatüsü: Yayın raftaki yerinde (RAFTA), kullanıcı üzerinde (İADE TARİHİ yazılıdır), kullanıcı üzerinde ve \nayırtmaları var (İADE TARİHİ +AYIRTMA SAYISI yazılıdır), kayıp, ciltte  veya  ödünç verilmeyen bir yayın \nolabilir.  \n \nRafta olduğu görülen yayını, künyesinde belirtilen yerde, yer numarasına göre bulabilirsiniz.",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 222,
+                "to": 237
+              }
+            }
+          }
+        },
+        {
+          "pageContent": "kaybedilmesi durumunda ise kullanıcı, Daire Başkanlığı’nca belirlenen, kaybedilene eşdeğer  bir  yayını 30 \ngün içinde temin etmek ve işlem ücretini ödemek zorundadır. \n \nAranılan Yayın İTÜ Kütüphanelerinde Yoksa...         \n \nKütüphaneye   Yayın Satın  Alınması  İçin  Yayın  Önerisi:  Kütüphane  koleksiyonlarında  bulamadığınız  ve \nkoleksiyona alınmasını istediğiniz ya da önereceğiniz yayınlar için yayın istek  formunu  doldurabilirsiniz. \nYayın İstek Formu’na, web sayfasında Hizmetler menüsü altında yer alan Yayın Sağlama bağlantısından \nulaşabilirsiniz.",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 502,
+                "to": 510
+              }
+            }
+          }
+        }
+      ],
+      "answer": "Yayın ayırtma, kullanmak istediğiniz bir yayının başka bir kullanıcı tarafından ödünç alınmış olması durumunda, yayın uzatma hakkı kullanılmadan iade edildiğinde kendiniz için ayrılmasını sağlamaktır. Bu işlemi yapmak için, web'de katalog kaydının olduğu sayfanın hemen üstünde yer alan \"İstek Yap\" butonunu kullanmanız gerekir. Ayırttığınız yayın, sizin ödünç alabilmeniz için Ödünç Verme Bankosu'nda 3 gün süreyle tutulur."
+    },
+    "toolsUsed": [],
+    "executionTime": null,
+    "error": null,
+    "chainExecution": null,
+    "additionalInfo": {}
+  },
+  {
+    "type": "chat",
+    "timestamp": "2025-08-19 08:00:57.539",
+    "userQuery": {
+      "input": "kütüphaneye kitap bağışı nasıl yapılır",
+      "chat_history": [],
+      "context": [
+        {
+          "pageContent": "koleksiyonunu geliştirmek amacı ile bağış yayın kabul etmektedir. \n1. Bağış yapmak isteyen kişi ve kurumların, bağışlayacakları yayınların bilgilerini içeren listeyi önceden \nDaire Başkanlığı’na iletmesi gerekir. \n2. Bağışlanacak koleksiyondaki el yazması ve nadir basma eser niteliği dışında kalanlardan, güncelliğini \nyitirmiş olanlar bağış olarak kabul edilmez.  \n3. Koleksiyon Geliştirme Bölümü tarafından kütüphane koleksiyonu için uygun olduğuna karar verilen \nyayınlar teknik işlemleri yapılarak koleksiyona eklenir. Bağış yapan kişi veya kuruma İTÜ adına \nteşekkür mektubu gönderilir.  \n4. Bağış yapılan yayın, kütüphane koleksiyonunda (rezerv yayınlar hariç) mevcutsa kabul edilmez.  \n5. Daire Başkanlığı bağış yapılan yayınları hangi bölümde ve hangi kurallar doğrultusunda kullanıcılara \nsunacağı konusunda karar verme hakkına sahiptir. \n6. Süreli yayınların bağış olarak kabul edilebilmesi için koleksiyonun başlangıcı ya da devamının \nkütüphanede bulunması gerekir.",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 527,
+                "to": 539
+              }
+            }
+          }
+        },
+        {
+          "pageContent": "5. Daire Başkanlığı bağış yapılan yayınları hangi bölümde ve hangi kurallar doğrultusunda kullanıcılara \nsunacağı konusunda karar verme hakkına sahiptir. \n6. Süreli yayınların bağış olarak kabul edilebilmesi için koleksiyonun başlangıcı ya da devamının \nkütüphanede bulunması gerekir.  \n7. Dergi, ansiklopedi vb. çok ciltli eserler cilt bütünlüğü oluşturuyorsa kabul edilir.  \n8. Daire Başkanlığı özel ya da tüzel kişilere, koleksiyon bağışı yapması için başvurabilir.  \n9. Daire Başkanlığı uygun gördüğü takdirde bağış olarak kabul ettiği yayınları iade etme veya başka bir \nkütüphaneye bağışlama hakkına sahiptir.  \n10. Fotokopi yayınlar,  fiziksel  açıdan  kötü  durumdaki yayınlar ve  devamlılığı  sağlanamayan  süreli \nyayınlar bağış olarak kabul edilmemektedir.  \n \nKULLANICI HESABI                                                                                             \n \nKütüphaneye  üye olduğunuz andan itibaren adınıza bir hesap oluşturulur. Bu hesapta üyelik bilgileriniz,",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 536,
+                "to": 549
+              }
+            }
+          }
+        },
+        {
+          "pageContent": "12 \n \nKütüphanelerarası Ödünç Yayın / Belge Sağlama Hizmeti: Kütüphane koleksiyonlarında bulamadığınız ancak \nkısa  süreliğine  kullanmak  istediğiniz kitapları,  diğer  kurumlardan  belli  bir  süreliğine  getirtmek  için \nkütüphanelerarası kitap ödünç alma formunu doldurarak isteğinizi bize iletebilirsiniz.  \nAynı şekilde basılı veya elektronik bir makaleyi koleksiyonlarımızda bulamadığınızda diğer kurumlardan \ngetirtilmesi için kütüphanelerarası ödünç belge sağlama formunu doldurmalısınız. \n \nİTÜ Kütüphanelerine Yayın Bağışı \n \nİTÜ Kütüphane ve Dokümantasyon Daire Başkanlığı üniversitede yapılan eğitim-öğretimi desteklemek, \naraştırmalara  katkıda  bulunmak  ve  kullanıcıların  kültürel  gereksinimleri  doğrultusunda   kütüphane \nkoleksiyonunu geliştirmek amacı ile bağış yayın kabul etmektedir. \n1. Bağış yapmak isteyen kişi ve kurumların, bağışlayacakları yayınların bilgilerini içeren listeyi önceden \nDaire Başkanlığı’na iletmesi gerekir.",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 515,
+                "to": 529
+              }
+            }
+          }
+        },
+        {
+          "pageContent": "yayınlar bağış olarak kabul edilmemektedir.  \n \nKULLANICI HESABI                                                                                             \n \nKütüphaneye  üye olduğunuz andan itibaren adınıza bir hesap oluşturulur. Bu hesapta üyelik bilgileriniz, \nödünç aldığınız yayınlar, cezalar, yayın ayırtmalarınız kaydedilir. Kütüphane web sayfasındaki kullanıcı \nişlemleri alanında siz de üzerinizdeki yayınları görebilir, iade sürelerini uzatabilir, yayın ayırtma işlemlerinizi \nyapabilirsiniz.  \nBu  hizmetten  yararlanmak  için en  az  6  haneli, içinde  büyük-küçük  harf  ve  rakam  olan bir PIN’e ihtiyacınız \nolacaktır.  \nPIN kodunuzu hiç almadıysanız ya da hatırlamıyorsanız, kütüphane web sayfasındaki PIN İşlemleri alanından \nşifrenizi kendiniz oluşturabilirsiniz. Şifreler e-mail  ya  da  telefonla  verilemez. Sizden  istenen  bilgileri  forma \ndoldurduğunuzda,  kütüphaneye üye olurken verdiğiniz e-posta adresinize PIN oluşturmanız için bir link",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 545,
+                "to": 557
+              }
+            }
+          }
+        },
+        {
+          "pageContent": "kaybedilmesi durumunda ise kullanıcı, Daire Başkanlığı’nca belirlenen, kaybedilene eşdeğer  bir  yayını 30 \ngün içinde temin etmek ve işlem ücretini ödemek zorundadır. \n \nAranılan Yayın İTÜ Kütüphanelerinde Yoksa...         \n \nKütüphaneye   Yayın Satın  Alınması  İçin  Yayın  Önerisi:  Kütüphane  koleksiyonlarında  bulamadığınız  ve \nkoleksiyona alınmasını istediğiniz ya da önereceğiniz yayınlar için yayın istek  formunu  doldurabilirsiniz. \nYayın İstek Formu’na, web sayfasında Hizmetler menüsü altında yer alan Yayın Sağlama bağlantısından \nulaşabilirsiniz.",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 502,
+                "to": 510
+              }
+            }
+          }
+        }
+      ],
+      "answer": "İTÜ Kütüphanelerine kitap (yayın) bağışı yapmak için, bağışlamak istediğiniz yayınların bilgilerini içeren bir listeyi önceden Daire Başkanlığı’na iletmeniz gerekmektedir."
+    },
+    "toolsUsed": [],
+    "executionTime": null,
+    "error": null,
+    "chainExecution": null,
+    "additionalInfo": {}
+  },
+  {
+    "type": "chat",
+    "timestamp": "2025-08-19 08:01:26.624",
+    "userQuery": {
+      "input": "bağış yapma şartları",
+      "chat_history": [],
+      "context": [
+        {
+          "pageContent": "koleksiyonunu geliştirmek amacı ile bağış yayın kabul etmektedir. \n1. Bağış yapmak isteyen kişi ve kurumların, bağışlayacakları yayınların bilgilerini içeren listeyi önceden \nDaire Başkanlığı’na iletmesi gerekir. \n2. Bağışlanacak koleksiyondaki el yazması ve nadir basma eser niteliği dışında kalanlardan, güncelliğini \nyitirmiş olanlar bağış olarak kabul edilmez.  \n3. Koleksiyon Geliştirme Bölümü tarafından kütüphane koleksiyonu için uygun olduğuna karar verilen \nyayınlar teknik işlemleri yapılarak koleksiyona eklenir. Bağış yapan kişi veya kuruma İTÜ adına \nteşekkür mektubu gönderilir.  \n4. Bağış yapılan yayın, kütüphane koleksiyonunda (rezerv yayınlar hariç) mevcutsa kabul edilmez.  \n5. Daire Başkanlığı bağış yapılan yayınları hangi bölümde ve hangi kurallar doğrultusunda kullanıcılara \nsunacağı konusunda karar verme hakkına sahiptir. \n6. Süreli yayınların bağış olarak kabul edilebilmesi için koleksiyonun başlangıcı ya da devamının \nkütüphanede bulunması gerekir.",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 527,
+                "to": 539
+              }
+            }
+          }
+        },
+        {
+          "pageContent": "5. Daire Başkanlığı bağış yapılan yayınları hangi bölümde ve hangi kurallar doğrultusunda kullanıcılara \nsunacağı konusunda karar verme hakkına sahiptir. \n6. Süreli yayınların bağış olarak kabul edilebilmesi için koleksiyonun başlangıcı ya da devamının \nkütüphanede bulunması gerekir.  \n7. Dergi, ansiklopedi vb. çok ciltli eserler cilt bütünlüğü oluşturuyorsa kabul edilir.  \n8. Daire Başkanlığı özel ya da tüzel kişilere, koleksiyon bağışı yapması için başvurabilir.  \n9. Daire Başkanlığı uygun gördüğü takdirde bağış olarak kabul ettiği yayınları iade etme veya başka bir \nkütüphaneye bağışlama hakkına sahiptir.  \n10. Fotokopi yayınlar,  fiziksel  açıdan  kötü  durumdaki yayınlar ve  devamlılığı  sağlanamayan  süreli \nyayınlar bağış olarak kabul edilmemektedir.  \n \nKULLANICI HESABI                                                                                             \n \nKütüphaneye  üye olduğunuz andan itibaren adınıza bir hesap oluşturulur. Bu hesapta üyelik bilgileriniz,",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 536,
+                "to": 549
+              }
+            }
+          }
+        },
+        {
+          "pageContent": "12 \n \nKütüphanelerarası Ödünç Yayın / Belge Sağlama Hizmeti: Kütüphane koleksiyonlarında bulamadığınız ancak \nkısa  süreliğine  kullanmak  istediğiniz kitapları,  diğer  kurumlardan  belli  bir  süreliğine  getirtmek  için \nkütüphanelerarası kitap ödünç alma formunu doldurarak isteğinizi bize iletebilirsiniz.  \nAynı şekilde basılı veya elektronik bir makaleyi koleksiyonlarımızda bulamadığınızda diğer kurumlardan \ngetirtilmesi için kütüphanelerarası ödünç belge sağlama formunu doldurmalısınız. \n \nİTÜ Kütüphanelerine Yayın Bağışı \n \nİTÜ Kütüphane ve Dokümantasyon Daire Başkanlığı üniversitede yapılan eğitim-öğretimi desteklemek, \naraştırmalara  katkıda  bulunmak  ve  kullanıcıların  kültürel  gereksinimleri  doğrultusunda   kütüphane \nkoleksiyonunu geliştirmek amacı ile bağış yayın kabul etmektedir. \n1. Bağış yapmak isteyen kişi ve kurumların, bağışlayacakları yayınların bilgilerini içeren listeyi önceden \nDaire Başkanlığı’na iletmesi gerekir.",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 515,
+                "to": 529
+              }
+            }
+          }
+        },
+        {
+          "pageContent": "yayınlar bağış olarak kabul edilmemektedir.  \n \nKULLANICI HESABI                                                                                             \n \nKütüphaneye  üye olduğunuz andan itibaren adınıza bir hesap oluşturulur. Bu hesapta üyelik bilgileriniz, \nödünç aldığınız yayınlar, cezalar, yayın ayırtmalarınız kaydedilir. Kütüphane web sayfasındaki kullanıcı \nişlemleri alanında siz de üzerinizdeki yayınları görebilir, iade sürelerini uzatabilir, yayın ayırtma işlemlerinizi \nyapabilirsiniz.  \nBu  hizmetten  yararlanmak  için en  az  6  haneli, içinde  büyük-küçük  harf  ve  rakam  olan bir PIN’e ihtiyacınız \nolacaktır.  \nPIN kodunuzu hiç almadıysanız ya da hatırlamıyorsanız, kütüphane web sayfasındaki PIN İşlemleri alanından \nşifrenizi kendiniz oluşturabilirsiniz. Şifreler e-mail  ya  da  telefonla  verilemez. Sizden  istenen  bilgileri  forma \ndoldurduğunuzda,  kütüphaneye üye olurken verdiğiniz e-posta adresinize PIN oluşturmanız için bir link",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 545,
+                "to": 557
+              }
+            }
+          }
+        },
+        {
+          "pageContent": "yararlanabilmektedir. \n2. Bu  odalardan yararlanmak  isteyen  kullanıcılar giriş katta yer  alan Ödünç Verme Bankosu’ndaki \npersonele başvurarak, kimlik kartı ile oda ödünç alabilmektedir. \n3. Grup çalışma odaları 3 saatliğine kullanılabilir. Odaları kullanmak isteyen başka bir kullanıcı \nolmadığı takdirde  kullanım süresi kütüphane hesabı üzerinden uzatılabilir. Zamanında teslim \nedilmeyen odalar için para cezası uygulanır.  \n4. Grup  çalışma  odalarına kütüphanenin diğer  bölümlerinde  olduğu  gibi  yiyecek  ve  içecek \ngetirilmesi, sigara içilmesi ve cep telefonu kullanılması yasaktır. \n5. Odaların  düzenli  ve  temiz   kullanılması  ile  odaya  götürülen  yayınların  salondaki  masalara \nbırakılmasından kullanıcı sorumludur. \n6. Kullanımda  olan  odalardan  yararlanmak  isteyen  kullanıcılar giriş kattaki Ödünç   Verme \nBankosu’na ayırtma taleplerini iletebilir. \nTOPLANTI VE KONFERANS SALONLARINDAN YARARLANMA",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 609,
+                "to": 621
+              }
+            }
+          }
+        }
+      ],
+      "answer": "İTÜ Kütüphanelerine yayın bağışı yapma şartları şunlardır:\n\n*   Bağış yapmak isteyen kişi ve kurumların, bağışlayacakları yayınların bilgilerini içeren listeyi önceden Daire Başkanlığı’na iletmesi gerekir.\n*   El yazması ve nadir basma eser niteliği dışında kalanlardan, güncelliğini yitirmiş olanlar bağış olarak kabul edilmez.\n*   Bağış yapılan yayın, kütüphane koleksiyonunda (rezerv yayınlar hariç) mevcutsa kabul edilmez.\n*   Süreli yayınların bağış olarak kabul edilebilmesi için koleksiyonun başlangıcı ya da devamının kütüphanede bulunması gerekir.\n*   Dergi, ansiklopedi vb. çok ciltli eserler cilt bütünlüğü oluşturuyorsa kabul edilir.\n*   Fotokopi yayınlar, fiziksel açıdan kötü durumdaki yayınlar ve devamlılığı sağlanamayan süreli yayınlar bağış olarak kabul edilmemektedir."
+    },
+    "toolsUsed": [],
+    "executionTime": null,
+    "error": null,
+    "chainExecution": null,
+    "additionalInfo": {}
+  },
+  {
+    "type": "error",
+    "timestamp": "2025-08-19 08:01:28.559",
+    "context": {},
+    "error": {
+      "type": "string",
+      "value": "Agent sorgusu işlenirken hata: bağış yapma şartları nelerdir"
+    }
+  },
+  {
+    "type": "chat",
+    "timestamp": "2025-08-20 12:20:08.303",
+    "userQuery": {
+      "input": "tuvaletler nerede",
+      "chat_history": [],
+      "context": [
+        {
+          "pageContent": "Öğrenci  Dolapları: Mustafa İnan Kütüphanesinin giriş katında bulunan dolapların anahtarlarını, Ödünç \nVerme  Bankosu’ndan kimlik karşılığında 5 saatliğine ödünç alabilir, süreyi 3  kez  uzatabilirsiniz. Gecikme \ndurumunda saatlik gecikme ücreti alınır. Anahtarı kaybetme durumunda ise kaybetme bedeli \nalınmaktadır. \n \nTuvaletler: Kütüphaneye girişte, sol taraftadır. \n \nBirinci Kat \nSol koridorda (bina arka cephesinde yer alan raf bloğu) Q ile başlayan kitap koleksiyonu, sağ koridorda (bina \nön cephesinde yer alan raf bloğu) R ile başlayan Z’ye kadar devam eden kitap koleksiyonu yer almaktadır. \nİkinci ve Üçüncü Kat  \n \nSüreli Yayınlar (dergiler) koleksiyonu yer almaktadır. Aranılan bir derginin hangi rafta olduğu -kitaplarda \nolduğu gibi- yer numarası yardımıyla bulunabilir. Süreli yayınlar ödünç verilmez, kütüphane içinde kullanılır.  \nÜçüncü katta, Nadir Eserler Koleksiyonu ve İTÜ Yayınları Arşivi yer almaktadır.",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 170,
+                "to": 184
+              }
+            }
+          }
+        },
+        {
+          "pageContent": "yer almakta, ödünç verilmemektedir. Detaylı bilgi referans kütüphanecilerinden (Danışma Masası) alınabilir. \n  \nSesli Çalışma Salonu  \nKütüphane’ye girişte soldaki merdivenlerle ulaşılan Salon’da grup çalışmaları yapılabilir, Kütüphane’nin \ndiğer alanlarında olduğu gibi çok sessiz olunması beklenmez. Sesli Çalışma Salonu’nun bir kısmı mescit \nolarak düzenlenmiştir.",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 192,
+                "to": 197
+              }
+            }
+          }
+        },
+        {
+          "pageContent": "Bunun için web sayfamızdaki Hizmetler menüsü altında yer alan formu doldurmanız yeterlidir. Detaylı bilgi \niçin bkz.: Aranılan Yayın İTÜ Kütüphanelerinde Yoksa... (s.13)      \n \nGenel Kitap Koleksiyonu  (A – P yer numaralı kitaplar): Aradığınız bir yayını yer numarası yardımıyla \nbulabilirsiniz.  Mustafa  İnan  Kütüphanesi  kitap  koleksiyonunun  yer  numarası  A  ile  başlayanlarla P  ile \nbaşlayan kitap koleksiyonu giriş katta yer almaktadır. Bu bölümdeki kitapları üyelik haklarınız kapsamında \nödünç alabilirsiniz.  \nReferans Kaynakları:  Ansiklopediler, indeksler,  abstraktlar,  elkitapları, yıllıklar gibi genel kullanıma yönelik \nolan danışma kaynaklarını giriş katta bulabilirsiniz. Bu koleksiyondaki kitapların yer numaralarının başında \nkırmızı renkte M harfi bulunmaktadır. Bu bölümdeki yayınlar yalnızca kütüphane içinde kullanılabilir, ödünç \nverilmez.  \nTezler: İTÜ’de üretilen yüksek lisans (uzmanlık) ve doktora tezlerini Kütüphane Giriş Katı’nda, salonun en",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 125,
+                "to": 136
+              }
+            }
+          }
+        },
+        {
+          "pageContent": "3 \n \nMUSTAFA İNAN KÜTÜPHANESİ’NDE NE NEREDE? \n \nGiriş Kat \n  \nÖdünç  Verme  Bankosu:  Kütüphaneye girişte sağda yer almaktadır. Ödünç kitap almak, aldığınız kitabı iade \netmek, ayırttığınız yayınları ödünç almak için bu bankoda çalışan görevliler sizlere yardımcı olmaktan \nmutluluk duyacaktır. \n  \nKütüphanelerarası Ödünç Yayın / Belge Sağlama Ofisi: İTÜ kütüphanelerinin koleksiyonunda  olmayan  ve \nsatın alınmasını bekleyecek  zamanınızın olmadığı durumlarda, kitapları yurt içi  ya  da  yurt dışında bulunan \nbaşka kütüphanelerden sizin için ödünç alabilir ya da istediğiniz makalelerin kopyasını sizin için getirtebiliriz. \nBunun için web sayfamızdaki Hizmetler menüsü altında yer alan formu doldurmanız yeterlidir. Detaylı bilgi \niçin bkz.: Aranılan Yayın İTÜ Kütüphanelerinde Yoksa... (s.13)      \n \nGenel Kitap Koleksiyonu  (A – P yer numaralı kitaplar): Aradığınız bir yayını yer numarası yardımıyla",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 112,
+                "to": 128
+              }
+            }
+          }
+        },
+        {
+          "pageContent": "yararlanabilmektedir. \n2. Bu  odalardan yararlanmak  isteyen  kullanıcılar giriş katta yer  alan Ödünç Verme Bankosu’ndaki \npersonele başvurarak, kimlik kartı ile oda ödünç alabilmektedir. \n3. Grup çalışma odaları 3 saatliğine kullanılabilir. Odaları kullanmak isteyen başka bir kullanıcı \nolmadığı takdirde  kullanım süresi kütüphane hesabı üzerinden uzatılabilir. Zamanında teslim \nedilmeyen odalar için para cezası uygulanır.  \n4. Grup  çalışma  odalarına kütüphanenin diğer  bölümlerinde  olduğu  gibi  yiyecek  ve  içecek \ngetirilmesi, sigara içilmesi ve cep telefonu kullanılması yasaktır. \n5. Odaların  düzenli  ve  temiz   kullanılması  ile  odaya  götürülen  yayınların  salondaki  masalara \nbırakılmasından kullanıcı sorumludur. \n6. Kullanımda  olan  odalardan  yararlanmak  isteyen  kullanıcılar giriş kattaki Ödünç   Verme \nBankosu’na ayırtma taleplerini iletebilir. \nTOPLANTI VE KONFERANS SALONLARINDAN YARARLANMA",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 609,
+                "to": 621
+              }
+            }
+          }
+        }
+      ],
+      "answer": "Tuvaletler, kütüphaneye girişte sol taraftadır."
+    },
+    "toolsUsed": [],
+    "executionTime": null,
+    "error": null,
+    "chainExecution": null,
+    "additionalInfo": {}
+  },
+  {
+    "type": "chat",
+    "timestamp": "2025-08-20 12:20:26.194",
+    "userQuery": {
+      "input": "emekli personel ödünç kitap alabilir mi",
+      "chat_history": [],
+      "context": [
+        {
+          "pageContent": "Doktora \nÖğrencisi \n15 15 3 3 5 3 \nLisans \nÖğrencisi \n10 10 3 3 5 3 \nİTU Emekli \nPersoneli \n5 5 3 3 \n \nÖdünç Verilmez \n \nÖdünç \nverilmez \nYayın Tipi Ödünç verme Süresi \nKitap Öğretim Elemanı 1 ay 4 uzatma \n \nİdari Personel 1 ay 3 uzatma \nY.Lisans/Doktora 15 gün 3 uzatma \nLisans 15 gün 3 uzatma \nİTÜ Emekli Personeli 1 ay 3 uzatma \nSüreli yayınlar Kütüphane içinde kullanılır \nReferans \nBölümündeki Yayınlar \nKütüphane içinde kullanılır \nRezerv \nBölümündeki \nYayınlar \nÖğretim \nÜyesi \n2 saat/ 1 \nDönem \nUzatma yapılmaz \n \nDiğer \nKullanıcılar \n2 saat/ 1 \ngün \nUzatma yapılmaz \nGörsel-İşitsel Materyal \nÖğretim \nÜyesi \n3 gün Uzatma yapılmaz \n \nDiğer \nKullanıcılar \n3 gün Uzatma yapılmaz \nTezler \nKütüphane içinde kullanılır \nNadir Eserler/ Arşiv Kopyaları/ Sanat \nKoleksiyonu/ Haritalar \n \nKütüphane içinde kullanılır. \nNotalar (ciltli ve urtext) \nKütüphane içinde kullanılır \nNota \n7 gün Uzatma yapılmaz",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 404,
+                "to": 460
+              }
+            }
+          }
+        },
+        {
+          "pageContent": "10 \n \nYAYIN ÖDÜNÇ ALMA      \n                                                                                                \nRaftan aldığınız bir yayını, İTÜ kimliğinizle ödünç verme bankolarından ödünç alabilirsiniz. Ödünç alma veya \nkütüphane  girişlerinde  başkasının  kartıyla işlem  yapmanın,  üyeliğin  geçici  olarak  iptal  edilmesiyle \nsonuçlanacağını unutmayın. \nÖdünç Yayın Alma Sayısı: \nÖdünç Yayın Alma Süresi: \n \n \nKullanıcı \nTipi \nÖdünç \nAlınabilen \nToplam \nYayın Sayısı \n \nKitap \n \nGörsel-İşitsel \nMateryal \nRezerv Yayın \n (Ders Kitabı)  \nKütüphanelerarası \nÖdünç Yayın \nNota \nÖğretim \nElemanı \n30 30 3 3 10 10 \nİdari \nPersonel \n10 10 3 \n3 \n5 3 \nY.Lisans/ \nDoktora \nÖğrencisi \n15 15 3 3 5 3 \nLisans \nÖğrencisi \n10 10 3 3 5 3 \nİTU Emekli \nPersoneli \n5 5 3 3 \n \nÖdünç Verilmez \n \nÖdünç \nverilmez \nYayın Tipi Ödünç verme Süresi \nKitap Öğretim Elemanı 1 ay 4 uzatma \n \nİdari Personel 1 ay 3 uzatma \nY.Lisans/Doktora 15 gün 3 uzatma \nLisans 15 gün 3 uzatma",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 368,
+                "to": 423
+              }
+            }
+          }
+        },
+        {
+          "pageContent": "2. Kütüphanelerarası ödünç yayın / belge sağlama hizmeti, \n3. Elektronik kaynaklara kampüs dışı erişim hizmeti, \n4. Kütüphaneye satın alınması için yayın siparişi hizmetlerinden \n yararlanılabilmesi için kütüphane üyeliği gerekmektedir. (Üye olan İTÜ emekli personeli sadece \nödünç verme hizmetinden yararlanabilir). \n \n➢ İTÜ mezunları, İTÜ Vakfı ve İTÜ Geliştirme Vakfı personeli, diğer üniversitelerin  yüksek  lisans  ve \ndoktora öğrencileri ile öğretim elemanları Üniversite Yönetim Kurulu (ÜYK) kararı ile belirlenen koşullar \nçerçevesinde sadece kütüphane içindeki hizmetlerden yararlanabilir, ödünç yayın alamazlar. \n1. İTÜ mezunları mezun kartları ile, \n2. Diğer üniversitelerin öğretim elemanları ve lisansüstü öğrencileri çıkarılacak üyelik kartı ile, \n3. İTÜ Kütüphanelerinden yararlanmak isteyen lisansüstü öğrenciler ve akademisyenler, Üniversite \nYönetim  Kurulu  (ÜYK)  tarafından  belirlenen kurallar çerçevesinde  misafir  üye  olarak  İTÜ \nKütüphanelerinden yararlanabilirler.",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 30,
+                "to": 43
+              }
+            }
+          }
+        },
+        {
+          "pageContent": "Notlarına rağmen ödünç aldığı yayını iade etmeyen; \na) Öğrencilerin öğrenci otomasyon sistemindeki kayıtlarına kısıntı konulur. \nb) Öğretim elemanı ve idari personelin görev yaptığı birime yazı yazılır. \nİTÜ emekli  personelinin ödünç alınan yayını iki kez  geciktirmesi cezasını ödemediği takdirde üyeliği iptal \nedilir. \n \nÖdünç Alınan Bir Yayının Kaybedilmesi \n \nÖdünç alınan yayınların korunması ve  zamanında iade edilmesi sorumluluğu yayınları ödünç alan kişiye \naittir. Ödünç aldığınız yayını kaybettiyseniz  yerine  aynı yayını satın alarak 30 gün içinde kütüphaneye \ngetirmeniz gerekir. Kaybettiğiniz yayın için ayrıca işlem ücreti  de  tahsil  edilir.  Baskısı tükenmiş yayının \nkaybedilmesi durumunda ise kullanıcı, Daire Başkanlığı’nca belirlenen, kaybedilene eşdeğer  bir  yayını 30 \ngün içinde temin etmek ve işlem ücretini ödemek zorundadır. \n \nAranılan Yayın İTÜ Kütüphanelerinde Yoksa...",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 491,
+                "to": 505
+              }
+            }
+          }
+        },
+        {
+          "pageContent": "yayınlar bağış olarak kabul edilmemektedir.  \n \nKULLANICI HESABI                                                                                             \n \nKütüphaneye  üye olduğunuz andan itibaren adınıza bir hesap oluşturulur. Bu hesapta üyelik bilgileriniz, \nödünç aldığınız yayınlar, cezalar, yayın ayırtmalarınız kaydedilir. Kütüphane web sayfasındaki kullanıcı \nişlemleri alanında siz de üzerinizdeki yayınları görebilir, iade sürelerini uzatabilir, yayın ayırtma işlemlerinizi \nyapabilirsiniz.  \nBu  hizmetten  yararlanmak  için en  az  6  haneli, içinde  büyük-küçük  harf  ve  rakam  olan bir PIN’e ihtiyacınız \nolacaktır.  \nPIN kodunuzu hiç almadıysanız ya da hatırlamıyorsanız, kütüphane web sayfasındaki PIN İşlemleri alanından \nşifrenizi kendiniz oluşturabilirsiniz. Şifreler e-mail  ya  da  telefonla  verilemez. Sizden  istenen  bilgileri  forma \ndoldurduğunuzda,  kütüphaneye üye olurken verdiğiniz e-posta adresinize PIN oluşturmanız için bir link",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 545,
+                "to": 557
+              }
+            }
+          }
+        }
+      ],
+      "answer": "Evet, İTÜ emekli personeli ödünç kitap alabilir.\n\nBağlamdaki bilgilere göre:\n*   İTÜ emekli personeli 5 adet kitap ödünç alabilir.\n*   Ödünç verme süresi 1 ay olup, 3 kez uzatma yapılabilir.\n*   Üye olan İTÜ emekli personeli sadece ödünç verme hizmetinden yararlanabilir."
+    },
+    "toolsUsed": [],
+    "executionTime": null,
+    "error": null,
+    "chainExecution": null,
+    "additionalInfo": {}
+  },
+  {
+    "type": "chat",
+    "timestamp": "2025-08-20 12:20:32.384",
+    "userQuery": {
+      "input": "emekli personel ödünç kitap alabilir mi",
+      "chat_history": [],
+      "context": [
+        {
+          "pageContent": "Doktora \nÖğrencisi \n15 15 3 3 5 3 \nLisans \nÖğrencisi \n10 10 3 3 5 3 \nİTU Emekli \nPersoneli \n5 5 3 3 \n \nÖdünç Verilmez \n \nÖdünç \nverilmez \nYayın Tipi Ödünç verme Süresi \nKitap Öğretim Elemanı 1 ay 4 uzatma \n \nİdari Personel 1 ay 3 uzatma \nY.Lisans/Doktora 15 gün 3 uzatma \nLisans 15 gün 3 uzatma \nİTÜ Emekli Personeli 1 ay 3 uzatma \nSüreli yayınlar Kütüphane içinde kullanılır \nReferans \nBölümündeki Yayınlar \nKütüphane içinde kullanılır \nRezerv \nBölümündeki \nYayınlar \nÖğretim \nÜyesi \n2 saat/ 1 \nDönem \nUzatma yapılmaz \n \nDiğer \nKullanıcılar \n2 saat/ 1 \ngün \nUzatma yapılmaz \nGörsel-İşitsel Materyal \nÖğretim \nÜyesi \n3 gün Uzatma yapılmaz \n \nDiğer \nKullanıcılar \n3 gün Uzatma yapılmaz \nTezler \nKütüphane içinde kullanılır \nNadir Eserler/ Arşiv Kopyaları/ Sanat \nKoleksiyonu/ Haritalar \n \nKütüphane içinde kullanılır. \nNotalar (ciltli ve urtext) \nKütüphane içinde kullanılır \nNota \n7 gün Uzatma yapılmaz",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 404,
+                "to": 460
+              }
+            }
+          }
+        },
+        {
+          "pageContent": "10 \n \nYAYIN ÖDÜNÇ ALMA      \n                                                                                                \nRaftan aldığınız bir yayını, İTÜ kimliğinizle ödünç verme bankolarından ödünç alabilirsiniz. Ödünç alma veya \nkütüphane  girişlerinde  başkasının  kartıyla işlem  yapmanın,  üyeliğin  geçici  olarak  iptal  edilmesiyle \nsonuçlanacağını unutmayın. \nÖdünç Yayın Alma Sayısı: \nÖdünç Yayın Alma Süresi: \n \n \nKullanıcı \nTipi \nÖdünç \nAlınabilen \nToplam \nYayın Sayısı \n \nKitap \n \nGörsel-İşitsel \nMateryal \nRezerv Yayın \n (Ders Kitabı)  \nKütüphanelerarası \nÖdünç Yayın \nNota \nÖğretim \nElemanı \n30 30 3 3 10 10 \nİdari \nPersonel \n10 10 3 \n3 \n5 3 \nY.Lisans/ \nDoktora \nÖğrencisi \n15 15 3 3 5 3 \nLisans \nÖğrencisi \n10 10 3 3 5 3 \nİTU Emekli \nPersoneli \n5 5 3 3 \n \nÖdünç Verilmez \n \nÖdünç \nverilmez \nYayın Tipi Ödünç verme Süresi \nKitap Öğretim Elemanı 1 ay 4 uzatma \n \nİdari Personel 1 ay 3 uzatma \nY.Lisans/Doktora 15 gün 3 uzatma \nLisans 15 gün 3 uzatma",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 368,
+                "to": 423
+              }
+            }
+          }
+        },
+        {
+          "pageContent": "2. Kütüphanelerarası ödünç yayın / belge sağlama hizmeti, \n3. Elektronik kaynaklara kampüs dışı erişim hizmeti, \n4. Kütüphaneye satın alınması için yayın siparişi hizmetlerinden \n yararlanılabilmesi için kütüphane üyeliği gerekmektedir. (Üye olan İTÜ emekli personeli sadece \nödünç verme hizmetinden yararlanabilir). \n \n➢ İTÜ mezunları, İTÜ Vakfı ve İTÜ Geliştirme Vakfı personeli, diğer üniversitelerin  yüksek  lisans  ve \ndoktora öğrencileri ile öğretim elemanları Üniversite Yönetim Kurulu (ÜYK) kararı ile belirlenen koşullar \nçerçevesinde sadece kütüphane içindeki hizmetlerden yararlanabilir, ödünç yayın alamazlar. \n1. İTÜ mezunları mezun kartları ile, \n2. Diğer üniversitelerin öğretim elemanları ve lisansüstü öğrencileri çıkarılacak üyelik kartı ile, \n3. İTÜ Kütüphanelerinden yararlanmak isteyen lisansüstü öğrenciler ve akademisyenler, Üniversite \nYönetim  Kurulu  (ÜYK)  tarafından  belirlenen kurallar çerçevesinde  misafir  üye  olarak  İTÜ \nKütüphanelerinden yararlanabilirler.",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 30,
+                "to": 43
+              }
+            }
+          }
+        },
+        {
+          "pageContent": "Notlarına rağmen ödünç aldığı yayını iade etmeyen; \na) Öğrencilerin öğrenci otomasyon sistemindeki kayıtlarına kısıntı konulur. \nb) Öğretim elemanı ve idari personelin görev yaptığı birime yazı yazılır. \nİTÜ emekli  personelinin ödünç alınan yayını iki kez  geciktirmesi cezasını ödemediği takdirde üyeliği iptal \nedilir. \n \nÖdünç Alınan Bir Yayının Kaybedilmesi \n \nÖdünç alınan yayınların korunması ve  zamanında iade edilmesi sorumluluğu yayınları ödünç alan kişiye \naittir. Ödünç aldığınız yayını kaybettiyseniz  yerine  aynı yayını satın alarak 30 gün içinde kütüphaneye \ngetirmeniz gerekir. Kaybettiğiniz yayın için ayrıca işlem ücreti  de  tahsil  edilir.  Baskısı tükenmiş yayının \nkaybedilmesi durumunda ise kullanıcı, Daire Başkanlığı’nca belirlenen, kaybedilene eşdeğer  bir  yayını 30 \ngün içinde temin etmek ve işlem ücretini ödemek zorundadır. \n \nAranılan Yayın İTÜ Kütüphanelerinde Yoksa...",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 491,
+                "to": 505
+              }
+            }
+          }
+        },
+        {
+          "pageContent": "yayınlar bağış olarak kabul edilmemektedir.  \n \nKULLANICI HESABI                                                                                             \n \nKütüphaneye  üye olduğunuz andan itibaren adınıza bir hesap oluşturulur. Bu hesapta üyelik bilgileriniz, \nödünç aldığınız yayınlar, cezalar, yayın ayırtmalarınız kaydedilir. Kütüphane web sayfasındaki kullanıcı \nişlemleri alanında siz de üzerinizdeki yayınları görebilir, iade sürelerini uzatabilir, yayın ayırtma işlemlerinizi \nyapabilirsiniz.  \nBu  hizmetten  yararlanmak  için en  az  6  haneli, içinde  büyük-küçük  harf  ve  rakam  olan bir PIN’e ihtiyacınız \nolacaktır.  \nPIN kodunuzu hiç almadıysanız ya da hatırlamıyorsanız, kütüphane web sayfasındaki PIN İşlemleri alanından \nşifrenizi kendiniz oluşturabilirsiniz. Şifreler e-mail  ya  da  telefonla  verilemez. Sizden  istenen  bilgileri  forma \ndoldurduğunuzda,  kütüphaneye üye olurken verdiğiniz e-posta adresinize PIN oluşturmanız için bir link",
+          "metadata": {
+            "loc": {
+              "lines": {
+                "from": 545,
+                "to": 557
+              }
+            }
+          }
+        }
+      ],
+      "answer": "Evet, İTÜ emekli personeli ödünç kitap alabilir.\n\nBağlama göre, İTÜ emekli personeli 5 adet kitap ödünç alabilir ve ödünç verme süresi 1 ay olup 3 uzatma hakkı bulunmaktadır. Ayrıca, üye olan İTÜ emekli personeli sadece ödünç verme hizmetinden yararlanabilir."
+    },
+    "toolsUsed": [],
+    "executionTime": null,
+    "error": null,
+    "chainExecution": null,
+    "additionalInfo": {}
   }
 ]

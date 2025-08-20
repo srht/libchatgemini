@@ -45,7 +45,7 @@ class DetailedLoggingCallbackHandler {
 
   handleChainStart(chain, inputs, runId, parentRunId, tags, metadata) {
     this.currentChainId = runId;
-    this.chainLogs.push({
+    const logEntry = {
       type: 'chain_start',
       runId,
       parentRunId,
@@ -54,11 +54,20 @@ class DetailedLoggingCallbackHandler {
       tags,
       metadata,
       timestamp: new Date().toISOString()
+    };
+    
+    this.chainLogs.push(logEntry);
+    
+    // Console'da da göster
+    console.log('\n🔗 CHAIN START:', {
+      chainName: logEntry.chainName,
+      runId: logEntry.runId,
+      inputs: logEntry.inputs
     });
   }
 
   handleChainEnd(outputs, runId, parentRunId, tags, metadata) {
-    this.chainLogs.push({
+    const logEntry = {
       type: 'chain_end',
       runId,
       parentRunId,
@@ -66,11 +75,19 @@ class DetailedLoggingCallbackHandler {
       tags,
       metadata,
       timestamp: new Date().toISOString()
+    };
+    
+    this.chainLogs.push(logEntry);
+    
+    // Console'da da göster
+    console.log('✅ CHAIN END:', {
+      runId: logEntry.runId,
+      outputs: logEntry.outputs
     });
   }
 
   handleLLMStart(llm, prompts, runId, parentRunId, tags, metadata) {
-    this.chainLogs.push({
+    const logEntry = {
       type: 'llm_start',
       runId,
       parentRunId,
@@ -79,11 +96,20 @@ class DetailedLoggingCallbackHandler {
       tags,
       metadata,
       timestamp: new Date().toISOString()
+    };
+    
+    this.chainLogs.push(logEntry);
+    
+    // Console'da da göster
+    console.log('🤖 LLM START:', {
+      llmName: logEntry.llmName,
+      runId: logEntry.runId,
+      promptCount: logEntry.prompts.length
     });
   }
 
   handleLLMEnd(output, runId, parentRunId, tags, metadata) {
-    this.chainLogs.push({
+    const logEntry = {
       type: 'llm_end',
       runId,
       parentRunId,
@@ -91,11 +117,19 @@ class DetailedLoggingCallbackHandler {
       tags,
       metadata,
       timestamp: new Date().toISOString()
+    };
+    
+    this.chainLogs.push(logEntry);
+    
+    // Console'da da göster
+    console.log('🎯 LLM END:', {
+      runId: logEntry.runId,
+      outputLength: typeof logEntry.output === 'string' ? logEntry.output.length : 'N/A'
     });
   }
 
   handleToolStart(tool, input, runId, parentRunId, tags, metadata) {
-    this.chainLogs.push({
+    const logEntry = {
       type: 'tool_start',
       runId,
       parentRunId,
@@ -104,11 +138,20 @@ class DetailedLoggingCallbackHandler {
       tags,
       metadata,
       timestamp: new Date().toISOString()
+    };
+    
+    this.chainLogs.push(logEntry);
+    
+    // Console'da da göster
+    console.log('🔧 TOOL START:', {
+      toolName: logEntry.toolName,
+      runId: logEntry.runId,
+      input: logEntry.input
     });
   }
 
   handleToolEnd(output, runId, parentRunId, tags, metadata) {
-    this.chainLogs.push({
+    const logEntry = {
       type: 'tool_end',
       runId,
       parentRunId,
@@ -116,11 +159,19 @@ class DetailedLoggingCallbackHandler {
       tags,
       metadata,
       timestamp: new Date().toISOString()
+    };
+    
+    this.chainLogs.push(logEntry);
+    
+    // Console'da da göster
+    console.log('🏁 TOOL END:', {
+      runId: logEntry.runId,
+      outputLength: typeof logEntry.output === 'string' ? logEntry.output.length : 'N/A'
     });
   }
 
   handleAgentAction(action, runId, parentRunId, tags, metadata) {
-    this.chainLogs.push({
+    const logEntry = {
       type: 'agent_action',
       runId,
       parentRunId,
@@ -128,11 +179,20 @@ class DetailedLoggingCallbackHandler {
       tags,
       metadata,
       timestamp: new Date().toISOString()
+    };
+    
+    this.chainLogs.push(logEntry);
+    
+    // Console'da da göster
+    console.log('🎭 AGENT ACTION:', {
+      runId: logEntry.runId,
+      tool: logEntry.action?.tool,
+      input: logEntry.action?.toolInput
     });
   }
 
   handleAgentEnd(action, runId, parentRunId, tags, metadata) {
-    this.chainLogs.push({
+    const logEntry = {
       type: 'agent_end',
       runId,
       parentRunId,
@@ -140,11 +200,19 @@ class DetailedLoggingCallbackHandler {
       tags,
       metadata,
       timestamp: new Date().toISOString()
+    };
+    
+    this.chainLogs.push(logEntry);
+    
+    // Console'da da göster
+    console.log('🎬 AGENT END:', {
+      runId: logEntry.runId,
+      finalAction: logEntry.action
     });
   }
 
   handleText(text, runId, parentRunId, tags, metadata) {
-    this.chainLogs.push({
+    const logEntry = {
       type: 'text',
       runId,
       parentRunId,
@@ -152,6 +220,14 @@ class DetailedLoggingCallbackHandler {
       tags,
       metadata,
       timestamp: new Date().toISOString()
+    };
+    
+    this.chainLogs.push(logEntry);
+    
+    // Console'da da göster
+    console.log('📝 TEXT:', {
+      runId: logEntry.runId,
+      text: logEntry.text
     });
   }
 
@@ -319,6 +395,11 @@ When to use tools
 
 Books/magazines (incl. call numbers or locations): Use get_books. If a physical item's location is requested or implied, also call get_information_from_documents to resolve the location for the call number.
 
+IMPORTANT: For "where is [book name]" questions:
+1. First use get_books to find the book and get its call number
+2. Then ALWAYS use get_information_from_documents with the call number to find which floor/shelf it's located on
+3. Provide complete location information including floor, shelf, and call number from the documents
+
 Course books/materials: Use get_course_books.
 
 Library databases (what the library subscribes to): Use get_library_databases, then guide the user to the library page: https://kutuphane.itu.edu.tr/arastirma/veritabanlari
@@ -349,23 +430,31 @@ If you can't find a book you must check if the user misspelled the book name fix
 
 If user greets you, greet warmly. If asked your name: "I am a library assistant AI created by the library team."
 
+IMPORTANT: Contact information (phone numbers, emails, office locations) from library staff and personnel is PUBLIC LIBRARY INFORMATION, not personal data. When users ask for contact details, phone numbers, or office information, provide this information freely as it is part of the library's public directory. Use get_information_from_documents or get_contact_information tools to find and share contact details.
+
 Do NOT include any other text or explanation outside of this format.
 Do NOT respond with just a thought.
 Do NOT respond with an action and action input if you don't have enough information for a final answer yet.
 
 Output protocol (ReAct)
 
+You MUST follow this EXACT format:
+
 Thought: brief private reasoning, no HTML.
 
 Action: exact tool name from {tool_names}.
 
 Action Input: plain string.
+
 (Observation will be supplied by the system; you do not write it.)
+
 Repeat Thought → Action → (system Observation) as needed. When ready:
 
 Thought: I have sufficient information to provide a final answer.
 
 Final Answer: valid HTML only, no Markdown.
+
+IMPORTANT: Always end with "Final Answer:" followed by HTML. Never stop at "Thought:" or "Action:".
 
 HTML rules for Final Answer
 
@@ -410,7 +499,41 @@ Observation: (system provides book results)
 Thought: I have sufficient information to provide a final answer.
 Final Answer:
 
-<p><b>Beyaz Diş kitabı bulundu:</b><br><b>Yazar:</b> London, Jack<br><b>Yer Numarası:</b> PS3523.O46 W419 2019<br><b>Katalog Kaydı:</b> <a href="https://divit.library.itu.edu.tr/record=b3445386">Görüntüle</a></p>`,
+<p><b>Beyaz Diş kitabı bulundu:</b><br><b>Yazar:</b> London, Jack<br><b>Yer Numarası:</b> PS3523.O46 W419 2019<br><b>Katalog Kaydı:</b> <a href="https://divit.library.itu.edu.tr/record=b3445386">Görüntüle</a></p>
+
+Example 4 — contact information
+Thought: User wants contact information for library staff → use get_information_from_documents.
+Action: get_information_from_documents
+Action Input: "Aytaç Kayadevir telefon numarası"
+Observation: (system provides contact details)
+Thought: I have sufficient information to provide a final answer.
+Final Answer:
+
+<p><b>İletişim Bilgileri:</b><br><b>Ad Soyad:</b> Aytaç Kayadevir<br><b>Pozisyon:</b> Kütüphaneci - Teknik Hizmetler<br><b>Dış Hat:</b> 285 30 13<br><b>Dahili:</b> 4119<br><b>E-posta:</b> kayadevir@itu.edu.tr</p>
+
+Example 5 — book location search
+Thought: User asks "Sefiller nerede" → need to find book location using get_books first, then get floor info from documents.
+Action: get_books
+Action Input: "Sefiller"
+Observation: (system provides book results with call number)
+Thought: Now I have the call number, need to find which floor this book is located on using get_information_from_documents.
+Action: get_information_from_documents
+Action Input: "PQ2468 .M8 2019"
+Observation: (system provides floor/shelf location information from documents)
+Thought: I have sufficient information to provide a final answer.
+Final Answer:
+
+<p><b>Sefiller kitabı bulundu:</b><br><b>Yazar:</b> Victor Hugo<br><b>Yer Numarası:</b> PQ2468 .M8 2019<br><b>Konum:</b> [LOCATION_FROM_DOCUMENTS]<br><b>Katalog Kaydı:</b> <a href="[CATALOG_URL_FROM_TOOL]">Görüntüle</a></p>
+
+Example 6 — library rules and policies
+Thought: User asks about loan limits for administrative staff → need to search documents for borrowing policies.
+Action: get_information_from_documents
+Action Input: "idari personel ödünç alma limit kitap sayısı"
+Observation: (system provides information about loan limits for administrative staff)
+Thought: I have sufficient information to provide a final answer.
+Final Answer:
+
+<p><b>İdari Personel Ödünç Alma Kuralları:</b><br><b>Kitap Sayısı:</b> [LOAN_LIMIT_FROM_DOCUMENTS]<br><b>Süre:</b> [LOAN_PERIOD_FROM_DOCUMENTS]<br><b>Not:</b> [ADDITIONAL_INFO_FROM_DOCUMENTS]</p>`,
       ],
       ["human", "{input}"],
       ["placeholder", "{agent_scratchpad}"], // Agent'ın düşünce süreci için placeholder
@@ -420,16 +543,21 @@ Final Answer:
     const agent = await createReactAgent({
       llm: chatModel,
       tools,
-      prompt: agentPrompt,
-      callbacks: [detailedCallbackHandler]
+      prompt: agentPrompt
     });
 
     const agentExecutor = new AgentExecutor({
       agent,
       tools,
       returnIntermediateSteps: true, // Ara adımları döndür
-      callbacks: [detailedCallbackHandler]
+      callbacks: [detailedCallbackHandler],
+      handleParsingErrors: true, // Parse hatalarını handle et
+      verbose: true // Debug için verbose mode
     });
+
+    console.log('🚀 AgentExecutor oluşturuldu, verbose mode aktif');
+    console.log('📋 Tools:', tools.map(t => t.name));
+    console.log('�� Query:', query);
 
     const startTime = Date.now();
     const result = await agentExecutor.invoke({ input: query });
@@ -445,8 +573,14 @@ Final Answer:
     const toolDetails = [];
     
     if (result.intermediateSteps) {
+      console.log(`\n🔍 INTERMEDIATE STEPS (${result.intermediateSteps.length} adım):`);
       result.intermediateSteps.forEach((step, index) => {
-        console.log('[INTERMEDIATE STEP:]',step);
+        console.log(`\n📝 STEP ${index + 1}:`);
+        console.log('  🎯 Action:', step.action?.tool);
+        console.log('  📥 Input:', step.action?.toolInput);
+        console.log('  📤 Observation:', step.observation);
+        console.log('  📋 Log:', step.action?.log);
+        
         if (step.action && step.action.tool) {
           toolsUsed.push(step.action.tool);
           toolDetails.push({

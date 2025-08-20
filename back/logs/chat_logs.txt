@@ -762,3 +762,209 @@ Timestamp: 2025-08-13 13:21:34.403
 User Query: [object Object]
 Agent Response: undefined
 === END LOG ENTRY ===
+
+=== CHAT LOG ENTRY ===
+Timestamp: 2025-08-19 06:47:42.737
+User Query: [object Object]
+Agent Response: undefined
+=== END LOG ENTRY ===
+
+=== CHAT LOG ENTRY ===
+Timestamp: 2025-08-19 06:48:36.774
+User Query: [object Object]
+Agent Response: undefined
+=== END LOG ENTRY ===
+
+=== CHAT LOG ENTRY ===
+Timestamp: 2025-08-19 07:00:22.314
+User Query: [object Object]
+Agent Response: undefined
+=== END LOG ENTRY ===
+
+=== CHAT LOG ENTRY ===
+Timestamp: 2025-08-19 07:01:07.591
+User Query: [object Object]
+Agent Response: undefined
+=== END LOG ENTRY ===
+
+=== CHAT LOG ENTRY ===
+Timestamp: 2025-08-19 07:14:14.051
+User Query: [object Object]
+Agent Response: undefined
+=== END LOG ENTRY ===
+
+=== CHAT LOG ENTRY ===
+Timestamp: 2025-08-19 07:15:53.010
+User Query: [object Object]
+Agent Response: undefined
+=== END LOG ENTRY ===
+
+=== CHAT LOG ENTRY ===
+Timestamp: 2025-08-19 07:21:24.513
+User Query: [object Object]
+Agent Response: undefined
+=== END LOG ENTRY ===
+
+=== CHAT LOG ENTRY ===
+Timestamp: 2025-08-19 07:21:28.318
+User Query: [object Object]
+Agent Response: undefined
+=== END LOG ENTRY ===
+
+=== CHAT LOG ENTRY ===
+Timestamp: 2025-08-19 07:22:56.251
+User Query: [object Object]
+Agent Response: undefined
+=== END LOG ENTRY ===
+
+=== CHAT LOG ENTRY ===
+Timestamp: 2025-08-19 07:23:01.473
+User Query: [object Object]
+Agent Response: undefined
+=== END LOG ENTRY ===
+
+=== CHAT LOG ENTRY ===
+Timestamp: 2025-08-19 07:23:30.295
+User Query: [object Object]
+Agent Response: undefined
+=== END LOG ENTRY ===
+
+=== ERROR LOG ===
+Timestamp: 2025-08-19 07:23:31.404
+Context: TypeError: Cannot read properties of undefined (reading '0')
+Error Type: string
+Error Value: "Agent sorgusu işlenirken hata: P ile başlayan yer numarasına sahip yayınlar nerede"
+=== END ERROR LOG ===
+
+=== CHAT LOG ENTRY ===
+Timestamp: 2025-08-19 07:23:49.606
+User Query: [object Object]
+Agent Response: undefined
+=== END LOG ENTRY ===
+
+=== CHAT LOG ENTRY ===
+Timestamp: 2025-08-19 07:24:12.100
+User Query: [object Object]
+Agent Response: undefined
+=== END LOG ENTRY ===
+
+=== CHAT LOG ENTRY ===
+Timestamp: 2025-08-19 07:24:39.815
+User Query: [object Object]
+Agent Response: undefined
+=== END LOG ENTRY ===
+
+=== CHAT LOG ENTRY ===
+Timestamp: 2025-08-19 07:25:48.930
+User Query: [object Object]
+Agent Response: undefined
+=== END LOG ENTRY ===
+
+=== CHAT LOG ENTRY ===
+Timestamp: 2025-08-19 07:26:59.162
+User Query: [object Object]
+Agent Response: undefined
+=== END LOG ENTRY ===
+
+=== CHAT LOG ENTRY ===
+Timestamp: 2025-08-19 07:29:33.727
+User Query: [object Object]
+Agent Response: undefined
+=== END LOG ENTRY ===
+
+=== CHAT LOG ENTRY ===
+Timestamp: 2025-08-19 07:29:38.136
+User Query: [object Object]
+Agent Response: undefined
+=== END LOG ENTRY ===
+
+=== CHAT LOG ENTRY ===
+Timestamp: 2025-08-19 07:30:25.797
+User Query: [object Object]
+Agent Response: undefined
+=== END LOG ENTRY ===
+
+=== CHAT LOG ENTRY ===
+Timestamp: 2025-08-19 07:49:21.867
+User Query: [object Object]
+Agent Response: undefined
+=== END LOG ENTRY ===
+
+=== CHAT LOG ENTRY ===
+Timestamp: 2025-08-19 07:50:23.612
+User Query: [object Object]
+Agent Response: undefined
+=== END LOG ENTRY ===
+
+=== CHAT LOG ENTRY ===
+Timestamp: 2025-08-19 07:55:58.025
+User Query: [object Object]
+Agent Response: undefined
+=== END LOG ENTRY ===
+
+=== CHAT LOG ENTRY ===
+Timestamp: 2025-08-19 07:56:28.938
+User Query: [object Object]
+Agent Response: undefined
+=== END LOG ENTRY ===
+
+=== CHAT LOG ENTRY ===
+Timestamp: 2025-08-19 07:57:50.052
+User Query: [object Object]
+Agent Response: undefined
+=== END LOG ENTRY ===
+
+=== CHAT LOG ENTRY ===
+Timestamp: 2025-08-19 07:57:59.601
+User Query: [object Object]
+Agent Response: undefined
+=== END LOG ENTRY ===
+
+=== CHAT LOG ENTRY ===
+Timestamp: 2025-08-19 07:58:28.582
+User Query: [object Object]
+Agent Response: undefined
+=== END LOG ENTRY ===
+
+=== CHAT LOG ENTRY ===
+Timestamp: 2025-08-19 08:00:35.451
+User Query: [object Object]
+Agent Response: undefined
+=== END LOG ENTRY ===
+
+=== CHAT LOG ENTRY ===
+Timestamp: 2025-08-19 08:00:57.539
+User Query: [object Object]
+Agent Response: undefined
+=== END LOG ENTRY ===
+
+=== CHAT LOG ENTRY ===
+Timestamp: 2025-08-19 08:01:26.624
+User Query: [object Object]
+Agent Response: undefined
+=== END LOG ENTRY ===
+
+=== ERROR LOG ===
+Timestamp: 2025-08-19 08:01:28.559
+Context: TypeError: Cannot read properties of undefined (reading '0')
+Error Type: string
+Error Value: "Agent sorgusu işlenirken hata: bağış yapma şartları nelerdir"
+=== END ERROR LOG ===
+
+=== CHAT LOG ENTRY ===
+Timestamp: 2025-08-20 12:20:08.303
+User Query: [object Object]
+Agent Response: undefined
+=== END LOG ENTRY ===
+
+=== CHAT LOG ENTRY ===
+Timestamp: 2025-08-20 12:20:26.194
+User Query: [object Object]
+Agent Response: undefined
+=== END LOG ENTRY ===
+
+=== CHAT LOG ENTRY ===
+Timestamp: 2025-08-20 12:20:32.384
+User Query: [object Object]
+Agent Response: undefined
+=== END LOG ENTRY ===
